@@ -1,0 +1,95 @@
+== 2a. week totals by account: all spending adsets vs losers (week profit < 0) vs losers no rule touched
+account_name  spend_adsets  spend  profit  losers  loser_spend  loser_loss  untouched_losers  untouched_spend  untouched_loss  untouched_by_anyone
+      ACC-01            61 1233.0   223.0      37         61.0       -27.0                37             61.0           -27.0                   34
+      ACC-02           228 1411.0    22.0     180        504.0      -157.0               180            504.0          -157.0                  161
+      ACC-03           134 1208.0   184.0     100        327.0       -92.0               100            327.0           -92.0                   93
+      ACC-04           114 2586.0   490.0      88        235.0       -87.0                22            103.0           -32.0                   17
+      ACC-05           201  690.0  -147.0     176        482.0      -184.0               176            482.0          -184.0                  161
+      ACC-06           245 1785.0   106.0     184        555.0      -198.0               184            555.0          -198.0                  164
+         NaN           983 8912.0   878.0     765       2164.0      -745.0               699           2032.0          -690.0                  630
+
+== 2b. SUSTAINED untouched losers: >= 3 spend days, loss on most of them, week loss >= $5
+account_name  n  spend  loss  loss_excl_last_day  buyer_touched
+      ACC-03  1   36.0  -8.0                -8.0              1
+      ACC-04  1    9.0  -5.0                -5.0              1
+      ACC-05  3   89.0 -24.0               -24.0              2
+      ACC-06  4   46.0 -26.0               -26.0              3
+         NaN  9  179.0 -63.0               -62.0              7
+
+== 2b-list. the sustained untouched losers
+          adset_id account_name  spend_days  neg_days  spend  profit    roi  buyer_touched
+730121092582511364       ACC-05           4         3  20.27   -9.39 -0.463           True
+730131435815981997       ACC-06           4         3  12.61   -9.31 -0.738           True
+730133762543700867       ACC-05           4         4  17.15   -8.32 -0.485          False
+730175047382406513       ACC-03           3         2  35.62   -7.53 -0.211           True
+730133022053654014       ACC-05           7         6  51.57   -6.79 -0.132           True
+730111395845609920       ACC-06           3         3   9.93   -6.16 -0.620           True
+730132435690207113       ACC-06           4         4   5.21   -5.21 -1.000          False
+730124861204325890       ACC-06           3         2  17.87   -5.13 -0.287           True
+    31326123629255       ACC-04           4         3   9.13   -5.09 -0.558           True
+
+== 2c. top 15 untouched losers by loss
+          adset_id account_name  spend_days  neg_days  spend  profit    roi  profit_excl_last_day  buyer_touched
+730126467823838547       ACC-06           3         1  24.10  -10.02 -0.416                -10.02           True
+730121092582511364       ACC-05           4         3  20.27   -9.39 -0.463                 -9.39           True
+730131435815981997       ACC-06           4         3  12.61   -9.31 -0.738                 -9.31           True
+730118046412871080       ACC-06           2         2  22.92   -9.26 -0.404                 -9.26           True
+730133762543700867       ACC-05           4         4  17.15   -8.32 -0.485                 -8.32          False
+730175047382406513       ACC-03           3         2  35.62   -7.53 -0.211                 -7.53           True
+730133022053654014       ACC-05           7         6  51.57   -6.79 -0.132                 -6.36           True
+730111395845609920       ACC-06           3         3   9.93   -6.16 -0.620                 -6.16           True
+730131279627046176       ACC-06           2         1  18.76   -6.08 -0.324                 -6.08           True
+730132435690207113       ACC-06           4         4   5.21   -5.21 -1.000                 -5.21          False
+730124861204325890       ACC-06           3         2  17.87   -5.13 -0.287                 -5.13           True
+    31326123629255       ACC-04           4         3   9.13   -5.09 -0.558                 -5.09           True
+730132171816989772       ACC-02           3         2  15.07   -4.90 -0.325                 -4.90           True
+730114960639330359       ACC-05           4         3   8.94   -4.46 -0.499                 -4.46           True
+730124465614136223       ACC-06           4         4   5.55   -4.28 -0.771                 -4.28          False
+
+== 2d. how deep: untouched losers by week ROI band
+     roi_band   n  spend   loss
+a roi <= -50% 460  521.0 -427.0
+  b -50..-30%  89  343.0 -137.0
+  c -30..-10%  98  506.0  -98.0
+    d -10..0%  52  661.0  -28.0
+
+== 4a. buyer event types (is a status change even loggable?)
+object_type                 event_type   n
+      adset           ui_adjust_budget 338
+      adset           ui_update_budget 328
+      adset update_ad_set_bid_strategy   1
+      adset       update_ad_set_budget  48
+   campaign           ui_adjust_budget 108
+   campaign           ui_update_budget 153
+   campaign     update_campaign_budget  25
+
+== 4b. buyer actions on adsets AFTER a rule acted on them
+      adset_id                                                                                                                     rule_actions              first_rule_t                   action_time           event_type old_budget new_budget  hours_after_rule note
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00 2026-06-07 14:15:43.365202+00     ui_adjust_budget      11.43        8.0              10.8 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00 2026-06-09 14:12:25.877476+00     ui_adjust_budget        8.0       13.6              58.7 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00 2026-06-09 14:12:25.900527+00     ui_adjust_budget        8.0       13.6              58.7 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00  2026-06-09 14:12:25.91252+00     ui_adjust_budget        8.0       13.6              58.7 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00        2026-06-11 11:30:03+00 update_ad_set_budget       13.6      10.87             104.0 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00        2026-06-11 13:46:04+00 update_ad_set_budget      10.87      17.22             106.3 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00 2026-06-11 13:46:08.137128+00     ui_adjust_budget      10.87      17.22             106.3 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00  2026-06-12 14:42:02.23146+00     ui_adjust_budget      17.22      23.57             131.2 None
+31273956645572                        R12:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 03:30:05+00:00 2026-06-12 18:16:26.996874+00     ui_adjust_budget      23.57      29.92             134.8 None
+31302925337341                                                                                                R10:Decrease -15% (min 9):SUCCESS 2026-06-07 05:30:07+00:00 2026-06-07 14:16:38.830631+00     ui_adjust_budget     267.36     213.89               8.8 None
+31302925337341                                                                                                R10:Decrease -15% (min 9):SUCCESS 2026-06-07 05:30:07+00:00 2026-06-07 15:03:55.117967+00     ui_update_budget     213.89      254.0               9.6 None
+31302925337341                                                                                                R10:Decrease -15% (min 9):SUCCESS 2026-06-07 05:30:07+00:00        2026-06-08 02:00:03+00 update_ad_set_budget      254.0      215.9              20.5 None
+31626016833981 R01:Turn OFF:SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R07:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):"No bud 2026-06-07 02:30:11+00:00   2026-06-07 14:16:38.8836+00     ui_adjust_budget     103.14      82.51              11.8 None
+31626016833981 R01:Turn OFF:SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R07:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):"No bud 2026-06-07 02:30:11+00:00        2026-06-10 19:30:04+00 update_ad_set_budget      82.51       66.0              89.0 None
+31626016833981 R01:Turn OFF:SUCCESS | R02:Decrease -20% (min 9):SUCCESS | R07:Decrease -40% (min 9):SUCCESS | R02:Decrease -20% (min 9):"No bud 2026-06-07 02:30:11+00:00        2026-06-11 02:30:02+00 update_ad_set_budget       66.0       39.6              96.0 None
+31808893639076                                                            R12:Decrease -40% (min 9):SUCCESS | R12:Decrease -40% (min 9):"No bud 2026-06-07 04:30:07+00:00 2026-06-07 14:15:43.472997+00     ui_adjust_budget       7.62       5.33               9.8 None
+
+== 4c. buyer actions on rule-touched adsets BEFORE the rule (context)
+ n  adsets
+22      11
+
+== 4d. buyer_actions rows that are actually the rule engine (same adset, within 120 s of a rule execution)
+                event_type   n  matches_rule_execution
+          ui_adjust_budget 446                       0
+          ui_update_budget 481                       0
+update_ad_set_bid_strategy   1                       0
+      update_ad_set_budget  48                      10
+    update_campaign_budget  25                       0

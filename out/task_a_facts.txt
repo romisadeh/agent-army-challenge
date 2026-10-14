@@ -1,0 +1,235 @@
+== F1 funnel
+ all_exec  oauth_failed  no_budget  success  success_kill_rows  killed_adsets  success_cuts  turn_on_rows  turn_on_success
+      214            30         20      164                152             66            12             8                0
+
+== F2 OAuth failures: 06-08 03:00-17:00 UTC vs other times
+ in_0608_window  n
+          False  3
+           True 27
+
+== F3 'No budget to change' vs null live-budget read
+ fb_budget_null  n
+          False  5
+           True 15
+
+== F4 per rule: logged / applied (SUCCESS) / distinct adsets / OAuth failed / no-op
+rule_id  logged  applied  adsets  oauth_failed  no_op
+    R01       4        4       3             0      0
+    R02      23        6       4             0     17
+    R03      36       17      13            19      0
+    R04     109      109      39             0      0
+    R05       7        6       6             1      0
+    R06       1        1       1             0      0
+    R07       1        1       1             0      0
+    R08      15       13      10             2      0
+    R09       8        0       1             8      0
+    R10       2        2       1             0      0
+    R11       2        2       1             0      0
+    R12       6        3       3             0      3
+
+== F5 R04: spend at action (all 109 rows) and repeats
+ rows  adsets  rows_per_kill  median_spend_at_action
+  109      39            2.8                    0.57
+
+== F6 R11: firings vs the earlier R03 kill on the same adset
+      adset_id                 r11_time           r03_first_kill
+31570891150705 2026-06-07T22:00:06.000Z 2026-06-07T21:30:09.000Z
+31570891150705 2026-06-07T21:30:15.000Z 2026-06-07T21:30:09.000Z
+
+== F7 own_rsoc adsets in ACC-04 metadata
+ acc04_own_rsoc_adsets  acted_on
+                    23         0
+
+== F8 timing of effective actions (from out/impact_actions.csv)
+cut_hours_local                   [5, 5, 5, 6, 6, 7, 7, 8, 8, 14, 18, 22]
+cuts_before_09                                                          9
+n_cuts                                                                 12
+share_cut_spend_judged_before_09                                     0.76
+cuts_matured_better_than_seen                                           8
+cuts_seen_le0_matured_gt0                                               6
+kills by local hour block: {'00-05': 16, '06-11': 9, '12-17': 27, '18-23': 14}
+
+== F9 rule ROI seen vs matured, R04 (mean gap)
+ r04_mean_roi_gap
+            0.006
+
+== F10 (rule, adset, day) groups fired more than once
+ groups_fired_more_than_once  rows_in_them
+                          66         193.0
+
+== F11 account similarity (adset-days with spend)
+account_name  rev_per_spend  rev_per_spend_day1  slg_spend_rows
+      ACC-01          1.181               1.088             121
+      ACC-02          1.015               0.823             402
+      ACC-03          1.152               0.910             256
+      ACC-04          1.186               0.955             275
+      ACC-05          0.786               0.695             323
+      ACC-06          1.059               0.978             534
+
+== F12 R04-qualifiers (not acted on) that spent the next day, by account
+   acc  qualifiers_with_next_day_in_window  spent_next_day
+ACC-01                                  15               7
+ACC-02                                  69               0
+ACC-03                                  44               7
+ACC-04                                   5               2
+ACC-05                                  86               4
+ACC-06                                  29              17
+
+== F13 metadata daily_budget / last buyer budget (all accounts)
+ adsets  ratio_100
+    185        178
+
+== F14 metadata status of rule-killed adsets
+effective_status delivery_status  killed_adsets
+          ACTIVE       ADSET_OFF             58
+          PAUSED    CAMPAIGN_OFF              7
+          ACTIVE          ACTIVE              1
+
+== F15 budget cuts: rule-log fields vs the engine's own API row (buyer_actions, within 10 s)
+rule_id       adset_id              action_time old_budget new_budget  fb_live set_budget  set_over_live api_old api_new  api_row_found
+    R12 31196781349398 2026-06-06T04:30:07.000Z       3.81      16.51    16.51      9.906           0.60     NaN     NaN          False
+    R02 31626016833981 2026-06-07T02:30:11.000Z    107.442   128.9304 128.9304   103.1443           0.80  128.93  103.14           True
+    R12 31273956645572 2026-06-07T03:30:05.000Z       12.7      19.05    19.05      11.43           0.60   19.05   11.43           True
+    R12 31808893639076 2026-06-07T04:30:07.000Z       6.35       12.7     12.7       7.62           0.60    12.7    7.62           True
+    R10 31302925337341 2026-06-07T05:30:07.000Z    262.128   314.5536 314.5536   267.3706           0.85  314.55  267.36           True
+    R10 31302925337341 2026-06-08T02:00:05.000Z   213.8934      254.0    254.0      215.9           0.85   254.0   215.9           True
+    R02 31626016833981 2026-06-10T19:30:05.000Z   103.1367    82.5119  82.5119    66.0095           0.80   82.51    66.0           True
+    R07 31626016833981 2026-06-11T02:30:03.000Z    82.5119    66.0019  66.0019    39.6011           0.60    66.0    39.6           True
+    R02 31191755212537 2026-06-11T05:30:07.000Z       7.62       12.7     12.7      10.16           0.80    12.7   10.16           True
+    R02 31273956645572 2026-06-11T11:30:04.000Z      8.001    13.6017  13.6017    10.8814           0.80    13.6   10.87           True
+    R02 31243712380589 2026-06-12T03:00:06.000Z       6.35       12.7     12.7      10.16           0.80    12.7   10.16           True
+    R02 31626016833981 2026-06-12T15:00:05.000Z    66.0019    39.5986  39.5986    31.6789           0.80     NaN     NaN          False
+
+== F16 buyer_actions coverage
+                    first_row                      last_row
+2026-06-06 14:00:10.726391+00 2026-06-12 18:16:27.133162+00
+
+== F17 which ROI field matches each rule's threshold (today vs last_3_days)
+rule_id   n  today_roi_fits  l3d_roi_fits
+    R02  23              21             2
+    R04 109             107             0
+    R10   2               2             0
+    R12   6               6             0
+
+== F18 R04 firings that miss '< -50%' (2-decimal ROI vs rpc/cpa precision)
+      adset_id              action_time roi_2dp  roi_from_rpc_cpa
+31500462861313 2026-06-07T16:30:11.000Z    -0.5           -0.4634
+31173597087415 2026-06-07T13:30:16.000Z    -0.5           -0.5000
+
+== F19 R07 reading test: rule-log evaluations with live budget > 65
+rule_id              action_time       adset_id  fb_live   roi  literal_reading_qualifies  flipped_reading_qualifies
+    R02 2026-06-07T02:30:11.000Z 31626016833981 128.9304 -0.16                       True                      False
+    R02 2026-06-07T03:00:06.000Z 31626016833981 103.1367 -0.13                       True                      False
+    R10 2026-06-07T05:30:07.000Z 31302925337341 314.5536  0.04                       True                      False
+    R10 2026-06-08T02:00:05.000Z 31302925337341    254.0 -0.04                       True                      False
+    R02 2026-06-10T19:30:05.000Z 31626016833981  82.5119  -0.1                       True                      False
+    R07 2026-06-11T02:30:03.000Z 31626016833981  66.0019 -0.51                      False                       True
+
+== F20 buyer_actions same-second repeats
+ n_groups  n_rows  extra_rows
+        4    11.0         7.0
+
+== F22 budget (current_budget_from_fb) at effective kill, by rule
+rule_id  kills  min_budget  median_budget  max_budget
+    R01      3       3.175          10.16     31.6738
+    R03     10       1.270           1.27      5.0800
+    R04     39       1.270           1.27      5.0800
+    R05      4       1.270           3.81      3.8100
+    R06      1       5.080           5.08      5.0800
+    R08      9       1.270           3.81     16.5100
+    NaN     66       1.270           1.27     31.6738
+
+== F23 no-op / failed executions by rule, adset, day
+rule_id       adset_id action_date               response  n
+    R02 31626016833981  2026-06-09  "No budget to change" 13
+    R03 31129016989551  2026-06-08 {"status": "error", "t  9
+    R09 31314467522499  2026-06-08 {"status": "error", "t  8
+    R03 31106545737316  2026-06-08 {"status": "error", "t  5
+    R03 31368753922831  2026-06-08 {"status": "error", "t  5
+    R08 31275731845445  2026-06-10 {"status": "error", "t  2
+    R12 31808893639076  2026-06-07  "No budget to change"  1
+    R12 31196781349398  2026-06-06  "No budget to change"  1
+    R02 31191755212537  2026-06-11  "No budget to change"  1
+    R02 31626016833981  2026-06-10  "No budget to change"  1
+    R02 31626016833981  2026-06-07  "No budget to change"  1
+    R05 31167980911567  2026-06-10 {"status": "error", "t  1
+    R12 31273956645572  2026-06-07  "No budget to change"  1
+    R02 31626016833981  2026-06-12  "No budget to change"  1
+
+== F24 R04 effective kills: matured day ROI on the kill day (from out/impact_actions.csv)
+kills=39 matured_roi_gt_0=0 matured_roi_le_0=39
+
+== F25 R03 firings: perf spend_day_no at firing
+ perf_spend_day_no  r03_firings
+                 1            1
+                 2           27
+                 3            8
+
+== F21 case adset 31302925337341: daily perf
+      date  spend  revenue   roi spend_day_no
+2026-06-06 216.31   323.55  0.50            9
+2026-06-07 319.76   319.65 -0.00           10
+2026-06-08 264.06   321.50  0.22           11
+2026-06-09 126.78   169.20  0.33           12
+2026-06-10   0.00     1.14  0.00           12
+2026-06-11   0.00     0.00  0.00           12
+2026-06-12   0.00      NaN  0.00           12
+
+== F21 case adset 31302925337341: every rule + buyer event
+                               t                                    src old_budget new_budget roi_seen spend_seen
+2026-06-06 14:15:59.821091+00:00                 buyer:ui_adjust_budget     262.13     314.55      NaN        NaN
+       2026-06-07 05:30:04+00:00             buyer:update_ad_set_budget     314.55     267.36      NaN        NaN
+       2026-06-07 05:30:07+00:00 rule:R10 Decrease -15% (min 9) SUCCESS   314.5536   267.3706     0.04   109.1438
+2026-06-07 14:16:38.830631+00:00                 buyer:ui_adjust_budget     267.36     213.89      NaN        NaN
+2026-06-07 15:03:55.117967+00:00                 buyer:ui_update_budget     213.89      254.0      NaN        NaN
+       2026-06-08 02:00:03+00:00             buyer:update_ad_set_budget      254.0      215.9      NaN        NaN
+       2026-06-08 02:00:05+00:00 rule:R10 Decrease -15% (min 9) SUCCESS      254.0      215.9    -0.04    70.4469
+
+== F21 case adset 31314467522499: daily perf
+      date  spend  revenue   roi spend_day_no
+2026-06-06   0.84     0.33 -0.61            2
+2026-06-07   1.66     1.33 -0.20            3
+2026-06-08   0.32     0.64  1.00            4
+2026-06-09   0.00      NaN  0.00            4
+2026-06-10   0.00      NaN  0.00            4
+2026-06-11   0.00      NaN  0.00            4
+2026-06-12   0.00      NaN  0.00            4
+
+== F21 case adset 31314467522499: every rule + buyer event
+                        t                        src old_budget new_budget roi_seen spend_seen
+2026-06-08 01:00:09+00:00  rule:R08 Turn OFF SUCCESS       1.27       None    -0.37     0.2667
+2026-06-08 06:30:12+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 09:30:20+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 10:30:17+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 11:30:20+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 12:30:16+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 13:30:12+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 14:30:13+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+2026-06-08 15:30:14+00:00 rule:R09 Turn ON {"status"        NaN       None     1.01     0.3175
+
+== F21 case adset 31273956645572: daily perf
+      date  spend  revenue   roi spend_day_no
+2026-06-06  10.52    21.31  1.03            4
+2026-06-07  19.39    21.42  0.10            5
+2026-06-08   9.88     7.63 -0.23            6
+2026-06-09   8.27     9.94  0.20            7
+2026-06-10  12.88    15.42  0.20            8
+2026-06-11  16.52    18.53  0.12            9
+2026-06-12  15.27    21.42  0.40           10
+
+== F21 case adset 31273956645572: every rule + buyer event
+                               t                                      src old_budget new_budget roi_seen spend_seen
+2026-06-06 18:17:19.673446+00:00                   buyer:ui_adjust_budget       12.7      19.05      NaN        NaN
+       2026-06-07 03:30:03+00:00               buyer:update_ad_set_budget      19.05      11.43      NaN        NaN
+       2026-06-07 03:30:05+00:00   rule:R12 Decrease -40% (min 9) SUCCESS      19.05      11.43     -0.6     6.1595
+       2026-06-07 04:00:03+00:00 rule:R12 Decrease -40% (min 9) "No budge      11.43      6.858     -0.6     6.1595
+2026-06-07 14:15:43.365202+00:00                   buyer:ui_adjust_budget      11.43        8.0      NaN        NaN
+2026-06-09 14:12:25.877476+00:00                   buyer:ui_adjust_budget        8.0       13.6      NaN        NaN
+2026-06-09 14:12:25.900527+00:00                   buyer:ui_adjust_budget        8.0       13.6      NaN        NaN
+2026-06-09 14:12:25.912520+00:00                   buyer:ui_adjust_budget        8.0       13.6      NaN        NaN
+       2026-06-11 11:30:03+00:00               buyer:update_ad_set_budget       13.6      10.87      NaN        NaN
+       2026-06-11 11:30:04+00:00   rule:R02 Decrease -20% (min 9) SUCCESS    13.6017    10.8814    -0.14     8.5471
+       2026-06-11 13:46:04+00:00               buyer:update_ad_set_budget      10.87      17.22      NaN        NaN
+2026-06-11 13:46:08.137128+00:00                   buyer:ui_adjust_budget      10.87      17.22      NaN        NaN
+2026-06-12 14:42:02.231460+00:00                   buyer:ui_adjust_budget      17.22      23.57      NaN        NaN
+2026-06-12 18:16:26.996874+00:00                   buyer:ui_adjust_budget      23.57      29.92      NaN        NaN

@@ -1,0 +1,95 @@
+== Effective actions by rule: spend impact and profit impact (low / central / high = marginal ROI at 50/75/100% for cuts)
+               n  spend_seen  d_spend  d_profit_low  d_profit_central  d_profit_high  truncated
+kind rule_id                                                                                   
+cut  R02       6      148.84   -32.04         -4.37             -6.58          -8.75          5
+     R07       1       15.43   -35.69          1.43              2.14           2.86          1
+     R10       2      179.59   -77.59        -11.20            -16.81         -22.41          1
+     R12       3       14.48    -8.40         -1.59             -2.38          -3.17          3
+kill R01       3       29.37    -5.16          0.41              0.41           0.41          0
+     R03      10        0.77   -15.61         -3.98             -3.98          -3.98          0
+     R04      39       31.94   -86.28         83.01             83.01          83.01          0
+     R05       4        4.99    -9.16          1.09              1.09           1.09          0
+     R06       1        3.04    -5.70          1.73              1.73           1.73          0
+     R08       9       21.00   -36.22         -9.06             -9.06          -9.06          0
+
+== Totals: profit saved vs burned
+                       low  central   high
+saved (d_profit>0)   89.37    90.14  90.93
+burned (d_profit<0) -31.90   -40.57 -49.20
+net                  57.47    49.57  41.73
+
+== Totals: spend
+   actual_spend  cf_spend  spend_lost
+0        643.46    955.28     -311.85
+
+== Top 10 burns (central)
+          adset_id rule_id action_date  hour_local  roi_seen  roi_own_corrected  peer_roi  roi_cf  roi_day_matured  actual_spend  cf_spend  d_spend  d_profit_central
+54  31302925337341     R10  2026-06-08           5     0.000              0.229     0.368   0.233            0.218        320.40    376.94   -56.54             -9.89
+26  31302925337341     R10  2026-06-07           8     0.114              0.444     0.337   0.438           -0.000        119.26    140.30   -21.05             -6.92
+23  31626016833981     R02  2026-06-07           5    -0.114              0.518     0.368   0.497           -0.023         52.03     65.04   -13.01             -4.85
+45  31255165214890     R08  2026-06-08           1    -0.870              0.557    -0.453   0.367            0.300          1.37      8.79    -7.42             -2.72
+5   31196781349398     R08  2026-06-06           7    -0.678             -0.612     0.368   0.191           -0.749          0.99     14.93   -13.94             -2.66
+67  31191755212537     R02  2026-06-11           8    -0.162              0.163     0.400   0.185            0.520         48.53     60.67   -12.13             -1.69
+24  31273956645572     R12  2026-06-07           6    -0.581              0.464     0.368   0.412            0.105          8.14     13.56    -5.43             -1.68
+0   31319368035107     R08  2026-06-06           4     0.000              0.449     0.368   0.371            0.057          0.20      3.42    -3.22             -1.20
+3   31861074850791     R08  2026-06-06           6    -0.033              0.165     0.368   0.361           -0.321          0.27      3.48    -3.22             -1.16
+51  31300423850323     R03  2026-06-08           2    -0.333             -0.160     0.290   0.223           -0.556          0.04      5.01    -4.97             -1.11
+
+== Top 10 saves (central)
+          adset_id rule_id action_date  hour_local  roi_seen  roi_own_corrected  peer_roi  roi_cf  roi_day_matured  actual_spend  cf_spend  d_spend  d_profit_central
+20  31142227961268     R04  2026-06-06          17    -0.529             -0.529    -1.000  -0.962           -0.571          0.09      6.74    -6.65              6.40
+19  31321487936035     R04  2026-06-06          17    -0.779             -0.779    -1.000  -0.980           -0.674          0.24      6.58    -6.34              6.21
+14  31262365306746     R04  2026-06-06          16    -0.580             -0.580    -1.000  -0.965           -0.639          0.30      6.68    -6.37              6.15
+21  31292536585348     R04  2026-06-06          17    -0.520             -0.520    -1.000  -0.959           -0.526          0.29      6.64    -6.35              6.09
+17  31299219133797     R04  2026-06-06          17    -0.583             -0.583    -1.000  -0.965           -0.553          0.43      6.68    -6.25              6.03
+15  31983993876612     R04  2026-06-06          16    -0.625             -0.625    -1.000  -0.966           -0.575          0.43      6.50    -6.07              5.86
+66  31626016833981     R07  2026-06-11           5    -0.484             -0.116     0.368  -0.080            0.153         53.53     89.22   -35.69              2.14
+68  31818629447720     R06  2026-06-11          12    -0.364             -0.205    -0.330  -0.304           -0.343          0.08      5.77    -5.70              1.73
+71  31886594280574     R04  2026-06-11          16    -1.000             -1.000    -1.000  -1.000           -1.000          0.01      1.69    -1.67              1.67
+59  31142755508350     R04  2026-06-10          19    -1.000             -1.000    -1.000  -1.000           -1.000          0.03      1.67    -1.65              1.65
+
+== SPLIT: cuts vs kills (spend_lost = actual - counterfactual spend; profit low/central/high = marginal ROI 50/75/100% for cuts)
+                      n  spend_judged  spend_lost  d_profit_low  d_profit_central  d_profit_high
+1 budget cuts      12.0        358.34     -153.72        -15.73            -23.63         -31.47
+2 kills excl. R04  27.0         59.17      -71.85         -9.81             -9.81          -9.81
+3 R04 kills        39.0         31.94      -86.28         83.01             83.01          83.01
+4 total excl. R04  39.0        417.51     -225.57        -25.54            -33.44         -41.28
+5 total incl. R04  78.0        449.45     -311.85         57.47             49.57          41.73
+
+== VALIDATION (sanity check, n = 13 adset-days): failed / no-op actions, where the no-action path was observed
+          adset_id rule_id  kind        date                   response  predicted_roi_cf  observed_roi  predicted_spend_no_action  observed_spend  observed_profit
+0   31196781349398     R12   cut  2026-06-06      "No budget to change"            -0.484        -0.753                        NaN            0.89            -0.67
+1   31626016833981     R02   cut  2026-06-07      "No budget to change"             0.419        -0.023                        NaN           51.21            -1.20
+2   31273956645572     R12   cut  2026-06-07      "No budget to change"            -0.036         0.105                        NaN            7.99             0.84
+3   31808893639076     R12   cut  2026-06-07      "No budget to change"            -0.249        -0.257                        NaN            4.35            -1.12
+4   31129016989551     R03  kill  2026-06-08  {"status": "error", "type             0.216        -1.000                       2.36            1.36            -1.36
+5   31368753922831     R03  kill  2026-06-08  {"status": "error", "type            -0.296        -0.321                       1.42            0.56            -0.18
+6   31106545737316     R03  kill  2026-06-08  {"status": "error", "type            -0.007        -1.000                       2.13            0.06            -0.06
+7   31626016833981     R02   cut  2026-06-09      "No budget to change"             0.161        -0.198                        NaN          111.01           -22.03
+8   31275731845445     R08  kill  2026-06-10  {"status": "error", "type             0.210        -0.953                       1.09            0.43            -0.41
+9   31167980911567     R05  kill  2026-06-10  {"status": "error", "type            -1.000        -1.000                       0.85            0.04            -0.04
+10  31626016833981     R02   cut  2026-06-10      "No budget to change"            -0.038        -0.163                        NaN           21.47            -3.49
+11  31191755212537     R02   cut  2026-06-11      "No budget to change"             0.179         0.515                        NaN           47.09            24.27
+12  31626016833981     R02   cut  2026-06-12      "No budget to change"            -0.088        -0.143                        NaN            0.14            -0.02
+
+== VALIDATION summary
+    n  roi_sign_matches  n_failed_kills  kill_spend_overprediction_min_x  kill_spend_overprediction_max_x
+0  13                 8               5                              1.7                             35.5
+
+== R04 SENSITIVITY (model central = 83.01; peer n = 7 adset-days)
+                                                 case  r04_d_profit
+0                                    peer_roi = -1.00         84.83
+1                                    peer_roi = -0.50         43.98
+2                                    peer_roi = -0.25         23.56
+3                                    peer_roi = +0.00          3.13
+4   modelled spend / 1.7 (validation over-prediction)         47.84
+5  modelled spend / 35.5 (validation over-prediction)          2.34
+
+== OMISSION: R04 conditions met outside ACC-04 (EOD approx). After-trigger = 6% of day-1 + all later days. Kill would save -profit_after (net of later winners).
+        qualifiers  spend_after  profit_after  saves  burns  net_saved
+ACC-01        15.0         5.86         -2.18   3.97  -1.79       2.18
+ACC-02        97.0         6.54         -4.34   5.34  -1.01       4.34
+ACC-03        50.0         8.34         -5.65   5.94  -0.29       5.65
+ACC-05        96.0         9.40         -7.09   7.09  -0.00       7.09
+ACC-06        35.0        34.49        -11.81  14.17  -2.36      11.81
+TOTAL        293.0        64.63        -31.06  36.51  -5.45      31.06

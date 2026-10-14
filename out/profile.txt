@@ -1,0 +1,153 @@
+== auto_rules: rows + columns with null/empty values
+n_rows  12
+
+== buyer_actions: rows + columns with null/empty values
+n_rows      1001
+adset_id     286
+old_budget     1
+new_budget     1
+note         977
+
+== campaign_adset_metadata: rows + columns with null/empty values
+n_rows         7129
+adset_name     1893
+bid_amount     6631
+roas_target    3512
+geo_countries   755
+language        502
+
+== daily_adset_performance: rows + columns with null/empty values
+n_rows                 4947
+estimated_conversions  2713
+revenue                2721
+profit                 2721
+ctr                    2953
+cr                     3097
+first_spend_date         52
+
+== rule_executions: rows + columns with null/empty values
+n_rows                         214
+old_budget                       2
+new_budget                       2
+set_budget                     197
+current_budget_from_fb          45
+last_3_days_revenue_at_action   68
+today_rpc_at_action            117
+today_cpa_at_action            114
+last_3_days_spend_at_action    114
+last_3_days_roi_at_action      114
+budget_level                    45
+
+== exact duplicate rows per table
+                    tbl  exact_dups
+             auto_rules           0
+          buyer_actions           4
+campaign_adset_metadata           0
+daily_adset_performance          72
+        rule_executions           0
+
+== perf duplicate (adset_id, date) keys, by date
+      date  dup_keys
+2026-06-09        72
+
+== perf dup keys that are NOT exact duplicates (conflicting values)
+Empty DataFrame
+Columns: [n]
+Index: []
+
+== metadata duplicate adset_id
+ n_rows  n_ids
+   7129   7129
+
+== perf rows per date: null revenue vs spend
+      date  n_rows  rev_null  rev_null_with_spend  spend  revenue  rev_per_spend
+2026-06-06     357        46                    0 1216.0   1529.0          1.257
+2026-06-07     510       238                    0 1739.0   1807.0          1.039
+2026-06-08     573       278                    0 1570.0   1658.0          1.056
+2026-06-09     632       404                    0 1281.0   1377.0          1.075
+2026-06-10     850       618                    0  975.0   1001.0          1.027
+2026-06-11     954       506                    0 1288.0   1523.0          1.182
+2026-06-12     999       586                    0  843.0    895.0          1.062
+
+== roi value on rows with null revenue
+ min_roi  max_roi    n
+     0.0      0.0 2721
+
+== profit / roi recompute (spend>0, deduped)
+   n  bad_profit  bad_roi
+1922           0        0
+
+== implausible values
+ neg_spend  clicks_gt_impr  fbconv_gt_clicks  roi_gt_5
+         0               0                42        10
+
+== adset_id length by account (perf)
+account_name  id_len  ids
+      ACC-01      18   61
+      ACC-02      18  233
+      ACC-03      18  138
+      ACC-04      14  117
+      ACC-05      18  201
+      ACC-06      18  250
+
+== adset_id coverage across tables
+            src  ids  in_perf  in_meta
+rule_executions   75       75       75
+  buyer_actions  185      185      185
+
+== rule executions by account
+      account_id account_name   n
+9913405683583663       ACC-04 214
+
+== rule firings: auto_rules.firings vs log
+rule_id  n_declared  n_logged
+    R01           4         4
+    R02          23        23
+    R03          36        36
+    R04         109       109
+    R05           7         7
+    R06           1         1
+    R07           1         1
+    R08          15        15
+    R09           8         8
+    R10           2         2
+    R11           2         2
+    R12           6         6
+
+== action_date vs UTC date of action_time (mismatch hours)
+utc_hour  n
+      21  2
+      22  8
+      23 11
+
+== rule responses
+                                                                                          response   n
+                                                                                           SUCCESS 164
+ {"status": "error", "type": "OAuthException", "code": 190, "message": "access token invalidated"}  27
+                                                                             "No budget to change"  20
+{"status": "error", "type": "OAuthException", "code": null, "message": "access token invalidated"}   3
+
+== rule total_days_at_action vs perf spend_day_no
+rule_id   n  mismatch
+    R01   4         0
+    R02  23         0
+    R03  36        28
+    R04 109         0
+    R05   7         0
+    R06   1         0
+    R07   1         0
+    R08  15         0
+    R09   8         0
+    R10   2         0
+    R11   2         0
+    R12   6         0
+
+== buyer actions: adset_id presence by object_type
+object_type                 event_type   n  with_adset_id
+      adset           ui_adjust_budget 338            338
+      adset           ui_update_budget 328            328
+      adset update_ad_set_bid_strategy   1              1
+      adset       update_ad_set_budget  48             48
+   campaign           ui_adjust_budget 108              0
+   campaign           ui_update_budget 153              0
+   campaign     update_campaign_budget  25              0
