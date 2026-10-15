@@ -187,7 +187,43 @@ Net excluding R04: **−$26 to −$41**, i.e. 5–8% of ACC-04's week profit ($4
 <!-- Asked / Got wrong / My call -->
 
 ## Step 3 — Architecture
-<!-- Asked / Got wrong / My call -->
+
+**Asked:** plan the Task B architecture *from* the INVESTIGATION findings, not from a generic template. Then write ARCHITECTURE.md, plus a sizing script ([src/arch_sizing.py](src/arch_sizing.py) → `out/arch_sizing.txt`) so the economics numbers have a source, the same way Task A's numbers do.
+
+**What I pushed back on in Claude's first plan:**
+- **"Data flow" was a list per CSV, not per agent.** The brief asks what each agent is fed. I made it produce a who-sees-what table. The principle that came out of it: only the Feature Builder touches raw tables.
+- **It was unclear whether the LLM executes.** I asked directly. The answer is now explicit everywhere: the LLM only recommends, and code (the Executor) writes. Limits live in code, so a prompt can't talk its way past them.
+- **"Top-3 lessons" was a guess.** Claude admitted it had no data behind the number. It's now "only lessons matching the segment, capped at ~5, tunable", with relevance and focus as the reasons.
+- **The plan used terms and rules without explaining them.** I asked about each one before approving. Every answer is now written into ARCHITECTURE.md:
+  - *What is an "adset card"?* → the glossary, plus an example card (§6.3).
+  - *What does "escalate" mean, and how is it different from `llm_review`?* → with `llm_review` the LLM decides and the Executor acts within limits; with `escalate` a human decides and nothing runs until they answer. Plus the explicit list of escalation triggers (§4).
+  - *Explain component #3 (the Decision Agent) and #4 (the Executor).* → the "what it can do" column in the topology table (§2).
+  - *What is T+3?* My question exposed a mix-up in the plan: I'd linked T+3 to the Executor (#4), but T+3 grading belongs to the Auditor (#5). The glossary now defines it, and it appears only under the Auditor.
+  - *What is a "window"? What is a "buyer lock"?* → the glossary and the cadence table (§3).
+  - *What does "acting on data more than 2h old" mean?* → spelled out: a stale data pull means recommend-only until fresh data arrives (§4).
+  - *What happens when the LLM budget is exhausted?* → spelled out: code-only `keep` plus the deterministic route, and urgent cases go to a human (§4).
+
+**My additions (not in Claude's plan):**
+- **Routing-spike alert:** if `llm_review` volume runs above normal, alert a human and say which triage rule caused it. Too many LLM calls usually means a threshold is unclear. Claude set the trigger (> 1.5× the 7-day median for that window, or > 30% of all cards) and extended the same idea to an **escalation-spike alert**, so humans don't get flooded with approvals.
+- **LLM budget alerts** before hitting $30. Claude turned this into the 50% / 80% / projected-pace / hard-stop-at-100% tiers.
+- **A daily human digest.** I asked whether humans get a daily summary. Claude's plan only mentioned one in a single line. It's now a full section with a fixed time (08:30, before the first window) and fixed contents, exceptions first.
+
+**Claude got wrong, and the data corrected it:**
+- **The cost argument.** The plan said "an LLM call on a $1.47 adset can cost more than the adset makes", as the reason to keep small adsets away from the LLM. The sizing script disproved it: at current Haiku 5.5 prices a call costs ~$0.0004. The whole POC is ~$0.47/day, and Haiku on *every* adset at every window is still only $0.40/day.
+  - The real reasons for the materiality gate are noise (R04 ruled on $0.57; §3.4) and Meta API/human-attention load.
+  - Cost does bind for the *model choice*: Opus on everything would be $32/day, over budget. ARCHITECTURE §5 says this honestly.
+- **The buyer lock's reach was underestimated.** It was proposed as an edge-case guard. The data shows buyers touch ~70 adsets/day holding 55% of spend (S7), so during co-existence the lock covers most of the money. Rollout §9 now treats this as intended for the shadow phase, and a buyer touch on an agent-owned adset becomes a graded override.
+
+**My calls:**
+- **Scope: design for all six accounts, roll out on ACC-04 first.**
+  - I raised the question: the rules only ever acted on one account, so should the design cover only ACC-04 and plan the rest later?
+  - Claude checked the data and recommended all six: buyers, whom the system replaces, do 89% of their `ui_*` work outside ACC-04. A design for ACC-04 only would repeat finding §1.3 ("all accounts" in name, one in practice).
+  - I accepted it, with ACC-04 as the first rollout account.
+- **Approved the plan** only after the clarifications, the per-agent data table and the alerts above were in.
+- **Reviewed and accepted Claude's proposed numbers** as they stand. Claude first listed these as open, because they were its assumptions and not mine:
+  - the salary figure (~$6k/month), and the framing that at this scale the case is buyer hours saved, not profit uplift (the portfolio makes ~$125/day);
+  - 15–25 escalations/day as the human-oversight load, to be measured in the shadow week;
+  - the decision limits in §4: ±20% and $50 per action, the $20 pause line, the $100 approval line, the 85% spend floor.
 
 ## Step 4 — Adset Decision Agent
 <!-- Asked / Got wrong / My call -->

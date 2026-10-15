@@ -1,0 +1,56 @@
+== S1 spending adsets, spend and profit per day
+         d  adsets  spend  profit  day1_adsets
+2026-06-06     308 1216.0   313.0          149
+2026-06-07     267 1739.0    66.0          116
+2026-06-08     287 1570.0    88.0           85
+2026-06-09     223 1281.0    96.0           47
+2026-06-10     196  975.0    18.0           69
+2026-06-11     323 1288.0   233.0          212
+2026-06-12     318  843.0    52.0          145
+
+== S2 spend concentration: adset-days/day at or above a spend level, and their share of spend
+ min_spend  adset_days_per_day  share_of_spend  median_adset_day_spend
+       1.0               184.6            0.96                    1.47
+       5.0                44.1            0.72                    1.47
+      20.0                10.3            0.47                    1.47
+      50.0                 4.4            0.34                    1.47
+     100.0                 1.4            0.18                    1.47
+
+== S3 per account: spend, profit, share of spend, buyer ui_* actions, spending adsets on the last day
+account_name  spend  profit  spend_share  adsets_last_day  ui_actions
+      ACC-01 1233.0   223.0         0.14               34          53
+      ACC-02 1411.0    21.0         0.16               97         178
+      ACC-03 1208.0   184.0         0.14               43          86
+      ACC-04 2586.0   481.0         0.29               14          73
+      ACC-05  690.0  -147.0         0.08               32          94
+      ACC-06 1785.0   106.0         0.20               98         182
+
+== S4 buyer actions per day (ui_* = safely human) and share with a note
+         d  ui_actions  with_note
+2026-06-06          47          0
+2026-06-07         126          4
+2026-06-08         150          3
+2026-06-09         151          4
+2026-06-10         119          3
+2026-06-11         160          5
+2026-06-12         174          5
+
+== S5 currently ACTIVE adsets (delivery_status) by budget band (metadata daily_budget / 100)
+     band  adsets
+   a <$20     292
+ b $20-50      10
+c $50-100       2
+ d >=$100       1
+
+== S7 buyer-lock reach: adsets with a ui_* action per day, and their share of that day's spend
+ touched_adsets_per_day  share_of_spend_touched_same_day
+                   70.0                             0.55
+
+== S6 LLM cost model (constants in this file)
+  Haiku: routed cards, 3 windows             calls/day= 180  cost/day=$0.080
+  Sonnet: second opinions                    calls/day=  20  cost/day=$0.358
+  Sonnet: daily digest (8k in / 2k out)      calls/day=   1  cost/day=$0.036
+  POC total                                                  cost/day=$0.474  (budget $30)
+  stress: haiku-5-5 on EVERY spending adset, 3 windows (~300x3 calls): $0.40/day
+  stress: sonnet-5-5 on EVERY spending adset, 3 windows (~300x3 calls): $16.11/day
+  stress: opus-5-5 on EVERY spending adset, 3 windows (~300x3 calls): $32.22/day
