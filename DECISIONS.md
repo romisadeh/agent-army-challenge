@@ -17,7 +17,7 @@ Format per step: **Asked** (what I asked Claude Code) · **Got wrong / rejected*
 **My call:**
 - Stack: Python + DuckDB (SQL straight over the CSVs, so the queries themselves are the deliverable) + pandas.
 - Order of work: data quality first, then rule impact, then architecture, then the agent — the design should be driven by what the investigation finds (especially the revenue-lag characteristics), not the other way around.
-- <!-- add your own reasoning here: why this order / stack, what you would have done differently -->
+- I started by understanding the data before touching the questions: what each CSV holds, how it’s built, and what the rules actually do. Then I planned the investigation in Claude’s plan mode before letting it near the raw data, so the analysis followed a plan I’d agreed to rather than whatever came out first.
 
 ---
 
@@ -35,9 +35,9 @@ Format per step: **Asked** (what I asked Claude Code) · **Got wrong / rejected*
 **Claude's own addition (kept — flag for review):** the brief asks for ROI delta only. Claude added `share_of_day_spend_seen` and `revenue_seen_implied` columns, because a rule firing at 03:00 sees a partial day — a raw ROI delta conflates *intraday incompleteness* with *revenue lag*. These are two different failure causes with different fixes.
 
 **My call:**
-- Join on `action_date`, not the UTC date of `action_time`: 21 executions at 21:00–23:59 UTC already carry the next `action_date` → reporting day is UTC+3 (Israel summer time), same as perf `date`. <!-- confirm / challenge -->
+- Join on `action_date`, not the UTC date of `action_time`: 21 executions at 21:00–23:59 UTC already carry the next `action_date` → reporting day is UTC+3 (Israel summer time), same as perf `date`.
 - "Matured" = the perf snapshot as delivered. This is an **assumption**, not verified: there is no extraction timestamp, so 06-11/06-12 revenue may itself still be incomplete.
-- <!-- your reaction to the delta result + what counterfactual logic you decide is worth building -->
+- The first ROI-delta result didn’t match the cases I’d seen in the data, so I didn’t accept it and tried to work out why the numbers came out that way. I chose to apply the rule’s action to the matured rest of the day, with marginal ROI as a range, because that answers the client’s question in dollars. I assumed at first that spend scales with budget; I learned from the data that it doesn’t always.
 
 ### Step 1b — I cross-checked Claude's numbers; three didn't hold up
 
@@ -53,7 +53,7 @@ Format per step: **Asked** (what I asked Claude Code) · **Got wrong / rejected*
    - Also: **none** of the 75 adsets the rules acted on is named `own_rsoc` (all are `slg:` campaigns), so the scope label in the rule names doesn't describe what the rules actually touch.
 - **Claude's own bug, caught while doing (2):** the "hours left in day" math used DuckDB's session timezone, which inherits this machine's (Israel, +03). That shifted every value by 3 h and put 22 kills in the wrong bucket. Fixed by forcing `TimeZone = 'UTC'`; the 2b numbers above are post-fix.
 
-**My call:** <!-- e.g. do the R04 probe results change what you think the "rules destroyed money" question is really about? -->
+**My call:** Yes. It went from “the rule lost money” to “the rule cut too early in the morning, before revenue had matured.” The investigation showed the rule itself wasn’t necessarily the problem — its timing was. That finding is what let us change the decision window in the architecture.
 
 ### Step 1c: my gap review against the Task A requirements
 
@@ -182,9 +182,6 @@ Net excluding R04: **−$26 to −$41**, i.e. 5–8% of ACC-04's week profit ($4
 **Claude's correction this round:** in step 1d it had headlined "net +$50 (range −$30 to +$57)". That number was carried by R04, the least reliable component. The split shows the reliable part (cuts) is consistently negative, which is what the verdict now says.
 
 **Task A closed.**
-
-## Step 2 — Rule impact reconstruction
-<!-- Asked / Got wrong / My call -->
 
 ## Step 3 — Architecture
 

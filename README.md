@@ -36,6 +36,8 @@ Without `--replay`, run.py calls the Anthropic API (needs `ANTHROPIC_API_KEY`) a
 - `out/*_dev*`, `out/*v3dev*`, `out/*v3b_dev*` — the 06-10 development iterations from RESULTS §4 (the 5-card smoke test, prompt v3 and the rejected v3b); `out/*_sens_*` is the sensitivity check (RESULTS §3.2); `out/llm_raw/` holds every stored LLM response, which is what makes `--replay` work without an API key
 
 ## Corners cut
+- Task A: the items listed as “seen but not investigated” in INVESTIGATION.md §5 (Meta conversions > clicks, ROI > 5, naming fields beyond the `own_rsoc`/`slg:` prefix) were not used. The kill counterfactual is weak at the single-adset level (validation n = 13), so R04’s impact is reported as not measurable rather than as a number.
+- Task B: the architecture’s estimates were tested only in part by Task C, which ran one window, not three. Measured LLM cost was $0.21–0.33 per window (vs $0.47/day estimated for three) and approvals were 9 in three days (vs the 15–25/day assumed). The Executor, kill switch, alerts and rollout plan are design only.
 - Task C decides at one window (10:00) on matured data only. The architecture's 14:00 window is demonstrated on 4 snapshot cases, not at scale (RESULTS §5.3).
 - No Meta status read: the agent can't see paused adsets (RESULTS §3.4).
 - Budgets are reconstructed from the logs on most cards; the deterministic route never fired this week.
