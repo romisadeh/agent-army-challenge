@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured last_3d ROI is -0.049 with 2 loss days and 1 profit day, and the last day is declining. Blended ROI is only 0.098, and w=0.3 leans heavily on peers (fwd_roi 0.161, n=30, fallback level 1). Evidence is mixed and roughly break-even, so no change. The buyer raised budget 1.27 to 3.81 about 65h ago, outside the 24h lock, with no notes.\",\"key_evidence\":[\"last_3d.roi=-0.049 (2 loss days, 1 profit day)\",\"blended_roi=0.098 with blend_weight_own=0.3\",\"peers.fwd_roi_1_3d=0.161, n=30, fallback_level=1\",\"trend_last_day_vs_prior=declining\"],\"uncertainty\":[\"Whether the 3.81 budget step from 65h ago has yet produced a stable return\",\"Peer estimate is band fallback, so weakly applicable to this adset\",\"Only 4 matured days, small spend (8.56 over 3 days)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 732,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000444,
+ "request_id": "req_011Cg7SMcR4MBSeLnU4yuvPy",
+ "ts": "2026-10-17T07:46:04+00:00"
+}

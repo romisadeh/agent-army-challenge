@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny budget ($3.81) and tiny spend ($8.74 over 3d) make the evidence thin. Last 3d ROI is -0.25 with 2 loss days, but yesterday spent only $0.76, so the -0.95 is noise. Blended ROI is +0.028 (about break-even) and peers are +0.15 (n=11). Neither scale up nor pause is justified. Kill rules failed/no-op and acted on immature data.\",\"key_evidence\":[\"blended_roi=0.028\",\"last_3d roi=-0.25 on spend $8.74\",\"d-1 spend $0.76, roi -0.95\",\"peers fwd_roi_1_3d=0.15 (n=11)\"],\"uncertainty\":[\"Yesterday's low spend and delivery cause unknown\",\"Whether late revenue will still arrive for recent days\",\"Small sample makes ROI very noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 712,
+  "output_tokens": 337,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005168,
+ "request_id": "req_011Cg7Tzm3dB6MCWFXMRjieW",
+ "ts": "2026-10-17T08:07:33+00:00"
+}

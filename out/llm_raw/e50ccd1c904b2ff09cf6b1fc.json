@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Evidence is mixed. Own 3-day ROI is +0.445 with two profit days, but the last matured day (d=-1) lost money at -0.391 and the trend is declining. Blended ROI is -0.075 and peers forward ROI is -0.294 (n=6). A human cut budget 2.48 to 1.98 about 14h ago and lock_24h is true, so no change is the right call. Spend exceeds 1.25x budget, which needs checking.\",\"key_evidence\":[\"blended_roi=-0.075\",\"buyer.lock_24h=true; last_human_action down 2.48->1.98 14.3h ago\",\"matured_days d=-1 roi=-0.391; trend_last_day_vs_prior=declining\",\"last_3d roi=0.445 with profit_days=2, loss_days=1\"],\"uncertainty\":[\"Peer sample is small (n=6) so the forward-ROI signal is weak\",\"data_quality_flag spend_exceeds_1.25x_budget may distort spend and ROI\",\"Whether the -0.391 day is noise or the start of a sustained decline\",\"Reason behind the buyer's recent budget cut is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 822,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000494,
+ "request_id": "req_011Cg7UVbtGhLnrN1rTGETyv",
+ "ts": "2026-10-17T08:14:05+00:00"
+}

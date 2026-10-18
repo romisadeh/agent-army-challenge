@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Tiny adset with a human budget increase 23h ago (1.27 to 3.81) and lock_24h active. Last-3d ROI is -0.182 on only $12.5 spend, mixed profit/loss days, and blended ROI is about break-even (-0.023). Evidence is too thin and mixed to pause or cut, and overriding a recent buyer action is unwarranted. Hold.\",\"key_evidence\":[\"buyer.lock_24h=true, last action up 1.27->3.81 23h ago\",\"blended_roi=-0.023\",\"last_3d roi=-0.182 on spend $12.5 (1 profit day, 2 loss days)\",\"peers fwd_roi_1_3d=0.077 (n=26)\"],\"uncertainty\":[\"Whether the post-increase spend will mature profitably\",\"Spend exceeding 1.25x budget flag may distort daily readings\",\"Very small sample sizes make ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 352,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005118,
+ "request_id": "req_011Cg7SqRuL2MgPczBnANqqH",
+ "ts": "2026-10-17T07:52:20+00:00"
+}

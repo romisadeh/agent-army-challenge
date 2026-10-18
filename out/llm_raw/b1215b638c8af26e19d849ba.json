@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"All 3 matured days lost money (last_3d ROI -0.314, 0 profit days) and blended ROI is -0.31, with peers at -0.307 (n=12). That points down, but spend is tiny ($11.89 over 3d) and the budget is already $1.52 after a buyer cut. Pausing on this is not warranted, and the data flags reduce trust. The 'scaling winner' note is stale and contradicts the numbers. Keep.\",\"key_evidence\":[\"last_3d.roi -0.314, 0 profit days of 3\",\"blended_roi -0.31; peers fwd_roi -0.307 (n=12)\",\"budget.current 1.52 after buyer cut from 1.9 (24.5h ago)\",\"flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Tiny spend makes ROI very noisy\",\"Data quality flags may distort spend or revenue\",\"Buyer's 'scaling winner' note (46h ago) conflicts with the numbers and later budget cut\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 654,
+  "output_tokens": 396,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005703,
+ "request_id": "req_011Cg7trxok4JYLLod3invDZ",
+ "ts": "2026-10-17T13:33:38+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Looks like a proven-winner candidate: age 8, last_3d ROI 0.532, blended 0.261, yesterday ROI 2.107. But only 1 of the last 3 days was profitable (fails the 2-of-3 rule). A buyer changed the budget 18.9h ago, so the 24h lock is active. The note says 'cutting' while the budget went up (4.83 to 8.2), which is contradictory. Spend is tiny. Keep and let the lock expire.\",\"key_evidence\":[\"last_3d profit_days=1, loss_days=2, ROI 0.532\",\"buyer lock_24h=true; budget 4.83->8.2 18.9h ago\",\"blended_roi 0.261 (w=0.47), peers fwd ROI 0.023\",\"yesterday ROI 2.107 on $5.69 spend\"],\"uncertainty\":[\"Buyer note says 'cutting' but the budget direction was up\",\"ROI is volatile on very small spend (~$5-8/day)\",\"Peer forward ROI is near break-even\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 666,
+  "output_tokens": 388,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005635,
+ "request_id": "req_011Cg9MXdGMwjUyZqHnCHKNv",
+ "ts": "2026-10-18T08:03:56+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.5,\"reasoning\":\"Last_3d ROI is +0.176 with 2 profit days, but blended_roi is only 0.077, below the +0.10 scale-up bar. Trend is declining and yesterday was slightly negative (-0.017). The buyer cut budget from 7.62 to 1.27 about 24.5h ago, a deliberate down move inside 48h that I should not override on this evidence. Peers forward ROI is near break-even (0.006). Keep at current budget.\",\"key_evidence\":[\"buyer.last_human_action: down 7.62->1.27, 24.5h ago\",\"blended_roi 0.077 (below +0.10 threshold)\",\"trend_last_day_vs_prior: declining; matured_days d-1 roi -0.017\",\"peers.fwd_roi_1_3d 0.006, n=31\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate pause-like move or a test of lower spend\",\"Spend runs about 3x budget (3.8 vs 1.27), so the real delivery level and the data_quality flag are unclear\",\"Whether the d-1 decline continues or is one-day noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 899,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000532,
+ "request_id": "req_011Cg7sgtozNwrp9jA6Kgwg5",
+ "ts": "2026-10-17T13:18:16+00:00"
+}

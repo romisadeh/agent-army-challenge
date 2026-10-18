@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is 0.021, below the +0.10 proven-winner bar, with 2 profit days and 1 loss day, so it is not a scale-up candidate. Blended_roi is 0.12, only slightly positive, and the budget was raised 117% by a human 17h ago (lock_24h true). Mixed, near break-even evidence with a recent deliberate buyer increase argues for holding the budget unchanged.\",\"key_evidence\":[\"last_3d.roi = 0.021 (below +0.10 threshold)\",\"last_3d profit_days 2, loss_days 1\",\"buyer.last_human_action up 2.92 to 6.35, hours_ago 17.0, lock_24h true\",\"blended_roi = 0.12\"],\"uncertainty\":[\"Whether the 117% buyer increase 17h ago has had time to show results on matured data\",\"Peer forward ROI 0.169 from n=8 band fallback, which is weak evidence\",\"Whether D-1 profit (0.131) signals a turn or is noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 816,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000489,
+ "request_id": "req_011Cg7tCENmiy456hXezTUxj",
+ "ts": "2026-10-17T13:24:53+00:00"
+}

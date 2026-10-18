@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured results are mixed: blended_roi 0.066 is only slightly positive, last_3d shows 2 loss days and 1 profit day, and trend_last_day_vs_prior is declining. The human raised budget from 11.56 to 17.91 about 21h ago and lock_24h is true, so I should not override that action on this evidence. Keep until the lock clears and the trend is clearer.\",\"key_evidence\":[\"blended_roi = 0.066\",\"last_3d loss_days = 2, profit_days = 1, roi = 0.075\",\"buyer.lock_24h = true, last_human_action up 11.56 to 17.91, 21.2h ago\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether the D-1 decline (roi -0.074) continues or is noise after the strong D-4 day\",\"Peer forward ROI of 0.044 with n=52 is modest but usable\",\"Whether the human budget increase is still performing as intended\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 672,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000418,
+ "request_id": "req_011Cg7UkQiE8oJoxLzn8aHcW",
+ "ts": "2026-10-17T08:17:26+00:00"
+}

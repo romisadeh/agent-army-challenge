@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.4,\"confidence\":0.45,\"reasoning\":\"Adset meets the proven-winner profile (age 4, 2 of 3 matured days profitable, last_3d.roi 1.47, blended_roi 0.55), but yesterday is clearly negative (D-1 roi -0.605) with trend_last_day_vs_prior declining, which is the named exception to scaling. Budget is reconstructed from end-of-week metadata and spend exceeds 1.25x budget, so the budget basis is unreliable. Keep until the trend and budget are confirmed.\",\"key_evidence\":[\"matured_days D-1 roi -0.605\",\"trend_last_day_vs_prior: declining\",\"last_3d.roi 1.47 with 2 profit days of 3\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget 2.4 is the true current budget, since it is reconstructed from metadata\",\"Whether yesterday's loss is a one-day dip or the start of a persistent decline\",\"Peer forward ROI is modest (0.041, n=54)\",\"Whether D-1 revenue is fully matured for the spend level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 998,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000578,
+ "request_id": "req_011Cg9N9XLRrj6sR5cJw8wcF",
+ "ts": "2026-10-18T08:12:04+00:00"
+}

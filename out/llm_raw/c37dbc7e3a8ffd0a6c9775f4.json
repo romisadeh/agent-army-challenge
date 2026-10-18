@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.05,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is thin at 0.049 with 2 profit days and 1 loss day, and blended_roi is 0.141, so the evidence is mixed and near break-even. The buyer cut budget from 3.81 to 3.05 only 0.4h ago and the 24h lock is active, so I should not override it. Trend is flat. Keep the current budget and reassess after the lock expires.\",\"key_evidence\":[\"last_3d.roi = 0.049 (2 profit days, 1 loss day)\",\"blended_roi = 0.141 with blend_weight_own 0.34\",\"buyer.lock_24h = true, last_human_action down 3.81->3.05 0.4h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag reflects a budget that was higher on earlier days, which would change how the recent ROI reads\",\"Whether the buyer's cut was a response to information not on the card\",\"Peer forward ROI of 0.188 (n=7) is only moderately supportive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 646,
+  "output_tokens": 717,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000442,
+ "request_id": "req_011Cg7UZMuVbSgCDr9Apsohq",
+ "ts": "2026-10-17T08:14:56+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":61.0,\"confidence\":0.6,\"reasoning\":\"Meets the proven-winner test: age_spend_days 10, two of last three matured days profitable (d-2 and d-1), last_3d.roi 0.219 above +0.10, and blended_roi 0.138 above +0.10. Trend_last_day_vs_prior is improving and no buyer lock or recent budget cut exists. Proposed +14% step. The budget_reconstructed flag means the 53.34 base is uncertain, and spend is small, so confidence is modest.\",\"key_evidence\":[\"last_3d.roi = 0.219 with 2 profit days, 1 loss day\",\"blended_roi = 0.138, blend_weight_own 0.53\",\"trend_last_day_vs_prior = improving; d-1 roi 0.967\",\"buyer.net_budget_change_48h = 0.0, lock_24h false\"],\"uncertainty\":[\"budget.current 53.34 is reconstructed from end-of-week metadata, so the true base may differ\",\"last_3d spend only 22.43, and d-3 loss of -0.57 shows volatility\",\"peer forward ROI is only 0.047 (n=12)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 879,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000517,
+ "request_id": "req_011Cg7tqnAkrxXfXfJx9wJfL",
+ "ts": "2026-10-17T13:33:23+00:00"
+}

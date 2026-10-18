@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is not a proven winner: last_3d.roi is +0.009 (below the +0.10 bar) with 2 of 3 days losing, and the trend is declining. Blended ROI of 0.10 is only marginally positive and leans on peers. Losses are small and not persistent enough to pause or cut. The budget is tiny ($1.61) and reconstructed, so any change has little impact. Keep.\",\"key_evidence\":[\"last_3d.roi=0.009, loss_days=2, profit_days=1\",\"blended_roi=0.10 (peers fwd_roi 0.143, n=11)\",\"trend_last_day_vs_prior=declining\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Reconstructed budget may not reflect the true current budget\",\"Spend volumes are very small, so ROI is noisy\",\"Whether the yesterday dip (-0.173 on $1.03) continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 361,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005259,
+ "request_id": "req_011Cg9N2i8cv1FcKDEMH4H3i",
+ "ts": "2026-10-18T08:10:31+00:00"
+}

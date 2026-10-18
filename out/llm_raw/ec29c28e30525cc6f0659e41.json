@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.168 with 3 loss days and a declining trend, and blended_roi is -0.074, so this is not a proven winner. A buyer cut budget from 6.35 to 3.81 14.3h ago and lock_24h is true, so the deliberate call should stand. Losses are not yet clearly persistent across the full window (D-5 and D-4 were strongly profitable), and peers are near break-even at -0.019. Holding avoids overriding the buyer on mixed evidence.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->3.81, hours_ago 14.3, lock_24h true\",\"last_3d.roi -0.168, loss_days 3, profit_days 0\",\"blended_roi -0.074, peers.fwd_roi_1_3d -0.019\",\"matured_days D-5 and D-4 ROI +0.346/+0.341 vs D-3..D-1 losses\"],\"uncertainty\":[\"Whether the 3-day losing streak continues at the reduced budget\",\"Source of the spend_exceeds_1.25x_budget flag, since latest spend 4.39 is about 1.15x the current budget\",\"Whether the buyer's cut was made for reasons not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 936,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000554,
+ "request_id": "req_011Cg9MEFGotRr7sy1B53Wsp",
+ "ts": "2026-10-18T08:00:02+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"Matured ROI is slightly negative (last_3d.roi -0.032, blended_roi -0.05, peers fwd -0.106) with a declining trend, so this is not a proven winner. The card's budget.current of 1.27 conflicts with daily spend of 9.4 to 27.2 (flag spend_exceeds_1.25x_budget), and net_budget_change_48h is -19.05, so the budget base can't be trusted. A human should confirm the real budget before any change.\",\"key_evidence\":[\"last_3d.roi = -0.032 (1 loss day, 2 profit days)\",\"blended_roi = -0.05 with blend_weight_own 0.76\",\"budget.current = 1.27 vs matured spend 9.4 to 27.22/day\",\"buyer.net_budget_change_48h = -19.05\"],\"uncertainty\":[\"True daily budget: the card's 1.27 may be wrong given spend levels\",\"Why the budget was cut by 19.05 in the last 48h and whether that was intentional\",\"Whether the declining trend continues after D-1\",\"Peer forward ROI (n=8) is negative but a weak signal\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 892,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000529,
+ "request_id": "req_011Cg7sngahYczA6Pkdn57MH",
+ "ts": "2026-10-17T13:19:35+00:00"
+}

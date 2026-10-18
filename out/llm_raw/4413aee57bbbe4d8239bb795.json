@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":14.22,\"confidence\":0.55,\"reasoning\":\"Matured data is mixed: one profit day (D-2 ROI 0.336) and one loss day (D-1 ROI -0.201), with last_3d ROI -0.068 and trend declining. Blended ROI is 0.068, only slightly positive, and leans on peers (n=46, fallback_level 1) because own spend is small. A buyer cut from 17.78 to 14.22 about 17 hours ago holds a 24h lock. Evidence is too thin to scale or cut, so keep the current budget.\",\"key_evidence\":[\"last_3d.roi = -0.068 with 1 profit day and 1 loss day\",\"blended_roi = 0.068 (blend_weight_own 0.45)\",\"buyer.lock_24h = true, last human action down 17.78 to 14.22 at 17.2h ago\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether D-1's loss is noise or the start of a sustained decline\",\"Peer forward ROI (0.181) is a band fallback and may not match this adset\",\"Whether the buyer's reduction was driven by information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 549,
+  "output_tokens": 697,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000422,
+ "request_id": "req_011Cg7STo6vYzNMb5Mjsg5gL",
+ "ts": "2026-10-17T07:47:27+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Budget is tiny ($2.54) and was cut by a human 14.2h ago, so the 24h lock is active. Last 3d ROI is -0.146 with 2 loss days and a declining trend, but the blended ROI is +0.174 because peers are strong (0.359, n=40). Evidence is mixed and the spend is small, so keep and respect the buyer's recent cut.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 3.81->2.54 14.2h ago\",\"last_3d roi=-0.146 (2 loss days, 1 profit day)\",\"blended_roi=0.174, peers fwd_roi_1_3d=0.359 (n=40)\",\"spend_exceeds_1.25x_budget flag; d-1 spend 4.29 vs budget 2.54\"],\"uncertainty\":[\"Why the buyer cut the budget\",\"Whether the spend overrun flag reflects a budget-setting problem\",\"Whether the decline from d-5 to d-1 continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 660,
+  "output_tokens": 376,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005454,
+ "request_id": "req_011Cg7V8Ss5HWQnsX1x64PmW",
+ "ts": "2026-10-17T08:22:24+00:00"
+}

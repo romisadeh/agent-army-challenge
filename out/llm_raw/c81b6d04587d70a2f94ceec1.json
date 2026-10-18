@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Last_3d ROI 0.102 with 2 profit days of 3 is mildly positive, but blended_roi 0.093 is below the 0.10 proven-winner bar, and the trend is flat. Buyer cut budget 24.89 to 17.42 only 24.5h ago (net -18.14 over 48h), so scaling up would override that move without strong evidence. Flag spend_exceeds_1.25x_budget (yesterday spend 29.39 vs budget 17.42) makes the budget baseline unclear. A human should settle this.\",\"key_evidence\":[\"buyer.last_human_action: down 24.89->17.42, 24.5h ago\",\"blended_roi: 0.093 (below 0.10)\",\"last_3d: roi 0.102, profit_days 2, loss_days 1\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the actual live budget is 17.42 or higher, given spend exceeds budget\",\"Whether the buyer's down move was driven by information not on the card\",\"Whether d-2 loss is noise or the start of a decline\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 1251,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000709,
+ "request_id": "req_011Cg7u4uRvokMFZxayzd3ok",
+ "ts": "2026-10-17T13:36:22+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three of three matured days lost money (last_3d.roi -0.314, blended_roi -0.31, peers fwd -0.307), so the losses look persistent. But data_quality_flags include meta_conversions_gt_clicks and spend_exceeds_1.25x_budget, so the revenue figures may be unreliable. The buyer cut budget 1.9 to 1.52 24.5h ago, which agrees with a downward move. The 'scaling winner' note is 46h old and was superseded. A human should check tracking before pausing.\",\"key_evidence\":[\"last_3d.roi -0.314 with loss_days 3, profit_days 0\",\"blended_roi -0.31 and peers.fwd_roi_1_3d -0.307 (n=12)\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\",\"buyer.last_human_action: down 1.9 to 1.52, 24.5h ago\"],\"uncertainty\":[\"Whether conversion over-attribution inflates or deflates revenue on this adset\",\"Whether spend above budget means extra spend outside the daily cap, affecting true loss size\",\"Whether the 24h-old buyer cut was made with information the card lacks\"],\"proposed_if_escalated\":\"pause\"}",
+ "usage": {
+  "input_tokens": 654,
+  "output_tokens": 947,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000561,
+ "request_id": "req_011Cg7trZ9SS6brCDxpVLTd3",
+ "ts": "2026-10-17T13:33:34+00:00"
+}

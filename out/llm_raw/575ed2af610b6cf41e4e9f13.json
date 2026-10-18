@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":10.16,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.123 with 2 loss days vs 1 profit day, and trend_last_day_vs_prior is declining with matured_days d=-1 at roi -0.549. blended_roi 0.068 is positive but weak, with blend_weight_own 0.45 and peers n=33 at fallback_level 1. A buyer cut the budget 12.7 to 10.16 about 38h ago, which is consistent with the losses. Evidence is mixed, so hold without pausing or cutting further.\",\"key_evidence\":[\"last_3d.roi = -0.123 (2 loss days, 1 profit day)\",\"matured_days d=-1 roi = -0.549, trend declining\",\"blended_roi = 0.068, peers fwd_roi_1_3d = 0.227 (n=33, fallback 1)\",\"buyer.last_human_action: down 12.7 to 10.16, 38.2h ago\"],\"uncertainty\":[\"buyer.net_budget_change_48h = +19.05 conflicts with the recent downward action; the budget history may be unreliable\",\"peer fallback to band level with n=33 is a weak forward signal\",\"single-day losses could be noise after the 1.268 ROI on d=-4\",\"duplicate performance rows were removed, so spend and revenue totals may be affected\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 611,
+  "output_tokens": 1013,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000589,
+ "request_id": "req_011Cg9MPve9sgrHTA8ntvvT5",
+ "ts": "2026-10-18T08:02:14+00:00"
+}

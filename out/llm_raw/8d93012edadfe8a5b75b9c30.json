@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured last_3d ROI is 0.027 with 2 profit days and 1 loss day, and the last day is declining (ROI 0.012). Blended ROI of 0.11 leans on peers (fwd_roi 0.161, n=30, fallback level 1) because own spend is small (blend_weight 0.38). Evidence is mixed and near break-even, with no buyer lock or instruction. Budget is reconstructed and day -4 has an extreme ROI, so no change.\",\"key_evidence\":[\"last_3d.roi = 0.027, profit_days 2 vs loss_days 1\",\"blended_roi = 0.11, blend_weight_own = 0.38\",\"peers.fwd_roi_1_3d = 0.161, n = 30, fallback_level 1\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"budget.current is reconstructed from a later log row, so the true daily budget may differ\",\"day -4 ROI of 5.829 is extreme and may be an outlier driving the 3-day result\",\"peer evidence is band fallback, not a close match\",\"last day declining could signal a real downtrend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 669,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000411,
+ "request_id": "req_011Cg7SBxyJKzQf51gXy9faV",
+ "ts": "2026-10-17T07:43:53+00:00"
+}

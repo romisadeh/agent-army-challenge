@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured last_3d shows 2 profit days and 1 loss, ROI 0.14 on spend 12.26. Blended_roi is 0.076 with blend_weight_own 0.38, and peers forward ROI is only 0.037. A buyer scaled up 17.2h ago and lock_24h is true, so no change until the lock clears and the evidence firms up.\",\"key_evidence\":[\"last_3d.roi = 0.14 (profit_days 2, loss_days 1)\",\"blended_roi = 0.076\",\"buyer.lock_24h = true; last_human_action up 5.08\u21926.35 at 17.2h ago\",\"peers.fwd_roi_1_3d = 0.037 (n=42)\"],\"uncertainty\":[\"Whether the D-2 loss (-0.256) is noise or the start of a trend\",\"Peer forward ROI is only slightly positive and below own ROI\",\"Effect of the recent 25% budget increase has not yet matured\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 662,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000409,
+ "request_id": "req_011Cg7U9kA3S1un7r7rtMamV",
+ "ts": "2026-10-17T08:09:35+00:00"
+}

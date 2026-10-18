@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":43.69,\"confidence\":0.55,\"reasoning\":\"Blended ROI is 0.002 and last_3d.roi is -0.036, so the adset is at break-even, not a proven winner (needs last_3d.roi and blended_roi above +0.10). Buyer cut budget 54.61 to 43.69 48.5h ago (buyer.last_human_action), which argues against scaling. Trend is improving and peers forward ROI is 0.298 (n=31), but mixed matured days give no clear direction.\",\"key_evidence\":[\"blended_roi = 0.002\",\"last_3d.roi = -0.036 (profit_days 2, loss_days 1)\",\"buyer.last_human_action: down 54.61 to 43.69, 48.5h ago\",\"peers.fwd_roi_1_3d = 0.298, n=31, fallback_level 1\"],\"uncertainty\":[\"Peer forward ROI (0.298) is a band fallback and could overstate near-term returns for this adset.\",\"Spend exceeds budget (spend_exceeds_1.25x_budget flag), so the effective daily spend may differ from the card budget.\",\"Whether the improving trend on the last day continues after the buyer's budget cut.\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 660,
+  "output_tokens": 902,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000538,
+ "request_id": "req_011Cg9M4cqovuCZBabahC1yK",
+ "ts": "2026-10-18T07:57:51+00:00"
+}

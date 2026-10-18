@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":12.7,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is 0.023 (2 profit days, 1 loss) and blended ROI is 0.09, so the evidence is mixed and near break-even. A human scaled budget from 6.35 to 12.7 about 19 hours ago and lock_24h is true, so I should not override that. Yesterday's ROI was -0.077 on 9.18 spend, which is one day of noise rather than a trend. Hold budget and reassess after the lock expires.\",\"key_evidence\":[\"last_3d.roi = 0.023 with profit_days 2 and loss_days 1\",\"blended_roi = 0.09 with blend_weight_own 0.47\",\"buyer.lock_24h = true after ui_update_budget 6.35 to 12.7 at 19.1h ago\",\"matured_days d=-1 roi = -0.077 on spend 9.18\"],\"uncertainty\":[\"Whether the 12.7 budget increase improves forward ROI, since spend has not yet reached budget\",\"Peer forward ROI of 0.15 from n=11 may not transfer to this adset\",\"Spend is below the 12.7 budget on recent days, so the true post-scale performance is still unclear\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 771,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000467,
+ "request_id": "req_011Cg7UwCLu19ZpUCErkb6xA",
+ "ts": "2026-10-17T08:19:53+00:00"
+}

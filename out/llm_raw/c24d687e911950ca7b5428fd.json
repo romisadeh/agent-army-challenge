@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.327 and blended_roi is only 0.049, below the +0.10 bar. A buyer raised the budget 21.3h ago and lock_24h is true, so I should not override it. Yesterday recovered to +0.363 ROI after two losing days, and spend is tiny. Evidence is mixed and thin, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.327 (2 loss days, 1 profit day)\",\"blended_roi = 0.049 (own weight 0.38)\",\"buyer lock_24h = true, budget raised 2.48->5.08 21.3h ago\",\"D-1 roi = 0.363 on spend 5.07\"],\"uncertainty\":[\"Whether D-1 recovery persists after the buyer's budget increase\",\"Small spend makes ROI very noisy\",\"Peer forward ROI 0.275 is for a different ROI band than this adset's own history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 356,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005237,
+ "request_id": "req_011Cg9Mk1UBZXSFYPxAWqSFf",
+ "ts": "2026-10-18T08:06:44+00:00"
+}

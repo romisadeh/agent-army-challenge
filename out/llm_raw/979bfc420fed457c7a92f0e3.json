@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured data shows 3 profit days and 0 loss days, with last_3d ROI 0.691 and blended_roi 0.621 (own weight 0.9). The buyer raised budget 53.85 to 66.55 18.5h ago and lock_24h is true, so I won't override that move. Peers forward ROI is -0.035 (n=15), which tempers scaling further. Keep until the new budget has matured.\",\"key_evidence\":[\"last_3d.profit_days=3, loss_days=0\",\"blended_roi=0.621 with blend_weight_own=0.9\",\"buyer.lock_24h=true, last up 53.85->66.55 at 18.5h ago\",\"peers.fwd_roi_1_3d=-0.035 (n=15)\"],\"uncertainty\":[\"Peer forward ROI is negative and could signal the post-scale decline\",\"Post-increase performance at 66.55 is not yet matured\",\"Day-4 ROI of 1.673 may be an outlier driving the average\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 634,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000397,
+ "request_id": "req_011Cg7Sb3AxJ7kvfmL1e83h9",
+ "ts": "2026-10-17T07:49:05+00:00"
+}

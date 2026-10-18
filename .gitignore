@@ -8,7 +8,7 @@
 *secret*
 credentials*.json
 
-# --- Raw data and the brief: provided by the company, not ours to publish (see data/README.md) ---
+# --- The raw CSVs and the brief: provided by the company, not ours to publish (see data/README.md) ---
 data/*.csv
 *.pdf
 

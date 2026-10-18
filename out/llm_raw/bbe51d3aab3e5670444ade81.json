@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI is positive (0.292) and 2 of the last 3 matured days were profitable, but the trend is declining, the peer forward ROI is weak (0.029, n=51), and the last-3-day ROI of 0.537 rests on one strong day (D-2, 2.107). A buyer raised budget 8.2 to 14.55 eighteen hours ago and the 24h lock is active, so no change is warranted on this evidence. Keep and re-check once the lock clears.\",\"key_evidence\":[\"blended_roi=0.292\",\"last_3d.profit_days=2, loss_days=1\",\"peers.fwd_roi_1_3d=0.029 (n=51)\",\"buyer.lock_24h=true, last up 8.2->14.55 18.4h ago\"],\"uncertainty\":[\"Whether the D-2 spike (ROI 2.107) is repeatable or a one-off\",\"Whether the CPM spike noted 42.9h ago has resolved\",\"Whether the 18h-ago buyer increase is still performing before the lock clears\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 837,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000503,
+ "request_id": "req_011Cg7V5dJJNZoT3ozdkeoR4",
+ "ts": "2026-10-17T08:21:48+00:00"
+}

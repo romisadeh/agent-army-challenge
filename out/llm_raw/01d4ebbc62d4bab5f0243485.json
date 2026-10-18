@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured numbers look like a proven winner: age 6, last_3d.roi 0.328, blended_roi 0.233, 2 of 3 days profitable. But buyer ui_adjust_budget moved 16.51 to 11.56 0.5h ago with lock_24h true, and trend is declining with D-1 roi -0.153. Buyer action plus lock outweighs the numbers, so a human should settle it. Spend exceeds 1.25x budget flag adds doubt.\",\"key_evidence\":[\"buyer.last_human_action: down 16.51->11.56, hours_ago 0.5, lock_24h true\",\"last_3d.roi 0.328, profit_days 2 of 3, blended_roi 0.233\",\"trend_last_day_vs_prior declining, matured_days d=-1 roi -0.153\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut budget; a deliberate reason could justify keeping it low\",\"Whether the spend-over-budget flag makes the 3-day ROI unreliable\",\"Whether the declining trend continues on D-1 final data\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 865,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000518,
+ "request_id": "req_011Cg9M3UJ5YaPmnuKNSFqFT",
+ "ts": "2026-10-18T07:57:35+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last_3d ROI is +0.163 with 2 of 3 matured days profitable, but blended_roi is 0.088, below the +0.10 proven-winner bar. A buyer cut budget 3.81 to 2.67 about 24.5h ago (net -2.41 over 48h), so scaling up would override that move. The spend_exceeds_1.25x_budget flag means the budget figure may be stale. Mixed evidence, so keep.\",\"key_evidence\":[\"last_3d.roi = 0.163 (2 profit days, 1 loss day)\",\"blended_roi = 0.088 (below +0.10 threshold)\",\"buyer.last_human_action: down 3.81 to 2.67, 24.5h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's 3.81 to 2.67 cut was deliberate or a correction for the budget mismatch\",\"Whether the d-1 spend of 4.39 against a 2.67 budget means the true daily budget differs from the card\",\"Peer forward ROI is -0.0 on n=31, which gives little support for scaling\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 941,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000553,
+ "request_id": "req_011Cg7tvvmKkBQfXJh7HjaBn",
+ "ts": "2026-10-17T13:34:34+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"A human cut the budget from 3.81 to 2.48 22h ago and the 24h lock is active, so I should not override it. Last 3 days show ROI 0.539 on only $9.21 spend with mixed days (2 loss, 1 profit), and yesterday was -0.694. Blended ROI 0.223 is mildly positive. Evidence is thin and mixed, so no change.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 3.81->2.48 22h ago\",\"last_3d roi=0.539 on spend 9.21 (2 loss days, 1 profit day)\",\"blended_roi=0.223, peers n=23 fwd_roi 0.078\",\"matured d-1 roi=-0.694, d-2 roi=-1.0\"],\"uncertainty\":[\"Spend exceeds 1.25x budget flag; actual delivery may not match the budget\",\"Tiny spend volume makes ROI very noisy\",\"Whether the buyer's cut signals intent to wind this adset down\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 379,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005452,
+ "request_id": "req_011Cg7U2cP2aFJoup33RFMir",
+ "ts": "2026-10-17T08:07:59+00:00"
+}

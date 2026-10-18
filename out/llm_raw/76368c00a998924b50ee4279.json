@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.5,\"reasoning\":\"Last 3 matured days show ROI 0.289 with 2 profit days and 1 loss day, but yesterday was -0.336 and trend is declining, so the profit is not consistent enough to scale. Blended ROI 0.151 is positive, but peer forward ROI is only 0.065. The spend_exceeds_1.25x_budget flag means the spend figures may be unreliable. Mixed evidence and a no-op buyer action call for no change.\",\"key_evidence\":[\"last_3d.roi=0.289 with loss_days=1, profit_days=2\",\"matured_days d=-1 roi=-0.336, trend_last_day_vs_prior=declining\",\"blended_roi=0.151, peers.fwd_roi_1_3d=0.065 (n=13)\",\"data_quality_flags=spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether spend of 12.33 vs budget 1.27 is a data error that would change the ROI reading\",\"Whether the declining trend continues into D-0 and D+1\",\"Peer forward ROI of 0.065 is only modestly positive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 785,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000472,
+ "request_id": "req_011Cg7SwexYhpdaStMy3sa48",
+ "ts": "2026-10-17T07:53:45+00:00"
+}

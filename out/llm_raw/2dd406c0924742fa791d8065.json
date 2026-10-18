@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Adset is 2 spend days old with 0 profit days in last 3d; last_3d.roi -0.47 on $8.22 spend, matured D-1 roi -0.917 and trend declining. blended_roi -0.445 with peers fwd_roi -0.435 (n=12) agrees. Losses are persistent, no buyer lock or notes. Budget flags (reconstructed budget, spend above 1.25x budget) add some uncertainty, but the direction is consistently negative.\",\"key_evidence\":[\"last_3d.roi = -0.47 with 2 loss days, 0 profit days\",\"matured_days D-1 roi = -0.917, trend_last_day_vs_prior = declining\",\"blended_roi = -0.445, peers.fwd_roi_1_3d = -0.435 (n=12)\"],\"uncertainty\":[\"budget.current is reconstructed from metadata; actual spend pacing may differ\",\"Only 2 spend days, so the adset may still be in learning phase\",\"Spend exceeds 1.25x budget, which may distort the spend baseline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 518,
+  "output_tokens": 397,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000272,
+ "request_id": "req_011Cg7tsuBUjVsHQr2LthFU2",
+ "ts": "2026-10-17T13:33:50+00:00"
+}

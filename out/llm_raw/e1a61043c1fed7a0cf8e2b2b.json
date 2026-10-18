@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"The adset is profitable on all 3 matured days (last_3d ROI +0.705, blended +0.258), but it is only 3 spend days old, so it is not a proven winner. A buyer cut the budget from 12.70 to 10.16 only 0.4h ago and a 24h lock is active. With thin spend ($9.87) I should not override a deliberate human action, so I hold.\",\"key_evidence\":[\"buyer.last_human_action: down 12.7->10.16, 0.4h ago\",\"buyer.lock_24h: true\",\"last_3d: 3 profit days, ROI 0.705, spend $9.87\",\"age_spend_days: 3\"],\"uncertainty\":[\"Why the buyer reduced the budget despite profitable days\",\"Small sample: total spend under $10\",\"Peer forward ROI is only +0.037, much lower than own ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 323,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004779,
+ "request_id": "req_011Cg9M7cwr6MRQZtrNLQbfF",
+ "ts": "2026-10-18T07:58:30+00:00"
+}

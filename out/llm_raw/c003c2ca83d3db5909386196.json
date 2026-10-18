@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Buyer raised budget from 6.35 to 12.7 eighteen hours ago and the 24h lock is active, so I won't override it. Matured 3-day ROI is 0.462 with 2 profit days and 1 loss day, and yesterday's ROI was 0.907 with improving trend. Blended ROI is 0.238, but peer forward ROI is only 0.034 (n=53). Evidence is positive but mixed, so no change.\",\"key_evidence\":[\"last_3d.roi = 0.462 (2 profit, 1 loss day)\",\"blended_roi = 0.238 with blend_weight_own 0.48\",\"peers.fwd_roi_1_3d = 0.034, n=53\",\"buyer.lock_24h = true, last action up 6.35\u219212.7 at 18.4h ago\"],\"uncertainty\":[\"Peer forward ROI of 0.034 suggests weaker future returns than own history\",\"Spend (4-9/day) is well below the 12.7 budget, so the budget increase may not be fully used\",\"Only 5 days of age; one profitable day could be noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 795,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000479,
+ "request_id": "req_011Cg7UnzXWrfYvuszsexMh2",
+ "ts": "2026-10-17T08:18:01+00:00"
+}

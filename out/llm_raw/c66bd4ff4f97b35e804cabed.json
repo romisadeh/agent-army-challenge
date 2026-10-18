@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is 0.027 with 2 profit and 1 loss day, and last day is near break-even (0.012) and declining. Spend is small (12.37 over 3 days, weight 0.38), so blended ROI 0.11 leans on peers (fwd 0.161, n=30, fallback level). Evidence is mixed, not a consistent matured loss or profit. Budget is reconstructed from a later log row, so treat it cautiously. Keep and reassess.\",\"key_evidence\":[\"last_3d.roi=0.027 with profit_days=2, loss_days=1\",\"matured_days D-1 roi=0.012, trend declining\",\"blended_roi=0.11, blend_weight_own=0.38\",\"data_quality_flags: budget_reconstructed, extreme_roi_gt_5\"],\"uncertainty\":[\"Budget value is reconstructed, not directly confirmed\",\"Peer evidence is band fallback with n=30\",\"Declining trend could signal a further drop next day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 372,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000262,
+ "request_id": "req_011Cg7Rtb6viSPx4FfDsDYwP",
+ "ts": "2026-10-17T07:39:56+00:00"
+}

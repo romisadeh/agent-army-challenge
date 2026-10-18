@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Blended ROI is positive (0.327), 3-day ROI is 0.344 with 2 profit days and 1 loss day, and peers (n=18) show 0.318. Evidence supports profit but is mixed: last day ROI fell to 0.182 and the trend is declining. The budget is unreliable (reconstructed from metadata; spend 5.02 exceeds the 1.27 budget ~4x), so a scale step cannot be sized confidently. Keep.\",\"key_evidence\":[\"blended_roi=0.327 (blend_weight_own=0.33)\",\"last_3d: profit_days=2, loss_days=1, roi=0.344\",\"trend_last_day_vs_prior=declining, D-1 roi=0.182\",\"budget.current=1.27 with budget_reconstructed flag and spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True daily budget: metadata-reconstructed value conflicts with observed spend\",\"Whether the D-1 decline continues or is noise\",\"Peer forward ROI (0.318) is only moderately informative for this adset's age and spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 621,
+  "output_tokens": 788,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000475,
+ "request_id": "req_011Cg7Uq5oKsuk9bRCHvVcwS",
+ "ts": "2026-10-17T08:18:30+00:00"
+}

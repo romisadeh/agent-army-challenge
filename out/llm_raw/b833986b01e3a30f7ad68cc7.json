@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.187 with 2 loss days vs 1 profit day, and yesterday was -0.234. Blended_roi is -0.018, close to break-even, and peers are +0.077 (n=26, fallback level 1). Losses are not yet clearly persistent enough to pause or scale down. The budget is reconstructed from metadata and spend exceeds 1.25x budget, so the card's budget reading is unreliable.\",\"key_evidence\":[\"last_3d.roi = -0.187 (2 loss days, 1 profit day)\",\"blended_roi = -0.018, blend_weight_own 0.36\",\"peers.fwd_roi_1_3d = 0.077, n = 26, fallback_level 1\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 1.27 is accurate, since it is reconstructed and spend exceeds budget\",\"Whether the -0.472 and -0.234 losses on D-2 and D-1 reflect a persistent decline or noise\",\"Peer ROI is weak (fallback band), so the forward estimate is uncertain\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 847,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000503,
+ "request_id": "req_011Cg7tDBNjD64DrpoAw8XAu",
+ "ts": "2026-10-17T13:25:06+00:00"
+}

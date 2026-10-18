@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":5.08,\"confidence\":0.5,\"reasoning\":\"Fails the proven-winner gate: last_3d.roi is 0.027, below the +0.10 threshold, so scale-up is not automatic. Blended_roi 0.11 leans on peers (blend_weight_own 0.38). Trend is declining with yesterday at roi 0.012. Budget is reconstructed from a later log and the card carries extreme_roi_gt_5, so the numbers are unreliable. No buyer lock or notes.\",\"key_evidence\":[\"last_3d.roi=0.027 (below +0.10 gate)\",\"blended_roi=0.11 with blend_weight_own=0.38\",\"trend_last_day_vs_prior=declining, D-1 roi=0.012\",\"data_quality_flags: budget_reconstructed, extreme_roi_gt_5\"],\"uncertainty\":[\"Actual current budget, since it is reconstructed from a later log row\",\"Whether the D-4 roi of 5.8 is a real signal or an outlier\",\"Whether the declining trend continues into tomorrow's matured data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 942,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00055,
+ "request_id": "req_011Cg7sUoCJvAxMkLmGfeKLb",
+ "ts": "2026-10-17T13:15:32+00:00"
+}

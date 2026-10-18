@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Buyer cut budget 2.54 to 2.03 via UI 0.4h ago with lock_24h true, so I respect the lock. Matured last_3d ROI is 0.07 with 2 loss days vs 1 profit day, and trend is declining (D-1 ROI -0.091). Blended_roi 0.114 is positive but leans on peers (own weight 0.31). Evidence is mixed, not strong enough to override the recent human action. Spend exceeds budget 1.25x, so budget figures are unreliable.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 2.54->2.03, 0.4h ago, lock_24h true\",\"last_3d.roi 0.07, loss_days 2, profit_days 1\",\"blended_roi 0.114 with blend_weight_own 0.31\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the D-1 loss (roi -0.091) starts a sustained decline or is noise after a +0.847 day\",\"Reliability of budget.current given spend exceeds budget 1.25x\",\"Peer forward ROI 0.134 on n=17 may not transfer to this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 582,
+  "output_tokens": 756,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000455,
+ "request_id": "req_011Cg7UbvAXLK4gMBAHbatUU",
+ "ts": "2026-10-17T08:15:31+00:00"
+}

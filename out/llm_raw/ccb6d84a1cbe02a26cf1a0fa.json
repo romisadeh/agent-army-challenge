@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":80.98,\"confidence\":0.55,\"reasoning\":\"Meets proven-winner criteria (age 34, 3/3 profitable days, last_3d ROI 0.167, blended 0.18), but a buyer cut the budget 115.67 to 80.98 about 24.5h ago (net -34.69 over 48h), and spend exceeds 1.25x budget, so the numbers are less reliable. Yesterday's ROI also dropped to 0.05. Holding the buyer's new level rather than scaling against their move.\",\"key_evidence\":[\"buyer.last_human_action: down 115.67->80.98, 24.5h ago\",\"last_3d: roi 0.167, 3 profit days, 0 loss days\",\"blended_roi 0.18; peers fwd_roi_1_3d 0.412 (n=6)\",\"data_quality_flags: spend_exceeds_1.25x_budget\",\"matured d-1 roi 0.05 vs 0.168 at d-2\"],\"uncertainty\":[\"Why the buyer cut the budget while the adset was profitable\",\"Whether spend overrun means the budget is not binding and ROI figures are skewed\",\"Whether the decline in ROI to 0.05 yesterday continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 427,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005931,
+ "request_id": "req_011Cg7u3MFt1K18G9LAwKE2k",
+ "ts": "2026-10-17T13:35:59+00:00"
+}

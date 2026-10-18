@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is -0.156 with 2 loss days and 1 small profit day. Blended ROI is -0.205, and peers forward ROI is -0.307 on a band fallback with n=12. The buyer already cut budget 19.05 to 9.52 46h ago, with no lock. Losses are modest in dollars and D-1 is near break-even (-0.002), so this is not a clear matured loss for a pause. Hold the current budget and reassess tomorrow.\",\"key_evidence\":[\"last_3d.roi = -0.156 (2 loss days, 1 profit day)\",\"blended_roi = -0.205, blend_weight_own = 0.67\",\"peers.fwd_roi_1_3d = -0.307, n=12, fallback_level 1\",\"matured_days d=-1 roi = -0.002\"],\"uncertainty\":[\"data_quality_flags spend_exceeds_1.25x_budget may mean the 9.52 budget is not the real spend cap\",\"peer evidence is a band fallback with modest n\",\"the 46h-old buyer cut has not yet had a full clean read\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 618,
+  "output_tokens": 955,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000558,
+ "request_id": "req_011Cg7Sdj18Y1PstzRQLATkw",
+ "ts": "2026-10-17T07:49:43+00:00"
+}

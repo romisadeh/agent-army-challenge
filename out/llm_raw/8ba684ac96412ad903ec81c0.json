@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is near break-even (last_3d roi 0.005, 2 loss days, 1 profit day), but blended_roi is -0.201 and peers are -0.307 at fallback_level 1 with n=12. Trend is declining. Evidence is mixed and thin, and this is not a clear matured loss, so pausing is not justified. Budget is reconstructed and spend exceeds 1.25x budget, which weakens any budget-based change. Hold and recheck.\",\"key_evidence\":[\"last_3d.roi = 0.005 with loss_days 2, profit_days 1\",\"blended_roi = -0.201, peers.fwd_roi_1_3d = -0.307 (n=12, fallback_level 1)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether budget.current 1.27 is accurate, since it is reconstructed from metadata\",\"Peer evidence is a band fallback, so it may not match this adset\",\"Whether D-1 decline (roi -0.281) continues into the next 1-3 days\",\"Absolute profit impact is very small at this spend level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 547,
+  "output_tokens": 905,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000526,
+ "request_id": "req_011Cg7SkHFXMHubfMniz1RR4",
+ "ts": "2026-10-17T07:51:12+00:00"
+}

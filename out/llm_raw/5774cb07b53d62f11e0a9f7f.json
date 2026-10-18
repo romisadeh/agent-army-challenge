@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset with a 24h buyer lock: the buyer cut the budget from 2.67 to 2.13 only 17 hours ago. Last 3d ROI is +0.05 on $12.03 spend, blended ROI is -0.056, and peers forward ROI is -0.119. Yesterday was negative, with a declining trend. That is not a proven winner and the losses are not persistent enough to pause. Spend exceeds 1.25x budget, so the data is slightly noisy. Keep the budget unchanged.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 2.67->2.13 17.2h ago\",\"blended_roi=-0.056\",\"last_3d.roi=0.05 (1 profit day, 2 loss days)\",\"peers.fwd_roi_1_3d=-0.119 (n=5)\"],\"uncertainty\":[\"Spend exceeding 1.25x budget may distort daily figures\",\"Very small sample: spend per day is only $2-9\",\"Reason for the buyer's cut is not stated in the notes\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 688,
+  "output_tokens": 392,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005719,
+ "request_id": "req_011Cg9N1yY33iThaQUgt9D7v",
+ "ts": "2026-10-18T08:10:21+00:00"
+}

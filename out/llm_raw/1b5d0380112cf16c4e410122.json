@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured data is a proven-winner pattern: last_3d.roi 0.273, blended_roi 0.183, 2 of 3 days profitable, age 7. But a 24h lock is active, and buyer ui_adjust_budget raised budget 6.35 to 12.7 21.2h ago. R02 cut it to 10.16 at 06:00 on immature data (roi_seen -0.21), so human and rule actions conflict. Scaling up would be the default, but the lock and conflict need a human to settle.\",\"key_evidence\":[\"last_3d.roi = 0.273, blended_roi = 0.183 (proven-winner range)\",\"buyer.lock_24h = true, last_human_action up 6.35 to 12.7, 21.2h ago\",\"rules.acted_today R02 cut to 10.16 at 06:00, roi_seen -0.21 (immature)\"],\"uncertainty\":[\"Whether the human intended 12.7 as the target level or a temporary step\",\"Whether R02's morning cut reflects real loss or noise from partial revenue\",\"Peer forward ROI of 0.104 is only modestly positive\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 1118,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00065,
+ "request_id": "req_011Cg9MhNXcrk2PdusYEjAWT",
+ "ts": "2026-10-18T08:06:11+00:00"
+}

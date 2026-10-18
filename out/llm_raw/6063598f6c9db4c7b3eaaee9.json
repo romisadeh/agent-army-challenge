@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured losses persist: last_3d.roi -0.314 with 3 loss days and 0 profit days, blended_roi -0.31, and peers fwd_roi_1_3d -0.307 (n=12). That argues for pause. However, a buyer ui_adjust_budget cut from 1.9 to 1.52 happened 24.5h ago, and a note 'scaling winner' at 46.2h conflicts with it. Flags meta_conversions_gt_clicks and spend_exceeds_1.25x_budget make the numbers doubtful. A human should settle this.\",\"key_evidence\":[\"last_3d.roi = -0.314, loss_days = 3, profit_days = 0\",\"blended_roi = -0.31; peers.fwd_roi_1_3d = -0.307 (n=12)\",\"buyer.last_human_action: down 1.9 -> 1.52, hours_ago 24.5\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the conversions > clicks flag means tracking is broken, which would make the losses unreliable\",\"Why the buyer cut budget despite the 'scaling winner' note\",\"Whether the 1.25x spend overrun reflects real spend or a reporting error\",\"Whether the losses persist once the data issues are resolved\"],\"proposed_if_escalated\":\"pause\"}",
+ "usage": {
+  "input_tokens": 654,
+  "output_tokens": 826,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0005,
+ "request_id": "req_011Cg7sr6vF9mCBoaiy2FL3t",
+ "ts": "2026-10-17T13:20:20+00:00"
+}

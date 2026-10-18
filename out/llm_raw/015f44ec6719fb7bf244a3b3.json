@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner thresholds on paper (age 8, 2 of 3 days profitable, last_3d ROI 0.17, blended 0.131), but specific fields argue against scaling: a buyer cut budget 25.4 to 17.78 about 24.5h ago, ROI is declining each day (0.424, 0.385, 0.104, -0.036), peers forward ROI is slightly negative, and spend exceeds 1.25x budget flag makes numbers less reliable. Hold.\",\"key_evidence\":[\"buyer last action: down 25.4->17.78, 24.5h ago\",\"trend_last_day_vs_prior: declining; d-1 ROI -0.036\",\"peers fwd_roi_1_3d -0.013 (n=30)\",\"flag: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether spend overrun distorts recent ROI\",\"Whether d-1 loss is noise or start of a trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 377,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005433,
+ "request_id": "req_011Cg7ttaAGUuekEmXvVsYRL",
+ "ts": "2026-10-17T13:34:00+00:00"
+}

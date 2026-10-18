@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"A buyer cut budget 16.51 to 11.56 30 minutes ago and the 24h lock is active, so I defer to that call. Matured 3-day ROI is positive (0.328, 2 profit days, 1 loss) and blended ROI is 0.233, but yesterday lost money (-0.153 on 21.96 spend) and the trend is declining. Peer forward ROI is only 0.038. Evidence is mixed, so no change.\",\"key_evidence\":[\"buyer.last_human_action: down 16.51->11.56, 0.5h ago, lock_24h true\",\"last_3d.roi 0.328 with profit_days 2, loss_days 1\",\"matured_days D-1 roi -0.153 on spend 21.96\",\"peers.fwd_roi_1_3d 0.038 n=40\"],\"uncertainty\":[\"Spend exceeds budget (flag spend_exceeds_1.25x_budget), so budget/spend reconciliation may be off\",\"Whether the D-1 loss reflects a trend or noise; trend_last_day_vs_prior is declining\",\"Whether the buyer's cut was based on information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 703,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000434,
+ "request_id": "req_011Cg7U5YJJUiS2ULGE3q5XK",
+ "ts": "2026-10-17T08:08:39+00:00"
+}

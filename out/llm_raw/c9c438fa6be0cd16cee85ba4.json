@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.02 with 2 loss days versus 1 profit day, and blended_roi is -0.015, which is roughly break-even and fails the proven-winner test (needs last_3d.roi > +0.10). Peers forward ROI is -0.007 (n=15), which agrees with flat performance. Yesterday's -0.161 on only 4.48 spend is thin evidence. budget.current is 15.54 but carries the budget_reconstructed flag, and yesterday's spend is well below budget. No buyer action or lock, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.02 (2 loss days, 1 profit day)\",\"blended_roi = -0.015; peers.fwd_roi_1_3d = -0.007 (n=15)\",\"trend_last_day_vs_prior = flat\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Whether budget.current 15.54 is accurate, since it was reconstructed from metadata\",\"Whether yesterday's underspend (4.48 vs 15.54 budget) reflects delivery limits rather than performance\",\"Whether the loss trend continues over the next matured days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 687,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000424,
+ "request_id": "req_011Cg9N7uoidRaEHtjDuozZM",
+ "ts": "2026-10-18T08:11:41+00:00"
+}

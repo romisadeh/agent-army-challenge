@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Age is 5 spend days and 2 of the last 3 days were profitable, but last_3d ROI is +0.072, below the +0.10 proven-winner threshold, and blended ROI is only +0.114. Yesterday was negative (-0.206) and the trend is declining. The budget of $1.27 is reconstructed and spend runs well above it, so a percentage change on that base is unreliable. Keep.\",\"key_evidence\":[\"last_3d.roi=0.072 (below 0.10 threshold)\",\"d-1 roi=-0.206, trend declining\",\"blended_roi=0.114, peers fwd_roi 0.166 (n=24)\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current daily budget is unknown since it was reconstructed and spend exceeds it\",\"Whether yesterday's loss is noise or the start of a decline on small spend of $5.30\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 610,
+  "output_tokens": 355,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005193,
+ "request_id": "req_011Cg9MmuNP1kayVgiQFwtUb",
+ "ts": "2026-10-18T08:07:10+00:00"
+}

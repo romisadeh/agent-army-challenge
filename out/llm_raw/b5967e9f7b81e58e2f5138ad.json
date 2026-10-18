@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":17.42,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is modestly positive (last_3d.roi 0.102, 2 profit days, 1 small loss day at -0.006) and blended_roi is 0.093, but the margin is thin and peer forward ROI is only 0.05. The buyer cut budget from 24.89 to 17.42 about 24.5h ago, and lock_24h is false, so no lock applies. Spend exceeded budget (spend_exceeds_1.25x_budget), so the true delivery level is uncertain. Mixed evidence favors no change this window.\",\"key_evidence\":[\"last_3d.roi = 0.102 with 2 profit days and 1 loss day\",\"blended_roi = 0.093 (blend_weight_own 0.84)\",\"peers.fwd_roi_1_3d = 0.05 (n=11)\",\"buyer.last_human_action: down 24.89 to 17.42, 24.5h ago\"],\"uncertainty\":[\"Why the buyer cut budget 24.5h ago; the reason is not in notes\",\"Whether budget 17.42 reflects actual delivery, given spend 29.39 on d-1 vs budget 17.42\",\"Whether the 1.25x overspend flag reflects a budget-setting error\",\"Whether the d-2 loss marks a trend or noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 906,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000533,
+ "request_id": "req_011Cg7SmoVUsAcJsWvbQ4YzT",
+ "ts": "2026-10-17T07:51:32+00:00"
+}

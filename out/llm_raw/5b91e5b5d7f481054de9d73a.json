@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":12.7,\"confidence\":0.6,\"reasoning\":\"Blended ROI 0.296 and 3-day ROI 0.26 are positive, with 2 profit days and 1 loss day, and yesterday was strong at 0.627 on $6.32 spend. Evidence is still thin: total 3-day spend is only $13.32 and blend weight is 0.4. A human doubled budget from 6.35 to 12.7 about 14 hours ago and lock_24h is true, so I hold rather than override the recent buyer action without stronger evidence.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget 6.35->12.7, hours_ago 14.1, lock_24h true\",\"blended_roi 0.296 with blend_weight_own 0.4\",\"last_3d: profit_days 2, loss_days 1, roi 0.26, spend 13.32\",\"matured_days d=-1 roi 0.627; peers fwd_roi_1_3d 0.319 n=22\"],\"uncertainty\":[\"Whether the 100% budget increase 14h ago is still ramping and may distort 3-day ROI\",\"Small total spend makes the ROI reading noisy\",\"Peer forward ROI estimate may not transfer to this adset\",\"Buyer intent behind the doubling is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 952,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000556,
+ "request_id": "req_011Cg7UuvzPu7Ck1mKRcCKL1",
+ "ts": "2026-10-17T08:19:36+00:00"
+}

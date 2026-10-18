@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Blended ROI is -0.015 and last_3d ROI is -0.02, roughly break-even with a mixed record (1 profit day, 2 loss days). Peers forward ROI is -0.007 on n=15, so nothing points clearly up or down. Yesterday's loss is on a small $4.48 spend and trend is flat. Budget is metadata-reconstructed, so no change is the safe call.\",\"key_evidence\":[\"blended_roi = -0.015\",\"last_3d: profit_days 1, loss_days 2, roi -0.02\",\"peers.fwd_roi_1_3d = -0.007, n=15\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Whether the reconstructed budget of 15.54 matches the live setting\",\"Whether D-1 loss on low spend ($4.48) is a real trend or noise\",\"Peer sample of 15 is modest\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 630,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000393,
+ "request_id": "req_011Cg7V5LnNAQZpQXb34GW2m",
+ "ts": "2026-10-17T08:21:43+00:00"
+}

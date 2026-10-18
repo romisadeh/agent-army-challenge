@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Meets the proven-winner test: age 9 spend days, 2 of last 3 matured days profitable, last_3d.roi 0.101 and blended_roi 0.118 both above +0.10. But buyer.last_human_action is a deliberate ui_adjust_budget down (19.05 to 15.24) 0.4h ago with lock_24h true, which conflicts with the scale-up default. A human should settle this.\",\"key_evidence\":[\"last_3d.roi = 0.101, profit_days 2, loss_days 1\",\"blended_roi = 0.118, age 9 spend days\",\"buyer.last_human_action: ui_adjust_budget down, hours_ago 0.4, lock_24h true\",\"peers.fwd_roi_1_3d = 0.144, n 15\"],\"uncertainty\":[\"Why the buyer cut budget 0.4h ago; it may reflect information not on the card\",\"Whether the D-2 loss (-0.116) is noise or the start of a trend; trend_last_day_vs_prior is flat\",\"Peer evidence is moderate (n 15)\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 1216,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000692,
+ "request_id": "req_011Cg9M6bx3LEf2seBNiAPAy",
+ "ts": "2026-10-18T07:58:19+00:00"
+}

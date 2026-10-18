@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own matured record is strong: last_3d.roi 0.528 with 3 profit days, age 4, and an improving trend. But blended_roi is -0.018, which fails the proven-winner gate (>0.10), and peers are negative (fwd_roi_1_3d -0.307, n=12). Buyer raised budget 17.2h ago and lock_24h is true, so no change today.\",\"key_evidence\":[\"blended_roi: -0.018\",\"last_3d.roi: 0.528 (3 profit days)\",\"peers.fwd_roi_1_3d: -0.307 (n=12, band fallback)\",\"buyer.lock_24h: true\"],\"uncertainty\":[\"Whether peer weakness (fallback level 1, n=12) reflects this adset's true forward ROI\",\"Whether the 24h lock expires and the blended ROI turns positive on the next window\",\"Whether the 17h-old buyer budget increase to 3.81 is still performing as the own 3-day record suggests\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 594,
+  "output_tokens": 839,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0005,
+ "request_id": "req_011Cg7tADEX4zCUi4L6RQ53V",
+ "ts": "2026-10-17T13:24:26+00:00"
+}

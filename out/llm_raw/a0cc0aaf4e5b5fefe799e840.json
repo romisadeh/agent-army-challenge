@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.181 with 2 loss days of 3, and yesterday was -0.678 and declining. The buyer cut budget 6.35 to 3.81 17.2h ago and the 24h lock is active, so scaling up would override that. Peers (+0.39) and blended ROI (+0.132) are positive but rest on tiny spend. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.roi -0.181, 1 profit day vs 2 loss days\",\"buyer lock_24h true, budget cut 6.35->3.81 17.2h ago\",\"peers fwd_roi_1_3d 0.39 (n=23), blended_roi 0.132\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Tiny spend makes daily ROI very noisy\",\"Spend over 1.25x budget may distort the recent numbers\",\"Why the buyer cut the budget is unknown (no note)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 378,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005465,
+ "request_id": "req_011Cg7tnZ67JLGmd85kmFH1v",
+ "ts": "2026-10-17T13:32:41+00:00"
+}

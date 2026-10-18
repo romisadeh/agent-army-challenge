@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.72,\"reasoning\":\"Three matured days (d-3 to d-1) all lost money: last_3d ROI -0.932 on $10.27 spend with $0.70 revenue, and the 3-day trend is consistently negative. Blended ROI is -0.634 and peers forward ROI is -0.481 (n=19, fallback 0), so both own history and peers point down. No buyer lock and no notes. Pausing stops the losses, though the $1.40 budget makes the absolute amount small. Spend exceeds 1.25x budget, so the budget figure may be unreliable.\",\"key_evidence\":[\"last_3d.roi = -0.932 with loss_days = 2 and profit_days = 0 on the card\",\"blended_roi = -0.634 with blend_weight_own = 0.34\",\"peers.fwd_roi_1_3d = -0.481 with n = 19\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend (about $3.4/day) exceeds the $1.40 budget, so actual spend control may differ from the card\",\"Only one profitable day (d-4, ROI 0.114) appears in the 4 matured days shown\",\"Buyer already cut budget from 2.54 to 1.40 about 45 hours ago, and the result of that cut is not yet visible\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 985,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000573,
+ "request_id": "req_011Cg7SpdJtD2WoTSacr7mss",
+ "ts": "2026-10-17T07:52:11+00:00"
+}

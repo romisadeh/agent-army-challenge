@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset meets most winner criteria (age 13, 2 of 3 days profitable, last_3d ROI +0.163), but blended ROI is 0.088, below the +0.10 threshold. A buyer cut the budget 3.81 to 2.67 about 24.5h ago (net -2.41 over 48h), and spend exceeded 1.25x budget, which makes the numbers less reliable. Peer ROI is flat at 0. Holding is the safer call.\",\"key_evidence\":[\"blended_roi 0.088 (below 0.10 threshold)\",\"last_3d roi 0.163, 2 profit days / 1 loss day\",\"buyer cut budget 3.81->2.67 24.5h ago\",\"flag spend_exceeds_1.25x_budget; peers fwd_roi 0.0 (n=31)\"],\"uncertainty\":[\"Why the buyer cut the budget and whether they intend it to stay down\",\"Spend overshoot may distort the daily ROI figures\",\"Small spend base ($23 over 3d) makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 391,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005557,
+ "request_id": "req_011Cg7svaYGyzQJcYPjiDefY",
+ "ts": "2026-10-17T13:21:20+00:00"
+}

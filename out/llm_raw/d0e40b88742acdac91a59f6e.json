@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 2 spend days old, so it is not a proven winner (needs 4+). Last 3d ROI is +0.783 on just $13.60 spend, and yesterday's ROI fell to +0.188 from +2.252. Peers forward ROI is negative (-0.133, n=13). A buyer cut the budget 15h ago and the 24h lock is active, so I won't override it. Keep.\",\"key_evidence\":[\"age_spend_days=2\",\"buyer lock_24h=true; budget cut 12.7->10.16 15.1h ago\",\"last_3d roi=0.783 on spend $13.60\",\"peers fwd_roi_1_3d=-0.133 (n=13)\"],\"uncertainty\":[\"Only two matured days, so the early ROI is very noisy\",\"Why the buyer reduced the budget is unknown\",\"Whether the declining trend continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 330,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004789,
+ "request_id": "req_011Cg7sjYqHUBRkFPs4ZFQva",
+ "ts": "2026-10-17T13:18:50+00:00"
+}

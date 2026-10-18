@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured evidence is mixed and roughly break-even. Last 3d ROI is -0.114 with 2 loss days and 1 profit day, but yesterday ROI was +0.153 and trend_last_day_vs_prior is improving. Blended ROI is -0.069 (w=0.91, peers fwd 0.394, n=15), which is not a clear losing trend. R07 cut yesterday was on morning data (roi_seen -0.51). Buyer's down action was 112.7h ago, outside the lock. No change.\",\"key_evidence\":[\"blended_roi: -0.069\",\"last_3d.roi: -0.114 (2 loss days, 1 profit day)\",\"matured_days D-1 roi: +0.153, trend improving\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend (53.8 to 117.9/day) exceeds budget.current 39.6, so the real current budget may differ from the card\",\"Peer forward ROI of 0.394 could be optimistic if the segment is unrepresentative\",\"Whether the morning R07 cut on immature data distorts the recent trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 724,
+  "output_tokens": 1076,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000629,
+ "request_id": "req_011Cg7UibHf1NYF9345raxx4",
+ "ts": "2026-10-17T08:17:03+00:00"
+}

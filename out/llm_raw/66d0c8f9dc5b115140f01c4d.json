@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"A human raised budget 2.48 to 5.08 about 21h ago and lock_24h is true. Own 3-day ROI is -0.327 with 2 loss days, and trend is declining. Blended ROI is only 0.049 (own weight 0.38), leaning on peers at 0.275 with n=17. Evidence conflicts with the recent deliberate buyer scale-up, so a human should settle it. Matured history is volatile (+4.7 to -1.0 ROI).\",\"key_evidence\":[\"buyer.last_human_action: up 2.48->5.08, hours_ago 21.3, lock_24h true\",\"last_3d.roi -0.327, loss_days 2, profit_days 1\",\"blended_roi 0.049 with blend_weight_own 0.38\",\"peers.fwd_roi_1_3d 0.275, n 17\"],\"uncertainty\":[\"Whether the 5.08 budget change has had enough time to show effect\",\"Peer n=17 is modest and peers may not match this adset's volatility\",\"Whether D-1 profit (ROI 0.363) marks a turn or noise\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 839,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000501,
+ "request_id": "req_011Cg7UhzryF7hERnbJs3dza",
+ "ts": "2026-10-17T08:16:54+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.61,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is only slightly positive (last_3d.roi 0.093, revenue 12.67 on spend 11.6), with 2 profit days and 1 loss day. blended_roi is 0.075 and peers fwd_roi_1_3d is 0.065 (n=13). The edge is thin and the budget is unreliable: budget_reconstructed flag and spend_exceeds_1.25x_budget, so scaling from 1.61 is not justified. No buyer lock or rule action to override.\",\"key_evidence\":[\"last_3d.roi = 0.093 with 2 profit days, 1 loss day\",\"blended_roi = 0.075 vs peers fwd_roi_1_3d = 0.065 (n=13)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True daily budget, since 1.61 is reconstructed and spend runs about 2.4x budget\",\"Whether the small positive ROI persists over more days\",\"Only 3 days of history, with spend of about $11.6 total\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 676,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000411,
+ "request_id": "req_011Cg7ShyBXwyPXCyVv3F6iz",
+ "ts": "2026-10-17T07:50:39+00:00"
+}

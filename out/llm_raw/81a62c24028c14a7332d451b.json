@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is a proven winner on matured data: age 6, 3 of 3 profitable days, last_3d.roi 0.691, blended_roi 0.621, trend improving. Scale-up is the default, but buyer.lock_24h is true after a ui_adjust_budget up 53.85 to 66.55 only 18.5h ago. Respecting that recent deliberate action and the lock means no change today. Peers fwd_roi_1_3d is -0.035 (n=15), a caution against a further step. Reassess at the next window as a scale-up candidate.\",\"key_evidence\":[\"buyer.lock_24h = true, last_human_action hours_ago 18.5\",\"last_3d.roi = 0.691, profit_days 3, loss_days 0\",\"blended_roi = 0.621, blend_weight_own 0.9\",\"peers.fwd_roi_1_3d = -0.035, n = 15\"],\"uncertainty\":[\"Whether the 24h lock permits any change today\",\"Peer forward ROI is slightly negative, so the winning streak may not persist\",\"Budget already rose about 24% in the last day, so further steps may need to be small\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 1079,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000622,
+ "request_id": "req_011Cg7sswz37XSAnt3Gehbjj",
+ "ts": "2026-10-17T13:20:47+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":248.0,\"confidence\":0.6,\"reasoning\":\"Proven-winner criteria are met: age 12 spend days, 2 profitable days of the last 3 (d-2 +0.218, d-1 +0.335, d-3 break-even), last_3d.roi 0.14 and blended_roi 0.137, both above 0.10. Yesterday was positive and no buyer lock is active. The buyer raised the budget 63.9h ago, but net_budget_change_48h is 0. Peer forward ROI is only 0.013, so I am capping the step at about +15%.\",\"key_evidence\":[\"last_3d.roi 0.14 (profit_days 2, loss_days 0)\",\"blended_roi 0.137\",\"d-1 roi 0.335 on spend 126.78\",\"peers fwd_roi_1_3d 0.013 (n=14)\"],\"uncertainty\":[\"Flag spend_exceeds_1.25x_budget means actual spend may not track the stated budget of 215.9\",\"Peer forward ROI is near break-even and suggests regression\",\"Yesterday's spend was low (126.78), so the strong ROI rests on a small sample\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 406,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005739,
+ "request_id": "req_011Cg7sc2EpdEsY1yNXqmbhZ",
+ "ts": "2026-10-17T13:17:09+00:00"
+}

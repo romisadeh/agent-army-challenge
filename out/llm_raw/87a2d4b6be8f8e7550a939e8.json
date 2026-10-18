@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Buyer cut budget 16.0 to 11.2 only 0.5h ago and a 24h lock is active. Matured data is mildly profitable (3d ROI 0.093, 2 profit days, blended 0.076), but peers are weak (0.018). That is not strong enough to override a deliberate human action. Holding the budget is the right call.\",\"key_evidence\":[\"buyer.lock_24h=true; last action down 16.0->11.2, 0.5h ago\",\"last_3d ROI 0.093 (2 profit / 1 loss days)\",\"blended_roi 0.076; peers fwd_roi_1_3d 0.018 (n=39)\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether the spend overrun reflects a delivery or budget-tracking issue\",\"Whether the ROI decline from D-5/D-4 to recent days continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 356,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005224,
+ "request_id": "req_011Cg7UGwzdhrYPzpfgbdXPo",
+ "ts": "2026-10-17T08:11:13+00:00"
+}

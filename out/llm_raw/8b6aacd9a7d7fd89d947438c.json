@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.5,\"reasoning\":\"Matured last_3d ROI is only 0.053 with 2 loss days vs 1 profit day, and the last day declined to -0.25. Blended ROI is a thin 0.063 with own weight 0.39, and peer forward ROI is 0.07 (n=11). The evidence is mixed and near break-even. A buyer raised budget 3.2 to 3.81 23h ago and the lock is active, so no change is warranted now.\",\"key_evidence\":[\"last_3d.roi = 0.053 (loss_days 2, profit_days 1)\",\"trend_last_day_vs_prior = declining, D-1 roi -0.25\",\"blended_roi = 0.063, blend_weight_own = 0.39\",\"buyer.lock_24h = true, last up 3.2 to 3.81 23h ago\"],\"uncertainty\":[\"Whether the declining D-1 trend continues or is one-day noise\",\"Peer forward ROI of 0.07 rests on only n=11 adsets\",\"spend_exceeds_1.25x_budget flag may mean actual spend differs from the budget figure\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 705,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000432,
+ "request_id": "req_011Cg7SZYZEM8w114XBFSUdM",
+ "ts": "2026-10-17T07:48:45+00:00"
+}

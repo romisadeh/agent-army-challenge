@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":1.5,\"confidence\":0.55,\"reasoning\":\"Proven-winner criteria are met: age 8 spend days, 2 of 3 matured days profitable, last_3d ROI +0.515, blended ROI +0.458 and peers +0.395 (n=14). Yesterday was only mildly negative (-0.097) after strong days, which looks like noise. The budget is tiny at $1.27, so a modest step of about 18% is low risk. The 'slow ramp per playbook' note supports gradual scaling. Spend is above budget, so confidence is limited.\",\"key_evidence\":[\"last_3d.roi=0.515 with 2 profit days of 3\",\"blended_roi=0.458, peers fwd_roi_1_3d=0.395 (n=14)\",\"d-1 roi=-0.097 on spend 6.96 (mild loss)\",\"budget.current=1.27, note 'slow ramp per playbook'\"],\"uncertainty\":[\"Spend exceeds 1.25x budget, so the real spend level is unclear\",\"Duplicate performance rows were removed, which may affect the numbers\",\"Revenue is small in absolute terms and the trend is declining\",\"Net budget change of -2.54 over 48h suggests a recent human reduction\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 652,
+  "output_tokens": 438,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.006119,
+ "request_id": "req_011Cg7u1UfaPufNkUESae9JP",
+ "ts": "2026-10-17T13:35:34+00:00"
+}

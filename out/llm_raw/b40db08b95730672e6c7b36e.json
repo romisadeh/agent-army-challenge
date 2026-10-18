@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset has only 2 spend days, so it is not a proven winner (needs 4+). Own 3-day ROI is +0.214 on just $10.20 spend, but ROI is declining (0.435 to 0.097) and peers forward ROI is -0.133 (n=13), putting blended ROI near break-even at -0.016. Budget is also reconstructed. Evidence is thin and mixed, so hold.\",\"key_evidence\":[\"age_spend_days=2\",\"blended_roi=-0.016\",\"last_3d.roi=0.214 on spend 10.2\",\"peers.fwd_roi_1_3d=-0.133 (n=13)\"],\"uncertainty\":[\"Only two matured days of data\",\"Budget reconstructed from metadata, may be inaccurate\",\"Whether declining ROI continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 499,
+  "output_tokens": 308,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004501,
+ "request_id": "req_011Cg7sn6hzhi5KdnKDnDdvZ",
+ "ts": "2026-10-17T13:19:25+00:00"
+}

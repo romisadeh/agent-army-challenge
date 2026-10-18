@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.049 (not above +0.10) with 2 loss days and 1 profit day, and blended_roi 0.098 is just below the +0.10 threshold. Yesterday's roi is -0.598 and trend_last_day_vs_prior is declining, which argues against scaling. The buyer tripled budget 64.7h ago with net_budget_change_48h 0.0 and no lock, so no recent buyer action blocks a decision. Losses are not yet clearly persistent, so keep at 3.81.\",\"key_evidence\":[\"last_3d.roi = -0.049 (2 loss days, 1 profit day)\",\"blended_roi = 0.098, below +0.10\",\"matured_days d=-1 roi = -0.598, trend declining\",\"buyer.last_human_action up 1.27 to 3.81, 64.7h ago\"],\"uncertainty\":[\"Peer forward ROI 0.161 is fallback level 1 with n=30, which is weak evidence\",\"Budget tripled after the buyer change; performance since then is mixed, so a cut may be warranted if losses persist\",\"Only four matured days, with small spend (8.56 over 3 days)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 913,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000537,
+ "request_id": "req_011Cg7sfKZx8PcSpvvqEfxkT",
+ "ts": "2026-10-17T13:17:54+00:00"
+}

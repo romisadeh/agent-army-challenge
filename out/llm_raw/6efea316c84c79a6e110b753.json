@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset: 1 day old, only $2.35 spend, one loss day (ROI -0.459). Blended ROI -0.28 leans on peers (n=19, fwd -0.259). A human raised the budget 15h ago and the 24h lock is active, and the rule engine killed it at 02:00 on $0.25 of immature data. Evidence is too thin to pause, and I should not override the buyer lock. Keep, and a human can confirm the rule kill.\",\"key_evidence\":[\"last_3d spend $2.35, ROI -0.459, 1 loss day\",\"blended_roi -0.28 (own weight 0.11)\",\"buyer lock_24h true, budget raised 1.27->3.81 15.1h ago\",\"R05 kill at 02:00 on spend_seen $0.25\"],\"uncertainty\":[\"Whether the buyer wants it live despite the rule kill\",\"Only one matured day, so no trend\",\"Peer forward ROI is negative, so it may keep losing\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 369,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00519,
+ "request_id": "req_011Cg7U1Nz6p2mWcvVaZVyJv",
+ "ts": "2026-10-17T08:07:42+00:00"
+}

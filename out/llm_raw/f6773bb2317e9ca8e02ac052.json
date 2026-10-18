@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Adset is only 2 spend days old, so it does not meet the 4+ day proven-winner test. Own 3-day ROI is +0.214 but rests on just two matured days ($10.20 spend). Blended ROI is -0.016 and peer forward ROI is -0.133 (n=13). Yesterday's trend is declining (ROI 0.097 vs 0.435). Budget 12.19 is flagged as reconstructed from metadata, so the budget figure is unreliable. Evidence is mixed and thin, so hold.\",\"key_evidence\":[\"blended_roi -0.016\",\"last_3d.roi 0.214 on only 2 matured days\",\"peers.fwd_roi_1_3d -0.133 (n=13)\",\"trend_last_day_vs_prior declining\"],\"uncertainty\":[\"Only 2 matured days exist, so own ROI is not yet stable\",\"budget.current 12.19 is reconstructed, not confirmed\",\"Peer forward ROI could diverge from this adset's trajectory\",\"Next day's matured result could clarify direction\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 499,
+  "output_tokens": 727,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000435,
+ "request_id": "req_011Cg7smnTPiLUJdHduGwb5g",
+ "ts": "2026-10-17T13:19:22+00:00"
+}

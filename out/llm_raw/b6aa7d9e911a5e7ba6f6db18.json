@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended_roi -0.05 and peers fwd_roi_1_3d -0.106 lean negative, and trend_last_day_vs_prior is declining. But last_3d shows 2 profit days and 1 loss day, with a near-break-even 3-day ROI of -0.032, so this is not a consistent matured loss. Budget.current 1.27 conflicts with spend of 9.4 to 27.2 per day and the flag spend_exceeds_1.25x_budget, and the buyer cut 19.05 in 48h. The budget figure cannot be trusted, so a human should settle it.\",\"key_evidence\":[\"blended_roi -0.05 with blend_weight_own 0.76\",\"last_3d roi -0.032, profit_days 2, loss_days 1\",\"budget.current 1.27 vs matured spend up to 27.22 and flag spend_exceeds_1.25x_budget\",\"buyer net_budget_change_48h -19.05, ui_adjust_budget 24.5h ago\"],\"uncertainty\":[\"Whether budget.current 1.27 is stale or misrecorded, since spend far exceeds it\",\"Whether the recent 48h buyer budget cut of 19.05 was a deliberate decision on losses\",\"Whether the declining trend continues into the next matured day\",\"Peer evidence strength (n=8, fallback_level 0)\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1082,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000621,
+ "request_id": "req_011Cg7SVLLPtRK5GHBcS3RTg",
+ "ts": "2026-10-17T07:47:50+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.89,\"confidence\":0.4,\"reasoning\":\"Age_spend_days is 3, below the 4+ threshold for proven-winner scale-up. last_3d.roi is +0.068 (2 profit days, 1 loss day), but blended_roi is -0.109 and peers.fwd_roi_1_3d is -0.297 with n=7. Evidence is mixed and near break-even, and trend_last_day_vs_prior is improving. budget.current relies on budget_reconstructed metadata, so the figure is uncertain. No buyer action or lock.\",\"key_evidence\":[\"last_3d.roi = 0.068 (2 profit, 1 loss day)\",\"blended_roi = -0.109 with blend_weight_own 0.51\",\"peers.fwd_roi_1_3d = -0.297 (n=7)\",\"age_spend_days = 3; trend_last_day_vs_prior = improving\"],\"uncertainty\":[\"Whether D-1 improvement (ROI 0.269) persists\",\"Peer forward ROI is negative and may dominate next days\",\"budget.current is reconstructed from metadata, not confirmed\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 529,
+  "output_tokens": 659,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000404,
+ "request_id": "req_011Cg9MA949EfFVqmraDePnx",
+ "ts": "2026-10-18T07:59:05+00:00"
+}

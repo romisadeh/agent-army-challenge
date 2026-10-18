@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner shape on ROI (last_3d 0.26, blended 0.296, 2 of 3 days profitable, yesterday +0.627), but a buyer doubled budget 6.35 to 12.7 only 14.1h ago with lock_24h true. Respecting the deliberate human action and letting the new budget level produce data is wiser than stacking another increase. Spend is also tiny, so evidence is thin.\",\"key_evidence\":[\"buyer.lock_24h=true; budget raised 6.35->12.7, 14.1h ago\",\"last_3d.roi=0.26 with 2 profit days, 1 loss day\",\"blended_roi=0.296; peers fwd_roi_1_3d=0.319 (n=22)\",\"last_3d spend only $13.32; flag duplicate_perf_rows_removed\"],\"uncertainty\":[\"Performance at the doubled budget is unknown\",\"Small spend makes ROI noisy\",\"Duplicate rows removed may affect the accuracy of the numbers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 382,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005461,
+ "request_id": "req_011Cg9MxnEobZN1vqkKKcjrp",
+ "ts": "2026-10-18T08:09:37+00:00"
+}

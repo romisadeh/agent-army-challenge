@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is -0.075 with 3-day ROI -0.054, so the adset is roughly break-even to slightly negative. Two of three days were profitable and yesterday's loss was on small spend ($4.55). Budget is only $3.56 after a buyer cut 24.5h ago. The evidence is too thin to justify scaling up, pausing or cutting further.\",\"key_evidence\":[\"blended_roi -0.075\",\"last_3d roi -0.054 (2 profit days, 1 loss day, spend $20.97)\",\"d-1 roi -0.547 on spend $4.55\",\"buyer cut budget 5.08 to 3.56 24.5h ago\"],\"uncertainty\":[\"Spend exceeded 1.25x budget, so the budget level may not reflect true delivery\",\"Peer forward ROI is -0.097 (n=9), a mild negative signal\",\"Only 5 days of history; yesterday's decline could be the start of a trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 357,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005176,
+ "request_id": "req_011Cg7SreT9YhSDU26NSFPhf",
+ "ts": "2026-10-17T07:52:37+00:00"
+}

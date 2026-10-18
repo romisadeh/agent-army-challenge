@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured blended ROI is modestly positive (0.108) and last 3 days ROI is 0.109 with 2 profit days and 1 loss day, but the last matured day is -0.01 and the trend is declining. Spend exceeded budget (flag), and a human cut budget from 6.32 to 4.43 about 24h ago with no lock. Evidence is mixed and thin for scaling, and the buyer's recent down-move argues against acting now. Keep.\",\"key_evidence\":[\"blended_roi=0.108\",\"last_3d.roi=0.109 with profit_days=2, loss_days=1\",\"matured_days D-1 roi=-0.01, trend_last_day_vs_prior=declining\",\"buyer.last_human_action direction=down 6.32->4.43, hours_ago=24.5\"],\"uncertainty\":[\"Whether the declining last-day trend continues or was noise\",\"Peer forward ROI (0.107, n=27) is only weakly supportive\",\"Why the buyer cut budget and whether the spend overrun flag affects true cost\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 641,
+  "output_tokens": 644,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000405,
+ "request_id": "req_011Cg7UjE21kaXjqU6qWCsWT",
+ "ts": "2026-10-17T08:17:10+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":12.56,\"confidence\":0.6,\"reasoning\":\"Proven winner: age 10 spend days, last_3d.roi 0.351 with 3 profit days, and blended_roi 0.227 (w=0.64). The buyer's down-adjust was 93.8h ago, outside the 48h window, with lock_24h false and net_budget_change_48h 0.0, so it does not block scaling. Recommend +15% from 10.92.\",\"key_evidence\":[\"last_3d.roi = 0.351, profit_days = 3, loss_days = 0\",\"blended_roi = 0.227, blend_weight_own = 0.64\",\"buyer.last_human_action hours_ago = 93.8, lock_24h = false\",\"peers.fwd_roi_1_3d = 0.003, n = 38\"],\"uncertainty\":[\"Peer forward ROI is near zero (0.003), suggesting the edge may fade after scaling\",\"Spend (~11.8-13.0/day) runs above the 10.92 budget, which is unexplained by the card\",\"Only 5 matured days, and the trend is flat\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 824,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000496,
+ "request_id": "req_011Cg9MRKveox1GUdJEjb7pa",
+ "ts": "2026-10-18T08:02:32+00:00"
+}

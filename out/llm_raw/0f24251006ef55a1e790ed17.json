@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Budget is already tiny ($1.27) after a buyer adjustment 0.4h ago with a 24h lock, and net budget change over 48h is -1.46. Last 3d ROI is -0.311 and blended ROI is -0.128, but spend is minimal and yesterday was roughly break-even (+0.036). Not a proven winner, and the lock argues against overriding a deliberate human action. Keep.\",\"key_evidence\":[\"buyer.lock_24h=true, last action 0.4h ago\",\"budget.current=1.27, net_budget_change_48h=-1.46\",\"last_3d.roi=-0.311, blended_roi=-0.128\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer lowered the budget so sharply\",\"Whether spend overrun distorts recent ROI\",\"Peer forward ROI is near break-even (-0.015)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 349,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005211,
+ "request_id": "req_011Cg9M4PCmi9z9NN8ydmYkX",
+ "ts": "2026-10-18T07:57:46+00:00"
+}

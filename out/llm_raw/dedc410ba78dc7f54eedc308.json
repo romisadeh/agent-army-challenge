@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner profile: age 7, 2 of last 3 days profitable, last_3d ROI 0.273, blended 0.183. But a buyer raised budget 6.35->12.7 21.2h ago with lock_24h active, and rule R02 cut budget to 10.16 this morning on immature data. Overriding a recent deliberate buyer action is discouraged, and the lock is still active. Hold at the current budget; revisit after the lock expires.\",\"key_evidence\":[\"buyer.lock_24h=true, human raised budget 21.2h ago\",\"last_3d.roi=0.273 (2 profit days, 1 loss)\",\"blended_roi=0.183\",\"rules: R02 cut at 06:00 on roi_seen -0.21 (immature)\"],\"uncertainty\":[\"Whether the buyer would want the R02 cut reversed toward 12.7\",\"Yesterday's spend of 9.87 followed the budget raise, so only one day reflects the higher budget\",\"Small absolute spend makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 385,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005677,
+ "request_id": "req_011Cg9Mhp2o9PoCDc1rieR6e",
+ "ts": "2026-10-18T08:06:15+00:00"
+}

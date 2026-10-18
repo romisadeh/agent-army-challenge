@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is 0.392 and blended_roi 0.365, with 2 profit days of 3, so this meets the proven-winner profile and would otherwise scale up 10-20%. Escalating because status_at_window is off_by_rule_today after R01 killed it at 02:30, and the budget was cut yesterday by R02 after a human raised it 64.9h ago. Spend (about 58-72/day) far exceeds budget.current 10.16, which the spend_exceeds_1.25x_budget flag confirms.\",\"key_evidence\":[\"last_3d.roi = 0.392, blended_roi = 0.365\",\"status_at_window = off_by_rule_today\",\"data_quality_flags includes spend_exceeds_1.25x_budget\",\"buyer.last_human_action: up 7.62 to 12.7, 64.9h ago\"],\"uncertainty\":[\"Whether the budget field or the spend figures are wrong, which changes the sizing of any scale-up\",\"Whether the R01 kill and R02 cuts reflect real losses or immature morning data\",\"Whether the adset should be reactivated at all after today's kill\",\"Peer forward ROI of 0.09 is modest\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 839,
+  "output_tokens": 995,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000603,
+ "request_id": "req_011Cg9MfJD7RcdLtK7SMQchg",
+ "ts": "2026-10-18T08:05:42+00:00"
+}

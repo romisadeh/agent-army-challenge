@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Mixed evidence: last_3d.roi is -0.054 and blended_roi -0.075, with peers at -0.097, so it is not a proven winner. Yesterday's loss (d-1 roi -0.547) follows two profitable days, and trend_last_day_vs_prior is declining. A buyer already cut budget 5.08 to 3.56 in the last 24.5h, and the spend_exceeds_1.25x_budget flag makes the numbers less reliable. One bad day is noise, so I hold rather than cut again.\",\"key_evidence\":[\"last_3d.roi = -0.054 (2 profit days, 1 loss day)\",\"blended_roi = -0.075, peers.fwd_roi_1_3d = -0.097 (n=9)\",\"buyer.last_human_action: down 5.08->3.56, 24.5h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the d-1 loss (-0.547 on spend 4.55) persists or was a one-day spike\",\"Effect of the recent buyer cut on the next 1-3 days, not yet visible in matured data\",\"Reliability of spend figures given the budget-overspend flag\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 917,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000541,
+ "request_id": "req_011Cg7t9SGZTAZ5m2npseEXZ",
+ "ts": "2026-10-17T13:24:16+00:00"
+}

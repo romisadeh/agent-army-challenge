@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer cut budget 6.35 to 3.81 about 17h ago and the 24h lock is active. Matured 3-day ROI is -0.181 with 2 loss days, and the trend is declining. Blended ROI is +0.132, but it leans on peers (fwd 0.39, n=23, fallback band) at w=0.45. Matured evidence is mixed and a recent deliberate buyer decision conflicts with the blended read, so a human should settle it.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget down 6.35->3.81, 17.2h ago, lock_24h true\",\"last_3d.roi -0.181, loss_days 2, profit_days 1\",\"blended_roi 0.132 vs own 3d ROI -0.181 (peers fwd 0.39, fallback_level 1)\",\"trend_last_day_vs_prior: declining; matured d-1 roi -0.678\"],\"uncertainty\":[\"Whether the peer forward ROI (fallback band, n=23) applies to this adset\",\"Why spend (6.43 on d-1) exceeds 1.25x current budget; likely the pre-cut 6.35 budget carried into yesterday\",\"Whether the buyer cut was driven by information not on the card\",\"Whether d-3 zero revenue reflects a tracking gap or real losses\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 1187,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000675,
+ "request_id": "req_011Cg7SUcv2Pxc526HJKaLEN",
+ "ts": "2026-10-17T07:47:40+00:00"
+}

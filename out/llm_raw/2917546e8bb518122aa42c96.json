@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny budget ($2.54) after a buyer cut 17.2h ago, with a 24h lock active. Last_3d ROI is -0.229 and blended ROI is -0.119, but spend is only $9.98 and yesterday's -0.631 on $5.03 follows a +0.285 day. Not a proven winner, and the losses are not yet persistent enough to pause. Overriding the buyer lock isn't warranted, so keep.\",\"key_evidence\":[\"buyer lock_24h=true, budget cut 3.81->2.54 17.2h ago\",\"last_3d roi -0.229 on spend $9.98 (2 profit days, 1 loss day)\",\"blended_roi -0.119, peers fwd_roi -0.064 (n=14)\",\"flag spend_exceeds_1.25x_budget; yesterday spend $5.03 vs budget ~3.81\"],\"uncertainty\":[\"Whether yesterday's overspend drove the -0.631 loss or it is just noise\",\"Small sample: only 4 spend days and under $10 in the last 3 days\",\"Whether the buyer intends to keep trimming this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 417,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005821,
+ "request_id": "req_011Cg9MTPN5rSQz6rNoXGtqp",
+ "ts": "2026-10-18T08:02:59+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"The adset is only 2 spend days old with $9.22 total spend. Days are mixed (+0.617 and -0.193), so it is not a proven winner. Blended ROI is -0.041, with peers at -0.133 (n=13) pulling it down. The budget is a tiny $3.81 and was reconstructed, and spend exceeded 1.25x budget, so the numbers are unreliable. There is no basis for a pause or a scale; hold.\",\"key_evidence\":[\"age_spend_days=2\",\"last_3d roi=0.16 on spend $9.22 (1 profit day, 1 loss day)\",\"blended_roi=-0.041; peers fwd_roi_1_3d=-0.133 (n=13)\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True budget is uncertain because it was reconstructed from metadata\",\"Only two matured days at very low spend, so the signal is noisy\",\"Whether the decline from +0.617 to -0.193 continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 516,
+  "output_tokens": 384,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005307,
+ "request_id": "req_011Cg7tvHrZA8QBgqiXihbN5",
+ "ts": "2026-10-17T13:34:23+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Mixed, near break-even evidence: last_3d.roi is -0.056 with 2 loss days and 1 profit day, and blended_roi is -0.045. The peers forward ROI is -0.025 (n=11). The adset is not a proven winner, since last_3d.roi is below +0.10, and there is no persistent matured loss trend (trend_last_day_vs_prior flat, D-1 roi +0.072). Budget data is unreliable (budget_reconstructed, spend_exceeds_1.25x_budget), so a budget change is not grounded. No buyer action or lock.\",\"key_evidence\":[\"last_3d.roi = -0.056 (2 loss days, 1 profit day)\",\"blended_roi = -0.045 with blend_weight_own 0.64\",\"peers.fwd_roi_1_3d = -0.025, n=11\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current of 6.35 is accurate, given spend of 2.48 to 29.08 per day\",\"Whether D-1 profit (+0.072) signals a turn or is noise\",\"Peer forward ROI is only mildly negative with a moderate sample\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 1053,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000609,
+ "request_id": "req_011Cg9MZZFpUj7DRidRgfKEu",
+ "ts": "2026-10-18T08:04:24+00:00"
+}

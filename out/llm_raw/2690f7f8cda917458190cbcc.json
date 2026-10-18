@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.65,\"reasoning\":\"Three straight matured loss days (last_3d ROI -0.168, blended -0.074), but spend is tiny ($11.54 over 3d). A buyer cut the budget 14.3h ago (6.35 to 3.81) and the 24h lock is active. Peers are near break-even (-0.019, n=12). Losses are small in absolute terms, so there is no case to override the buyer or pause. Keep the budget and let the buyer's reduction play out.\",\"key_evidence\":[\"buyer.lock_24h=true; budget cut 6.35->3.81 14.3h ago\",\"last_3d: 3 loss days, ROI -0.168 on $11.54 spend\",\"blended_roi=-0.074; peers fwd_roi_1_3d=-0.019 (n=12)\",\"flag: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether spend overshoot continues after the budget cut\",\"Whether the decline continues once revenue fully matures\",\"Buyer's intent behind the cut is not documented (no note)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 387,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005542,
+ "request_id": "req_011Cg7UGEotvksf9N5vimktV",
+ "ts": "2026-10-17T08:11:03+00:00"
+}

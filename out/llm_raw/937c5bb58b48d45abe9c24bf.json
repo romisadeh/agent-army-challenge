@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.6,\"reasoning\":\"Adset is off_by_rule_today after R05 kill at 02:00 (roi_seen -1.0 on 0.25 spend). Matured D-1 is a loss: last_3d.roi -0.459 on spend 2.35, 1 loss day, 0 profit days. blended_roi -0.28 (blend_weight_own 0.11) and peers fwd_roi_1_3d -0.259 agree. Age is only 1 spend day, so evidence is thin. buyer.lock_24h is true after a deliberate budget raise 15.1h ago. No change; leave budget at 3.81 and do not reactivate.\",\"key_evidence\":[\"last_3d.roi = -0.459 (1 loss day, 0 profit days)\",\"blended_roi = -0.28, peers.fwd_roi_1_3d = -0.259\",\"status_at_window = off_by_rule_today; rules R05 kill at 02:00\",\"buyer.lock_24h = true, last up-move 1.27 to 3.81 15.1h ago\"],\"uncertainty\":[\"Only one matured day of data at age 1 spend day\",\"Why the buyer raised budget 15h ago; the human may have information the card lacks\",\"Whether the R05 kill on partial morning data was a false signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 952,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000553,
+ "request_id": "req_011Cg9LxSZm5wJXxqXgqy3Sp",
+ "ts": "2026-10-18T07:56:28+00:00"
+}

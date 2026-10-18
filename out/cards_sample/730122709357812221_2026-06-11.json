@@ -1,0 +1,73 @@
+{
+ "adset_id": "730122709357812221",
+ "account": "ACC-01",
+ "decision_date": "2026-06-11",
+ "window": "10:00 local (UTC+3); all performance below is matured (through D-1)",
+ "age_spend_days": 1,
+ "status_at_window": "active",
+ "budget": {
+  "current": 3.81,
+  "source": "buyer_log_before_window",
+  "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+  "budget_type": "ABO"
+ },
+ "matured_days": [
+  {
+   "d": -2,
+   "spend": 27.4,
+   "revenue": 44.39,
+   "roi": 0.62
+  },
+  {
+   "d": -1,
+   "spend": 41.49,
+   "revenue": 21.58,
+   "roi": -0.48
+  }
+ ],
+ "last_3d": {
+  "spend": 68.89,
+  "revenue": 65.97,
+  "roi": -0.042,
+  "loss_days": 1,
+  "profit_days": 1
+ },
+ "trend_last_day_vs_prior": "declining",
+ "peers": {
+  "segment": "ACC-01 (fallback)",
+  "n": 17,
+  "fallback_level": 2,
+  "fwd_roi_1_3d": 0.148
+ },
+ "blended_roi": 0.0,
+ "blend_weight_own": 0.78,
+ "buyer": {
+  "last_human_action": {
+   "hours_ago": 19.9,
+   "event": "ui_update_budget",
+   "from": 1.27,
+   "to": 3.81,
+   "direction": "up",
+   "note": null
+  },
+  "net_budget_change_48h": 2.54,
+  "lock_24h": true,
+  "notes": [
+   {
+    "hours_ago": 47.8,
+    "text": "client brand test - keep live through the weekend regardless of ROI (account manager request)"
+   }
+  ]
+ },
+ "rules": {
+  "acted_yesterday": [],
+  "acted_today_before_window": []
+ },
+ "data_quality_flags": [
+  "small_or_coarse_peer_group",
+  "spend_exceeds_1.25x_budget",
+  "CRITICAL:performance_before_adset_creation",
+  "CRITICAL:spend_day_counter_zero_on_spend_day"
+ ],
+ "lessons": []
+}

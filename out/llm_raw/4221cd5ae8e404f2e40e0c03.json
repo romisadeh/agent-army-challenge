@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Passes the proven-winner screen: age 4 spend days, 2 of 3 matured days profitable, last_3d.roi 2.468 and blended_roi 0.839. Yesterday's d=-1 was a full loss (roi -1.0, zero revenue on 3.09 spend) and trend_last_day_vs_prior is declining, which the mandate names as a field arguing against scaling. The 64.7h-old buyer scale-up to 3.81 is not locked and net 48h change is 0, so no override concern. Hold one more day.\",\"key_evidence\":[\"last_3d.roi = 2.468 with 2 profit days and 1 loss day\",\"matured_days d=-1 roi = -1.0 (revenue 0.0 on spend 3.09)\",\"trend_last_day_vs_prior = declining\",\"blended_roi = 0.839, peers.n = 16 (fallback_level 0)\"],\"uncertainty\":[\"Whether the zero-revenue D-1 day is a one-off or the start of a loss trend\",\"Peer forward ROI of 0.105 is modest\",\"Spend (~3/day) runs below the 3.81 budget, so the budget may not be the constraint\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 1315,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000738,
+ "request_id": "req_011Cg7tcNsBBD4E3kBaUuFi7",
+ "ts": "2026-10-17T13:30:23+00:00"
+}

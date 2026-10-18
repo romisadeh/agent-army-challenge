@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset with a $3.56 budget. Last 3d ROI is -0.172 on only $12.47 spend, with one profit day and one loss day, so the evidence is mixed. Yesterday had only $0.48 spend, so its -1.0 ROI is noise. Blended ROI is +0.08, with peers at +0.238 (n=30). That is not a consistent loss, so no pause or cut. It is not consistently profitable either, so no scale-up.\",\"key_evidence\":[\"last_3d roi -0.172 on spend 12.47\",\"blended_roi 0.08 (own weight 0.38)\",\"peers fwd_roi_1_3d 0.238, n=30\",\"d-1 spend 0.48, roi -1.0\"],\"uncertainty\":[\"Why spend collapsed to $0.48 yesterday (delivery issue?)\",\"Spend exceeded 1.25x budget flag, so the data may be unreliable\",\"Buyer cut the budget 48h ago with no note\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 370,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005364,
+ "request_id": "req_011Cg7UUhS7HHNCSZJzBvZPM",
+ "ts": "2026-10-17T08:13:53+00:00"
+}

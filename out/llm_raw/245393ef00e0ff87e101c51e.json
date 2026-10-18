@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Own matured data is strongly profitable: last_3d.roi 0.57 with 3 of 3 profit days and improving trend, but spend is small (9.59) and blended_roi is -0.041 because peers are negative (fwd_roi -0.334, n=9). Age is 3 days, below the 4+ proven-winner threshold. A buyer cut budget from 12.7 to 7.62 23.1h ago and lock_24h is true, so a scale-up would override a recent deliberate human action. Escalate for a human to weigh the buyer's cut against the profitable history.\",\"key_evidence\":[\"last_3d.roi = 0.57, profit_days = 3, loss_days = 0\",\"blended_roi = -0.041, blend_weight_own = 0.32\",\"buyer.last_human_action: down, 12.7 to 7.62, hours_ago 23.1, lock_24h true\",\"age_spend_days = 3, peers.n = 9 (fwd_roi_1_3d -0.334)\"],\"uncertainty\":[\"Why the buyer cut the budget (possible unrecorded concern or intentional test)\",\"Whether the 3-day profit persists given small spend and weak peer history\",\"Whether the lock is enforced in code, which would block any budget change today\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 565,
+  "output_tokens": 977,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000566,
+ "request_id": "req_011Cg9N8sqS395BD42KAcHKr",
+ "ts": "2026-10-18T08:11:56+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"Matured data is profitable: 3-day ROI 0.346 with 2 profit days and 1 loss day, and blended ROI 0.176 is positive. But a human raised the budget 19h ago (2.67 to 6.35, +138%) and the 24h lock is active. Spend is tiny and the new budget is untested, so I won't stack another change. Hold and let the new budget show results.\",\"key_evidence\":[\"buyer.lock_24h = true, budget raised 2.67->6.35 19h ago\",\"last_3d ROI 0.346 on $11.65 spend (2 profit days, 1 loss)\",\"blended_roi 0.176, peers fwd ROI 0.077 (n=22)\",\"budget.current 6.35 vs yesterday's spend 4.11\"],\"uncertainty\":[\"How performance holds at the higher 6.35 budget, which has no matured data yet\",\"Small spend makes the ROI figures noisy\",\"Peer forward ROI is only modestly positive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 623,
+  "output_tokens": 367,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00529,
+ "request_id": "req_011Cg7Tyfw1o6ygT8L5owX3V",
+ "ts": "2026-10-17T08:07:19+00:00"
+}

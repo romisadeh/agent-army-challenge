@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Budget was cut by a human 24.5h ago from $7.62 to $1.27, which is now a very small budget. Matured data shows 2 profitable days of 3 with 3-day ROI +17.6%, but yesterday was roughly break-even (-1.7%) and the trend is declining. Blended ROI is only +7.7% and peers are about flat (+0.6%). Evidence is thin and a recent deliberate buyer cut argues against scaling up. Spend exceeding budget is a flag. Keep.\",\"key_evidence\":[\"last_3d ROI 0.176 (2 profit days, 1 loss day) on $14.33 spend\",\"blended_roi 0.077; peers fwd_roi_1_3d 0.006 (n=31)\",\"buyer cut budget 7.62 -> 1.27 24.5h ago\",\"d-1 ROI -0.017, trend declining\"],\"uncertainty\":[\"Why the buyer cut the budget so sharply\",\"Whether spend above 1.25x budget distorts yesterday's ROI\",\"Whether yesterday's break-even is noise or the start of a decline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 410,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0057,
+ "request_id": "req_011Cg7SPTKBARn6DE429Ufp2",
+ "ts": "2026-10-17T07:46:28+00:00"
+}

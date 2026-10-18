@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Only 2 spend days, so not a proven winner. Yesterday was clearly negative (matured roi -0.496) with a declining trend and last_3d.roi -0.295. But the buyer raised budget 3.81 to 6.32 38h ago, after an earlier note saying CPM spiked, cutting. blended_roi is only +0.025 at weight 0.34. The human signal conflicts with the numbers, so a person should settle it.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget up 3.81->6.32, 38.1h ago\",\"matured_days d=-1 roi -0.496, trend_last_day_vs_prior declining\",\"last_3d.roi -0.295 on spend 10.12\",\"blended_roi 0.025, blend_weight_own 0.34\"],\"uncertainty\":[\"Whether the loss on d=-1 persists or is one bad day after a profitable d=-2\",\"Why the buyer reversed the cut note with a scale-up\",\"Peer group is coarse (fallback_level 2, n=29, data_quality flag)\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 944,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00055,
+ "request_id": "req_011Cg9MriEo2vwc51RPin578",
+ "ts": "2026-10-18T08:08:17+00:00"
+}

@@ -1,0 +1,159 @@
+== Coverage (plan items 11, 16)
+  2026-06-10: 223 active adsets; auto_keep 131 (59% of adsets, 10.8% of 3-day spend); routes {'auto_keep': 131, 'llm_review': 91, 'escalate': 1}; day-1 adsets with no decision by design: 69 (12% of D's spend)
+  2026-06-11: 188 active adsets; auto_keep 109 (58% of adsets, 9.3% of 3-day spend); routes {'auto_keep': 109, 'llm_review': 78, 'escalate': 1}; day-1 adsets with no decision by design: 212 (20% of D's spend)
+  2026-06-12: 317 active adsets; auto_keep 255 (80% of adsets, 15.7% of 3-day spend); routes {'llm_review': 61, 'auto_keep': 255, 'escalate': 1}; day-1 adsets with no decision by design: 145 (12% of D's spend)
+  actions: {'keep': 698, 'scale_up': 15, 'pause': 6, 'scale_down': 3, 'escalate': 6}; requires_approval: 9; portfolio-trimmed: 0
+  shrink check: adsets left on keep/escalate carried 91% of D's spend among active adsets
+
+== Primary metric: counterfactual absolute profit and spend vs what actually happened (day D, rest of day)
+  agent            executable  : {"n_actions": 15, "low": {"spend": 13.17, "profit": 3.27}, "central": {"spend": 13.17, "profit": 4.59}, "high": {"spend": 13.17, "profit": 5.91}}
+  agent            if_approved : {"n_actions": 17, "low": {"spend": 13.73, "profit": 3.98}, "central": {"spend": 13.73, "profit": 5.38}, "high": {"spend": 13.73, "profit": 6.79}}
+  no-LLM ablation  executable  : {"n_actions": 20, "low": {"spend": 16.84, "profit": 1.1}, "central": {"spend": 16.84, "profit": 1.65}, "high": {"spend": 16.84, "profit": 2.2}}
+  no-LLM ablation  if_approved : {"n_actions": 104, "low": {"spend": 143.55, "profit": 10.13}, "central": {"spend": 143.55, "profit": 14.93}, "high": {"spend": 143.55, "profit": 19.73}}
+  (profit/spend deltas in $, by marginal-ROI scenario m = 0.5 / 0.75 / 1.0; pause uses the day's average ROI)
+
+== Direction accuracy on matured outcome (D+D1 where D+1 exists). Assumption: label band +-10% ROI (>= +10% up, <= -10% down, else neutral). The harmful rate is the safety number; accuracy alone rewards activity
+  agent, all decisions: graded 302 of 728: correct 46 (15%), harmful 4 (1%), neither 252 (83%)
+  agent, route llm_review: graded 173 of 230: correct 36 (21%), harmful 4 (2%), neither 133 (77%)
+  agent, route deterministic: no gradable decisions
+  agent, route auto_keep: graded 129 of 495: correct 10 (8%), harmful 0 (0%), neither 119 (92%)
+  agent, action scale_up: graded 14 of 15: correct 8 (57%), harmful 3 (21%), neither 3 (21%)
+  agent, action scale_down: no gradable decisions
+  agent, action pause: graded 2 of 6: correct 1 (50%), harmful 1 (50%), neither 0 (0%)
+  agent, action keep: graded 286 of 698: correct 37 (13%), harmful 0 (0%), neither 249 (87%)
+  no-LLM ablation, llm_review cards: graded 156 of 230: correct 52 (33%), harmful 28 (18%), neither 76 (49%)
+  agent,           llm_review cards: graded 173 of 230: correct 36 (21%), harmful 4 (2%), neither 133 (77%)
+
+== Escalations graded twice (plan item 10): n = 6
+  as the proposed action: graded 2 of 6: correct 0 (0%), harmful 0 (0%), neither 2 (100%)
+  as the default keep:    graded 5 of 6: correct 0 (0%), harmful 0 (0%), neither 5 (100%)
+
+== Keep decomposition (Step 5a): 698 keeps, carrying 81% of D's spend
+  auto_keep (materiality gate, no LLM)                 n 495  D spend $ 365.59 (14%)  $ grade: graded 217 of 495: right in $ 209 (96%), total regret $22.15, profit effect vs keep $+0.00
+  LLM said keep                                        n 203  D spend $1803.74 (68%)  $ grade: graded 171 of 203: right in $ 148 (87%), total regret $47.98, profit effect vs keep $+0.00
+  of 'LLM said keep': Haiku alone 77, with Sonnet 126; median data_sufficiency 0.68, signal_agreement 0.80
+  auto_keep (materiality gate, no LLM): right in $, spend-weighted 91%; restricted to D spend >= $5: graded 11 of 11: right in $ 8 (73%), total regret $4.32, profit effect vs keep $+0.00
+  LLM said keep: right in $, spend-weighted 55%; restricted to D spend >= $5: graded 90 of 90: right in $ 67 (74%), total regret $40.00, profit effect vs keep $+0.00
+  (not keeps, for completeness: agreement-gate escalations 1; thin-evidence +10% caps 0)
+
+== $ grade (ADDED AFTER THE FIRST FULL RUN, Step 5a: ARCH §7.2 grades in $; the stub had used the direction band)
+   regret = best of {keep, +20%, -20%, the action} minus the action's profit effect, day D, m = 0.75; right in $ = regret <= $0.50
+  agent, all decisions:      graded 405 of 728: right in $ 370 (91%), total regret $73.91, profit effect vs keep $+5.38
+  agent, llm_review cards:   graded 188 of 230: right in $ 161 (86%), total regret $51.76, profit effect vs keep $+5.38
+  agent, LLM's own action:   graded 188 of 230: right in $ 161 (86%), total regret $51.76, profit effect vs keep $+5.38
+  no-LLM, llm_review cards:  graded 169 of 230: right in $ 150 (89%), total regret $35.99, profit effect vs keep $+12.57
+  agent, action scale_up  :  graded 14 of 15: right in $ 11 (79%), total regret $2.81, profit effect vs keep $+4.21
+  agent, action scale_down:  no gradable decisions
+  agent, action pause     :  graded 3 of 6: right in $ 2 (67%), total regret $0.97, profit effect vs keep $+1.17
+  agent, action keep      :  graded 388 of 698: right in $ 357 (92%), total regret $70.13, profit effect vs keep $+0.00
+
+== Calibration (plan item 4)
+ raw LLM confidence vs the LLM's own action (direction band):
+  Brier 0.261 on n = 173 (0 = perfect; always saying 0.5 scores 0.25)
+    confidence 0.0-0.4: n   3, mean stated 0.35, actually right 0%
+    confidence 0.4-0.6: n 127, mean stated 0.49, actually right 20%
+    confidence 0.6-0.8: n  43, mean stated 0.62, actually right 23%
+ capped confidence vs the final action (LLM cards, direction band):
+  Brier 0.237 on n = 173 (0 = perfect; always saying 0.5 scores 0.25)
+    confidence 0.0-0.4: n  21, mean stated 0.25, actually right 0%
+    confidence 0.4-0.6: n 115, mean stated 0.48, actually right 23%
+    confidence 0.6-0.8: n  37, mean stated 0.62, actually right 24%
+ CHANGE DECISIONS ONLY (where a direction grade means something):
+  raw, LLM proposed a change:
+  Brier 0.265 on n = 16 (0 = perfect; always saying 0.5 scores 0.25)
+    confidence 0.4-0.6: n   9, mean stated 0.53, actually right 67%
+    confidence 0.6-0.8: n   7, mean stated 0.60, actually right 43%
+  capped, final action is a change:
+  Brier 0.265 on n = 16 (0 = perfect; always saying 0.5 scores 0.25)
+    confidence 0.4-0.6: n   9, mean stated 0.53, actually right 67%
+    confidence 0.6-0.8: n   7, mean stated 0.60, actually right 43%
+
+== Prompt revision decisions_prompt_v3: v2 (the run) vs v3. Wording chosen on 06-10 only (development); 06-11 and 06-12 held out
+  development 06-10        v2 (run): actions {'scale_up': 5, 'keep': 79, 'pause': 5, 'scale_down': 2}; changes 12
+                               $: graded 73 of 91: right in $ 63 (86%), total regret $16.60, profit effect vs keep $+1.51
+                               direction: graded 65 of 91: correct 17 (26%), harmful 2 (3%), neither 46 (71%)
+                               executable $ vs actual: {"spend": -1.07, "profit": 1.51}
+  development 06-10        v3: actions {'scale_up': 8, 'keep': 74, 'pause': 5, 'escalate': 1, 'scale_down': 3}; changes 16
+                               $: graded 72 of 91: right in $ 63 (88%), total regret $15.94, profit effect vs keep $+0.85
+                               direction: graded 64 of 91: correct 20 (31%), harmful 2 (3%), neither 42 (66%)
+                               executable $ vs actual: {"spend": 3.25, "profit": 0.81}
+  development 06-10        no-LLM rule: actions {'scale_up': 24, 'keep': 44, 'escalate': 12, 'pause': 2, 'scale_down': 9}; changes 35
+                               $: graded 61 of 91: right in $ 54 (89%), total regret $12.49, profit effect vs keep $+1.90
+                               direction: graded 54 of 91: correct 22 (41%), harmful 8 (15%), neither 24 (44%)
+                               executable $ vs actual: {"spend": 4.96, "profit": 1.09}
+  HELD-OUT 06-11 + 06-12   v2 (run): actions {'keep': 124, 'pause': 1, 'scale_up': 10, 'escalate': 3, 'scale_down': 1}; changes 12
+                               $: graded 115 of 139: right in $ 98 (85%), total regret $35.17, profit effect vs keep $+3.86
+                               direction: graded 108 of 139: correct 19 (18%), harmful 2 (2%), neither 87 (81%)
+                               executable $ vs actual: {"spend": 14.24, "profit": 3.08}
+  HELD-OUT 06-11 + 06-12   v3: actions {'keep': 111, 'pause': 1, 'scale_up': 22, 'escalate': 2, 'scale_down': 3}; changes 26
+                               $: graded 115 of 139: right in $ 99 (86%), total regret $32.80, profit effect vs keep $+6.23
+                               direction: graded 108 of 139: correct 25 (23%), harmful 6 (6%), neither 77 (71%)
+                               executable $ vs actual: {"spend": 17.38, "profit": 3.75}
+  HELD-OUT 06-11 + 06-12   no-LLM rule: actions {'scale_up': 54, 'pause': 1, 'keep': 70, 'escalate': 9, 'scale_down': 5}; changes 60
+                               $: graded 108 of 139: right in $ 96 (89%), total regret $23.50, profit effect vs keep $+10.66
+                               direction: graded 102 of 139: correct 30 (29%), harmful 20 (20%), neither 52 (51%)
+                               executable $ vs actual: {"spend": 11.88, "profit": 0.56}
+
+== Prompt revision decisions_prompt_v3b_dev: v2 (the run) vs v3. Wording chosen on 06-10 only (development); 06-11 and 06-12 held out
+  development 06-10        v2 (run): actions {'scale_up': 5, 'keep': 79, 'pause': 5, 'scale_down': 2}; changes 12
+                               $: graded 73 of 91: right in $ 63 (86%), total regret $16.60, profit effect vs keep $+1.51
+                               direction: graded 65 of 91: correct 17 (26%), harmful 2 (3%), neither 46 (71%)
+                               executable $ vs actual: {"spend": -1.07, "profit": 1.51}
+  development 06-10        v3b_dev: actions {'scale_up': 14, 'keep': 63, 'pause': 4, 'scale_down': 10}; changes 28
+                               $: graded 73 of 91: right in $ 62 (85%), total regret $17.86, profit effect vs keep $-1.00
+                               direction: graded 65 of 91: correct 19 (29%), harmful 4 (6%), neither 42 (65%)
+                               executable $ vs actual: {"spend": 2.95, "profit": 1.12}
+  development 06-10        no-LLM rule: actions {'scale_up': 24, 'keep': 44, 'escalate': 12, 'pause': 2, 'scale_down': 9}; changes 35
+                               $: graded 61 of 91: right in $ 54 (89%), total regret $12.49, profit effect vs keep $+1.90
+                               direction: graded 54 of 91: correct 22 (41%), harmful 8 (15%), neither 24 (44%)
+                               executable $ vs actual: {"spend": 4.96, "profit": 1.09}
+  HELD-OUT 06-11 + 06-12   v2 (run): actions {'keep': 124, 'pause': 1, 'scale_up': 10, 'escalate': 3, 'scale_down': 1}; changes 12
+                               $: graded 115 of 139: right in $ 98 (85%), total regret $35.17, profit effect vs keep $+3.86
+                               direction: graded 108 of 139: correct 19 (18%), harmful 2 (2%), neither 87 (81%)
+                               executable $ vs actual: {"spend": 14.24, "profit": 3.08}
+  HELD-OUT 06-11 + 06-12   no-LLM rule: actions {'scale_up': 54, 'pause': 1, 'keep': 70, 'escalate': 9, 'scale_down': 5}; changes 60
+                               $: graded 108 of 139: right in $ 96 (89%), total regret $23.50, profit effect vs keep $+10.66
+                               direction: graded 102 of 139: correct 30 (29%), harmful 20 (20%), neither 52 (51%)
+                               executable $ vs actual: {"spend": 11.88, "profit": 0.56}
+
+== Prompt revision decisions_prompt_v3dev: v2 (the run) vs v3. Wording chosen on 06-10 only (development); 06-11 and 06-12 held out
+  development 06-10        v2 (run): actions {'scale_up': 5, 'keep': 79, 'pause': 5, 'scale_down': 2}; changes 12
+                               $: graded 73 of 91: right in $ 63 (86%), total regret $16.60, profit effect vs keep $+1.51
+                               direction: graded 65 of 91: correct 17 (26%), harmful 2 (3%), neither 46 (71%)
+                               executable $ vs actual: {"spend": -1.07, "profit": 1.51}
+  development 06-10        v3dev: actions {'scale_up': 8, 'keep': 74, 'pause': 5, 'escalate': 1, 'scale_down': 3}; changes 16
+                               $: graded 72 of 91: right in $ 63 (88%), total regret $15.94, profit effect vs keep $+0.85
+                               direction: graded 64 of 91: correct 20 (31%), harmful 2 (3%), neither 42 (66%)
+                               executable $ vs actual: {"spend": 3.25, "profit": 0.81}
+  development 06-10        no-LLM rule: actions {'scale_up': 24, 'keep': 44, 'escalate': 12, 'pause': 2, 'scale_down': 9}; changes 35
+                               $: graded 61 of 91: right in $ 54 (89%), total regret $12.49, profit effect vs keep $+1.90
+                               direction: graded 54 of 91: correct 22 (41%), harmful 8 (15%), neither 24 (44%)
+                               executable $ vs actual: {"spend": 4.96, "profit": 1.09}
+  HELD-OUT 06-11 + 06-12   v2 (run): actions {'keep': 124, 'pause': 1, 'scale_up': 10, 'escalate': 3, 'scale_down': 1}; changes 12
+                               $: graded 115 of 139: right in $ 98 (85%), total regret $35.17, profit effect vs keep $+3.86
+                               direction: graded 108 of 139: correct 19 (18%), harmful 2 (2%), neither 87 (81%)
+                               executable $ vs actual: {"spend": 14.24, "profit": 3.08}
+  HELD-OUT 06-11 + 06-12   no-LLM rule: actions {'scale_up': 54, 'pause': 1, 'keep': 70, 'escalate': 9, 'scale_down': 5}; changes 60
+                               $: graded 108 of 139: right in $ 96 (89%), total regret $23.50, profit effect vs keep $+10.66
+                               direction: graded 102 of 139: correct 30 (29%), harmful 20 (20%), neither 52 (51%)
+                               executable $ vs actual: {"spend": 11.88, "profit": 0.56}
+
+== Sensitivity check decisions_sens_ds025 (DS_MIN 0.25, SA_MIN 0.5; replayed, $0; not a headline)
+  actions: {'keep': 698, 'scale_up': 15, 'pause': 6, 'scale_down': 3, 'escalate': 6}
+  llm_review cards, direction: graded 173 of 230: correct 36 (21%), harmful 4 (2%), neither 133 (77%)
+  llm_review cards, $ grade:   graded 188 of 230: right in $ 161 (86%), total regret $51.76, profit effect vs keep $+5.38
+  executable $ vs actual:      {"n_actions": 15, "low": {"spend": 13.17, "profit": 3.27}, "central": {"spend": 13.17, "profit": 4.59}, "high": {"spend": 13.17, "profit": 5.91}}
+
+== Feedback loop run on this week's ledger (out/ledger.jsonl -> out/calibration.json, out/lessons.json)
+  age 1-3 / down: {'n': 1, 'mean_confidence': 0.6, 'hit_rate': 1.0, 'overconfidence': -0.4, 'sa_min_next_week': 0.5, 'status': 'too few cases'}
+  age 1-3 / neutral: {'n': 30, 'mean_confidence': 0.471, 'hit_rate': 1.0, 'overconfidence': -0.529, 'sa_min_next_week': 0.35, 'status': 'applied'}
+  age 1-3 / up: {'n': 2, 'mean_confidence': 0.575, 'hit_rate': 1.0, 'overconfidence': -0.425, 'sa_min_next_week': 0.5, 'status': 'too few cases'}
+  age 4+ / down: {'n': 2, 'mean_confidence': 0.65, 'hit_rate': 0.5, 'overconfidence': 0.15, 'sa_min_next_week': 0.5, 'status': 'too few cases'}
+  age 4+ / neutral: {'n': 141, 'mean_confidence': 0.522, 'hit_rate': 0.837, 'overconfidence': -0.315, 'sa_min_next_week': 0.35, 'status': 'applied'}
+  age 4+ / up: {'n': 12, 'mean_confidence': 0.55, 'hit_rate': 0.75, 'overconfidence': -0.2, 'sa_min_next_week': 0.4, 'status': 'applied'}
+  proposed lessons (need human activation): 5
+    L-001 [age 4+ / neutral] keep with positive 3-day history, day matured positive: cost $20.92 in regret over 17 cases (week of 2026-06-10)
+    L-002 [age 4+ / neutral] keep with positive 3-day history, day matured negative: cost $3.74 in regret over 4 cases (week of 2026-06-10)
+    L-003 [age 1-3 / neutral] keep with positive 3-day history, day matured positive: cost $3.40 in regret over 3 cases (week of 2026-06-10)
+    L-004 [age 4+ / neutral] keep with negative 3-day history, day matured positive: cost $2.48 in regret over 3 cases (week of 2026-06-10)
+    L-005 [age 1-3 / neutral] keep with negative 3-day history, day matured positive: cost $1.86 in regret over 3 cases (week of 2026-06-10)

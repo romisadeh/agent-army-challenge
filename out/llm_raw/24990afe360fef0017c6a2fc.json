@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":60.0,\"confidence\":0.58,\"reasoning\":\"Meets the proven-winner criteria: age 10 spend days, 2 of last 3 matured days profitable (d-2 +0.647, d-1 +0.967), last_3d ROI +0.219 and blended ROI +0.138, both above +0.10. Trend is improving, with no buyer lock or notes. Spend is far below budget, so I'm taking a modest ~12% step. The reconstructed-budget flag and thin spend argue for restraint.\",\"key_evidence\":[\"last_3d.roi=0.219 (2 profit days, 1 loss)\",\"blended_roi=0.138\",\"d-1 roi=0.967, trend improving\",\"budget.current=53.34 vs ~8-22 daily spend\"],\"uncertainty\":[\"Budget reconstructed from metadata (data_quality_flag), so the true current budget may differ\",\"Small daily spend (~$22 over 3d) makes ROI noisy\",\"Peer forward ROI is only +0.047\",\"d-3 loss of -0.57 shows volatility\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 383,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005377,
+ "request_id": "req_011Cg7sqpX1kLpZaus4KLNqz",
+ "ts": "2026-10-17T13:20:16+00:00"
+}

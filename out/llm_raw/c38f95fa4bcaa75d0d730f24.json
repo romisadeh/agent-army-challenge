@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner criteria (age 7, 2 of 3 days profitable, last_3d ROI +0.442, blended +0.402), but a buyer raised budget 16.9h ago (7.62 to 12.7, +67%) with a 24h lock active. Overriding a deliberate recent human action isn't warranted. Spend also exceeds 1.25x budget, so the data is unreliable. Hold and let the new budget play out.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 7.62->12.7 16.9h ago\",\"last_3d.roi=0.442, blended_roi=0.402\",\"flag spend_exceeds_1.25x_budget\",\"matured D-1 ROI 0.841 vs D-2 -0.258 (volatile)\"],\"uncertainty\":[\"Whether spend overshoot reflects budget changes or delivery anomalies\",\"ROI volatility day to day (-0.26 to +0.84)\",\"Impact of the buyer's budget increase is not yet observable\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005449,
+ "request_id": "req_011Cg7sWwuVXsfyagyAtWGJT",
+ "ts": "2026-10-17T13:16:00+00:00"
+}

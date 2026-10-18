@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets the proven-winner profile (age 9, 2 of 3 days profitable, last_3d ROI 0.537, blended 0.292), but a buyer raised budget 8.2 to 14.55 only 18.4h ago and the 24h lock is active. Yesterday ROI was only 0.103 on higher spend, and the trend is declining. Scaling again would override a recent deliberate buyer action, so hold.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 8.2->14.55 18.4h ago\",\"last_3d.roi=0.537 (2 profit days, 1 loss)\",\"blended_roi=0.292, peers fwd_roi 0.029\",\"trend_last_day_vs_prior=declining, d-1 roi 0.103\"],\"uncertainty\":[\"How the adset performs at the new, higher budget\",\"Whether the buyer will scale further after the lock expires\",\"Small spend base ($21 over 3d) makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 368,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005417,
+ "request_id": "req_011Cg9N8cXSQaM3p57H3244a",
+ "ts": "2026-10-18T08:11:51+00:00"
+}

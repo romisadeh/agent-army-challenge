@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Blended ROI is only modestly positive (0.069) and the last 3 matured days are mixed (2 profit, 1 loss, last_3d ROI 0.063). Peer forward ROI (0.078, n=20) is similar, so there is no clear edge to scale. The buyer raised budget from 8.0 to 13.6 about 41h ago with no lock, so the new level needs more matured days before any change. Lock is false, so no buyer conflict.\",\"key_evidence\":[\"blended_roi=0.069 with blend_weight_own=0.61\",\"last_3d: profit_days=2, loss_days=1, roi=0.063\",\"peers.fwd_roi_1_3d=0.078, n=20\",\"buyer.last_human_action: up 8.0->13.6, hours_ago=40.8\"],\"uncertainty\":[\"Whether the buyer's 8.0->13.6 increase is producing sustained profit, since it is under 2 days old\",\"Whether d-3 loss (roi -0.228) is noise or the start of a trend\",\"spend_exceeds_1.25x_budget flag may reflect the pre-increase budget, so spend-to-budget read is unreliable\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 662,
+  "output_tokens": 853,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000511,
+ "request_id": "req_011Cg7TyxNUk6SCzXvV7aPGf",
+ "ts": "2026-10-17T08:07:24+00:00"
+}

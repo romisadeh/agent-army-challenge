@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured results are mixed: 2 profit days and 3 loss days, with last 3d ROI -0.133 and two straight zero-revenue days (D-2, D-1). Blended ROI is +0.111, but it leans on peers (w=0.4). The buyer cut budget 24.5h ago without a lock, and spend exceeds budget by more than 1.25x. Evidence is too thin and conflicting to move budget, and the human's recent cut should not be overridden.\",\"key_evidence\":[\"last_3d.roi = -0.133 (2 loss days, 1 profit day)\",\"matured_days D-2 and D-1 revenue = 0.0\",\"blended_roi = 0.111 with blend_weight_own = 0.4\",\"buyer.last_human_action: down 3.18 to 2.07, 24.5h ago\"],\"uncertainty\":[\"Whether the zero-revenue D-2 and D-1 reflect real losses or a tracking gap\",\"Budget/spend mismatch flag (spend_exceeds_1.25x_budget) may mean the budget figure is wrong\",\"Peer forward ROI (n=17) may not transfer to this adset\",\"Whether the buyer's cut was intended to stop spend or was a test\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 967,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000567,
+ "request_id": "req_011Cg7UhKKhh3BckruPfRB4H",
+ "ts": "2026-10-17T08:16:46+00:00"
+}

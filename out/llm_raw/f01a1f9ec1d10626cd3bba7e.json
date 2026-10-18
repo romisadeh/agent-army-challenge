@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.212 with 3 loss days and 0 profit days, and trend_last_day_vs_prior is declining. blended_roi is 0.007, roughly break-even, and peers fwd_roi_1_3d is 0.15 with n=11. The buyer cut budget 6.35 to 3.18 22h ago and lock_24h is true, so no change is the right call. The spend_exceeds_1.25x_budget flag makes the spend-to-budget picture unreliable.\",\"key_evidence\":[\"last_3d.roi = -0.212, loss_days 3, profit_days 0\",\"buyer.last_human_action: down 6.35 to 3.18, 22h ago, lock_24h true\",\"blended_roi = 0.007, peers fwd_roi_1_3d = 0.15 (n=11)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend overrun against the 3.18 budget distorts the true daily spend\",\"Whether the peer forward ROI of 0.15 holds for this adset after the budget cut\",\"Whether the declining trend continues into the next matured day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 749,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000457,
+ "request_id": "req_011Cg9LuXMQzm7Bqc2h11hsj",
+ "ts": "2026-10-18T07:55:47+00:00"
+}

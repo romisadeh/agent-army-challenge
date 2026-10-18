@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has only 3 spend days, so it is not a proven winner (needs 4+). A buyer cut the budget 14.2h ago and the 24h lock is active, so I should not override it. Yesterday was negative (-0.124) and the trend is declining, though blended ROI is positive at 0.334. Keep the budget at $10.16.\",\"key_evidence\":[\"age_spend_days=3 (below the 4+ winner threshold)\",\"buyer lock_24h=true, last action down 12.7->10.16 14.2h ago\",\"d-1 roi=-0.124, trend declining\",\"blended_roi=0.334, last_3d roi=0.249\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Small spend base, so ROI is noisy\",\"Duplicate performance rows were removed, which may affect the figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 320,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004775,
+ "request_id": "req_011Cg7t4UxQHsoy41ccyDK21",
+ "ts": "2026-10-17T13:23:07+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.67,\"confidence\":0.55,\"reasoning\":\"Proven-winner profile: age 6 spend days, last_3d.roi 0.207 with 3 profit days, blended_roi 0.323, peers fwd_roi 0.413. Scaling is the default, but buyer.last_human_action was a deliberate budget cut (3.81 to 2.67, ui_adjust_budget, 24.5h ago) with net_budget_change_48h -1.14. Per the rule against overriding recent buyer cuts, hold at current budget. Spend-over-budget flag adds noise.\",\"key_evidence\":[\"buyer.last_human_action: down 3.81->2.67, 24.5h ago\",\"last_3d: roi 0.207, profit_days 3, loss_days 0\",\"blended_roi 0.323 vs peers fwd_roi 0.413 (n=15)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate scale-down or a test; no notes given\",\"Whether the spend-over-budget flag means the real budget differs from 2.67\",\"Next-day matured ROI after the cut; a strong day would justify scaling in the next window\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 899,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000533,
+ "request_id": "req_011Cg7tEjyK8MuWB9taAQYmb",
+ "ts": "2026-10-17T13:25:28+00:00"
+}

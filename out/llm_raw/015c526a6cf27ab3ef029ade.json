@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"All 3 recent matured days lost (last_3d ROI -0.285, 0 profit days) with yesterday worst at -0.48 and a declining trend. Spend is tiny ($8.17 over 3d; budget $3.05), so the loss in absolute dollars is small. Blended ROI -0.028 leans on peers (+0.077, n=26). A buyer cut the budget 24.6h ago, so the budget is already reduced. Not a clear pause case yet; keep and let more data accrue.\",\"key_evidence\":[\"last_3d.roi -0.285, 0 profit days / 3 loss days\",\"blended_roi -0.028 (own weight 0.29)\",\"buyer last action: budget down 5.08->3.05, 24.6h ago\",\"peers fwd_roi_1_3d +0.077, n=26\"],\"uncertainty\":[\"Small spend makes ROI noisy\",\"Whether the buyer intends to pause or continue testing\",\"Peer ROI is a fallback band, not a close match\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 602,
+  "output_tokens": 374,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005367,
+ "request_id": "req_011Cg7szWs8XxuSDNoKy17Ck",
+ "ts": "2026-10-17T13:22:13+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset: $9.31 spend over 3 days, budget $1.27 (reconstructed, spend exceeds 1.25x budget). 3d ROI +0.018 is roughly break-even, with one profitable day then two losses. Blended ROI -0.162 leans on weak peers (-0.245). Evidence is too thin and the budget is unreliable, so neither scaling nor pausing is justified. Absolute dollars at stake are negligible.\",\"key_evidence\":[\"last_3d ROI 0.018 on $9.31 spend\",\"blended_roi -0.162 (w=0.32)\",\"yesterday ROI -1.0 on $1.28 spend\",\"flag: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current budget is uncertain (reconstructed from metadata)\",\"Whether yesterday's zero revenue is noise given tiny spend\",\"Whether the declining trend continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 547,
+  "output_tokens": 360,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005068,
+ "request_id": "req_011Cg7URCeADkhwuTeQuwnUv",
+ "ts": "2026-10-17T08:13:05+00:00"
+}

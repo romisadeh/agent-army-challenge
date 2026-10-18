@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has only 3 spend days, so it is not a proven winner. last_3d.roi is -0.086 and blended_roi is 0.083, under the 0.10 threshold. Yesterday was -0.382 with a declining trend. The buyer raised the budget 3x about 41h ago, and spend is tiny, so there is no case to scale or cut. Keeping lets the data mature.\",\"key_evidence\":[\"last_3d.roi -0.086 (2 profit days, 1 loss)\",\"d-1 roi -0.382, trend declining\",\"blended_roi 0.083, own weight 0.32\",\"buyer raised budget 1.27->3.81 41.1h ago\"],\"uncertainty\":[\"Tiny spend (about $9 over 3 days) makes ROI noisy\",\"Whether yesterday's loss reflects the budget tripling\",\"Early-morning R08 kills failed/NOOP on immature data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 344,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005233,
+ "request_id": "req_011Cg7taNERXe4f5TKfpVBqh",
+ "ts": "2026-10-17T13:29:52+00:00"
+}

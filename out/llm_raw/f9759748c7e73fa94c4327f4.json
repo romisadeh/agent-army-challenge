@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Not a proven winner: blended_roi is -0.075, below the +0.10 threshold, though last_3d.roi is 0.445 with 2 of 3 days profitable. Peers forward ROI is -0.294 (n=6). The buyer cut budget 2.48 to 1.98 14.3h ago and lock_24h is true. Yesterday was -0.391 with a declining trend. The spend_exceeds_1.25x_budget flag makes budget-based reads unreliable. Hold budget under the lock.\",\"key_evidence\":[\"blended_roi = -0.075\",\"last_3d.roi = 0.445 (2 profit, 1 loss days)\",\"buyer.last_human_action: down 2.48\u21921.98, 14.3h ago, lock_24h true\",\"peers.fwd_roi_1_3d = -0.294, n=6\"],\"uncertainty\":[\"Whether the buyer's down-move was based on information not on the card\",\"Whether spend exceeding budget means the true daily budget differs from 1.98\",\"Whether yesterday's loss persists or was noise after good days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 1044,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000608,
+ "request_id": "req_011Cg9MV322h2gN8Es7nYueF",
+ "ts": "2026-10-18T08:03:23+00:00"
+}

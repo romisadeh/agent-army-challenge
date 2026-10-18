@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset is only 3 spend days old, so it does not meet the 4+ day proven-winner test. Last 3 matured days show ROI 0.622 with 2 of 3 profitable and trend improving, and blended_roi is 0.239. However, buyer.last_human_action was a budget doubling 17.2h ago with lock_24h true, and peers fwd_roi_1_3d is only 0.037 at n=42. Respect the lock and hold budget at 12.7 for now.\",\"key_evidence\":[\"last_3d.roi = 0.622 with 2 profit days of 3\",\"blended_roi = 0.239\",\"buyer.lock_24h = true, last human up from 6.35 to 12.7 at 17.2h ago\",\"age_spend_days = 3 (below 4+ scale threshold)\"],\"uncertainty\":[\"Whether the buyer's doubling is sustainable at 12.7 once the lock expires\",\"Peer forward ROI of 0.037 suggests only modest future returns\",\"Only 3 matured days of history on a budget that was just doubled\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 946,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00055,
+ "request_id": "req_011Cg9MJ7NAEbYw5Fn4rq7Fs",
+ "ts": "2026-10-18T08:00:54+00:00"
+}

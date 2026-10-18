@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is 0.022, below the +0.10 bar, with 2 loss days and 1 profit day. blended_roi 0.118 leans on peers because spend is small (blend_weight_own 0.39). A buyer deliberately cut budget 6.35 to 3.18 46h ago (net_budget_change_48h -3.17), and data_quality_flags shows spend_exceeds_1.25x_budget. Evidence is mixed and near break-even, so hold.\",\"key_evidence\":[\"last_3d.roi = 0.022 (2 loss days, 1 profit day)\",\"blended_roi = 0.118, blend_weight_own = 0.39\",\"buyer.last_human_action: down 6.35 to 3.18, 46h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the d-1 gain (roi 0.287) marks a turnaround or noise\",\"Whether the spend overrun distorts the budget-relative read\",\"Peer forward ROI rests on only n=6 comparable adsets\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 646,
+  "output_tokens": 820,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000496,
+ "request_id": "req_011Cg9Mfy9fnDPfezD64EC1A",
+ "ts": "2026-10-18T08:05:50+00:00"
+}

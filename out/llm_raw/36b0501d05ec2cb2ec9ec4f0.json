@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"The adset has only 3 spend days, so it is not a proven winner (needs 4+). Own 3-day ROI is strong at +0.57 with 3 of 3 profitable days, but spend is tiny at $9.59. Peers forward ROI is -0.334, which drags blended ROI to -0.041. A buyer cut the budget 23h ago and the 24h lock is active, so I should not override it. Keep.\",\"key_evidence\":[\"age_spend_days=3 (below the 4+ winner threshold)\",\"last_3d roi=0.57, profit_days=3, spend=$9.59\",\"blended_roi=-0.041, peers fwd_roi_1_3d=-0.334 (n=9)\",\"buyer lock_24h=true, budget cut 12.7->7.62 23.1h ago\"],\"uncertainty\":[\"Tiny spend means ROI is noisy and may not persist\",\"Why the buyer cut the budget is unknown\",\"Peer segment is age 4+ and this adset is only age 3, so the match is imperfect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 565,
+  "output_tokens": 384,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005393,
+ "request_id": "req_011Cg9N9GVSzfqARQAsKRCVM",
+ "ts": "2026-10-18T08:12:00+00:00"
+}

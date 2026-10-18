@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured losses over last_3d (roi -0.168, 3 loss days, 0 profit days) and a declining trend support the recent buyer cut from 6.35 to 3.81 14.3h ago. The 24h lock and that deliberate human action mean no change now. Blended ROI -0.074 with peers at -0.019 is near break-even, not a clear loss to pause. Spend overran budget (flag), so actual exposure is higher than the card's budget suggests.\",\"key_evidence\":[\"last_3d.roi = -0.168 with 3 loss days and 0 profit days\",\"buyer.last_human_action: down 6.35 -> 3.81, hours_ago 14.3, lock_24h true\",\"blended_roi = -0.074; peers fwd_roi_1_3d = -0.019 (n=12)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut to 3.81 is already reflected in spend, since spend exceeds budget\",\"Whether the 4 matured days before yesterday's loss streak reflect a recovering trend\",\"Peer evidence is near break-even, so a pause or further cut is not clearly warranted\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 822,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000495,
+ "request_id": "req_011Cg7UFtgfwLozeesN8nPAD",
+ "ts": "2026-10-17T08:11:00+00:00"
+}

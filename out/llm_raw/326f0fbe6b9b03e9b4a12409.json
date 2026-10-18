@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"The adset has only 3 spend days, so it does not meet the 4+ day proven-winner threshold. Last 3d ROI is +0.187 with 2 of 3 days profitable, and blended ROI is +0.119, which is mildly positive. However, the budget is reconstructed at $1.27 while yesterday's spend was $10.73, and spend exceeds 1.25x budget. The budget figure is unreliable, so a scale step cannot be computed safely. Keep.\",\"key_evidence\":[\"age_spend_days=3 (below 4+ threshold)\",\"last_3d.roi=0.187, profit_days=2, loss_days=1\",\"blended_roi=0.119\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget (budget 1.27 vs yesterday spend 10.73)\"],\"uncertainty\":[\"True current daily budget is unknown because it was reconstructed from metadata\",\"Peer forward ROI is only +0.065, which is thin edge\",\"Total spend is small ($16.08), so the ROI estimate is noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 397,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005483,
+ "request_id": "req_011Cg7sgFwTQnu4hgUb2pA3B",
+ "ts": "2026-10-17T13:18:06+00:00"
+}

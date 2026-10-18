@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.012 and blended ROI is -0.011, below the +0.10 threshold. Yesterday was clearly negative at -0.327 on a declining trend. Losses are not yet persistent enough to scale down or pause, since D-2 was +0.191. A buyer cut the budget 24.5h ago (16 to 11.2), so I would not override it. Keep at the current budget.\",\"key_evidence\":[\"last_3d.roi -0.012 (1 profit day, 2 loss days)\",\"blended_roi -0.011; peers fwd_roi_1_3d -0.008 (n=14)\",\"matured D-1 ROI -0.327, trend declining\",\"buyer cut budget 16.0 to 11.2 24.5h ago\"],\"uncertainty\":[\"Whether D-1 weakness is noise or the start of a decline\",\"Spend exceeds 1.25x budget, so the budget figure may be unreliable\",\"Effect of the buyer's budget cut is not yet visible in matured data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 651,
+  "output_tokens": 385,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005575,
+ "request_id": "req_011Cg9MwT86JiJLCyoVCbXpc",
+ "ts": "2026-10-18T08:09:19+00:00"
+}

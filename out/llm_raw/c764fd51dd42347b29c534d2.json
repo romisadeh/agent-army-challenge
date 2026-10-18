@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.4,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.187 with 2 loss days vs 1 profit day, and blended_roi is -0.018, roughly break-even. Matured days are mixed (d-4 +0.242, d-2 -0.472, d-1 -0.234) and trend is flat. Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the base is unreliable. Peer fwd_roi 0.077 is fallback-level. Keep until the budget is verified.\",\"key_evidence\":[\"last_3d.roi = -0.187 (2 loss days, 1 profit day)\",\"blended_roi = -0.018 with blend_weight_own 0.36\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"peers.fallback_level = 1, n = 26\"],\"uncertainty\":[\"Whether budget.current 1.27 is the true daily budget, since it is reconstructed from end-of-week metadata\",\"Whether the peer fwd_roi of 0.077 applies to this adset\",\"Whether the losing trend persists into D0 and D+1\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 902,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000531,
+ "request_id": "req_011Cg9LZdo4FqFJN3URvHW9D",
+ "ts": "2026-10-18T07:51:18+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured days are mostly profitable (4 of 5), last_3d ROI 0.555 and blended ROI 0.324 with peers at 0.215. However, budget is $1.27 with spend up to 3-5x that, and the flags say budget was reconstructed and spend exceeds 1.25x budget, so the budget figure is unreliable. Spend is tiny, so a scale-up has little absolute impact and I can't size it. Hold and verify budget.\",\"key_evidence\":[\"last_3d roi 0.555 (2 profit days, 1 loss day)\",\"blended_roi 0.324, peers fwd_roi 0.215 (n=15)\",\"budget.current 1.27 vs yesterday spend 3.02\",\"flag: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"True current daily budget is unknown due to reconstruction and spend overrun\",\"Small spend of $9.45 over 3d makes ROI noisy\",\"Whether the -0.574 day signals a trend or noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 621,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005426,
+ "request_id": "req_011Cg7UCcNoz9xGv6p8SFxRN",
+ "ts": "2026-10-17T08:10:14+00:00"
+}

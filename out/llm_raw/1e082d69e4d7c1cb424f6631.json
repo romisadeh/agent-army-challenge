@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.028 and last_3d ROI is -0.06 (2 loss days, 1 profit day), which is roughly break-even, not a clear matured loss. Over all five matured days, revenue (71.0) slightly exceeds spend (68.4). Peers are near break-even at -0.002 with n=13. Trend is declining, and the budget is reconstructed with a spend-exceeds-budget flag, so the numbers are not fully reliable. Evidence is mixed, so keep.\",\"key_evidence\":[\"blended_roi = -0.028\",\"last_3d.roi = -0.06 with loss_days 2, profit_days 1\",\"peers.fwd_roi_1_3d = -0.002 (n=13)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the declining trend on D-1 (ROI -0.224) continues into next week\",\"Reconstructed budget may misstate true daily spend cap\",\"Peer forward ROI is near zero with moderate sample size\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 810,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000488,
+ "request_id": "req_011Cg9NAp6knrCKoom1h2Njc",
+ "ts": "2026-10-18T08:12:22+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset is only 3 spend days old with $10.27 total spend, so the evidence is thin. 3-day ROI is roughly break-even (+0.005), 1 profitable day vs 2 losing, and yesterday declined. Peers are negative (-0.307, n=12), giving blended ROI -0.201. Budget of $1.27 is tiny and reconstructed, with spend exceeding 1.25x budget, so the budget figure is unreliable. Not a proven winner, and the losses are too small and too early to justify a pause.\",\"key_evidence\":[\"last_3d.roi=0.005 on spend $10.27 (1 profit day, 2 loss days)\",\"blended_roi=-0.201 (peers fwd_roi_1_3d=-0.307, n=12)\",\"age_spend_days=3, trend_last_day_vs_prior=declining\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current budget is unknown because it was reconstructed from metadata\",\"Peer segment is a fallback band (age 4+), so it may not match this adset\",\"Very low spend means ROI is noisy; one more day could shift direction\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 547,
+  "output_tokens": 440,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005917,
+ "request_id": "req_011Cg7t3tYSar4hKmweGHDAr",
+ "ts": "2026-10-17T13:23:00+00:00"
+}

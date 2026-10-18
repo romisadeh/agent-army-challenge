@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":2.91,\"confidence\":0.5,\"reasoning\":\"Three consecutive matured loss days: last_3d.roi -0.326 over $20.79 spend, blended_roi -0.113, trend_last_day_vs_prior declining. Not a proven winner. Buyer already cut budget 5.69 to 3.42 24.6h ago, and net_budget_change_48h is -4.71, so I continue the downward direction with a modest ~15% step. Peer fwd_roi 0.109 (fallback level 1) argues for caution, and the spend_exceeds_1.25x_budget flag weakens the budget-to-spend link.\",\"key_evidence\":[\"last_3d.roi -0.326, loss_days 3\",\"blended_roi -0.113 at blend_weight_own 0.51\",\"buyer last_human_action down 5.69 to 3.42, hours_ago 24.6\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Peer fwd_roi 0.109 is fallback-level with n=23, so it may signal recovery\",\"Spend exceeds budget, so a budget cut may not reduce actual spend\",\"Whether the buyer's cut is intended to be the final level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1269,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000717,
+ "request_id": "req_011Cg7swVctmB5wQDggBZzxc",
+ "ts": "2026-10-17T13:21:35+00:00"
+}

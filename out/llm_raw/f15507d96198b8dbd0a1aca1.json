@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Adset meets proven-winner criteria: age 4, 3 of 3 last days profitable, last_3d ROI 0.199, blended ROI 0.17, flat trend. Scale-up would normally apply. But budget.current of $1.27 is reconstructed from metadata and yesterday's spend of $8.95 far exceeds it, so the budget baseline is unreliable and a percentage step off it is meaningless. A human should confirm the true budget.\",\"key_evidence\":[\"last_3d roi 0.199, 3 profit days, 0 loss days\",\"blended_roi 0.17, peers fwd_roi 0.134 (n=17)\",\"budget.current 1.27 vs D-1 spend 8.95\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current daily budget (CBO, may be set at campaign level)\",\"Whether the recent spend level is sustainable at a higher budget\",\"Only 4 days of history, with an early loss day\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 383,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005407,
+ "request_id": "req_011Cg9M2Sh4Z95ccN1CdC1sw",
+ "ts": "2026-10-18T07:57:20+00:00"
+}

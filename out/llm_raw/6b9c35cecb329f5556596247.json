@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Three straight matured loss days (last_3d roi -0.134, spend 51.87) and a declining trend point to weakness, but the buyer cut budget 22h ago and lock_24h is active, so no change is the right call. Blended_roi is -0.086 at blend_weight_own 0.72, while peers forward roi is +0.039 (n=22, fallback 0). The spend_exceeds_1.25x_budget flag makes the loss figures less reliable. Losses are small on a $13 budget.\",\"key_evidence\":[\"last_3d.roi -0.134 with 3 loss days, 0 profit days\",\"blended_roi -0.086 vs peers fwd_roi_1_3d 0.039 (n=22)\",\"buyer.last_human_action ui_adjust_budget down 22.1h ago, lock_24h true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag inflates the loss figures\",\"Whether the buyer's cut is already reducing losses, since D-1 is the first day after it\",\"Whether the next matured day stays negative, which would support a pause or further cut\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 619,
+  "output_tokens": 881,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000521,
+ "request_id": "req_011Cg7Sy55ev9eVDDCYGv4BA",
+ "ts": "2026-10-17T07:54:05+00:00"
+}

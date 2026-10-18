@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.133 with 2 loss days, and yesterday was -1.0 with trend_last_day_vs_prior declining. Blended_roi 0.111 leans on peers (fwd_roi 0.275, n=17) at 0.4 weight. A buyer cut budget 3.18 to 2.07 about 24h ago, and spend exceeds 1.25x budget, so budget.current may be stale. A human should settle buyer intent versus losing numbers.\",\"key_evidence\":[\"last_3d.roi = -0.133 with 2 loss days\",\"matured_days d-1 revenue 0.0 on spend 4.37 (roi -1.0)\",\"buyer.last_human_action down 3.18 to 2.07, 24.5h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 2.07 reflects true spend level given spend exceeds budget\",\"Whether losses persist over d-2 and d-1 or are noise after d-5 and d-3 gains\",\"Peer forward ROI reliability (n=17) versus own negative 3-day ROI\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 1135,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000653,
+ "request_id": "req_011Cg9Mirj3TsC26E5R7YGPX",
+ "ts": "2026-10-18T08:06:31+00:00"
+}

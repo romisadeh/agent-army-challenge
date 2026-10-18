@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured evidence is negative: blended_roi -0.287, last_3d roi -0.163 with 2 loss days of 3, yesterday roi -0.367, trend declining, and peers fwd_roi -0.374. A 24h buyer lock is active from a human budget cut 17.2h ago in the same direction, so I won't add a further change automatically. Spend is small and peer data is a fallback with n=9, so the signal is not decisive.\",\"key_evidence\":[\"blended_roi = -0.287 (blend_weight_own 0.41)\",\"last_3d roi = -0.163, loss_days 2 / profit_days 1\",\"peers fwd_roi_1_3d = -0.374, fallback_level 1\",\"buyer.lock_24h = true, last action down 16.51 to 13.21, 17.2h ago\"],\"uncertainty\":[\"Only 4 matured days and a single profitable day in the window; could be noise\",\"Peer fallback is band-level, not segment-specific\",\"Whether a further cut or pause would be warranted once the lock expires\",\"Budget is small ($13.21), so absolute losses are limited\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 1068,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000613,
+ "request_id": "req_011Cg7Syjav3PsCToV8dULvm",
+ "ts": "2026-10-17T07:54:16+00:00"
+}

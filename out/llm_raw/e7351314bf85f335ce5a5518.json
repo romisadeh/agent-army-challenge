@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d shows 1 profit day and 2 loss days (d-3 -0.25, d-2 -0.147), so the 2-of-3 profitable test fails. Over five matured days, profit days (2) do not outnumber loss days (3), though overall ROI is positive, driven by d-1 at 0.988. The buyer doubled budget (6.35 to 12.7) 14.2h ago and lock_24h is true, so do not change the budget now. Blended ROI 0.212 is positive but leans on peers at 0.39 weight.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget 6.35->12.7, hours_ago 14.2, lock_24h true\",\"last_3d: profit_days 1, loss_days 2, roi 0.276\",\"matured_days d-1 roi 0.988 after d-3 -0.25 and d-2 -0.147\",\"blended_roi 0.212 with blend_weight_own 0.39\"],\"uncertainty\":[\"Whether the recent budget doubling is already producing the d-1 gain or was a one-off\",\"Peer forward ROI of 0.17 over 23 peers is moderate evidence, not strong\",\"Whether the next matured day confirms the improving trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 960,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000564,
+ "request_id": "req_011Cg9MvjEB6VWhWYTUQFwae",
+ "ts": "2026-10-18T08:09:11+00:00"
+}

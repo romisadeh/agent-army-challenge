@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":61.0,\"confidence\":0.66,\"reasoning\":\"Proven winner: aged 12 spend days, 3 of 3 last days profitable, last_3d ROI +0.615 and blended ROI +0.46, with an improving trend (yesterday ROI +0.79). No buyer lock or budget change in 48h and no rule actions. Only the reconstructed-budget flag argues for caution, so a modest ~14% step to $61 is appropriate.\",\"key_evidence\":[\"last_3d roi 0.615, 3 profit days / 0 loss days\",\"blended_roi 0.46 (peers fwd 0.094, n=22)\",\"yesterday ROI 0.793 on $22.63 spend, trend improving\",\"budget.current 53.34, no buyer lock\"],\"uncertainty\":[\"Budget was reconstructed from metadata, so the current value may be inaccurate\",\"Daily spend is well under budget, so extra budget may not translate into extra spend\",\"Peer forward ROI is much lower (0.094) than own ROI, so own results may regress\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 593,
+  "output_tokens": 375,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005359,
+ "request_id": "req_011Cg9MuRQ6ufnVfSkewjV6L",
+ "ts": "2026-10-18T08:08:52+00:00"
+}

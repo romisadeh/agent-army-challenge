@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured profit is mixed: 2 profit days and 1 loss day in last_3d, with ROI 0.515 but the latest day at -0.097 and trend declining. Blended_roi 0.458 is supported by peers (n=14, fwd_roi 0.395), but the own sample is small. The buyer's 'slow ramp per playbook' note and the no-change adjust 24.5h ago argue against an abrupt move. Evidence is not consistent enough to scale up or cut.\",\"key_evidence\":[\"last_3d.profit_days=2, loss_days=1\",\"matured_days d=-1 roi=-0.097, trend_last_day_vs_prior=declining\",\"blended_roi=0.458, peers.fwd_roi_1_3d=0.395 (n=14)\",\"buyer.notes: 'slow ramp per playbook' (69.2h ago)\"],\"uncertainty\":[\"Whether the yesterday loss is noise or the start of a decline\",\"Why net_budget_change_48h is -2.54 and the reason behind the cut\",\"spend_exceeds_1.25x_budget flag: actual spend may differ from the $1.27 budget\",\"Small absolute budget means any change moves very little money\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 652,
+  "output_tokens": 824,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000496,
+ "request_id": "req_011Cg7ShchF65myGZrtWzf4b",
+ "ts": "2026-10-17T07:50:35+00:00"
+}

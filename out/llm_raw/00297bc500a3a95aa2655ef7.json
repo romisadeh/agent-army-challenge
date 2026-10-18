@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI is -0.128 (own 3d ROI 0.026 at weight 0.58, peers -0.337 n=5), so the signal leans negative but is weak. Matured days split 2 profit and 3 loss, and the losses are small (-0.023 to -0.064). The buyer already cut budget 8.89 to 6.22 24.5h ago with no lock. Spend exceeds budget, so the card's figures are unreliable. Evidence is mixed and near break-even, so no change.\",\"key_evidence\":[\"blended_roi -0.128\",\"last_3d roi 0.026 with loss_days 2 and profit_days 1\",\"peers fwd_roi_1_3d -0.337 with n 5\",\"buyer last_human_action down 8.89 to 6.22 at 24.5h ago\"],\"uncertainty\":[\"Spend exceeds budget flag suggests budget or spend data may be wrong\",\"Peer sample is only n=5\",\"Trend is flat and the losses are small, so a further decline is unproven\",\"Buyer's reason for the earlier cut is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 1012,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00059,
+ "request_id": "req_011Cg7V2sHpzvuXjNFAzrfqU",
+ "ts": "2026-10-17T08:21:11+00:00"
+}

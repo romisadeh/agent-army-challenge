@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI is -0.029 and last_3d ROI is -0.068 with 2 of 3 days losing, so it is not a proven winner and does not clearly warrant pause. Yesterday was -0.33 and trend_last_day_vs_prior is declining. Peers forward ROI is +0.031 (n=5). The budget.current of 1.91 is reconstructed and conflicts with spend_exceeds_1.25x_budget and daily spend of 8.39. Because the budget baseline is unreliable, a percentage change cannot be sized safely.\",\"key_evidence\":[\"blended_roi=-0.029 (blend_weight_own 0.61)\",\"last_3d.roi=-0.068, loss_days=2, profit_days=1\",\"trend_last_day_vs_prior=declining, matured_days d=-1 roi=-0.33\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 1.91 is the true daily budget, since spend of 8.39 on d=-1 far exceeds it\",\"Whether the peer forward ROI of +0.031 (n=5) reflects this adset's trajectory\",\"Whether the decline persists over the next 1-2 matured days\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 626,
+  "output_tokens": 955,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000561,
+ "request_id": "req_011Cg9N7J6dvK8AQRDasLoji",
+ "ts": "2026-10-18T08:11:34+00:00"
+}

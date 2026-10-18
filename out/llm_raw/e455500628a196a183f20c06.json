@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured last_3d ROI is -0.085 with 2 loss days and 1 profit day, and blended_roi is -0.058. Peers are near break-even (fwd_roi_1_3d -0.007, n=11). The losses are modest and the budget is only $1.27, so the evidence is mixed rather than a clear matured loss. spend_exceeds_1.25x_budget flag means spend data is suspect. No buyer action in 48h and no lock.\",\"key_evidence\":[\"blended_roi -0.058\",\"last_3d roi -0.085 (2 loss days, 1 profit day)\",\"peers fwd_roi_1_3d -0.007, n=11\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend overrun inflates the losses\",\"Whether D-1 zero-revenue day (spend 0.71) is a real trend or a reporting lag\",\"Peer sample is small enough that the break-even read could shift\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 624,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000395,
+ "request_id": "req_011Cg7UBLckMUBKcrCHLpeMm",
+ "ts": "2026-10-17T08:09:57+00:00"
+}

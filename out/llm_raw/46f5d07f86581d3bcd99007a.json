@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Buyer raised budget from 7.62 to 20.32 about 17 hours ago and the 24h lock is active, so no change is warranted. Matured 3-day ROI is 0.504 with 2 profit days and 1 loss day, and blended_roi is 0.29. Peer forward ROI is about -0.003 with n=32, so peers do not support a further scale-up. Spend (11.91 yesterday) is well below the 20.32 budget, so the new budget has not yet been tested. Evidence is mixed and thin, so hold.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget up 7.62->20.32, 16.9h ago, lock_24h true\",\"last_3d.roi 0.504, profit_days 2, loss_days 1\",\"blended_roi 0.29 with blend_weight_own 0.58\",\"peers.fwd_roi_1_3d -0.003, n 32\"],\"uncertainty\":[\"Whether spend ramps toward the 20.32 budget and holds ROI at that level\",\"Peer forward ROI near zero suggests the segment may not sustain returns after scaling\",\"Yesterday's ROI of 0.695 on 11.91 spend is a single day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 593,
+  "output_tokens": 821,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000488,
+ "request_id": "req_011Cg7SPivnZWGDS8BsibeLH",
+ "ts": "2026-10-17T07:46:32+00:00"
+}

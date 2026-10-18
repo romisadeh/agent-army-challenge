@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Last 3 matured days lost money on all 3 days (last_3d roi -0.252, revenue 7.59 on spend 10.15), but blended_roi is near break-even at -0.034 and peers forward ROI is +0.077 (n=26, fallback band). Buyer already cut budget 3.81 to 1.90 about 43h ago with no lock. Evidence is mixed, not a clear matured loss, so no change.\",\"key_evidence\":[\"last_3d.roi = -0.252 with loss_days = 3\",\"blended_roi = -0.034 (blend_weight_own 0.34)\",\"peers.fwd_roi_1_3d = 0.077, n = 26 (fallback_level 1)\",\"buyer.last_human_action: down 3.81 to 1.9, 43.1h ago\"],\"uncertainty\":[\"Peer sample uses band fallback, so it is a weak signal\",\"Spend exceeds budget flag makes the actual budget-to-spend relationship unclear\",\"Whether the buyer's recent cut is already producing better results is not yet visible in matured data\",\"A further matured loss day would strengthen the case for pausing\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 913,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000537,
+ "request_id": "req_011Cg7SfhQCsTNQqoWwATspL",
+ "ts": "2026-10-17T07:50:10+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is about break-even (last_3d.roi 0.018) with 2 loss days of 3, but the day -3 profit was strong. Blended_roi (-0.162) and peers fwd_roi (-0.245) are negative and trend_last_day_vs_prior is declining, with yesterday at -1.0. Age is only 3 spend days, so it does not qualify as a proven winner. Data flags (budget_reconstructed, spend_exceeds_1.25x_budget) make the budget and spend figures unreliable. Evidence is mixed, so keep and re-check tomorrow.\",\"key_evidence\":[\"last_3d.roi = 0.018, loss_days 2 / profit_days 1\",\"blended_roi = -0.162, peers.fwd_roi_1_3d = -0.245\",\"trend_last_day_vs_prior = declining, matured_days d=-1 roi = -1.0\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget 1.27 is accurate, since spend 9.31 far exceeds budget over 3 days\",\"Whether yesterday's zero revenue persists or was a one-day dip\",\"Peer evidence band is a fallback (level 1), so it is only moderately reliable\",\"Age is 3 spend days, so the 4+ day proven-winner rule does not yet apply\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 547,
+  "output_tokens": 972,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000562,
+ "request_id": "req_011Cg9MQKoSAMTrqgMaWrMZi",
+ "ts": "2026-10-18T08:02:19+00:00"
+}

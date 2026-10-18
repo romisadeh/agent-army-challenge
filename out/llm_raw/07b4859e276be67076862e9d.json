@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":13.21,\"confidence\":0.55,\"reasoning\":\"Matured evidence leans negative: last_3d.roi -0.163 with 2 loss days vs 1 profit day, blended_roi -0.287, peers fwd_roi_1_3d -0.374, and trend_last_day_vs_prior is declining. It does not meet the proven-winner bar. However, buyer.last_human_action was a deliberate cut 17.2h ago and lock_24h is true, so I defer to the lock rather than cut again. Spend is small (last_3d.spend 13.98), so a further cut would rest on thin data.\",\"key_evidence\":[\"last_3d.roi -0.163 (2 loss days, 1 profit day)\",\"blended_roi -0.287 with blend_weight_own 0.41\",\"buyer.lock_24h true; ui_adjust_budget 16.51 to 13.21 17.2h ago\",\"trend_last_day_vs_prior declining\"],\"uncertainty\":[\"Whether the 10:00 cut is still bedding in; a further cut may be warranted if yesterday's -0.367 repeats\",\"Peer sample is band fallback with n=9\",\"Single profitable day (D-2 at 0.557) may be a real recovery\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 1039,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000601,
+ "request_id": "req_011Cg7tFUYuNzEUeKAydgPU1",
+ "ts": "2026-10-17T13:25:39+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.032 and blended_roi is -0.05, both below the +0.10 threshold. Yesterday was roughly break-even (+0.026) and peers forward ROI is -0.106, which is mildly negative. Losses are not persistent enough to pause or scale down. The budget of $1.27 is tiny while spend ran far above it (spend_exceeds_1.25x_budget), so the budget field looks unreliable. Keep and monitor.\",\"key_evidence\":[\"last_3d.roi = -0.032\",\"blended_roi = -0.05\",\"peers.fwd_roi_1_3d = -0.106 (n=8)\",\"flag spend_exceeds_1.25x_budget; budget.current 1.27 vs yesterday spend 9.40\"],\"uncertainty\":[\"Budget of $1.27 conflicts with actual daily spend of $9-27, so the true budget is unclear\",\"Net budget change of -19.05 over 48h suggests a recent buyer cut, intent unknown\",\"Mixed ROI trend with one strong day (-4) rolling off\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 410,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005767,
+ "request_id": "req_011Cg7toRkcGoKWe4akAq2v9",
+ "ts": "2026-10-17T13:32:53+00:00"
+}

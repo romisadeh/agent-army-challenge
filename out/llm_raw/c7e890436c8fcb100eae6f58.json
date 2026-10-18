@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":111.75,\"confidence\":0.62,\"reasoning\":\"Proven winner: 36 spend days, 3 of 3 profitable days in last_3d, last_3d ROI +0.161 and blended ROI +0.166, both above +0.10. Yesterday was the best day at +0.282. Peers forward ROI is +0.245 (n=5). The buyer raised budget 45.9h ago with no lock and no hold note, so a +15% step is reasonable.\",\"key_evidence\":[\"last_3d: 3 profit days, 0 loss, ROI 0.161\",\"blended_roi 0.166; peers fwd_roi_1_3d 0.245 (n=5)\",\"d-1 ROI 0.282 on spend 103.85\",\"buyer raised budget 80.98 to 97.17 45.9h ago, lock_24h false\"],\"uncertainty\":[\"spend_exceeds_1.25x_budget flag may mean spend and budget figures are unreliable\",\"ROI is thin on d-3 (+0.05) so margin may erode at higher spend\",\"Budget was already raised 20% about 46h ago; the effect is not fully visible\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 403,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005739,
+ "request_id": "req_011Cg9N42h73eYhXLQUWDycJ",
+ "ts": "2026-10-18T08:10:49+00:00"
+}

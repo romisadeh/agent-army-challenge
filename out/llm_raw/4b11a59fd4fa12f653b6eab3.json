@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Mixed, near break-even evidence: last_3d.roi 0.023 and blended_roi 0.09 both fall short of the +0.10 proven-winner bar, and only 2 of the last 3 matured days were profitable (d-1 was -0.077). A buyer doubled budget 6.35 to 12.7 about 19 hours ago and lock_24h is true, so I would not move it again today. Holding budget lets the recent increase be judged on matured data.\",\"key_evidence\":[\"last_3d.roi = 0.023\",\"blended_roi = 0.09 (below +0.10 bar)\",\"buyer.last_human_action: up 6.35 to 12.7, hours_ago 19.1, lock_24h true\",\"matured_days d-1 roi = -0.077\"],\"uncertainty\":[\"Whether the 19h-old budget doubling is already producing ROI at the new level\",\"Peer forward ROI of 0.15 (n=11) could support scaling if the lock lapses\",\"Only one day of data at the new budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 698,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000433,
+ "request_id": "req_011Cg9MynFLJftqitriRr72q",
+ "ts": "2026-10-18T08:09:52+00:00"
+}

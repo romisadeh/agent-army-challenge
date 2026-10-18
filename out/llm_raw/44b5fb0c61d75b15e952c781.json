@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":4.06,\"confidence\":0.45,\"reasoning\":\"Last 3 matured days are mixed: last_3d roi -0.099 with 1 loss day and 2 profit days, and the latest day is -0.276 on spend 5.71 against budget 4.06. blended_roi is only 0.029 with blend_weight_own 0.34, leaning on peers (fwd_roi 0.094, n=6). A 24h lock is active after a human cut budget 5.08 to 4.06 seventeen hours ago. Evidence is thin and conflicting, so hold.\",\"key_evidence\":[\"last_3d.roi = -0.099 (1 loss day, 2 profit days)\",\"blended_roi = 0.029, blend_weight_own = 0.34\",\"buyer.lock_24h = true, last human action down 5.08 to 4.06 at 17.2h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the latest loss day (-0.276) is noise or the start of a trend (trend declining)\",\"Whether the peer forward ROI of 0.094 applies to this adset given small spend\",\"Why the human cut the budget, since no note explains it\",\"Spend exceeding budget suggests budget/spend attribution may be off\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 710,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000432,
+ "request_id": "req_011Cg7Sw4E112spK5LZC1wCC",
+ "ts": "2026-10-17T07:53:37+00:00"
+}

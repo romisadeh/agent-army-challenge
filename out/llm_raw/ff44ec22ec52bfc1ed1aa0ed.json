@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Only two matured days: D-2 profitable (ROI 0.573) and D-1 a loss (ROI -0.62), so the signal is mixed. Blended ROI is -0.029 and peers forward ROI is -0.113, both slightly negative, with trend declining. Budget 1.27 is flagged as reconstructed and spend exceeds 1.25x budget, so any percentage change is unreliable. No buyer lock or notes. Keep until data is clearer.\",\"key_evidence\":[\"blended_roi = -0.029\",\"matured_days D-2 roi 0.573, D-1 roi -0.62\",\"peers fwd_roi_1_3d = -0.113 (n=10)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget 1.27 is accurate, since it was reconstructed from metadata\",\"Whether the declining trend continues over the next matured day\",\"Peer sample of 10 is modest\",\"Own spend is small, so w=0.29 leans heavily on peers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 514,
+  "output_tokens": 657,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000399,
+ "request_id": "req_011Cg7SmG2sucJMYCA1xob89",
+ "ts": "2026-10-17T07:51:24+00:00"
+}

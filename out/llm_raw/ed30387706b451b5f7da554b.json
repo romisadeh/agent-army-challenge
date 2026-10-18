@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has 7 spend days but only 1 of the last 3 matured days profitable, so it fails the proven-winner test (last_3d ROI 0.075 and blended ROI 0.066, both under 0.10). A human raised the budget 21h ago and lock_24h is active. Trend is declining with two losing days, but the losses are small, so there is no basis to cut. Keep and let the recent budget increase play out.\",\"key_evidence\":[\"last_3d.roi=0.075 with 1 profit day, 2 loss days\",\"blended_roi=0.066\",\"buyer.lock_24h=true; budget raised 11.56->17.91 21.2h ago\",\"trend_last_day_vs_prior=declining; d-1 ROI -0.074\"],\"uncertainty\":[\"How the recently raised budget performs at the higher spend level\",\"Whether the ROI of d-2 and d-1 is noise or the start of a decline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 345,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005131,
+ "request_id": "req_011Cg9Mo7iZA4jULj9f8sMki",
+ "ts": "2026-10-18T08:07:26+00:00"
+}

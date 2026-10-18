@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.42,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.114 with 2 loss days, and blended_roi is -0.069. Yesterday was profitable (matured_days d-1 roi +0.153) and trend_last_day_vs_prior is improving, so pausing or cutting again is not supported. The rule R07 cut to 39.6 succeeded and is only one day old. The buyer's down adjustment was 112.7h ago, outside 48h. Peer fwd_roi of 0.394 (n=15) argues against scaling down. Evidence is mixed, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.114 (2 loss days, 1 profit day)\",\"blended_roi = -0.069 with blend_weight_own 0.91\",\"matured_days d-1 roi = +0.153, trend improving\",\"peers.fwd_roi_1_3d = 0.394, n = 15\"],\"uncertainty\":[\"Spend exceeds budget (53.8 vs 39.6) and the buyer's last set level was 82.51, so the true daily budget and spend pattern are unclear\",\"Whether yesterday's profit persists or is noise after the rule cut\",\"Peer forward ROI is strong but may not apply to this adset's trajectory\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 724,
+  "output_tokens": 1410,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000799,
+ "request_id": "req_011Cg9MkHXZuqP7FDhaMw4Sk",
+ "ts": "2026-10-18T08:06:52+00:00"
+}

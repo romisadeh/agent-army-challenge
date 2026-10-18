@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age 14 spend days, last_3d.roi 0.40 with 3 of 3 profit days, blended_roi 0.226, and matured days -3 to -1 all positive. However buyer.lock_24h is true after a human raised budget 5.08 to 8.89 17.2h ago. The buyer's direction matches scaling, but a recent deliberate action plus lock conflicts with an automated change. Escalate so a human can confirm the scale-up.\",\"key_evidence\":[\"last_3d.roi = 0.4, profit_days = 3\",\"blended_roi = 0.226, peers.fwd_roi_1_3d = 0.029 (n=39)\",\"buyer.lock_24h = true; last_human_action up 5.08\u21928.89, 17.2h ago\",\"matured_days -3 to -1 ROI 0.582, 0.526, 0.171\"],\"uncertainty\":[\"Whether the lock blocks the change or only flags it\",\"Peer forward ROI of 0.029 is much weaker than own history\",\"Whether the 17h-old buyer raise was intended as a step toward further scaling\",\"Day -4 loss (ROI -0.352) shows volatility\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 1137,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000652,
+ "request_id": "req_011Cg9MHR8UEBfug9xJNAN2F",
+ "ts": "2026-10-18T08:00:46+00:00"
+}

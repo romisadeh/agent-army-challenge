@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.85,\"confidence\":0.35,\"reasoning\":\"Matured last_3d ROI is 0.067 with 2 profit days and 1 loss day, and blended_roi is 0.048, which is only marginally positive. Peer forward ROI is -0.003 (n=31), so the edge is thin. The buyer cut budget from 12.64 to 8.85 about 24h ago, and no lock is set, so I respect that recent call. Spend (54.5 over 3 days) far exceeds budget, so the card's budget may be stale. Keep and re-check.\",\"key_evidence\":[\"blended_roi = 0.048\",\"last_3d.roi = 0.067 with profit_days 2, loss_days 1\",\"peers.fwd_roi_1_3d = -0.003, n = 31\",\"buyer.last_human_action: down 12.64 to 8.85, hours_ago 24.5\"],\"uncertainty\":[\"Why spend is about 2x the stated budget (flag shows 1.25x), which may mean the budget value is wrong\",\"Whether the buyer's cut was meant to be a lasting reduction\",\"Whether the d-1 profit streak holds once peer decay is applied\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 834,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000497,
+ "request_id": "req_011Cg7SX7CSJuTq6eKChWmA7",
+ "ts": "2026-10-17T07:48:13+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI -0.039 is near break-even, and own 3-day ROI is -0.059 with 2 loss days and a declining trend. Peers are strong (+0.244) but fallback n=27 and blend weight 0.93 means own data dominates. Budget source is buyer_log_before_window, and R02 cuts all FAILED/NOOP yesterday, so the true live budget may not be 82.51. A buyer cut 64.7h ago has no lock. Trust in the budget baseline is too low to act; proposed keep.\",\"key_evidence\":[\"blended_roi = -0.039\",\"last_3d roi = -0.059, loss_days 2, profit_days 1\",\"rules.acted_yesterday: 13 R02 cuts all FAILED/NOOP\",\"budget.source = buyer_log_before_window; buyer ui_adjust_budget 103.14 -> 82.51 at 64.7h\"],\"uncertainty\":[\"Actual live daily budget, since all R02 cuts failed and the source is the buyer log\",\"Whether the spend_exceeds_1.25x_budget flag reflects a real budget mismatch\",\"Whether the d-1 loss (-0.248) is noise after a +0.617 day at d-4\",\"Peer forward ROI reliability at fallback_level 1 with n=27\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 1401,
+  "output_tokens": 1257,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000787,
+ "request_id": "req_011Cg7SLUW2ShkBV5LabfMfg",
+ "ts": "2026-10-17T07:45:51+00:00"
+}

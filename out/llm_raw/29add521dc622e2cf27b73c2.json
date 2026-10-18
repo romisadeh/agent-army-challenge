@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":1.52,\"confidence\":0.5,\"reasoning\":\"Three straight matured loss days (last_3d.loss_days 3, roi -0.252) with blended_roi -0.034 show a persisting loss, and the buyer already cut budget 3.81 to 1.9 forty-three hours ago, so a further 20% step agrees with that direction. Peers (fwd_roi 0.077, n=26) are only a fallback band and weak. The spend_exceeds_1.25x_budget flag makes the spend figures less reliable.\",\"key_evidence\":[\"last_3d.roi -0.252 with 3 loss days, 0 profit days\",\"blended_roi -0.034 at blend_weight_own 0.34\",\"buyer.last_human_action down 3.81 to 1.9, 43.1h ago\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend above budget means a lower budget may not cut actual spend\",\"Peer forward ROI 0.077 is a weak fallback signal\",\"Losses are small in absolute dollars (about 2.6 over 3 days)\",\"Trend is flat, so the loss may not be deepening\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1218,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000692,
+ "request_id": "req_011Cg7tyNbdzixzEdig1FzWK",
+ "ts": "2026-10-17T13:35:08+00:00"
+}

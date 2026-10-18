@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Roughly break-even: blended_roi 0.007, 3-day ROI -0.114 with 2 loss days and 1 profit day. The last 5 matured days alternate between profit and loss, so there is no consistent loss to justify a cut or pause, and no consistent profit to justify scaling. Peers' forward ROI of 0.302 (n=29) offers mild support against cutting. Budget is small at $15.54.\",\"key_evidence\":[\"blended_roi 0.007\",\"last_3d roi -0.114 (2 loss days, 1 profit day)\",\"peers fwd_roi_1_3d 0.302, n=29\",\"matured days alternate: +0.159, +0.057, -0.338, +0.124, -0.131\"],\"uncertainty\":[\"Whether peer forward ROI of 0.302 applies to this adset given its own weak 3-day ROI\",\"Budget is reconstructed from metadata (budget_reconstructed flag), so the current value may be inaccurate\",\"No buyer notes or recent human action to indicate intent\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 384,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005404,
+ "request_id": "req_011Cg7UX6xX4SZJyVuvHtSFi",
+ "ts": "2026-10-17T08:14:25+00:00"
+}

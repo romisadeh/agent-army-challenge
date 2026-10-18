@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":13.21,\"confidence\":0.5,\"reasoning\":\"Mixed, near break-even matured data: last_3d.roi is -0.042 with 2 profit days and 1 loss day, and trend_last_day_vs_prior is improving. blended_roi (-0.221) and peers.fwd_roi_1_3d (-0.386, n=18) lean negative. A buyer cut budget 16.51 to 13.21 41.2h ago, which is already a downward move. No clear persistent loss, so no further change now.\",\"key_evidence\":[\"last_3d.roi = -0.042, profit_days 2, loss_days 1\",\"blended_roi = -0.221 with blend_weight_own 0.48\",\"peers.fwd_roi_1_3d = -0.386, n = 18\",\"buyer.last_human_action: down 16.51 to 13.21, 41.2h ago\"],\"uncertainty\":[\"Whether the improving last-day trend persists\",\"Peer forward ROI is a band fallback and may not fit this adset\",\"Whether the buyer's recent cut was meant to be the final level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 788,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000478,
+ "request_id": "req_011Cg9MbMZR4fHcKXH4JtBgx",
+ "ts": "2026-10-18T08:04:48+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last 3 matured days show ROI 0.009 with 2 loss days and 1 profit day, and yesterday was -0.173 with a declining trend. Blended ROI is 0.10 (own weight 0.32), and peer forward ROI is 0.143 on n=11. Evidence is mixed and near break-even, and the budget is unreliable (reconstructed from metadata, spend exceeds 1.25x budget), so no change is the safest call.\",\"key_evidence\":[\"last_3d.roi=0.009 with loss_days=2, profit_days=1\",\"matured_days d=-1 roi=-0.173, trend declining\",\"blended_roi=0.1, peers.fwd_roi_1_3d=0.143 (n=11)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Current budget of 1.61 is reconstructed from metadata and may not be the live value\",\"Spend exceeds budget, so true daily spend pattern is unclear\",\"Only 5 days of history and 3 matured days in the 3-day window\",\"Whether the declining trend continues into D-0 and D+1\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 702,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000431,
+ "request_id": "req_011Cg7UygPAaTfrt72KRuSY5",
+ "ts": "2026-10-17T08:20:26+00:00"
+}

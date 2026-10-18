@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.67,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d shows only 1 profit day and 2 loss days, and d-1 ROI is -0.236 with trend_last_day_vs_prior declining. Blended_roi 0.156 and last_3d.roi 0.265 are positive but driven by one strong day. A buyer cut budget 3.81 to 2.67 about 48.5h ago. Data_quality_flags (conversions_gt_clicks, spend_exceeds_1.25x_budget) make the numbers less reliable. Hold current budget.\",\"key_evidence\":[\"last_3d.profit_days: 1, loss_days: 2\",\"matured_days d-1 roi: -0.236, trend_last_day_vs_prior: declining\",\"buyer.last_human_action: down, hours_ago 48.5\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the d-3 profit day reflects a durable recovery or noise\",\"Reliability of spend and conversion data given the flags\",\"Whether peer forward ROI of 0.075 over 20 peers holds for this adset\",\"Reason for the buyer's recent budget cut\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 656,
+  "output_tokens": 966,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00057,
+ "request_id": "req_011Cg9LtERQUdP6BGv72duxj",
+ "ts": "2026-10-18T07:55:30+00:00"
+}

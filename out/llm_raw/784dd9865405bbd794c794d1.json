@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Age is 3 spend days, so the proven-winner rule (4+ days) does not apply. Last_3d ROI 0.214 and blended_roi 0.143 are positive, with 2 of 3 days profitable. Against scaling: matured D-1 ROI is -0.242 with trend_last_day_vs_prior declining, and the buyer tripled budget from 1.27 to 3.81 about 41h ago. The spend_exceeds_1.25x_budget flag makes the spend base less reliable. Hold for one more matured day.\",\"key_evidence\":[\"last_3d.roi=0.214, profit_days=2, loss_days=1\",\"blended_roi=0.143\",\"matured_days D-1 roi=-0.242, trend_last_day_vs_prior=declining\",\"buyer.last_human_action up 1.27->3.81, hours_ago=41.1\"],\"uncertainty\":[\"Whether the D-1 loss is noise or the start of a decline after the 3x budget step\",\"Peer forward ROI 0.105 across n=16 suggests modest upside, not a strong signal\",\"Whether spend above budget (flag) inflates the spend denominator\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 575,
+  "output_tokens": 1013,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000586,
+ "request_id": "req_011Cg7tbzQ5D7T9ELD17vczp",
+ "ts": "2026-10-17T13:30:16+00:00"
+}

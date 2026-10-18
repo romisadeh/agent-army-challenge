@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Matured data shows consistent losses: last_3d ROI -0.577 with 2 loss days and 1 profit day, yesterday ROI -1.0 on spend 9.04, and blended_roi -0.632. Peers forward ROI is -0.685 (n=12), and trend is declining. The rule already switched it off. The 22h-old buyer scale-down is consistent with these losses, so pausing does not override it. Spend exceeding budget is flagged, so the budget-based reading is uncertain.\",\"key_evidence\":[\"blended_roi = -0.632\",\"last_3d.roi = -0.577 (loss_days 2, profit_days 1)\",\"matured_days d=-1 roi = -1.0, spend 9.04\",\"peers.fwd_roi_1_3d = -0.685, n=12\"],\"uncertainty\":[\"Spend 9.04 vs budget 3.17 (spend_exceeds_1.25x_budget) may mean the budget is not the true cap\",\"Buyer lock is active; confirm the human is not holding the adset deliberately\",\"Single-day profit on d=-3 and d=-5 suggests some volatility\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 710,
+  "output_tokens": 1175,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000677,
+ "request_id": "req_011Cg7Tv7XnQD6VhE8yqnSqH",
+ "ts": "2026-10-17T08:06:33+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is -0.068 with 2 loss days and 1 profit day, and blended ROI is -0.029. Trend is declining, but the losses are small and peers forward ROI is +0.031 (n=5, weak). Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the budget base is unreliable. Evidence is mixed and near break-even, so no change.\",\"key_evidence\":[\"last_3d.roi = -0.068 (2 loss days, 1 profit day)\",\"blended_roi = -0.029, blend_weight_own = 0.61\",\"peers.fwd_roi_1_3d = 0.031, n = 5\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Real daily budget: card budget 1.91 conflicts with 31.0 spend over 3 days\",\"Whether the declining trend continues on D-1 losses\",\"Peer forward ROI is based on only 5 adsets\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 626,
+  "output_tokens": 744,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000453,
+ "request_id": "req_011Cg7V4mda34vdqZDmCusLD",
+ "ts": "2026-10-17T08:21:36+00:00"
+}

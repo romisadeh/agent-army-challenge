@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.54,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is -0.328 with 3 loss days and 0 profit days, and trend is declining. Blended ROI is only 0.049, roughly break-even, and peer forward ROI is 0.208 (n=16, fallback 0). A buyer cut budget 13.3h ago and lock_24h is true, so I am not changing budget inside the lock. Evidence is mixed, so hold at 2.54.\",\"key_evidence\":[\"last_3d.roi = -0.328, loss_days = 3\",\"blended_roi = 0.049\",\"peers.fwd_roi_1_3d = 0.208, n = 16\",\"buyer.lock_24h = true, last action down 3.81 to 2.54\"],\"uncertainty\":[\"Whether the decline continues after the buyer's cut\",\"Peer signal is weaker than own losing trend; peers may not match this adset\",\"Spend exceeds 1.25x budget flag may distort spend figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 650,
+  "output_tokens": 796,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000482,
+ "request_id": "req_011Cg7Ujom34aU2gertSqz9i",
+ "ts": "2026-10-17T08:17:18+00:00"
+}

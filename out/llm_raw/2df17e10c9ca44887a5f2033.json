@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner profile on paper (age 9, 2 of 3 days profitable), but last_3d ROI is 0.101, which is not above the +0.10 threshold by a meaningful margin. Blended ROI of 0.118 is only just above it. More importantly, a buyer cut the budget from 19.05 to 15.24 only 0.4 hours ago with a 24h lock. Overriding that deliberate action is not warranted without strong evidence.\",\"key_evidence\":[\"buyer.last_human_action: down 19.05->15.24, 0.4h ago\",\"buyer.lock_24h: true\",\"last_3d.roi: 0.101 with 2 profit days, 1 loss day\",\"blended_roi: 0.118\"],\"uncertainty\":[\"Why the buyer reduced budget despite a profitable yesterday (ROI 0.233)\",\"Whether the lock will lapse and the adset merits scaling tomorrow\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 354,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005217,
+ "request_id": "req_011Cg9M741THaibWPEQa6Tvi",
+ "ts": "2026-10-18T07:58:22+00:00"
+}

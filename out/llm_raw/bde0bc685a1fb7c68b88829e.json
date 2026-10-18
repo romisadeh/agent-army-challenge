@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":6.98,\"confidence\":0.55,\"reasoning\":\"Proven-winner pattern: age_spend_days 4, last_3d.roi 0.761 with 2 profit days, blended_roi 0.39, so I would scale up about 10% to 6.98. However buyer.lock_24h is true after a ui_update_budget raise 17h ago (3.81 to 6.35), and the lock means a human should settle whether to stack another increase now. Trend improving, no data flags. Peer fwd ROI is modest at 0.105.\",\"key_evidence\":[\"last_3d.roi = 0.761 (2 profit days, 1 loss)\",\"blended_roi = 0.39, blend_weight_own = 0.43\",\"buyer.lock_24h = true, last_human_action up 3.81 to 6.35, hours_ago 17\",\"peers.fwd_roi_1_3d = 0.105, n = 16\"],\"uncertainty\":[\"Whether the 24h buyer lock should block any change today\",\"Small 3-day spend of 15.33 makes own ROI noisy\",\"Whether the 67% buyer raise has had time to show its effect\",\"Peer forward ROI is only 0.105 versus own 0.761\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 1209,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000685,
+ "request_id": "req_011Cg7scVF3KHc2D1kVFaUpw",
+ "ts": "2026-10-17T13:17:17+00:00"
+}

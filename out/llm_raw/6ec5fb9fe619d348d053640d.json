@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Proven-winner profile: age 7, last_3d.roi 0.236 and blended_roi 0.205 both above +0.10, 2 of 3 matured days profitable. But buyer.last_human_action was a deliberate budget cut (10.16 to 9.14) 17.2h ago with lock_24h true, and the trend is declining with d-1 ROI only 0.017. The spend_exceeds_1.25x_budget flag also weakens the numbers. A human should settle the lock versus the scale-up evidence.\",\"key_evidence\":[\"last_3d.roi = 0.236, blended_roi = 0.205\",\"buyer.last_human_action: down, 10.16 to 9.14, hours_ago 17.2, lock_24h true\",\"trend_last_day_vs_prior = declining, matured d-1 roi = 0.017\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate hold or a reaction to a loss the card does not show\",\"Whether the d-1 decline is the start of a trend or noise\",\"Whether the spend overrun distorts the ROI reading\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 673,
+  "output_tokens": 797,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000487,
+ "request_id": "req_011Cg9N151Rh6Gt815CANEhZ",
+ "ts": "2026-10-18T08:10:09+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.4,\"reasoning\":\"Matured 3-day evidence is mixed: 1 profit day and 2 loss days, with 3-day ROI of 0.025 (revenue 11.33 on spend 11.05). Last day was -0.653 and the trend is declining. Blended ROI of 0.13 leans on peers (fwd_roi 0.188, n=7) with weight 0.36. Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the base is unreliable. No buyer lock or notes. Evidence is too thin to scale or pause.\",\"key_evidence\":[\"last_3d.roi = 0.025 with profit_days 1, loss_days 2\",\"matured_days d=-1 roi = -0.653, trend_last_day_vs_prior = declining\",\"blended_roi = 0.13, blend_weight_own = 0.36\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget 3.81 is reconstructed from end-of-week metadata, so true daily budget may differ\",\"Whether the declining last-day trend continues\",\"Peer forward ROI (0.188, n=7) may not transfer to this adset\",\"Small absolute spend means ROI readings are noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 548,
+  "output_tokens": 809,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000478,
+ "request_id": "req_011Cg7UJQZq2zfcq4SnBUNjm",
+ "ts": "2026-10-17T08:11:33+00:00"
+}

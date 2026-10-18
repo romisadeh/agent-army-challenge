@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is -0.028 and last_3d ROI is -0.06, so this is roughly break-even and not a proven winner. Spend has fallen to about $3/day against a $6.35 budget, so there is little data to act on. The budget is reconstructed, so I'd avoid acting on it. No buyer lock or notes. Losses are small and not persistent enough to pause, so keep.\",\"key_evidence\":[\"blended_roi -0.028\",\"last_3d roi -0.06 (1 profit day, 2 loss days)\",\"matured spend falling: $29.08 (d-5) to $3.12 (d-1)\",\"flag: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Why spend collapsed from $29 to $3/day while the budget is $6.35\",\"Whether the reconstructed budget is accurate\",\"Peer forward ROI is near zero, so there is no clear edge either way\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 348,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005135,
+ "request_id": "req_011Cg9NB9WZXifzTi4Tk2VFc",
+ "ts": "2026-10-18T08:12:25+00:00"
+}

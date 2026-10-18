@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset meets the proven-winner screen: age 4 spend days, 2 of 3 matured days profitable, last_3d.roi 0.49 and blended_roi 0.223, both above 0.10. However, buyer made a deliberate ui_adjust_budget cut 12.7 to 10.16 about 24h ago, and trend_last_day_vs_prior is declining with D-1 ROI -0.024. Conflict between a recent buyer action and the numbers needs a human. If forced, scale up about 15% to roughly 11.68.\",\"key_evidence\":[\"last_3d.roi = 0.49 (> 0.10)\",\"blended_roi = 0.223 (> 0.10)\",\"buyer.last_human_action: down, 24.4h ago, 12.7 to 10.16\",\"trend_last_day_vs_prior = declining, D-1 roi = -0.024\"],\"uncertainty\":[\"Why the buyer cut budget 24h ago (possible known issue not on card)\",\"Whether the D-1 loss is noise or the start of a decline\",\"Peer forward ROI is only 0.041 (n=54), a weak signal\",\"Budget is small ($10.16), so absolute profit impact is limited\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 1052,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000607,
+ "request_id": "req_011Cg9MpmqXbnPAwMWJB7qVy",
+ "ts": "2026-10-18T08:07:51+00:00"
+}

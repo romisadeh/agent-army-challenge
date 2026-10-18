@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Budget is tiny ($3.81) and a human raised it 23h ago, so the 24h lock is active. Last 3d ROI is +5.3% with 2 loss days and 1 profit day, blended ROI is +6.3%, and the last two matured days are negative. That is mixed, roughly break-even evidence, which does not justify scaling or pausing. Overspend flag noted.\",\"key_evidence\":[\"blended_roi 0.063\",\"last_3d roi 0.053 (2 loss days, 1 profit day)\",\"buyer lock_24h true, budget raised 3.2 to 3.81 23h ago\",\"matured d-1 roi -0.25 on spend 3.45\"],\"uncertainty\":[\"Whether the recent decline continues or is noise at such low spend\",\"Why spend exceeds 1.25x budget\",\"Effect of the recent budget increase on performance\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 330,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004898,
+ "request_id": "req_011Cg7SZr6v2jXWi2ij4MHgg",
+ "ts": "2026-10-17T07:48:48+00:00"
+}

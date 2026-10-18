@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.049 (below +0.10), blended_roi is only 0.098, and yesterday was -0.598 with a declining trend. Spend is tiny ($8.56 over 3d) and budget is $3.81, so the data is thin. Peers are mildly positive at 0.161, which argues against cutting or pausing. Hold and observe.\",\"key_evidence\":[\"last_3d.roi -0.049 (1 profit day, 2 loss days)\",\"blended_roi 0.098, blend_weight_own 0.3\",\"yesterday roi -0.598, trend declining\",\"peers fwd_roi_1_3d 0.161 (n=30)\"],\"uncertainty\":[\"Very small spend makes daily ROI noisy\",\"Budget was tripled 64.7h ago, effect still unclear\",\"Peer data is band fallback, not exact match\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 335,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004963,
+ "request_id": "req_011Cg7sffnd4FPZyuHEJim8z",
+ "ts": "2026-10-17T13:17:57+00:00"
+}

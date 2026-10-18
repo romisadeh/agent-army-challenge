@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.146 with 2 of 3 days losing and a declining trend. Scaling up is unjustified. A buyer cut the budget 3.81 to 2.54 14.2h ago and the 24h lock is active, so I should not override it. Spend is tiny (about $11.54 over 3d) and peers are positive (0.359), so a pause is also unjustified. Keep.\",\"key_evidence\":[\"last_3d.roi -0.146, 1 profit day vs 2 loss days\",\"buyer.lock_24h true; budget cut 3.81->2.54 14.2h ago\",\"blended_roi 0.174 vs peers fwd_roi_1_3d 0.359 (n=40)\",\"trend_last_day_vs_prior declining\"],\"uncertainty\":[\"Whether the decline continues or the early profitable days (d-5, d-4) reflect true performance\",\"Spend exceeded 1.25x budget, so the budget signal may be unreliable\",\"Reason for the buyer's budget cut is not noted\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 660,
+  "output_tokens": 391,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005653,
+ "request_id": "req_011Cg9NBqri9t1jxES2H95fM",
+ "ts": "2026-10-18T08:12:35+00:00"
+}

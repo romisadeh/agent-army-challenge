@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"A human cut budget from 19.05 to 15.24 only 0.4h ago, and a 24h lock is active. Matured data is mildly positive (3d ROI 0.101, blended 0.118, 2 of 3 days profitable) and yesterday was +0.233, so there is no basis for a pause or a further cut. Scaling up would override the deliberate buyer action without strong evidence. Hold.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 19.05->15.24 0.4h ago\",\"last_3d ROI 0.101 on $31.14 spend, 2 profit days / 1 loss day\",\"blended_roi 0.118 with peers fwd ROI 0.144 (n=15)\",\"budget.current 15.24\"],\"uncertainty\":[\"Why the buyer reduced the budget despite a positive trend\",\"Daily ROI is volatile (-0.116 to +0.367) on small spend\",\"Whether yesterday's +0.233 holds as revenue matures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 372,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005348,
+ "request_id": "req_011Cg7U96MT3YwSxP7vBqzkj",
+ "ts": "2026-10-17T08:09:27+00:00"
+}

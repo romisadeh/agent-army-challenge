@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age 7, last_3d.roi 0.442, blended_roi 0.402, 2 of 3 days profitable, trend improving. But buyer.lock_24h is true after a human ui_update_budget up 7.62 to 12.7 16.9h ago, and data_quality_flags includes spend_exceeds_1.25x_budget (3-day spend 158.95 vs a 12.7 daily budget), so the budget and spend figures may not reconcile. Escalate rather than override the lock.\",\"key_evidence\":[\"last_3d.roi 0.442 with profit_days 2 of 3\",\"blended_roi 0.402, peers fwd_roi 0.084 (n=15)\",\"buyer.lock_24h true, last human action up 16.9h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend/budget mismatch means the budget figure is wrong\",\"Whether the buyer's recent increase was meant to be held\",\"Whether the day-4 loss (roi -0.258) signals a reversal\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 1050,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000607,
+ "request_id": "req_011Cg7sWXnuopxcqM7M7ER5p",
+ "ts": "2026-10-17T13:15:56+00:00"
+}

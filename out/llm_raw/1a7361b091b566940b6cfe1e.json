@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":10.38,\"confidence\":0.6,\"reasoning\":\"Matured losses persist: last_3d.roi -0.134 with 3 loss days and 0 profit days, trend_last_day_vs_prior declining (D-1 roi -0.291), and blended_roi -0.086 with blend_weight_own 0.72. Peers fwd_roi_1_3d 0.039 (n=22) is too weak to offset. Buyer already moved budget down 14.4 to 12.97 22h ago, so a further 20% cut agrees with that direction. Lock_24h means a human must confirm. Spend exceeds budget flag suggests spend is understated against budget.\",\"key_evidence\":[\"last_3d.roi = -0.134 with loss_days 3, profit_days 0\",\"trend_last_day_vs_prior = declining, matured D-1 roi -0.291\",\"blended_roi = -0.086, blend_weight_own = 0.72\",\"buyer.last_human_action: down 14.4 to 12.97, 22.1h ago, lock_24h true\"],\"uncertainty\":[\"Whether the day -4 win (roi 0.683) signals recovery rather than noise\",\"Peer forward ROI of 0.039 suggests similar adsets may improve\",\"Spend exceeds budget flag means true daily spend may differ from budget.current\",\"Buyer lock may carry information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 619,
+  "output_tokens": 954,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000561,
+ "request_id": "req_011Cg9LcBQsjE3oGBYK3SCGA",
+ "ts": "2026-10-18T07:51:53+00:00"
+}

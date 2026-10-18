@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset has 5 spend days, 2 of last 3 days profitable, last_3d ROI +0.51 and blended ROI +0.156, so it nominally fits proven-winner criteria. However, the buyer cut budget 3.81 to 2.29 about 24h ago, spend exceeded 1.25x budget, and conversions exceed clicks, so numbers are unreliable. Yesterday ROI fell to +0.12 (declining), and the ROI is driven by one outlier day. Holding.\",\"key_evidence\":[\"last_3d roi 0.511 on only $8.39 spend, driven by d-2 roi 1.41\",\"buyer last action: down 3.81->2.29, 24.6h ago\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\",\"peers fwd_roi_1_3d 0.007 (n=32); trend declining\"],\"uncertainty\":[\"Whether the d-2 revenue spike is real given conversions>clicks flag\",\"Why the buyer cut the budget\",\"Whether spend overshoot distorts ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 411,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005795,
+ "request_id": "req_011Cg7ty5KKhz6J5w5jk6x5M",
+ "ts": "2026-10-17T13:35:01+00:00"
+}

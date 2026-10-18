@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Age_spend_days is 2, below the 4+ threshold for proven-winner scaling. Last_3d ROI is +0.011 with one profit day and one loss day, and blended_roi is -0.027. Peers forward ROI is -0.06 (n=42, band fallback), so the evidence is mixed and roughly break-even. Yesterday's ROI was -0.02 with a flat trend. No buyer action or lock constrains the decision. Keep until more matured days accumulate.\",\"key_evidence\":[\"age_spend_days: 2\",\"last_3d.roi: 0.011 (1 profit, 1 loss day)\",\"blended_roi: -0.027\",\"peers.fwd_roi_1_3d: -0.06\"],\"uncertainty\":[\"Whether the next matured days turn consistently profitable or losing\",\"Peer signal is band fallback (fallback_level 1), so its weight is limited\",\"Budget reconstructed from metadata may not reflect the true current budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 499,
+  "output_tokens": 483,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000313,
+ "request_id": "req_011Cg7sj2CJGyMYxCzh2pHRH",
+ "ts": "2026-10-17T13:18:43+00:00"
+}

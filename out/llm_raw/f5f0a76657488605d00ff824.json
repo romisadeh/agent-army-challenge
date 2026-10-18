@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":12.7,\"confidence\":0.55,\"reasoning\":\"Adset is only 3 spend days old, so it fails the 4+ day proven-winner test. Own 3-day ROI is +0.081 with 2 profit days of 3, but blended_roi is -0.104 because peers forward ROI is -0.307 with weight 0.52. Buyer doubled budget 38h ago, so scaling further now would stack on that move. Evidence is mixed, so hold at 12.7.\",\"key_evidence\":[\"age_spend_days=3\",\"last_3d.roi=0.081 with profit_days=2\",\"blended_roi=-0.104 vs peers fwd_roi_1_3d=-0.307\",\"buyer.last_human_action up 6.35->12.7, hours_ago=38.2\"],\"uncertainty\":[\"Whether the 38h-old doubling is already producing profit at the new budget\",\"Peer signal is band fallback (fallback_level 1) with n=12\",\"Day -2 and -1 ROI near zero, trend flat\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 676,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000416,
+ "request_id": "req_011Cg7u6pmS4rzMxR8eJdjiQ",
+ "ts": "2026-10-17T13:36:46+00:00"
+}

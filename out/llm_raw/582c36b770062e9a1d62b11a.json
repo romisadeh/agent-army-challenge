@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Meets proven-winner thresholds on paper (age 4, 2 of 3 profitable days, last_3d ROI 1.47, blended 0.55), but the budget is reconstructed and spend exceeds 1.25x budget, so the $2.40 budget is unreliable. Yesterday was clearly negative (-0.605) with a declining trend. Spend is tiny, and one day (d-2) drives nearly all profit. Scaling a budget I can't trust is risky, so hold.\",\"key_evidence\":[\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"last_3d roi 1.47 on $11.07 spend, driven by d-2 ROI 3.626\",\"d-1 ROI -0.605, trend declining\",\"peers fwd_roi_1_3d 0.041 (n=54)\"],\"uncertainty\":[\"True current daily budget is unknown due to reconstruction\",\"Whether d-2 was a one-off spike\",\"Small sample: total 3d spend only $11.07\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 386,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005435,
+ "request_id": "req_011Cg9N9sYrV29Wz6myZVah5",
+ "ts": "2026-10-18T08:12:08+00:00"
+}

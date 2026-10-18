@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.5,\"reasoning\":\"Matured last_3d ROI is -0.092 with 2 profit days and 1 loss day, so the matured trend is mixed rather than a consistent profit or loss. Blended ROI is only 0.072, and blend_weight_own is 0.35, so peers carry most of the weight. The buyer raised budget from 1.27 to 3.81 about 65h ago, and the 3-day spend data is too short to judge that change. The spend_exceeds_1.25x_budget flag adds doubt. Keep the budget and reassess once more matured days arrive.\",\"key_evidence\":[\"last_3d.roi = -0.092 (2 profit days, 1 loss day)\",\"blended_roi = 0.072, blend_weight_own = 0.35\",\"buyer.last_human_action: ui_update_budget 1.27 -> 3.81, 64.7h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 1.27 -> 3.81 budget step is still ramping or has already degraded performance\",\"Peer evidence is fallback_level 1 band-level data, not an exact match\",\"Reliability of the spend-vs-budget flag, which may indicate a budget or spend mismatch\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 797,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000475,
+ "request_id": "req_011Cg7SCYGXBnV6hKsEvh9Sh",
+ "ts": "2026-10-17T07:44:00+00:00"
+}

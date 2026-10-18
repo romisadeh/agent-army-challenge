@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.78,\"confidence\":0.6,\"reasoning\":\"Tiny budget ($1.78) after a buyer cut 23h ago, with a 24h lock active. Last 3d ROI is -0.269 on only $9.03 spend, mixed with 2 loss days and 1 profit day. Blended ROI is +0.06 because peers are positive. Evidence is thin and roughly break-even, so a change is not justified and the buyer's recent action should be respected.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 2.54->1.78 23.1h ago\",\"last_3d roi=-0.269 on spend 9.03 (2 loss, 1 profit days)\",\"blended_roi=0.06, peers fwd_roi_1_3d=0.208 (n=16)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether spend overshoot of budget distorts the recent ROI readings\",\"Why the buyer cut the budget, since no note was left\",\"Small spend makes all ROI figures noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005478,
+ "request_id": "req_011Cg7V4WLKkKdRFy3cTgmGk",
+ "ts": "2026-10-17T08:21:31+00:00"
+}

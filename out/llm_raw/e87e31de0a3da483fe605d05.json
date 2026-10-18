@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Tiny adset: $10.40 spend over 3 days with mixed results (2 loss days, 1 profit day) and 3d ROI of -0.083. Peers are positive (0.227) but only via band fallback, and blended ROI of 0.121 is weakly positive. The buyer cut budget 14.3h ago and the 24h lock is active, so I should not override it. Evidence is too thin to scale or pause.\",\"key_evidence\":[\"last_3d ROI -0.083 on $10.40 spend (1 profit day, 2 loss days)\",\"buyer lock_24h true, budget cut 3.05 to 2.44 14.3h ago\",\"blended_roi 0.121 (own weight 0.34), peers fwd_roi_1_3d 0.227 n=33\",\"flags: spend_exceeds_1.25x_budget, duplicate_perf_rows_removed\"],\"uncertainty\":[\"Peer ROI is from a band fallback segment, so it may not match this adset\",\"Spend over 1.25x budget and duplicate rows removed reduce trust in the data\",\"Yesterday's ROI of -0.384 may be noise or the start of a decline on a very small base\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 430,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00587,
+ "request_id": "req_011Cg7UJ8M1EQNY5naTAfqHG",
+ "ts": "2026-10-17T08:11:29+00:00"
+}

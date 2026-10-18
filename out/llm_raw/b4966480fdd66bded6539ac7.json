@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset: 3-day spend $9.39 at ROI 0.009, essentially break-even, with 2 loss days and 1 profit day. Blended ROI 0.10 leans on peers (n=11, fwd ROI 0.143) but is not strong enough to scale. Losses are small, so no pause. Budget is reconstructed ($1.61) and spend exceeded 1.25x budget, so the budget figure is unreliable. Keep.\",\"key_evidence\":[\"last_3d ROI 0.009 on $9.39 spend (2 loss days, 1 profit day)\",\"blended_roi 0.10 with own weight 0.32\",\"peers fwd_roi_1_3d 0.143, n=11\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Actual current budget is uncertain due to reconstruction\",\"Yesterday's decline (ROI -0.173 on $1.03) may indicate a trend or just noise at tiny spend\",\"Whether the min-ROAS bid strategy is throttling delivery\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 408,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00568,
+ "request_id": "req_011Cg7UyxVJ2aFhpWoYhphca",
+ "ts": "2026-10-17T08:20:29+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Own matured data is persistently losing: last_3d.roi -0.341 with 3 loss days and 0 profit days, and yesterday roi -0.16. The proven-winner rule does not apply. Blended_roi 0.274 is positive only because peers.fwd_roi_1_3d 0.697 (n=5) outweighs own ROI at w=0.41. Buyer scaled 1.27 to 3.81 about 89h ago, which then lost, and spend exceeds 1.25x budget. A human should settle this. If forced, scale_down about 20% to 3.05.\",\"key_evidence\":[\"last_3d.roi = -0.341, loss_days = 3, profit_days = 0\",\"blended_roi = 0.274 driven by peers.fwd_roi_1_3d = 0.697 (n=5), blend_weight_own = 0.41\",\"buyer.last_human_action: ui_update_budget up 1.27 to 3.81, 89h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the peer forward ROI (n=5) holds for this adset given its own persistent losses\",\"Whether the 89h-old buyer scale-up was a deliberate bet the buyer still expects to pay off\",\"Whether the spend-over-budget flag makes the matured spend and revenue figures unreliable\",\"Sample is small (13.75 spend over 3 days)\"],\"proposed_if_escalated\":\"scale_down\"}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 1574,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000869,
+ "request_id": "req_011Cg7sZ4d7nqPqZDkwBRSiD",
+ "ts": "2026-10-17T13:16:32+00:00"
+}

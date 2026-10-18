@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is -0.06 (2 loss days, 1 profit day) but blended_roi is +0.088 with peers at 0.171 (n=11). Buyer cut budget 12.7 to 8.89 about 24.5h ago with no lock. Evidence is mixed and near break-even, so no change. D-1 spend of 0.67 against a budget of 8.89 suggests under-delivery.\",\"key_evidence\":[\"last_3d.roi = -0.06 (2 loss days, 1 profit day)\",\"blended_roi = 0.088 with blend_weight_own 0.36\",\"buyer.last_human_action: down 12.7 to 8.89, 24.5h ago, lock_24h false\",\"matured_days d=-1 spend 0.67 vs budget.current 8.89\"],\"uncertainty\":[\"Whether D-1 under-delivery (spend 0.67) reflects a bid-cap or audience limit rather than weak performance\",\"Peer forward ROI rests on n=11 and may not transfer to this adset\",\"Whether the buyer's recent cut was a deliberate call on information not on the card\",\"Five-day ROI is about -0.20, so a continued slide would favor scale_down or pause\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 1000,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000582,
+ "request_id": "req_011Cg7UwpfgdHWV1We3dSxyi",
+ "ts": "2026-10-17T08:20:02+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Own 3 days are all profitable (ROI 0.57 on $9.59 spend), but spend is tiny and peers forecast -0.334 (n=9), giving blended ROI of -0.041. A human cut the budget 12.7 to 7.62 only 23h ago and the 24h lock is active. Evidence is thin and mixed, so no change.\",\"key_evidence\":[\"last_3d roi 0.57, 3 profit days, spend $9.59\",\"peers fwd_roi_1_3d -0.334 (n=9)\",\"blended_roi -0.041, own weight 0.32\",\"buyer lock_24h true, budget cut 12.7 to 7.62 23.1h ago\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether the small-sample profit holds as spend grows\",\"Peer segment may not match this adset's early strong performance\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 565,
+  "output_tokens": 333,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004834,
+ "request_id": "req_011Cg7V6eLapc8dbHrVwY5mH",
+ "ts": "2026-10-17T08:22:00+00:00"
+}

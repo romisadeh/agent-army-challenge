@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner criteria (age 9, 3/3 profitable days, last_3d ROI 0.165, blended 0.145), but a buyer raised budget 10.87 to 17.22 (+58%) 17.2h ago with lock_24h true. Overriding or stacking another increase on a deliberate recent action is inappropriate. Hold and let the new budget level show results.\",\"key_evidence\":[\"buyer.lock_24h true; last action up 10.87->17.22, 17.2h ago\",\"last_3d roi 0.165, 3 profit days, 0 loss days\",\"blended_roi 0.145 (peers 0.108, n=24)\",\"rules.acted_yesterday: R02 cut at 14:30 on immature data (roi_seen -0.14)\"],\"uncertainty\":[\"How performance holds at the higher budget after the 58% increase\",\"Whether the buyer intends further increases after the lock expires\",\"Engine echo rows excluded from buyer log may hide other actions\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 371,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005537,
+ "request_id": "req_011Cg9MiaTWMjGdDvb35uRdS",
+ "ts": "2026-10-18T08:06:25+00:00"
+}

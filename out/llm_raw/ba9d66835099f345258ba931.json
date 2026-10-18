@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"Blended ROI is +0.172 with 0.9 own weight, but the matured picture is mixed: last_3d shows 2 loss days and 1 profit day, and the 5-day series swings between -0.26 and +0.84. Scale-up needs consistent profit, which is absent. Spend (about $58/day) far exceeds budget.current ($10.16), so the budget baseline is unreliable. A buyer raised budget 40.9h ago and rule R02 cut it this morning, with one cut reported as FAILED/NOOP. A human should settle the budget data and the conflicting actions.\",\"key_evidence\":[\"blended_roi=0.172\",\"last_3d loss_days=2 profit_days=1 roi=0.183\",\"data_quality_flags: spend_exceeds_1.25x_budget\",\"buyer last_human_action up 7.62->12.70 at 40.9h ago; rules cut 08:30 SUCCESS, 09:00 FAILED/NOOP\"],\"uncertainty\":[\"Whether budget.current reflects actual delivery spend or the field is stale\",\"Whether the 09:00 cut failed and the adset is running at 12.70 or 10.16\",\"Whether the buyer's recent raise was deliberate and should be respected\",\"Peer forward ROI of 0.074 (n=21) suggests modest upside only\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 777,
+  "output_tokens": 1180,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000686,
+ "request_id": "req_011Cg7TwCzUcgDzeu45h7miu",
+ "ts": "2026-10-17T08:06:48+00:00"
+}

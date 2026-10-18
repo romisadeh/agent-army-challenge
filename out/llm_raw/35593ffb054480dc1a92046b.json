@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.65,\"reasoning\":\"Buyer cut the budget from 10.16 to 6.1 22h ago, so the 24h lock is active. The 3-day ROI is 0.417 and blended ROI 0.282, but spend is tiny at $21.95 and yesterday was -0.18 after +0.188 and +2.25. Evidence is mixed and the trend is declining, so I recommend no change and respect the buyer's recent action.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 10.16->6.1 22h ago\",\"last_3d roi=0.417 on spend $21.95 (2 profit days, 1 loss)\",\"blended_roi=0.282, peers fwd_roi_1_3d=0.134 (n=17)\",\"yesterday roi=-0.18, trend declining\"],\"uncertainty\":[\"Why the buyer cut the budget despite the note saying 'weekend boost'\",\"Spend exceeded 1.25x budget, so the true budget behavior is unclear\",\"Very small spend makes ROI noisy; the day -3 ROI of 2.25 is on only $3.92\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 403,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00562,
+ "request_id": "req_011Cg7U7mEUpi8WPXSX5TwXc",
+ "ts": "2026-10-17T08:09:08+00:00"
+}

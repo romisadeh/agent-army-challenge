@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset meets proven-winner criteria on its face (age 13, 2 of 3 days profitable, last_3d ROI +0.163) but blended ROI is 0.088, below the +0.10 threshold, so it is not a mandatory scale-up. A buyer cut the budget 24.5h ago (3.81 to 2.67), and spend exceeds 1.25x budget, which makes spend data unreliable. Peers are flat at 0.0. Hold.\",\"key_evidence\":[\"blended_roi 0.088 (<0.10 threshold)\",\"last_3d roi 0.163, 2 profit days / 1 loss day\",\"buyer cut budget 3.81->2.67 24.5h ago\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer reduced the budget\",\"Whether spend overshoot distorts recent ROI\",\"Peer forward ROI is flat at 0.0, so upside is unclear\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 361,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005269,
+ "request_id": "req_011Cg7twLXZqymwJoVEZmTQC",
+ "ts": "2026-10-17T13:34:37+00:00"
+}

@@ -1,0 +1,6 @@
+2026-06-10 ACC-02: trailing spend/day $208.67 (trailing_window_short (4 days)); expected before actions $202.37; floor $177.37; proposed +$0.75 / -$1.03
+2026-06-10 ACC-03: trailing spend/day $192.81 (trailing_window_short (4 days)); expected before actions $196.28; floor $163.89; proposed +$1.10 / -$0.00
+2026-06-10 ACC-04: trailing spend/day $504.56 (trailing_window_short (4 days)); expected before actions $475.10; floor $428.87; proposed +$1.51 / -$2.76
+2026-06-10 ACC-05: trailing spend/day $125.04 (trailing_window_short (4 days)); expected before actions $158.45; floor $106.28; proposed +$0.00 / -$12.18
+2026-06-10 ACC-06: trailing spend/day $290.00 (trailing_window_short (4 days)); expected before actions $259.30; floor $246.50; proposed +$1.20 / -$9.02
+2026-06-10 executable after portfolio guard: 14

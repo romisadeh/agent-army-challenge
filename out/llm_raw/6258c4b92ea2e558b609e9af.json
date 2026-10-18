@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.5,\"reasoning\":\"Adset meets proven-winner metrics: age 4, last_3d.roi 0.534, blended_roi 0.312, 2 of 3 matured days profitable. However yesterday was a total loss (roi -1.0, revenue 0.0 on 3.33 spend) and trend_last_day_vs_prior is declining, which the scale-up exception names as a reason to hold. Budget was raised 67h ago outside the 48h window, and spend_exceeds_1.25x_budget adds some uncertainty. Keep budget unchanged and reassess tomorrow.\",\"key_evidence\":[\"last_3d.roi = 0.534 with 2 profit days, 1 loss day\",\"matured_days d=-1 roi = -1.0, revenue = 0.0\",\"trend_last_day_vs_prior = declining\",\"blended_roi = 0.312, peers fwd_roi_1_3d = 0.105 (n=16)\"],\"uncertainty\":[\"Whether yesterday's zero-revenue day is a one-off or the start of a sustained decline\",\"Spend exceeding 1.25x budget flag may mean actual daily spend differs from the card budget\",\"Peer sample is moderate (n=16), and the budget increase 67h ago has had only partial time to show its effect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 607,
+  "output_tokens": 1049,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000606,
+ "request_id": "req_011Cg7sVU4PwjXVrZMRFSaXE",
+ "ts": "2026-10-17T13:15:41+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":13.6,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is weak at 0.039 (2 profit days, 1 loss day), and blended_roi is 0.083. Peers forward ROI is 0.165 but rests on a fallback band with n=27. The buyer raised budget from 8.0 to 13.6 16.8h ago and lock_24h is true, so I should not override that. Spend exceeds 1.25x budget, which needs checking. Evidence is mixed and roughly break-even, so keep.\",\"key_evidence\":[\"blended_roi=0.083\",\"last_3d.roi=0.039 with profit_days=2, loss_days=1\",\"buyer.lock_24h=true after ui_adjust_budget up 8.0->13.6 16.8h ago\",\"peers.fwd_roi_1_3d=0.165 n=27 fallback_level=1\"],\"uncertainty\":[\"Peer evidence is a band fallback, not the exact segment\",\"data_quality_flag spend_exceeds_1.25x_budget may distort spend and ROI\",\"Day-to-day ROI swings widely (1.027, 0.105, -0.228, 0.203)\",\"Whether the recent budget increase has had enough time to show its effect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 873,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000518,
+ "request_id": "req_011Cg7SHDQ78ytw4EteuZZub",
+ "ts": "2026-10-17T07:45:04+00:00"
+}

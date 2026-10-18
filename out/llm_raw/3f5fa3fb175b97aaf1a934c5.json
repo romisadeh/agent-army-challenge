@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"Budget is tiny ($2.13) and a buyer cut it 17h ago, so the 24h lock is active. Last-3d ROI is +0.05 with 2 loss days and 1 profit day; blended ROI is -0.056 and peers are -0.119. That is mixed, roughly break-even evidence. It supports neither a scale-up nor a pause, and overriding the buyer is not justified.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 2.67->2.13 17.2h ago\",\"last_3d roi=0.05 (2 loss days, 1 profit day, spend $12.03)\",\"blended_roi=-0.056, peers fwd_roi_1_3d=-0.119 (n=5)\",\"D-1 roi=-0.667 on spend $2.51\"],\"uncertainty\":[\"Spend exceeded 1.25x budget, so the actual daily spend level is unclear\",\"Duplicate rows were removed, so the revenue figures may be slightly off\",\"Small spend makes the ROI figures noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 688,
+  "output_tokens": 388,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00563,
+ "request_id": "req_011Cg7UySH6qpW2sDkNnab41",
+ "ts": "2026-10-17T08:20:22+00:00"
+}

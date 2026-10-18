@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.05,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.285 with 3 loss days, and all four matured days are negative with trend declining, so the losses persist. However, blended_roi is only -0.028 (near break-even) and peers show fwd_roi_1_3d +0.077 (n=26, fallback level 1). Spend is small ($8.17 over 3 days), so the own signal is noisy. The buyer already cut budget 5.08 to 3.05 about 25h ago, which agrees with the losses. Hold at the current budget and reassess once more matured data arrives.\",\"key_evidence\":[\"last_3d.roi = -0.285 with loss_days = 3, profit_days = 0\",\"matured_days: all four days negative, trend_last_day_vs_prior = declining\",\"blended_roi = -0.028 with blend_weight_own = 0.29\",\"buyer.last_human_action: down 5.08 to 3.05, 24.6h ago\"],\"uncertainty\":[\"Whether the next matured day stays negative; a fourth loss day on top of this would justify pausing\",\"Peer forward ROI is a fallback band with n=26, so it is weak support\",\"Small absolute spend means ROI swings may be noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 602,
+  "output_tokens": 982,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000573,
+ "request_id": "req_011Cg7tzZPZVooiCv6HRAvPt",
+ "ts": "2026-10-17T13:35:23+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is 0.273 with 2 profit days and 1 loss day, and blended ROI is 0.183, so the numbers favour growth. But a buyer raised budget 6.35 to 12.7 about 21h ago with lock_24h true, and rule R02 cut it to 10.16 at 06:00 on immature data. The buyer instruction conflicts with the numbers, so a human should settle it.\",\"key_evidence\":[\"last_3d.roi: 0.273 (profit_days 2, loss_days 1)\",\"blended_roi: 0.183 (blend_weight_own 0.47)\",\"buyer.lock_24h: true, last_human_action up to 12.7 at 21.2h ago\",\"rules.acted_today_before_window: R02 cut at 06:00, roi_seen -0.21\"],\"uncertainty\":[\"Why the buyer raised budget 21h ago; the note is null\",\"Whether R02's -0.21 reading on partial data reflects a real trend\",\"Whether the rule-cut budget of 10.16 should be restored to the buyer's 12.7\",\"Peer forward ROI of 0.104 is based on n=26 and is only moderately strong\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 1089,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000633,
+ "request_id": "req_011Cg7UgCwgtsFHbmUM7tDxJ",
+ "ts": "2026-10-17T08:16:31+00:00"
+}

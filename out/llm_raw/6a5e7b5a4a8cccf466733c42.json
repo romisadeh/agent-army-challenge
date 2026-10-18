@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.4,\"reasoning\":\"Last 3 matured days are mixed: 2 loss days, 1 profit day, last_3d ROI -0.25 on $8.74 spend. Blended ROI is +0.028, near break-even, and peers forward ROI is +0.15 (n=11, fallback 0). Buyer tripled budget 65h ago with no lock. Evidence is thin and conflicting, so no change.\",\"key_evidence\":[\"last_3d.roi = -0.25 (2 loss days, 1 profit day)\",\"blended_roi = 0.028\",\"peers.fwd_roi_1_3d = 0.15, n=11\",\"buyer.last_human_action: up 1.27 -> 3.81, 65.1h ago\"],\"uncertainty\":[\"Whether the 3x budget increase is causing the recent losses\",\"Yesterday's spend of $0.76 is far below the $3.81 budget, so delivery issues may distort ROI\",\"Failed R08 kill attempts yesterday may indicate a platform or execution problem not visible on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 712,
+  "output_tokens": 1018,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000599,
+ "request_id": "req_011Cg7TzKBsf13E6jbjACEza",
+ "ts": "2026-10-17T08:07:30+00:00"
+}

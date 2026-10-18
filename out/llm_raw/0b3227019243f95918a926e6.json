@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Matured 3-day ROI is -0.639 with 0 profitable days out of 3 and spend $8.27; blended ROI -0.639 (own weight 0.29, peers n=6 at fallback 0, fwd ROI null). Trend declining, yesterday ROI -0.814. Buyer already cut budget 5.08 to 3.05 24.6h ago with no note and no lock, consistent with losing. Persistent losses over multiple days, so pause is justified over keep.\",\"key_evidence\":[\"last_3d.roi = -0.639, profit_days = 0\",\"blended_roi = -0.639\",\"matured_days d=-1 roi = -0.814, trend_last_day_vs_prior = declining\",\"buyer.last_human_action: down 5.08->3.05, 24.6h ago\"],\"uncertainty\":[\"Peer forward ROI unavailable (fwd_roi_1_3d null), so peer evidence is absent\",\"Small budget ($3.05) means limited absolute loss at stake\",\"Only 4 spend days; d=-4 was marginally profitable\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 398,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00028,
+ "request_id": "req_011Cg7scKB4UWCQQnQkFMBYD",
+ "ts": "2026-10-17T13:17:11+00:00"
+}

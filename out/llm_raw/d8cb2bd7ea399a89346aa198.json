@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":1.22,\"confidence\":0.6,\"reasoning\":\"All 3 recent matured days lost (last_3d.roi -0.314, 0 profit days) and peers also forward-negative (-0.307, n=12), so blended_roi is -0.31. Not a proven winner. Budget is tiny ($1.52) so the stakes are small. A -20% trim is sensible rather than pause given tiny spend; the buyer's 'scaling winner' note is stale versus the data.\",\"key_evidence\":[\"last_3d.roi -0.314, loss_days 3, profit_days 0\",\"blended_roi -0.31\",\"peers fwd_roi_1_3d -0.307 (n=12)\",\"buyer last action: budget down 1.9->1.52, 24.5h ago\"],\"uncertainty\":[\"Very small spend, so noise is high\",\"Data flags: conversions > clicks and spend > 1.25x budget reduce data reliability\",\"Buyer note 'scaling winner' at 46h conflicts with the numbers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 654,
+  "output_tokens": 362,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005351,
+ "request_id": "req_011Cg7srQPE2Fsxr2GirzMvY",
+ "ts": "2026-10-17T13:20:23+00:00"
+}

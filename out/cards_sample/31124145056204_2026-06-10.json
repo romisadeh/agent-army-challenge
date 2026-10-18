@@ -1,0 +1,71 @@
+{
+ "adset_id": "31124145056204",
+ "account": "ACC-04",
+ "decision_date": "2026-06-10",
+ "window": "10:00 local (UTC+3); all performance below is matured (through D-1)",
+ "age_spend_days": 4,
+ "status_at_window": "active",
+ "budget": {
+  "current": 5.08,
+  "source": "buyer_log_after_window",
+  "bid_strategy": "LOWEST_COST_WITH_MIN_ROAS",
+  "budget_type": "ABO"
+ },
+ "matured_days": [
+  {
+   "d": -4,
+   "spend": 2.68,
+   "revenue": 18.3,
+   "roi": 5.829
+  },
+  {
+   "d": -3,
+   "spend": 2.81,
+   "revenue": 0.53,
+   "roi": -0.81
+  },
+  {
+   "d": -2,
+   "spend": 4.37,
+   "revenue": 6.91,
+   "roi": 0.581
+  },
+  {
+   "d": -1,
+   "spend": 5.19,
+   "revenue": 5.26,
+   "roi": 0.012
+  }
+ ],
+ "last_3d": {
+  "spend": 12.37,
+  "revenue": 12.7,
+  "roi": 0.027,
+  "loss_days": 1,
+  "profit_days": 2
+ },
+ "trend_last_day_vs_prior": "declining",
+ "peers": {
+  "segment": "ACC-04 / age 4+ (band fallback)",
+  "n": 30,
+  "fallback_level": 1,
+  "fwd_roi_1_3d": 0.161
+ },
+ "blended_roi": 0.11,
+ "blend_weight_own": 0.38,
+ "buyer": {
+  "last_human_action": null,
+  "net_budget_change_48h": 0.0,
+  "lock_24h": false,
+  "notes": []
+ },
+ "rules": {
+  "acted_yesterday": [],
+  "acted_today_before_window": []
+ },
+ "data_quality_flags": [
+  "budget_reconstructed:from_later_log_row",
+  "extreme_roi_gt_5"
+ ],
+ "lessons": []
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 3 spend days old and does not qualify as a proven winner: just 1 of 3 matured days profitable, last_3d ROI -0.141, blended ROI -0.009. Trend is declining, but losses are tiny in absolute dollars (spend $12.97 over 3 days) and the buyer cut budget 39.9h ago. Evidence is thin and mixed, so no change is warranted.\",\"key_evidence\":[\"last_3d.roi -0.141 (1 profit day, 2 loss days)\",\"blended_roi -0.009 with blend_weight_own 0.39\",\"buyer cut budget 5.08->3.81 39.9h ago\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Small sample: spend of only $1.88 yesterday makes ROI noisy\",\"Spend exceeding budget flag may distort the true per-day numbers\",\"Peer ROI is only +0.077 from a fallback segment (age 4+)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 583,
+  "output_tokens": 369,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005279,
+ "request_id": "req_011Cg7tCv6iQ34hrkuhpU6dj",
+ "ts": "2026-10-17T13:25:02+00:00"
+}

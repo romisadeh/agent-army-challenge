@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer raised budget 4.83 to 8.2 18.9h ago (lock_24h true), but the note says 'CPM spiked, cutting', which contradicts the action. Matured data is mixed: last_3d.roi 0.532 is driven by one big day (d-1 roi 2.107), while d-3 and d-2 lost money. Only 1 of 3 matured days was profitable, so the proven-winner rule does not apply. blended_roi 0.261 and peers fwd_roi 0.023 (n=40) are weakly positive. A human should resolve the buyer intent before any change.\",\"key_evidence\":[\"buyer.last_human_action: up 4.83->8.2, 18.9h ago, lock_24h true\",\"buyer.notes: 'CPM spiked, cutting' conflicts with direction up\",\"last_3d: 1 profit day, 2 loss days, roi 0.532 driven by d-1 roi 2.107\",\"peers.fwd_roi_1_3d 0.023, n=40\"],\"uncertainty\":[\"Whether the buyer meant to cut or raise the budget\",\"Whether the d-1 spike is repeatable or a one-off\",\"Whether CPM spike is persisting today\",\"Peer forward ROI is only slightly positive\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 666,
+  "output_tokens": 878,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000527,
+ "request_id": "req_011Cg9MXJocM6nPwcGfxevfB",
+ "ts": "2026-10-18T08:03:53+00:00"
+}

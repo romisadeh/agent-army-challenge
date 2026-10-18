@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":16.73,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.09 with 2 loss days of 3, and blended_roi is -0.059, so it fails the proven-winner test. Peers are near break-even (fwd_roi_1_3d 0.013, n=11), and the matured losses are not a strong persistent trend. Buyer raised budget 10.38 to 16.73 about 17h ago with lock_24h true, so hold rather than reverse it. Trend is flat. Review again after the lock expires.\",\"key_evidence\":[\"last_3d.roi = -0.09 (2 loss days, 1 profit day)\",\"blended_roi = -0.059 with blend_weight_own 0.69\",\"buyer.last_human_action: up 10.38->16.73, 17.2h ago, lock_24h true\",\"peers.fwd_roi_1_3d = 0.013, n=11\"],\"uncertainty\":[\"Whether the recent budget increase is still being absorbed, so 3-day ROI may not reflect the new spend level\",\"Whether the buyer has context on the upward move that the card does not show\",\"Whether the losing streak deepens on D-1 and D-2 patterns\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 634,
+  "output_tokens": 808,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000489,
+ "request_id": "req_011Cg9ManHREdiDed2AnEuPA",
+ "ts": "2026-10-18T08:04:40+00:00"
+}

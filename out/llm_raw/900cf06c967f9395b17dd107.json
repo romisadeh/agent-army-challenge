@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":5.08,\"confidence\":0.5,\"reasoning\":\"Matured last_3d ROI is only 0.04 with 2 profit days and 1 loss day, so the evidence is mixed. blended_roi is 0.136 with w=0.35, and peers forward ROI is 0.188 at n=7 (fallback 0). A human cut budget 20.2h ago and lock_24h is true, so no change is warranted today.\",\"key_evidence\":[\"last_3d.roi = 0.04 (profit_days 2, loss_days 1)\",\"blended_roi = 0.136, blend_weight_own = 0.35\",\"peers.fwd_roi_1_3d = 0.188, n = 7\",\"buyer.lock_24h = true, last human action down 20.2h ago\"],\"uncertainty\":[\"Whether the peer forward ROI of 0.188 holds for this adset, given the thin own spend\",\"Whether the recent buyer cut from 6.35 to 5.08 was made for reasons not on the card\",\"Only 4 matured days of history, so the trend is not established\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 540,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000349,
+ "request_id": "req_011Cg7UKcdPK6Royss2Qw1PQ",
+ "ts": "2026-10-17T08:11:49+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.5,\"reasoning\":\"Matured results are mixed and near break-even. blended_roi is 0.028 and last_3d.roi is -0.25, with 2 loss days and 1 profit day, so it is not a proven winner. Yesterday was -0.95 on only 0.76 spend. Peers forward ROI is 0.15 (n=11, fallback 0), which offsets the own losses. The buyer raised budget 1.27 to 3.81 65h ago with no lock, and the adset has lost since. Evidence does not justify a scale-up or a cut yet.\",\"key_evidence\":[\"blended_roi: 0.028\",\"last_3d.roi: -0.25 (loss_days 2, profit_days 1)\",\"matured_days d=-1 roi: -0.95 on spend 0.76\",\"peers.fwd_roi_1_3d: 0.15 (n=11)\"],\"uncertainty\":[\"Whether the post-increase losses persist or are noise from a small spend base\",\"Failed R08 kill attempts yesterday: confirm the adset is not partly paused or in an inconsistent state\",\"Peer sample of 11 is modest\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 712,
+  "output_tokens": 1042,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000613,
+ "request_id": "req_011Cg9Lx1uSD5cisusm6gPtP",
+ "ts": "2026-10-18T07:56:22+00:00"
+}

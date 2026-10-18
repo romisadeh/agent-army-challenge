@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.54,\"confidence\":0.5,\"reasoning\":\"Buyer cut budget 3.81 to 2.54 14.2h ago and lock_24h is true, so no change is advised. Last 3d ROI is -0.146 with 2 loss days, and yesterday was -0.172 with a declining trend. Blended ROI 0.174 relies on peers (fwd 0.359, n=40). Spend exceeds budget, and duplicate rows were removed. Mixed evidence against a locked, recently reduced adset argues for holding.\",\"key_evidence\":[\"buyer.lock_24h = true; last_human_action down 3.81->2.54, 14.2h ago\",\"last_3d.roi = -0.146, loss_days 2 vs profit_days 1\",\"matured_days D-1 roi -0.172, trend_last_day_vs_prior declining\",\"data_quality_flags includes spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag means the budget or spend figures are wrong\",\"Peer forward ROI 0.359 at fallback_level 1 could mean recovery if the decline reverses\",\"Whether the buyer's cut was meant to stop losses or was a cautious test\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 660,
+  "output_tokens": 1136,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000655,
+ "request_id": "req_011Cg9NBQ4Rs5aQ2dVKypgQN",
+ "ts": "2026-10-18T08:12:31+00:00"
+}

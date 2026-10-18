@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.182 with 2 loss days of 3, blended_roi is -0.023, and trend_last_day_vs_prior is declining. The buyer raised budget 1.27 to 3.81 about 23h ago under lock_24h, which conflicts with these losing matured numbers. Data_quality_flags shows spend exceeding 1.25x budget. A human should settle the conflict. If forced, keep the budget at 3.81 and do not scale further.\",\"key_evidence\":[\"last_3d.roi=-0.182 with loss_days=2 and profit_days=1\",\"blended_roi=-0.023 with peers fwd_roi_1_3d=0.077 (n=26, fallback)\",\"buyer.last_human_action up 1.27->3.81, hours_ago=23, lock_24h=true\",\"trend_last_day_vs_prior=declining; matured_days d=-1 roi=-0.217\"],\"uncertainty\":[\"Whether the buyer's 3x budget increase was intended as a test with knowledge not on the card\",\"Whether spend_exceeds_1.25x_budget flag means reported spend is unreliable\",\"Whether the d=-4 and d=-3 profitable days indicate recovery or noise\",\"Peer evidence is band fallback, so it is weak\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 1032,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000599,
+ "request_id": "req_011Cg7u7v9ubLK2QT7E6PFHH",
+ "ts": "2026-10-17T13:37:03+00:00"
+}

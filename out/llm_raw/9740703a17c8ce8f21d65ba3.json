@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is +0.528 with 3 profit days and an improving last day, but blended_roi is -0.018 because weak band-fallback peers (n=12, fwd_roi -0.307) carry 65% weight. A human raised budget 2.03 to 3.81 17.2h ago and lock_24h is true. Evidence is mixed and the lock applies, so hold without change.\",\"key_evidence\":[\"last_3d.roi=0.528, profit_days=3, loss_days=0\",\"blended_roi=-0.018 with peers.fwd_roi_1_3d=-0.307, n=12, fallback_level=1\",\"buyer.last_human_action up 2.03\u21923.81, hours_ago=17.2, lock_24h=true\"],\"uncertainty\":[\"Peer band is a fallback with small n, so the negative blend may not reflect this adset\",\"Whether D-day revenue confirms the improving trend\",\"Whether the 88% budget increase from yesterday is still ramping\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 594,
+  "output_tokens": 983,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00057,
+ "request_id": "req_011Cg7SsMVU8EWMjdAQF2xxV",
+ "ts": "2026-10-17T07:52:48+00:00"
+}

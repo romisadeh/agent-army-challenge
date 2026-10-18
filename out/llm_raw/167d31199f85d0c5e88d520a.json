@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is near break-even (last_3d.roi 0.021, 2 profit days vs 1 loss) and the adset is only 5 days old with spend under $10 per day. Blended_roi 0.12 leans on a thin peer set (n=8, fallback level 1). Buyer doubled budget from 2.92 to 6.35 seventeen hours ago and lock_24h is true, so no change is the right call.\",\"key_evidence\":[\"last_3d.roi = 0.021, profit_days 2, loss_days 1\",\"buyer.lock_24h = true, last human action up 2.92 to 6.35 at 17h ago\",\"blended_roi = 0.12, blend_weight_own 0.33\",\"peers.n = 8, fallback_level 1\"],\"uncertainty\":[\"Whether the 17h-old budget doubling is already producing profit in the forward days\",\"Peer forward ROI 0.169 is weak evidence at n=8 and fallback band\",\"Only 4 matured days of history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 797,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000477,
+ "request_id": "req_011Cg7SuX6Dbbz635pLKTJVy",
+ "ts": "2026-10-17T07:53:17+00:00"
+}

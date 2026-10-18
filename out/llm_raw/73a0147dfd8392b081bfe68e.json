@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":6.1,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner criteria: age 6 spend days, 2 of last 3 matured days profitable, last_3d ROI +0.364, blended ROI +0.23. Yesterday was positive (+0.344), so the decline is not a loss. The buyer cut the budget 24.4h ago (6.35 to 5.08) after a midnight spike, and the lock has expired. A +20% step returns to roughly the prior level. Spend overshoot flag tempers confidence.\",\"key_evidence\":[\"last_3d.roi=0.364 (2 profit days, 1 loss)\",\"blended_roi=0.23\",\"matured d-1 roi=0.344 on spend 6.45\",\"buyer cut budget 6.35->5.08 24.4h ago, lock_24h=false\"],\"uncertainty\":[\"Spend exceeds 1.25x budget, so the budget may not bind and scaling may add little\",\"The buyer's midnight spike reset suggests possible pacing volatility\",\"Small absolute spend means noisy ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 385,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005631,
+ "request_id": "req_011Cg9Mh365UNUPtR4sxMk5y",
+ "ts": "2026-10-18T08:06:05+00:00"
+}

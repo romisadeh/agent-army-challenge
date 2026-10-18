@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is near break-even (last_3d roi 0.011, one profit day and one loss day), and blended_roi is -0.027 with blend_weight_own 0.47. Peers forward ROI is -0.06 but fallback_level 1 with n=42 is weak evidence. Spend is small ($19.05 budget). No buyer lock or notes. Evidence is mixed and roughly break-even, so no change.\",\"key_evidence\":[\"last_3d.roi = 0.011, profit_days 1, loss_days 1\",\"blended_roi = -0.027\",\"peers.fwd_roi_1_3d = -0.06, fallback_level 1\"],\"uncertainty\":[\"Peer fallback band is broad; forward ROI may differ for this adset\",\"Only 2 matured days of history; age_spend_days = 2\",\"Budget reconstructed from metadata, so the true current budget may differ\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 499,
+  "output_tokens": 342,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00024,
+ "request_id": "req_011Cg7SRKszrfzoCsTrj4DKX",
+ "ts": "2026-10-17T07:46:52+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Matured data is profitable (3d ROI 0.399, blended 0.261, yesterday 0.663 and improving), which would normally favor a scale-up. But a human cut the budget 12.7 to 10.16 only 0.4h ago and the 24h lock is active. Spend is small and the buyer is trimming the original while testing a duplicate. Respect the deliberate action and keep.\",\"key_evidence\":[\"buyer.last_human_action: down 12.7->10.16, 0.4h ago, lock_24h=true\",\"last_3d ROI 0.399 on $19.30 spend, 2 profit days / 1 loss day\",\"blended_roi 0.261 (peers fwd 0.127, n=16)\",\"buyer note 93h ago: duplicated to new audience, trimming original\"],\"uncertainty\":[\"Why the buyer cut budget despite good yesterday ROI\",\"Performance of the duplicated audience\",\"Small spend makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 658,
+  "output_tokens": 360,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00529,
+ "request_id": "req_011Cg7UMNwRzBAi83Rvw34rn",
+ "ts": "2026-10-17T08:12:13+00:00"
+}

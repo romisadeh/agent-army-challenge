@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last 3 matured days are profitable overall (ROI 0.70 on $12.88, 2 profit days, 1 loss), and blended ROI is 0.297. But spend is tiny (blend weight 0.39), peers are only +3.8%, and a buyer cut the budget from 6.35 to 4.13 about 24.5h ago. Evidence is thin, so I hold rather than reverse the buyer.\",\"key_evidence\":[\"last_3d ROI 0.70 on $12.88 spend, 2 profit days / 1 loss day\",\"blended_roi 0.297 (own weight 0.39)\",\"peers fwd_roi_1_3d 0.038, n=53\",\"buyer last action: down 6.35 to 4.13, 24.5h ago\"],\"uncertainty\":[\"Why the buyer cut the budget\",\"Tiny spend makes ROI very noisy\",\"Peer ROI is only slightly positive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 347,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005102,
+ "request_id": "req_011Cg7UsvaXYr7LxxvDqep7U",
+ "ts": "2026-10-17T08:19:08+00:00"
+}

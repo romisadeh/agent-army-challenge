@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"Adset is profitable: 3-day ROI 0.59 with 2 of 3 profit days, blended ROI 0.528, and yesterday ROI 0.856. But the buyer raised budget 55.3 to 68 only 14.1h ago and lock_24h is true, so I should not override it. Peers' forward ROI is only 0.015, which tempers further scaling. Hold and let the new budget produce data.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 55.3->68.0 14.1h ago\",\"last_3d ROI 0.59 (2 profit days, 1 loss day)\",\"blended_roi 0.528, blend_weight_own 0.89\",\"peers fwd_roi_1_3d 0.015 (n=19)\"],\"uncertainty\":[\"How the adset performs at the new $68 budget; spend was ~$55-57 recently\",\"Peers' near-zero forward ROI suggests possible mean reversion\",\"Duplicate perf rows were removed, so data accuracy is slightly uncertain\",\"ROI volatility: -0.221 on D-2 vs 1.104 on D-3\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 640,
+  "output_tokens": 416,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005814,
+ "request_id": "req_011Cg7UudQxqpayVJ9b3jbbg",
+ "ts": "2026-10-17T08:19:31+00:00"
+}

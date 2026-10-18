@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets the proven-winner profile on paper (age 5, 2 of 3 profitable days, last_3d ROI +0.445), but blended ROI is -0.075 (below +0.10) because peers are weak at -0.294. A buyer cut the budget 14.3h ago and a 24h lock is active, and yesterday was negative and declining. Spend is tiny, so I keep and respect the buyer's deliberate action.\",\"key_evidence\":[\"buyer.lock_24h=true; budget cut 2.48->1.98 14.3h ago\",\"blended_roi=-0.075 (peers fwd_roi -0.294, n=6)\",\"last_3d roi=+0.445, 2 profit days / 1 loss day\",\"d-1 ROI -0.391, trend declining\"],\"uncertainty\":[\"Whether yesterday's loss is noise given only $1.46 spend\",\"Why the buyer reduced budget\",\"Peer weakness may not apply to this adset's own strong history\",\"Spend exceeding 1.25x budget flag may distort recent numbers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 392,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005633,
+ "request_id": "req_011Cg9MVRdKs8wQLK4GuNsV9",
+ "ts": "2026-10-18T08:03:27+00:00"
+}

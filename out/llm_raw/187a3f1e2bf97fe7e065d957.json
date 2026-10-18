@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Passes the proven-winner screen (age 4, 2 of 3 matured days profitable, last_3d.roi 0.289, blended_roi 0.151), but trend_last_day_vs_prior is declining and yesterday's roi is -0.336, which the scale-up exception names. data_quality_flags spend_exceeds_1.25x_budget (spend 2.68 vs budget 1.27) makes the budget base unreliable. net_budget_change_48h -3.81 suggests recent buyer cuts. Keep until the trend and budget data are clarified.\",\"key_evidence\":[\"matured_days d-1 roi -0.336\",\"trend_last_day_vs_prior declining\",\"data_quality_flags spend_exceeds_1.25x_budget\",\"buyer.net_budget_change_48h -3.81\"],\"uncertainty\":[\"Whether yesterday's loss is a one-day dip or the start of a decline\",\"Whether the budget of 1.27 is the true delivery base given spend above budget\",\"Reason for the 48h net budget reduction\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 1051,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000608,
+ "request_id": "req_011Cg7tDpGFQi4hHKso1zcrz",
+ "ts": "2026-10-17T13:25:15+00:00"
+}

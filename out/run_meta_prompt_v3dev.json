@@ -1,0 +1,16 @@
+{
+ "run_ts": "2026-10-17T13:15:14+00:00",
+ "mode": "agent",
+ "replay": false,
+ "limit": null,
+ "dates": [
+  "2026-06-10"
+ ],
+ "prompt_version": "adset-agent-v3",
+ "DS_MIN": 0.35,
+ "SA_MIN": 0.5,
+ "MATERIALITY_3D_SPEND": 8.0,
+ "llm_calls_billed": 136,
+ "cost_billed_usd": 0.2981,
+ "cost_of_decisions_usd": 0.2981
+}

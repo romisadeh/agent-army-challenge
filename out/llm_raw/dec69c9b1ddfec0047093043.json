@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":13.41,\"confidence\":0.6,\"reasoning\":\"Meets the proven-winner test: age_spend_days 4, profit_days 3 of last 3, last_3d.roi 0.331 and blended_roi 0.259, both above +0.10. No buyer action, lock, or notes. Trend is declining (last day 0.233 vs prior 0.824) but yesterday stayed profitable, so a modest 10% step is preferred over keep.\",\"key_evidence\":[\"last_3d.roi = 0.331 with profit_days 3, loss_days 0\",\"blended_roi = 0.259 (blend_weight_own 0.57)\",\"trend_last_day_vs_prior = declining\",\"buyer.last_human_action = null, lock_24h = false\"],\"uncertainty\":[\"budget.current 12.19 is reconstructed from metadata, so the true base may differ\",\"declining trend could continue toward break-even\",\"peer forward ROI 0.163 is positive but below own ROI\",\"yesterday's spend 14.02 exceeds budget, so the spend base is unclear\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 560,
+  "output_tokens": 806,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00048,
+ "request_id": "req_011Cg9MrMoDUPD2vWWM9fkKM",
+ "ts": "2026-10-18T08:08:11+00:00"
+}

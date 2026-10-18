@@ -1,0 +1,81 @@
+{
+ "adset_id": "31124038476129",
+ "account": "ACC-04",
+ "decision_date": "2026-06-11",
+ "window": "10:00 local (UTC+3); all performance below is matured (through D-1)",
+ "age_spend_days": 5,
+ "status_at_window": "active",
+ "budget": {
+  "current": 6.35,
+  "source": "buyer_log_before_window",
+  "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+  "budget_type": "ABO"
+ },
+ "matured_days": [
+  {
+   "d": -5,
+   "spend": 0.01,
+   "revenue": 0.0,
+   "roi": -1.0
+  },
+  {
+   "d": -4,
+   "spend": 2.74,
+   "revenue": 2.93,
+   "roi": 0.069
+  },
+  {
+   "d": -3,
+   "spend": 4.62,
+   "revenue": 7.94,
+   "roi": 0.717
+  },
+  {
+   "d": -2,
+   "spend": 3.85,
+   "revenue": 4.8,
+   "roi": 0.248
+  },
+  {
+   "d": -1,
+   "spend": 4.58,
+   "revenue": 4.47,
+   "roi": -0.025
+  }
+ ],
+ "last_3d": {
+  "spend": 13.06,
+  "revenue": 17.21,
+  "roi": 0.318,
+  "loss_days": 1,
+  "profit_days": 2
+ },
+ "trend_last_day_vs_prior": "declining",
+ "peers": {
+  "segment": "ACC-04 / age 4+ / >+5%",
+  "n": 22,
+  "fallback_level": 0,
+  "fwd_roi_1_3d": 0.078
+ },
+ "blended_roi": 0.173,
+ "blend_weight_own": 0.39,
+ "buyer": {
+  "last_human_action": {
+   "hours_ago": 19.0,
+   "event": "ui_update_budget",
+   "from": 3.81,
+   "to": 6.35,
+   "direction": "up",
+   "note": null
+  },
+  "net_budget_change_48h": 2.54,
+  "lock_24h": true,
+  "notes": []
+ },
+ "rules": {
+  "acted_yesterday": [],
+  "acted_today_before_window": []
+ },
+ "data_quality_flags": [],
+ "lessons": []
+}

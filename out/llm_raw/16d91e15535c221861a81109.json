@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset has 5 spend days, but last_3d.roi is -0.01 and blended_roi is 0.049, both below the +0.10 proven-winner thresholds. Yesterday was -0.144 on the largest spend with a declining trend. A buyer cut the budget 24.5h ago, and spend exceeded 1.25x budget. Peers are strong (+0.556), which argues against cutting. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.roi -0.01 (2 profit days, 1 loss)\",\"blended_roi 0.049\",\"d-1 roi -0.144 on $89.65 spend, trend declining\",\"buyer cut budget 54.61->43.69 24.5h ago\"],\"uncertainty\":[\"Spend overshoot vs budget (flag) may distort the ROI picture\",\"Whether yesterday's loss is noise or the start of a trend as spend scaled up\",\"Peer ROI of +0.556 may not apply to this adset's recent performance\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 374,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005419,
+ "request_id": "req_011Cg7simorWP2g3cnAyNRP2",
+ "ts": "2026-10-17T13:18:40+00:00"
+}

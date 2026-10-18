@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.341 with 3 loss days and 0 profit days. The positive blended_roi of 0.274 comes from peers (fwd ROI 0.697, n=5), since own weight is only 0.41. Spend is tiny ($13.75 over 3d, budget $3.81), so losses are small and a pause isn't justified. Spend exceeding 1.25x budget is a flag. Keep and watch.\",\"key_evidence\":[\"last_3d roi -0.341, 0 profit days / 3 loss days\",\"blended_roi 0.274 driven by peers fwd_roi 0.697 (n=5)\",\"budget.current 3.81, spend 13.75 over 3d\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether peer recovery applies to this adset given its own consistent losses\",\"Why spend exceeds budget; may distort the ROI picture\",\"Very small spend, so the sample is noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 370,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005347,
+ "request_id": "req_011Cg7sZdo9SKLgAm42mfHfx",
+ "ts": "2026-10-17T13:16:36+00:00"
+}

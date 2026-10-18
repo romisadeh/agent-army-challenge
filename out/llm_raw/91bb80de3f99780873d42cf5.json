@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Blended ROI is -0.119 and 3-day ROI is -0.229, but the losses are small in absolute terms (about $2.3 on $9.98 spend) and 2 of 3 matured days were profitable. A buyer cut budget 17.2h ago and the 24h lock is active, so I defer to that recent human action rather than change it. Spend exceeded 1.25x budget on D-1, so the cut's effect is unclear. Yesterday's -0.631 is a single bad day, not a trend.\",\"key_evidence\":[\"blended_roi -0.119\",\"last_3d roi -0.229, profit_days 2, loss_days 1\",\"buyer lock_24h true, ui_update_budget down 3.81->2.54 17.2h ago\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether D-1 overspend (spend 5.03 vs budget 2.54) reflects a budget-enforcement issue\",\"Whether peer forward ROI (-0.064, n=14) holds for this adset\",\"Whether the buyer's cut is taking effect after the lock expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 752,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000456,
+ "request_id": "req_011Cg7UTgkA1aX7ypg6aYQwv",
+ "ts": "2026-10-17T08:13:40+00:00"
+}

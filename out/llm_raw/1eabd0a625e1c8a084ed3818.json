@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":80.98,\"confidence\":0.55,\"reasoning\":\"Meets proven-winner criteria (age 34, 3 of 3 profitable days, last_3d ROI 0.167, blended 0.18). But a buyer cut the budget from 115.67 to 80.98 24.5h ago (net -34.69 over 48h), which is a deliberate recent action. Yesterday ROI fell to 0.05, and spend exceeded 1.25x budget, so the data may be unreliable. Holding respects the buyer's move; peers (0.412) argue for scaling later.\",\"key_evidence\":[\"buyer.last_human_action: down 115.67->80.98, 24.5h ago\",\"last_3d: 3 profit days, ROI 0.167\",\"matured d-1 ROI 0.05, down from 0.168\",\"flag: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget\",\"Whether the spend overrun distorts the ROI figures\",\"Whether yesterday's ROI of 0.05 is the start of a decline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 379,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005439,
+ "request_id": "req_011Cg7t3Db9nCa7SKF1jmPwU",
+ "ts": "2026-10-17T13:22:50+00:00"
+}

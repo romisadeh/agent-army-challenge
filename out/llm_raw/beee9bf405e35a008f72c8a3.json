@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"Matured days are mixed: two losses (D-4, D-3), one strong profit day (D-2, ROI 1.41) and one small profit (D-1, ROI 0.121). The 3-day ROI of 0.511 rests mainly on D-2. Blended ROI is 0.156 and peer forward ROI is only 0.007. Trend is declining. Flags show conversions above clicks and spend above 1.25x budget, so the data is unreliable. The buyer cut budget 24.6h ago with no lock. Evidence is too thin and conflicting to scale or pause.\",\"key_evidence\":[\"matured_days: D-4 ROI -0.044, D-3 ROI -0.12, D-2 ROI 1.41, D-1 ROI 0.121\",\"last_3d.roi 0.511 on spend 8.39, driven by one day\",\"blended_roi 0.156 vs peers.fwd_roi_1_3d 0.007 (n=32)\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the conversions-exceed-clicks flag reflects a tracking bug that inflates revenue\",\"Whether D-2 spike repeats or was a one-off\",\"Whether the 24.6h-old buyer cut was based on information not on the card\",\"Whether the declining trend continues into D+1\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 980,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000571,
+ "request_id": "req_011Cg7Sezx7k6XzdCYcHS2pi",
+ "ts": "2026-10-17T07:50:01+00:00"
+}

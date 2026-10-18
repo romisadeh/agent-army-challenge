@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"last_3d.roi is -0.012 and blended_roi is -0.011, roughly break-even, with 2 loss days vs 1 profit day. Yesterday was -0.327 and trend_last_day_vs_prior is declining, which argues against scaling. The buyer cut budget 16.0 to 11.2 only 24.5h ago, so I will not add to it. Peers' forward ROI is -0.008. The spend_exceeds_1.25x_budget flag makes the spend figures less reliable. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.roi = -0.012 (roughly break-even)\",\"blended_roi = -0.011\",\"buyer.last_human_action: down 16.0 to 11.2, 24.5h ago\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether yesterday's -0.327 is noise or the start of a persistent decline\",\"Reliability of spend figures given spend_exceeds_1.25x_budget flag\",\"Whether the 24.5h-old buyer cut reflects information I lack\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 651,
+  "output_tokens": 799,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000486,
+ "request_id": "req_011Cg9Mw84rzSPYeNAsTn66v",
+ "ts": "2026-10-18T08:09:16+00:00"
+}

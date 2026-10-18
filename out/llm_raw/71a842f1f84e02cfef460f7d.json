@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.89,\"confidence\":0.35,\"reasoning\":\"Only two matured days exist: d-2 ROI -0.373 and d-1 ROI 0.002 (break-even), so the losses are not yet a consistent trend. Blended ROI is -0.336 with own weight 0.34, and peers are weak at -0.435 with n=12. Trend is improving and spend is small at $8.89. Pausing would rest on two days, so keep and reassess tomorrow.\",\"key_evidence\":[\"matured_days d-2 roi -0.373 and d-1 roi 0.002\",\"blended_roi -0.336 with blend_weight_own 0.34\",\"trend_last_day_vs_prior improving\",\"data_quality_flags budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Budget figure is reconstructed from metadata, so current spend level may be off\",\"Only 2 matured days; peer evidence is negative (n=12) and could mean continued losses\",\"A third matured day would show whether the loss persists\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 501,
+  "output_tokens": 719,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000428,
+ "request_id": "req_011Cg7SW32PKpWNsVo8NEQ6Q",
+ "ts": "2026-10-17T07:47:58+00:00"
+}

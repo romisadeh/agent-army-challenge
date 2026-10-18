@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":20.45,\"confidence\":0.55,\"reasoning\":\"Proven-winner signals: age 8 spend days, last_3d.roi 0.17 > 0.10, blended_roi 0.131 > 0.10, 2 of 3 matured days profitable. Against scaling: buyer ui_adjust_budget moved 25.4 to 17.78 24.5h ago (net_budget_change_48h -7.62), trend_last_day_vs_prior declining, and d-1 roi -0.036. Buyer-vs-numbers conflict, so escalate. Proposed scale_up about 15%.\",\"key_evidence\":[\"last_3d.roi = 0.17, blended_roi = 0.131\",\"buyer.last_human_action: down 25.4 to 17.78, hours_ago 24.5\",\"matured_days d-1 roi = -0.036, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's down move was a deliberate lower-risk call or a reaction to a bad day\",\"Whether spend_exceeds_1.25x_budget means the budget figure is stale\",\"Peer forward ROI is -0.013 on n=30, so peers argue against scaling\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 1243,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000705,
+ "request_id": "req_011Cg7tt6YMPayYm7nYFNJ1R",
+ "ts": "2026-10-17T13:33:56+00:00"
+}

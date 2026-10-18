@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":17.22,\"confidence\":0.6,\"reasoning\":\"A 24h lock is active after a human raised budget from 10.87 to 17.22 17 hours ago, so I won't override it. Matured data supports that direction: last_3d ROI 0.165 with 3 profit days and 0 loss days, yesterday ROI 0.121, blended_roi 0.145, peers fwd 0.108. Days are not all profitable (D-4 was -0.228), and the trend is flat. Evidence supports holding the new budget, not scaling further yet.\",\"key_evidence\":[\"buyer.lock_24h = true; last_human_action up 10.87\u219217.22, 17.2h ago\",\"last_3d.roi = 0.165, profit_days 3, loss_days 0\",\"blended_roi = 0.145 vs peers.fwd_roi_1_3d = 0.108 (n=24)\",\"matured_days d=-4 roi -0.228; trend_last_day_vs_prior = flat\"],\"uncertainty\":[\"Budget only 17.22 since a recent raise; the 3-day sample is small and spend is under 40 USD\",\"Legacy rule R02 cut on immature morning data yesterday; its effect on the next days is unknown\",\"Peer forward ROI is only 0.108, so the blended edge over peers is modest\",\"Whether the buyer's raise was meant as a test to hold or as a step to keep scaling\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 998,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000588,
+ "request_id": "req_011Cg7Ugu5gYQTtqz5u5WLFG",
+ "ts": "2026-10-17T08:16:40+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Age is 3 spend days, below the 4+ proven-winner threshold. Last_3d ROI is +0.083 and blended_roi +0.032, roughly break-even. Yesterday was -0.256 with trend_last_day_vs_prior declining. A human cut budget 3.81 to 2.54 22h ago and lock_24h is true, so no change. The spend_exceeds_1.25x_budget flag adds uncertainty about the numbers.\",\"key_evidence\":[\"buyer.lock_24h = true (ui_update_budget down 3.81 to 2.54, 22h ago)\",\"last_3d.roi = 0.083, blended_roi = 0.032\",\"matured_days d=-1 roi = -0.256, trend declining\",\"age_spend_days = 3\"],\"uncertainty\":[\"Whether the spend-over-budget flag makes spend and ROI unreliable\",\"Whether the 22h-old buyer cut reflects a deliberate call on this adset\",\"Peer forward ROI of 0.008 is barely positive, offering little directional signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 810,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000484,
+ "request_id": "req_011Cg7skqm3kgTSiDCXBNGko",
+ "ts": "2026-10-17T13:19:09+00:00"
+}

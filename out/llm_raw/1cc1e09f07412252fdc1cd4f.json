@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: only 1 of last 3 matured days profitable (d-3 +0.956, d-2 -0.162, d-1 -0.31), so the 2-of-3 rule fails. last_3d.roi 0.264 rests on one day, trend is declining, and peers.fwd_roi_1_3d is ~0.004 (break-even). A buyer cut budget 7.43 to 4.83 about 45h ago. Evidence is mixed, so hold rather than move budget.\",\"key_evidence\":[\"matured_days d-1 roi -0.31, trend_last_day_vs_prior declining\",\"last_3d profit_days 1, loss_days 2\",\"peers.fwd_roi_1_3d 0.004 (n=31)\",\"buyer.last_human_action down 7.43 to 4.83, 45.2h ago\"],\"uncertainty\":[\"Whether the d-1 loss is noise after a strong d-3 or the start of a persistent decline\",\"Cause of data_quality flag spend_exceeds_1.25x_budget (d-1 spend 5.08 vs budget 4.83 is only ~1.05x)\",\"Reason for the buyer's down move, which the card does not state\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 1008,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000587,
+ "request_id": "req_011Cg7tBZmpPC6P9UrAu9c1S",
+ "ts": "2026-10-17T13:24:46+00:00"
+}

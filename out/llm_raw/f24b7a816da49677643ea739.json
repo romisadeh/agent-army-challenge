@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"The adset meets the proven-winner thresholds on paper (age 6, 2 of 3 days profitable, last_3d ROI +0.428, blended +0.167). But a buyer cut the budget 2.29 to 1.83 only 0.4h ago and lock_24h is true, so scaling up would override a deliberate human action. Yesterday was negative and the trend is declining. Spend also exceeds 1.25x budget, and conversions exceed clicks, so the data is unreliable. Keeping is the safest choice.\",\"key_evidence\":[\"buyer.last_human_action: down 2.29->1.83, 0.4h ago, lock_24h=true\",\"last_3d.roi=0.428 (2 profit days, 1 loss day)\",\"trend_last_day_vs_prior=declining; d-1 ROI -0.081\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget, since no note was left\",\"Whether revenue and conversion data is reliable given the quality flags\",\"Spend is tiny (about $10 over 3 days), so ROI is noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 659,
+  "output_tokens": 433,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.006071,
+ "request_id": "req_011Cg9MKkmibyR1EiyvtQkBb",
+ "ts": "2026-10-18T08:01:15+00:00"
+}

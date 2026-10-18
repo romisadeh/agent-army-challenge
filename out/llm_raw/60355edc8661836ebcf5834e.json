@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":5.08,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is 0.364 with 2 profit days and 1 loss day, and blended ROI is 0.23, which is positive but not a clear scale-up signal. Peer forward ROI is 0.107 (n=27). Yesterday's ROI of 0.344 is positive, but the trend is declining and the prior day lost money. Spend exceeds budget by 1.27x, so the budget figure is unreliable. The buyer's 24h-old reset has no lock. Keep the current budget.\",\"key_evidence\":[\"last_3d.roi = 0.364, profit_days 2, loss_days 1\",\"blended_roi = 0.23, peers.fwd_roi_1_3d = 0.107 (n=27)\",\"trend_last_day_vs_prior = declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the declining trend continues or yesterday's profit was noise\",\"Whether the spend-over-budget flag means the real budget differs from 5.08\",\"Whether the midnight spike recurs now that the buyer reset the budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 773,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000473,
+ "request_id": "req_011Cg7UfpoRiHdNNRZmPDeX5",
+ "ts": "2026-10-17T08:16:25+00:00"
+}

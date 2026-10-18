@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":12.0,\"confidence\":0.6,\"reasoning\":\"All five matured days were profitable (ROI 0.076 to 0.523), and last_3d shows 3 profit days with ROI 0.351 on $36.12 spend. blended_roi is 0.227 at blend_weight_own 0.64. Peer forward ROI is only 0.003 (n=38, fallback 0), so the edge may fade. Buyer's down-adjust was 93.8h ago with no lock or note. A modest +10% step is justified.\",\"key_evidence\":[\"matured_days: all 5 days roi > 0\",\"blended_roi: 0.227\",\"peers.fwd_roi_1_3d: 0.003 (n=38)\",\"buyer.last_human_action: down 93.8h ago, lock_24h false\"],\"uncertainty\":[\"Peer forward ROI near break-even may signal regression after scaling\",\"Spend runs ~12 per day against a 10.92 budget, so delivery may not follow the budget\",\"Buyer reduced budget recently for unstated reasons\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 849,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000506,
+ "request_id": "req_011Cg7URoKkGgU2ehnG6RsC1",
+ "ts": "2026-10-17T08:13:14+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":82.51,\"confidence\":0.45,\"reasoning\":\"Evidence is mixed. last_3d.roi is -0.059 with 2 loss days of 3, and blended_roi is -0.039, so it fails the proven-winner test. Yesterday's roi of -0.248 is declining. Against that, the 4-day matured ROI is about +0.10, peers forward ROI is +0.244 (n=27, fallback), and the buyer's cut 64.7h ago is outside the 48h net-change window. Failed R02 cuts are echo noise, not performance. No change until the losses persist.\",\"key_evidence\":[\"last_3d.roi = -0.059 (2 loss days of 3)\",\"blended_roi = -0.039, blend_weight_own = 0.93\",\"trend_last_day_vs_prior = declining; matured d-1 roi = -0.248\",\"peers.fwd_roi_1_3d = 0.244, n = 27, fallback_level 1\"],\"uncertainty\":[\"Whether D-1 is a one-day dip or the start of a persistent loss trend\",\"Peer benchmark is a band fallback and may not reflect this adset\",\"Buyer's 103.14 to 82.51 cut may be a deliberate call with context I don't have\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 1401,
+  "output_tokens": 1295,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000809,
+ "request_id": "req_011Cg7tcr9GBVKspDn4tXWsk",
+ "ts": "2026-10-17T13:30:30+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.55,\"reasoning\":\"Last 3 matured days show 2 profit days and 1 zero-revenue day (D-1, spend 3.09, ROI -1.0), with trend_last_day_vs_prior declining. Blended ROI is 0.839 but own weight is only 0.31, and peer forward ROI is a weaker 0.105 (n=16). Budget was tripled 64.7h ago with no lock. Evidence is mixed, so hold budget.\",\"key_evidence\":[\"last_3d.profit_days=2, loss_days=1, roi=2.468\",\"matured_days D-1 revenue=0.0, roi=-1.0\",\"blended_roi=0.839 with blend_weight_own=0.31\",\"peers.fwd_roi_1_3d=0.105, n=16\"],\"uncertainty\":[\"Whether yesterday's zero revenue is a one-day dip or the start of a decline\",\"Small spend base (about $9 over 3 days) makes ROI volatile\",\"Effect of the 3x budget increase 64.7h ago is not yet visible in matured data\",\"Peer forward ROI is much weaker than own history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 958,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000557,
+ "request_id": "req_011Cg7SL51fL4VXU7zEm7nzF",
+ "ts": "2026-10-17T07:45:44+00:00"
+}

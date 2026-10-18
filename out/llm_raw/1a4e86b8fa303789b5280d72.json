@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d ROI is only +0.053 and blended ROI +0.063, both under the +0.10 threshold. Yesterday was -0.25 and the trend is declining. A buyer raised the budget 23h ago and the 24h lock is active, so I should not override it. Spend is tiny (about $3.81 per day), so stakes are low. Keep.\",\"key_evidence\":[\"last_3d.roi=0.053 (1 profit day, 2 loss days)\",\"blended_roi=0.063\",\"buyer.lock_24h=true, budget raised 3.2->3.81 23h ago\",\"trend_last_day_vs_prior=declining, d-1 roi=-0.25\"],\"uncertainty\":[\"Whether the budget increase caused the recent ROI decline\",\"Spend exceeds 1.25x budget, so the budget figure may not reflect actual delivery\",\"Very small sample, so noise dominates\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 349,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005137,
+ "request_id": "req_011Cg7srxifTx3Us5RfV8NDZ",
+ "ts": "2026-10-17T13:20:30+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is -0.085 with 2 loss days and 1 profit day, and blended ROI is -0.058, which is roughly break-even to slightly negative. Not a proven winner, and no clear persistent matured loss justifies a pause. The data_quality_flag spend_exceeds_1.25x_budget is serious: last_3d spend of 36.47 far exceeds 3 days at budget.current 1.27, and budget.source is a buyer log, so the budget figure may be stale. A human should confirm the real budget before any change.\",\"key_evidence\":[\"data_quality_flags: spend_exceeds_1.25x_budget\",\"last_3d.roi: -0.085 (2 loss days, 1 profit day)\",\"blended_roi: -0.058, peers.fwd_roi_1_3d: -0.007 (n=11)\",\"budget.current: 1.27 from buyer_log_before_window vs last_3d.spend 36.47\"],\"uncertainty\":[\"Whether the true daily budget is far above 1.27, which would change the spend base and the meaning of ROI\",\"Whether D-1 zero revenue (spend 0.71) is a delay artifact or a real stop\",\"Whether the adset is still delivering spend at the stated budget\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 870,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000521,
+ "request_id": "req_011Cg9M9YWFKJ7AeqQt6Efaq",
+ "ts": "2026-10-18T07:58:58+00:00"
+}

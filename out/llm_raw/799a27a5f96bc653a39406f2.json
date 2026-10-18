@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":13.97,\"confidence\":0.6,\"reasoning\":\"Meets the proven-winner test: age_spend_days 5 (4+), 2 of last 3 matured days profitable, last_3d.roi 0.462 (>0.10), blended_roi 0.238 (>0.10). Buyer's last action was an upward move (6.35 to 12.7), so no recent cut argues against scaling. Proposed +10%. lock_24h is true, so code may block the change; the peer forward ROI of 0.034 is modest.\",\"key_evidence\":[\"last_3d.roi=0.462 with 2 profit days of 3\",\"blended_roi=0.238\",\"buyer.last_human_action direction=up, hours_ago=18.4\",\"peers.fwd_roi_1_3d=0.034 with n=53\"],\"uncertainty\":[\"lock_24h=true may block the change or require a human\",\"yesterday's ROI of 0.907 came on a spend spike (9.25 vs about 4.5 earlier), so it may not persist\",\"peer forward ROI is only 0.034, suggesting limited upside\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 1332,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00075,
+ "request_id": "req_011Cg9MqRWRpj9mcKSGEEpNx",
+ "ts": "2026-10-18T08:08:02+00:00"
+}

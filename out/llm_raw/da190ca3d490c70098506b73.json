@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset with very low spend (3-day $8.13). Own 3-day ROI is -0.073 with mixed days (2 loss, 1 profit), and the last day was a weak -0.394 on only $1.19 spend. Peers are modestly positive (0.157, n=11), blended ROI 0.09. Evidence is too thin and mixed to scale up or cut. Budget was raised 41h ago and is not locked. Hold.\",\"key_evidence\":[\"last_3d roi -0.073 on spend $8.13 (2 loss, 1 profit days)\",\"blended_roi 0.09 with own weight 0.29\",\"peers fwd_roi_1_3d 0.157, n=11\",\"matured d-1 roi -0.394 on spend $1.19\"],\"uncertainty\":[\"Whether the budget raise 41h ago to $6.35 is driving the recent decline\",\"Small sample: single-day revenue swings of a few dollars distort ROI\",\"Peer segment is a fallback band, so it may not match this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 380,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005434,
+ "request_id": "req_011Cg7UYjx2qy1DbfURnD15B",
+ "ts": "2026-10-17T08:14:47+00:00"
+}

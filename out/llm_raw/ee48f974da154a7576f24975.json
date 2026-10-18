@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Own 3-day ROI is +0.068 with 2 profit days and 1 loss day, but blended ROI is -0.109 because peer forward ROI is -0.297 (n=7, fallback 0). Evidence is mixed and near break-even, and the last day improved (ROI +0.269). Spend is small ($21.2 over 3 days), so the blend leans on peers. The budget is reconstructed from metadata, so the current value is uncertain. No change until more matured days confirm a direction.\",\"key_evidence\":[\"blended_roi = -0.109\",\"last_3d.roi = 0.068 with profit_days 2, loss_days 1\",\"peers.fwd_roi_1_3d = -0.297, n = 7\",\"trend_last_day_vs_prior = improving\"],\"uncertainty\":[\"Budget value is reconstructed (budget_reconstructed flag), so the true current budget may differ\",\"Peer evidence is thin (n=7) and negative\",\"Only 3 matured days; one more day could flip the blended sign\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 529,
+  "output_tokens": 609,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000376,
+ "request_id": "req_011Cg7UBcPHL6hbEsQod6ESp",
+ "ts": "2026-10-17T08:10:01+00:00"
+}

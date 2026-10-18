@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Adset is age 3 spend days, below the 4+ proven-winner threshold, and its 3-day ROI is -0.141 with blended_roi -0.009, so it is roughly break-even and slightly negative. Yesterday was -0.561 and trend_last_day_vs_prior is declining, which argues against scaling. Losses are not yet clearly persistent (1 profit day of 3), and peers show fwd_roi_1_3d 0.077 (n=26). A buyer cut budget 5.08 to 3.81 about 40h ago, so no change is the safer call.\",\"key_evidence\":[\"last_3d.roi = -0.141 (2 loss days, 1 profit day)\",\"blended_roi = -0.009 at blend_weight_own 0.39\",\"buyer last_human_action: down 5.08 to 3.81, hours_ago 39.9\",\"trend_last_day_vs_prior = declining; matured d=-1 roi -0.561\"],\"uncertainty\":[\"data_quality_flag spend_exceeds_1.25x_budget may mean budget.current is not the true spend basis\",\"budget.source is buyer_log_before_window, not a live read\",\"peer fallback_level 1 band, so the forward-ROI signal is weak\",\"only 3 matured days; one more day could show persistent losses or a recovery\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 583,
+  "output_tokens": 824,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000491,
+ "request_id": "req_011Cg7tCZbvVFSj5YS3goNX5",
+ "ts": "2026-10-17T13:24:58+00:00"
+}

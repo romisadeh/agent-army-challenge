@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three consecutive matured loss days (last_3d roi -0.406, 0 profit days) and blended_roi -0.348, with peers at -0.307 (n=12, band fallback), show a consistent matured loss, not one bad day. Yesterday improved to -0.175 but was still negative. Absolute losses are small (about $6 on $14 spend), so pausing costs little. Budget was reconstructed, which adds uncertainty.\",\"key_evidence\":[\"last_3d.roi = -0.406 with 3 loss days and 0 profit days\",\"blended_roi = -0.348 (blend_weight_own 0.42)\",\"peers.fwd_roi_1_3d = -0.307, n = 12\",\"trend_last_day_vs_prior = improving, but matured d=-1 roi is still -0.175\"],\"uncertainty\":[\"Budget is reconstructed from end-of-week metadata (budget_reconstructed flag), so the current spend level may not be accurate\",\"Yesterday's improvement could mark a turnaround if it continues\",\"Adset is only 3 days old, so the learning phase may still be distorting results\",\"Peer evidence is a band fallback (level 1)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 1018,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000581,
+ "request_id": "req_011Cg7StRkDyHTS1EzoHxRbf",
+ "ts": "2026-10-17T07:53:03+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Three straight matured loss days (last_3d.roi -0.328, profit_days 0) and a declining trend argue for further cuts. But a buyer cut the budget 13.3h ago (last_human_action 3.81 to 2.54, lock_24h true), and blended_roi 0.049 is only weakly positive, with peers at +0.208. The buyer lock and the losing history conflict, so a human should decide.\",\"key_evidence\":[\"last_3d.roi = -0.328 with 3 loss days and 0 profit days\",\"buyer.last_human_action: down 3.81 to 2.54, hours_ago 13.3, lock_24h true\",\"blended_roi = 0.049 (below the +0.10 proven-winner bar)\",\"peers.fwd_roi_1_3d = 0.208, n = 16\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate response to the losses or a routine adjustment\",\"Whether spend_exceeds_1.25x_budget flag means the budget was overridden or the spend figures are wrong\",\"Whether peer forward ROI applies to this adset given its recent losing streak\"],\"proposed_if_escalated\":\"scale_down\"}",
+ "usage": {
+  "input_tokens": 650,
+  "output_tokens": 995,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000584,
+ "request_id": "req_011Cg9Mn9J2Jrre4PxvT54BT",
+ "ts": "2026-10-18T08:07:15+00:00"
+}

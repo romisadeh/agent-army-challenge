@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.4,\"reasoning\":\"Adset is 3 spend days old, so the proven-winner rule does not apply. Last_3d.roi is -0.086 and yesterday fell to -0.382 with trend_last_day_vs_prior declining. Blended_roi is +0.083 and peers fwd_roi_1_3d is +0.161 (n=30, fallback). Buyer scaled budget up 1.27 to 3.81 about 41h ago, a recent deliberate action, so I hold rather than move again. Kill rules fired on immature morning data and failed.\",\"key_evidence\":[\"last_3d.roi = -0.086 with 1 loss day of 3\",\"matured_days d=-1 roi = -0.382, trend declining\",\"buyer.last_human_action up 1.27 to 3.81, 41.1h ago\",\"blended_roi = 0.083, peers fwd_roi_1_3d = 0.161 (n=30)\"],\"uncertainty\":[\"Whether yesterday's loss is noise or the start of a persistent decline\",\"Whether the 41h-old budget increase is still ramping and not yet at steady state\",\"Kill attempts at 01:30 and 02:00 failed, so the adset may need a human to confirm its live state\",\"Peer evidence is band fallback, so it is only a weak prior\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 1085,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000632,
+ "request_id": "req_011Cg7saTYXnJgSpwX98ewZq",
+ "ts": "2026-10-17T13:16:49+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Adset is 3 spend days old, so the 4+ day proven-winner rule does not apply. Buyer ui_adjust_budget cut budget 10.16 to 6.1 22h ago and lock_24h is true, so a human acted deliberately. Last_3d ROI 0.417 and blended_roi 0.282 are positive, but yesterday was -0.18 with a declining trend and spend exceeded 1.25x budget. Evidence conflicts with the buyer's recent action, so a human should decide.\",\"key_evidence\":[\"buyer.last_human_action: down 10.16->6.1, 22h ago, lock_24h true\",\"matured_days d=-1 roi -0.18, trend_last_day_vs_prior declining\",\"blended_roi 0.282, last_3d.roi 0.417\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the weekend boost reversal was intended to be permanent\",\"Reliability of spend figures given the spend-over-budget flag\",\"Whether the declining trend continues on D-0 after the budget cut\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 737,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00045,
+ "request_id": "req_011Cg9M5JivZHg9JvVbEAwpi",
+ "ts": "2026-10-18T07:57:59+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured 3-day ROI is -0.059 with 2 loss days and 1 profit day, and blended ROI is -0.039. That is roughly break-even, not a consistent loss, so pausing or cutting is unjustified. Peers' forward ROI of +0.244 argues against cutting. Yesterday was bad (-0.248) and today's partial is -0.107, but the buyer cut the budget 72h ago. Hold and observe.\",\"key_evidence\":[\"blended_roi -0.039 (w=0.93 own)\",\"last_3d ROI -0.059, 2 loss days / 1 profit day\",\"peers fwd_roi_1_3d +0.244 (n=27)\",\"today_partial roi_corrected -0.107 at 17:30\"],\"uncertainty\":[\"Whether yesterday's -0.248 is noise or the start of a decline\",\"Spend exceeding 1.25x budget flag may distort spend and ROI\",\"R02 cut rules failed/noop all day, so budget control is unclear\",\"Peer band is a fallback, so it is a weak signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 1507,
+  "output_tokens": 395,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.007338,
+ "request_id": "req_011Cg7VCEHPU8YsfvRsHetPS",
+ "ts": "2026-10-17T08:23:16+00:00"
+}

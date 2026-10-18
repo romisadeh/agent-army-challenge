@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Last 3 matured days are all profitable (last_3d roi 0.48, profit_days 3) and blended_roi is 0.332, but the 5-day window includes two loss days (d-5, d-4) and the 5-day ROI is roughly 0.18. Budget 53.34 is flagged as reconstructed from metadata, and 3-day spend of 28.93 is well under budget. Evidence is mixed and the budget baseline is unreliable, so no change.\",\"key_evidence\":[\"last_3d.roi=0.48 with profit_days=3, loss_days=0\",\"matured_days d-5 roi=-0.029 and d-4 roi=-0.57\",\"blended_roi=0.332 with blend_weight_own=0.59\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Actual current daily budget, since budget.current is reconstructed from metadata\",\"Whether the d-1..d-3 profit persists, given peer forward ROI of only 0.117 (n=15)\",\"Spend running well below budget, so a budget increase may not raise spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 594,
+  "output_tokens": 940,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000548,
+ "request_id": "req_011Cg7UEe557fBL8nmmVc4U6",
+ "ts": "2026-10-17T08:10:43+00:00"
+}

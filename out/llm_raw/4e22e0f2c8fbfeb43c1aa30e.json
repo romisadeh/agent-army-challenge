@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Three matured days (d-3 to d-1) were all profitable: ROI 0.456, 0.156, 0.135, with last_3d ROI 0.199 and blended_roi 0.17, supported by peers at 0.134 (n=17). The budget is unreliable: current 1.27 is reconstructed from end-of-week metadata, and spend exceeds 1.25x budget (d-1 spend 8.95 vs budget 1.27). A correct new budget cannot be set from this base, so a human should confirm the real budget before scaling.\",\"key_evidence\":[\"last_3d.profit_days: 3, loss_days: 0\",\"blended_roi: 0.17 (blend_weight_own 0.54)\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week, spend_exceeds_1.25x_budget\",\"budget.current: 1.27 vs matured_days d-1 spend 8.95\"],\"uncertainty\":[\"True current daily budget (metadata is reconstructed and spend is about 7x budget)\",\"Whether d-4 loss (roi -0.406) signals instability, though it is outside the last 3 days\",\"Peer evidence is moderate (n=17) and forward-looking\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 1053,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000603,
+ "request_id": "req_011Cg7U3t1fDn58u33cFayzy",
+ "ts": "2026-10-17T08:08:18+00:00"
+}

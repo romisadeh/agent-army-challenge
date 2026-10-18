@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3 days are all losses (ROI -0.459) and blended ROI is -0.19, but spend is tiny at $15.75 over 3 days. A buyer cut the budget 22h ago (1.9 to 1.27) and the 24h lock is active, so I should not override it. The budget is already minimal, and a pause on this thin data would be premature. Peers are roughly break-even at +0.021. Keep.\",\"key_evidence\":[\"last_3d.roi -0.459 with 0 profit days\",\"buyer.last_human_action down 1.9->1.27, 22h ago, lock_24h true\",\"blended_roi -0.19, peers fwd_roi 0.021 (n=6)\",\"budget.current 1.27\"],\"uncertainty\":[\"Spend flag spend_exceeds_1.25x_budget may distort results\",\"Whether the buyer plans to pause it\",\"Revenue from recent days may still be arriving late\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 650,
+  "output_tokens": 347,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005193,
+ "request_id": "req_011Cg9MUnDHss9KboUT96t37",
+ "ts": "2026-10-18T08:03:17+00:00"
+}

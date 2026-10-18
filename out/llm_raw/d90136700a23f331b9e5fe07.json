@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.55,\"reasoning\":\"The 24h buyer lock is active after a human raised budget 3.81 to 6.35 nineteen hours ago, so I hold the budget. Matured evidence is mixed: last_3d ROI is 0.318 with 2 profit days and 1 loss day, blended_roi is 0.173, but yesterday ROI was -0.025 and trend_last_day_vs_prior is declining. Peer forward ROI is only 0.078. No change is right until the trend clarifies.\",\"key_evidence\":[\"buyer.lock_24h = true (ui_update_budget up 3.81 to 6.35, 19h ago)\",\"last_3d.roi = 0.318, profit_days 2, loss_days 1\",\"matured_days D-1 roi = -0.025, trend_last_day_vs_prior = declining\",\"blended_roi = 0.173, peers.fwd_roi_1_3d = 0.078 (n=22)\"],\"uncertainty\":[\"Whether the declining trend continues over the next 1-3 days\",\"Effect of the recent 3.81 to 6.35 increase on ROI, since it is only one day old\",\"Peer forward ROI of 0.078 is well below the own 3-day ROI, so the blend may overstate performance\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 817,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 1869
+ },
+ "cost_usd": 0.000705,
+ "request_id": "req_011Cg7TuPrmBiQxjCgVmsAC8",
+ "ts": "2026-10-17T08:06:22+00:00"
+}

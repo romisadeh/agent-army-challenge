@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Age is 3 spend days, so it is not a proven-winner candidate (needs 4+). last_3d.roi is -0.027 with 2 loss days vs 1 profit day, and blended_roi is only 0.059 with own weight 0.29. The evidence is mixed and near break-even. A buyer raised budget 3.81 to 6.35 15.2h ago and lock_24h is true, so no change is proposed. trend_last_day_vs_prior is improving, but D-1 is one day.\",\"key_evidence\":[\"last_3d.roi = -0.027, loss_days 2, profit_days 1\",\"blended_roi = 0.059, blend_weight_own 0.29\",\"age_spend_days = 3\",\"buyer.last_human_action: up 3.81\u21926.35, hours_ago 15.2, lock_24h true\"],\"uncertainty\":[\"Whether the improving D-1 trend (ROI +0.281) persists\",\"Peer forward ROI 0.094 on n=6 may not hold for this adset\",\"Whether the recent buyer increase is performing before the adset reaches age 4\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 632,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000394,
+ "request_id": "req_011Cg7twxhw3N4npGfa1eKod",
+ "ts": "2026-10-17T13:34:46+00:00"
+}

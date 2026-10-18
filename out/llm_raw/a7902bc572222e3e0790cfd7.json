@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is 0.108 and blended ROI is 0.063, but the matured trend is declining: last day ROI is -0.162 and 2 of the last 3 days lost money. That is mixed evidence, not consistent profit or consistent loss, so no change. The buyer cut budget from 7.62 to 1.27 about 48h ago with no lock, so keep the current setting and reassess tomorrow.\",\"key_evidence\":[\"last_3d.roi = 0.108 on spend 11.65\",\"blended_roi = 0.063 with blend_weight_own 0.37\",\"matured_days d-1 roi = -0.162, trend_last_day_vs_prior = declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag means the budget reading of 1.27 is wrong\",\"Whether the 48h-old buyer cut to 1.27 is still taking effect in the spend data\",\"Peer forward ROI of 0.037 is positive but only modestly so\",\"One more day of matured data could confirm or reverse the declining trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 1075,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000621,
+ "request_id": "req_011Cg7U4t8sgkCCHSxKCAbea",
+ "ts": "2026-10-17T08:08:32+00:00"
+}

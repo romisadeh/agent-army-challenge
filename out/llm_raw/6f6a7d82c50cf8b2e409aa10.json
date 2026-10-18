@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Blended ROI is modestly positive (0.138) with 2 profitable and 1 losing matured day in the last 3 days, and the trend is improving (yesterday ROI 0.967). Peer forward ROI is weak (0.047, n=12) and spend is far below the daily budget. The budget figure is reconstructed from metadata, so a budget-based step is unreliable. No buyer action or lock applies. Evidence supports holding rather than scaling.\",\"key_evidence\":[\"blended_roi=0.138 with blend_weight_own=0.53\",\"last_3d profit_days=2, loss_days=1, roi=0.219\",\"peers fwd_roi_1_3d=0.047, n=12\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Whether budget.current=53.34 is the true live budget, since it is reconstructed\",\"Whether yesterday's strong ROI (0.967) persists beyond one day\",\"Whether spend underdelivery (about 7.5/day vs 53.34 budget) is structural or temporary\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 758,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000454,
+ "request_id": "req_011Cg7SYUqi6hDhbujQ9UuWd",
+ "ts": "2026-10-17T07:48:31+00:00"
+}

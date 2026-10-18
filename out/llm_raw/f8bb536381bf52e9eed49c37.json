@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is a proven-winner candidate: age 18, 2 of last 3 matured days profitable, last_3d.roi 0.212, blended_roi 0.34. However, the explicit exception applies: yesterday was clearly negative (d=-1 roi -0.574) and trend_last_day_vs_prior is declining. Budget is also unreliable (budget_reconstructed flag, spend_exceeds_1.25x_budget), so hold rather than scale on this card.\",\"key_evidence\":[\"matured_days d=-1 roi -0.574\",\"trend_last_day_vs_prior: declining\",\"last_3d.roi 0.212, profit_days 2 of 3\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether yesterday's loss is noise or the start of a persistent decline\",\"Actual current budget, since it was reconstructed from metadata and spend exceeds budget\",\"Whether the peer forward ROI (0.417, n=14) holds for this adset\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 589,
+  "output_tokens": 1009,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000585,
+ "request_id": "req_011Cg7soiNP7HmnzdiuUgSk5",
+ "ts": "2026-10-17T13:19:49+00:00"
+}

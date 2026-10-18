@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured ROI is modestly positive: last_3d ROI 0.117, blended_roi 0.135, peers fwd ROI 0.172 (n=22). Profit days lead loss days 2 to 1, but the margin is thin and the 5-day profit is only about $4.7. Buyer cut budget 19.05 to 15.24 via ui_adjust_budget 24.4h ago with no lock or notes. Not enough consistent profit to override that deliberate cut, so hold.\",\"key_evidence\":[\"last_3d.roi = 0.117 (profit_days 2, loss_days 1)\",\"blended_roi = 0.135\",\"peers.fwd_roi_1_3d = 0.172, n = 22\",\"buyer.last_human_action: down 19.05 -> 15.24, hours_ago 24.4\"],\"uncertainty\":[\"Whether the 0.17 peer ROI holds for this adset given its thin margin\",\"Whether the buyer's down-adjust reflected information not on the card\",\"Two of five matured days were losses, so the trend is not yet clear\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 992,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000577,
+ "request_id": "req_011Cg7Un1ivc5zh4sK1VPjZ2",
+ "ts": "2026-10-17T08:17:49+00:00"
+}

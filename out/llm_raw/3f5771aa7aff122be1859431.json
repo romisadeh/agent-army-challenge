@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is +0.176 with 2 profit days, but yesterday fell to -0.017 and trend is declining. Blended ROI is only 0.077 and peer forward ROI is 0.006 (n=31). Buyer cut budget from 7.62 to 1.27 about 24.5h ago, so I defer to that recent action. Spend exceeds budget (3.8 vs 1.27), so budget data may be stale. Evidence is mixed and near break-even; no change.\",\"key_evidence\":[\"last_3d.roi = 0.176 (2 profit, 1 loss day)\",\"matured_days d=-1 roi = -0.017, trend declining\",\"blended_roi = 0.077; peers fwd_roi_1_3d = 0.006 (n=31)\",\"buyer last_human_action down 7.62 to 1.27, 24.5h ago\"],\"uncertainty\":[\"Whether budget.current 1.27 reflects the true live budget given spend exceeds budget flag\",\"Whether the buyer's cut was intended to be final or a test\",\"Whether yesterday's decline continues or was noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 739,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000449,
+ "request_id": "req_011Cg7SP5t5H9khZ6BFBSFmn",
+ "ts": "2026-10-17T07:46:24+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is +0.346 with 2 profit days and 1 loss day, and blended ROI is +0.176, which supports scaling. However, the buyer raised budget from 2.67 to 6.35 via UI 19h ago and lock_24h is true, so a human made a recent deliberate call. Peer forward ROI is only 0.077 (n=22). A human should settle this conflict.\",\"key_evidence\":[\"buyer.last_human_action: up 2.67->6.35, 19h ago, lock_24h true\",\"last_3d.roi: 0.346 (profit_days 2, loss_days 1)\",\"blended_roi: 0.176 (blend_weight_own 0.37)\",\"peers.fwd_roi_1_3d: 0.077 (n=22)\"],\"uncertainty\":[\"Why the buyer raised budget and whether that intent still holds\",\"Whether the 6.35 budget has had enough time to show its effect\",\"Peer forward ROI is well below the own 3-day ROI\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 623,
+  "output_tokens": 695,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000428,
+ "request_id": "req_011Cg7TyPMsTNXraYqXXADZ8",
+ "ts": "2026-10-17T08:07:15+00:00"
+}

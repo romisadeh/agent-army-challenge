@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.172 with 1 profit day and 1 loss day, and blended_roi is only 0.08. Spend is tiny ($12.47 over 3d), so peers (fwd ROI 0.238, n=30) carry weight, but they don't justify scaling given declining recent days. Buyer cut budget 48h ago to 3.56. Losses aren't persistent or large enough to pause or cut further.\",\"key_evidence\":[\"last_3d.roi=-0.172 on $12.47 spend\",\"blended_roi=0.08\",\"peers fwd_roi_1_3d=0.238 (n=30)\",\"buyer cut budget 5.08->3.56 48.5h ago\"],\"uncertainty\":[\"Spend exceeded 1.25x budget, so the daily budget may not be controlling delivery\",\"Yesterday's $0.48 spend is too small to read\",\"Whether the peer rebound applies to this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 359,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005303,
+ "request_id": "req_011Cg9MU2dgfKwcmr1yjsc89",
+ "ts": "2026-10-18T08:03:07+00:00"
+}

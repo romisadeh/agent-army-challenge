@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.55,\"reasoning\":\"Adset is 4 spend days old with 2 of 3 matured days profitable and last_3d.roi 0.14, but blended_roi 0.076 is below the +0.10 proven-winner threshold. Peer fwd_roi_1_3d is only 0.037 and yesterday was +0.248 with trend flat. A human raised budget 5.08 to 6.35 17.2h ago and lock_24h is true, so I'm not overriding it. Evidence is mixed; hold.\",\"key_evidence\":[\"blended_roi 0.076 (below +0.10 threshold)\",\"last_3d.roi 0.14, profit_days 2, loss_days 1\",\"buyer.lock_24h true, last human up 5.08 to 6.35 at 17.2h\",\"peers.fwd_roi_1_3d 0.037 (n=42)\"],\"uncertainty\":[\"Whether yesterday's +0.248 persists or the d-2 loss repeats\",\"Peer forward ROI is only modestly positive\",\"Whether the buyer's recent increase was meant to be followed by further scaling\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 865,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000513,
+ "request_id": "req_011Cg9M7r29NFZExN2eKqn1B",
+ "ts": "2026-10-18T07:58:35+00:00"
+}

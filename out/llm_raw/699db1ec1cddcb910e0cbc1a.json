@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Blended ROI is -0.205 and last_3d ROI is -0.156 (2 loss days, 1 profit day), with peers at -0.307, so this is not a proven winner. Yesterday is flat (-0.002) and not a clear persistent loss, and the buyer already cut budget 19.05 to 9.52 in the last 48h. The spend_exceeds_1.25x_budget flag makes the spend figures less reliable. Keep the current budget.\",\"key_evidence\":[\"blended_roi -0.205\",\"last_3d.roi -0.156 with 2 loss days vs 1 profit day\",\"buyer.last_human_action down 19.05 to 9.52, 46.1h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag means real spend is higher than the card shows, which would make the losses worse\",\"Whether the losses persist over another matured day at the reduced budget\",\"Peer forward ROI is weak (fallback_level 1, n=12) but strongly negative\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 618,
+  "output_tokens": 854,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00051,
+ "request_id": "req_011Cg7svprVnYjwbf8i94Fhs",
+ "ts": "2026-10-17T13:21:25+00:00"
+}

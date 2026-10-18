@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.059, blended_roi is -0.039, and only 1 of 3 matured days was profitable. Yesterday was -0.248 with a declining trend, so scaling is not supported. Pausing needs persistent matured losses, and the 4-day picture is roughly break-even with a mixed D-4 win. The buyer's down move was 64.7h ago, outside the 48h window. Rule R02 cuts all failed, so the budget is unchanged. Spend-over-budget flag makes the numbers less reliable. Keep.\",\"key_evidence\":[\"last_3d.roi = -0.059 (2 loss days, 1 profit day)\",\"blended_roi = -0.039 with blend_weight_own 0.93\",\"matured_days D-1 roi = -0.248, trend_last_day_vs_prior = declining\",\"buyer.last_human_action hours_ago = 64.7, net_budget_change_48h = 0.0\"],\"uncertainty\":[\"Whether yesterday's -0.248 is the start of a persistent decline or noise\",\"Spend-exceeds-1.25x-budget flag makes the spend/budget figures less reliable\",\"Why the R02 cuts all FAILED/NOOP and whether the budget state matches the buyer log\",\"Peer forward ROI of 0.244 (n=27, band fallback) could support a scale-up if matured results improve\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 1401,
+  "output_tokens": 1052,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000687,
+ "request_id": "req_011Cg7se5RP1mh27f5XXZGg3",
+ "ts": "2026-10-17T13:17:38+00:00"
+}

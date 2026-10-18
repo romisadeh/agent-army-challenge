@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.62,\"reasoning\":\"Strong matured profit: 3 of 3 profit days, 3d ROI 0.691, blended ROI 0.621, and yesterday improving at 1.104. But a human raised the budget 18.5h ago and the 24h lock is active, so I should not override it. Peers' forward ROI is -0.035 (n=15), a caution against further scaling. Hold and revisit after the lock expires.\",\"key_evidence\":[\"last_3d ROI 0.691, 3 profit days, 0 loss days\",\"buyer lock_24h true, budget raised 53.85 to 66.55 18.5h ago\",\"peers fwd_roi_1_3d -0.035 (n=15)\",\"blended_roi 0.621\"],\"uncertainty\":[\"Whether the recent budget increase will hold ROI at the higher spend level\",\"Peer segment suggests mean reversion for adsets with high ROI\",\"Duplicate perf rows were removed, which may affect the accuracy of the figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 361,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005202,
+ "request_id": "req_011Cg7SbJmoWJtyVvnoqXGMW",
+ "ts": "2026-10-17T07:49:08+00:00"
+}

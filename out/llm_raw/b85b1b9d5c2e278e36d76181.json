@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is only 0.068 on 9.77 spend, with one loss day (D-1 ROI -0.422) and a declining trend. Blended ROI is 0.292, but its weight on peers is high (w=0.33) and peer n=17 is modest. Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the scale signal is unreliable. Evidence is mixed, so no change.\",\"key_evidence\":[\"last_3d.roi=0.068 (profit_days 2, loss_days 1)\",\"matured_days D-1 roi=-0.422, trend_last_day_vs_prior=declining\",\"blended_roi=0.292 with blend_weight_own=0.33\",\"budget.source=metadata, flag budget_reconstructed\"],\"uncertainty\":[\"Budget value is reconstructed, so true spend pacing is unknown\",\"Whether the D-1 loss is noise or the start of a decline\",\"Peer forward ROI (n=17) may not match this adset\",\"Spend exceeds budget, so the spend basis may be wrong\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 557,
+  "output_tokens": 745,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000447,
+ "request_id": "req_011Cg7SS98chBC6p3ZPJzMwR",
+ "ts": "2026-10-17T07:47:05+00:00"
+}

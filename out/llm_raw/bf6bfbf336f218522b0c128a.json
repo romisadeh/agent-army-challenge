@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.054 and blended_roi is -0.075, below the +0.10 threshold. Yesterday was -0.547 and the trend is declining, but the loss is small in dollars (spend 4.55). The buyer cut the budget 24.5h ago to 3.56, so scaling up would contradict them. The evidence is not strong enough to pause, so hold.\",\"key_evidence\":[\"last_3d.roi -0.054 (2 profit days, 1 loss day)\",\"blended_roi -0.075; peers fwd_roi_1_3d -0.097 (n=9)\",\"d-1 roi -0.547 on spend 4.55, trend declining\",\"buyer cut budget 5.08 -> 3.56, 24.5h ago\"],\"uncertainty\":[\"Spend exceeded 1.25x budget, so the daily figures may be distorted\",\"Very small spend makes ROI noisy\",\"Whether yesterday's loss persists once late revenue arrives\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 373,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005397,
+ "request_id": "req_011Cg7u9HiyKCTZapa2yvSCg",
+ "ts": "2026-10-17T13:37:19+00:00"
+}

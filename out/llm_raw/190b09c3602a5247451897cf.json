@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3 matured days are profitable overall (ROI 0.17, 2 profit days, 1 loss), and blended ROI is +0.131. But ROI is declining (0.42, 0.39, 0.10, -0.04) and peers are about break-even (-0.013, n=30). A buyer cut the budget 24.5h ago, and the lock has expired. Evidence is mixed, so scaling up is unjustified and so is cutting after one slightly negative day. Hold.\",\"key_evidence\":[\"last_3d ROI 0.17 (2 profit days, 1 loss)\",\"blended_roi 0.131\",\"peers fwd_roi_1_3d -0.013 (n=30)\",\"ROI trend declining: 0.424 to -0.036 over 4 days\"],\"uncertainty\":[\"Whether the ROI decline continues or yesterday was noise\",\"Spend exceeded 1.25x budget, so the actual spend pattern is unclear\",\"Why the buyer cut the budget 24.5h ago (no note)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 380,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005402,
+ "request_id": "req_011Cg7Sansxw1nXEHZ52fKw3",
+ "ts": "2026-10-17T07:49:01+00:00"
+}

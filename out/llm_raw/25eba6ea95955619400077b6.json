@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":4.38,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 4, last_3d.profit_days 3 of 3, last_3d.roi 0.398 (>0.10), blended_roi 0.21 (>0.10). Yesterday's roi 0.248 is positive, so the declining trend (vs 0.717 prior day) does not argue against scaling. Buyer's up-move was 64.7h ago, outside 48h, net_budget_change_48h 0.0, lock_24h false, so no conflict. Proposed 15% step from 3.81 to 4.38, consistent with the buyer's direction.\",\"key_evidence\":[\"last_3d.roi=0.398 with profit_days=3, loss_days=0\",\"blended_roi=0.21 (own weight 0.36, peers fwd_roi 0.105 n=16)\",\"trend_last_day_vs_prior=declining (0.248 vs 0.717)\",\"buyer.last_human_action up 1.27->3.81 at 64.7h ago, lock_24h=false\"],\"uncertainty\":[\"Only 4 spend days and small spend ($11.21 over 3 days), so the ROI reading is noisy\",\"Declining trend could continue; d-1 roi 0.248 is well below d-2 0.717\",\"Peer forward ROI of 0.105 is much lower than own 3-day ROI\",\"Budget already tripled 64.7h ago; further scaling may hit diminishing returns\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 591,
+  "output_tokens": 1032,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2177
+ },
+ "cost_usd": 0.000847,
+ "request_id": "req_011Cg7tToif1XUWmYF5k1AM1",
+ "ts": "2026-10-17T13:28:26+00:00"
+}

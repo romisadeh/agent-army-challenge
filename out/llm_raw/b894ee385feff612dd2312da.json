@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":10.16,\"confidence\":0.6,\"reasoning\":\"Three straight matured loss days (last_3d.loss_days=3, roi -0.406), blended_roi -0.348 and peers fwd_roi_1_3d -0.307 (n=12) all point negative. Age is 3 spend days, so it is not a proven winner. Trend_last_day_vs_prior is improving but still negative. Cut ~20% rather than pause on this small spend. Budget is reconstructed, so the current value is uncertain.\",\"key_evidence\":[\"last_3d.loss_days=3, profit_days=0\",\"blended_roi=-0.348\",\"peers.fwd_roi_1_3d=-0.307 (n=12)\",\"data_quality_flags: budget_reconstructed\"],\"uncertainty\":[\"Budget value is reconstructed from metadata, so the 20% step base may be off\",\"Improving last-day trend could signal recovery\",\"Only 3 days of data and small spend ($14.27 over 3 days)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 809,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00048,
+ "request_id": "req_011Cg9LY3U2gTjVcD8Lc9d7m",
+ "ts": "2026-10-18T07:50:56+00:00"
+}

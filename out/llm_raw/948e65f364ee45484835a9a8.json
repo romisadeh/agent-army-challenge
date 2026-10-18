@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":22.9,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 17 (4+), profit_days 3 of last 3, last_3d.roi 0.475 and blended_roi 0.371 are both above +0.10. The buyer's last_human_action raised budget 12.27 to 20.85 (direction up, 16.8h ago), which agrees with scaling, so there is no conflict. Trend is declining, but yesterday's ROI of 0.356 is still profitable, so it does not argue against scaling. Step is about +10%, within the 20% guideline.\",\"key_evidence\":[\"last_3d.roi = 0.475, profit_days = 3, loss_days = 0\",\"blended_roi = 0.371 (blend_weight_own 0.7)\",\"buyer.last_human_action direction up, 12.27 to 20.85, 16.8h ago, lock_24h true\",\"trend_last_day_vs_prior = declining (matured_days d=-1 roi 0.356)\"],\"uncertainty\":[\"lock_24h is true, so code may block execution until the lock clears\",\"Peer evidence is band fallback with n=6, fwd_roi_1_3d 0.131, which is weak\",\"Declining trend: yesterday's ROI 0.356 is below the 0.497 of the prior day\",\"Budget was just raised 16.8h ago; response to the recent increase is not yet visible\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 1053,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000607,
+ "request_id": "req_011Cg7t61Bc8EZCzEcg2ewvs",
+ "ts": "2026-10-17T13:23:30+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset is age 3 spend days, below the 4+ proven-winner threshold, so the scale-up default does not apply. last_3d.roi 0.654 with 2 of 3 profitable days and blended_roi 0.257 is positive, but the 24h lock is active after a buyer raised budget 5.08 to 8.53 about 17 hours ago (lock_24h true). Peer fwd_roi_1_3d is only 0.041. Hold budget and let the lock expire and more matured days arrive. trend_last_day_vs_prior is improving.\",\"key_evidence\":[\"lock_24h: true, last_human_action up 5.08->8.53 at 17.2h ago\",\"age_spend_days: 3 (below 4+ threshold)\",\"last_3d.roi: 0.654, profit_days 2 / loss_days 1\",\"peers.fwd_roi_1_3d: 0.041 (n=54)\"],\"uncertainty\":[\"Whether the buyer's upward move was intended to be the new baseline\",\"Whether D-2 loss (roi -0.708) signals instability at higher budget\",\"Peer forward ROI of 0.041 is much weaker than own 3-day ROI\",\"Next-day matured result after the budget increase\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 564,
+  "output_tokens": 780,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000468,
+ "request_id": "req_011Cg9MoPBURnH2BQQkSQGKE",
+ "ts": "2026-10-18T08:07:31+00:00"
+}

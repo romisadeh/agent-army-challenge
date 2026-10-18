@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is +0.70 (revenue 21.89 on spend 12.88) with 2 profit days and 1 loss day, and blended_roi is +0.297. Peer forward ROI is weak (0.038, n=53). The buyer cut budget 6.35 to 4.13 about 24.5h ago, and the budget is still 4.13. Scaling up would reverse a recent deliberate human cut on only five matured days, so a human should settle it.\",\"key_evidence\":[\"last_3d.roi=0.7 with profit_days=2, loss_days=1\",\"blended_roi=0.297, blend_weight_own=0.39\",\"buyer.last_human_action: down 6.35->4.13, hours_ago=24.5, lock_24h=false\",\"peers.fwd_roi_1_3d=0.038, n=53\"],\"uncertainty\":[\"Why the buyer cut budget 24.5h ago (no note given)\",\"Only five matured days; the profit may be noise\",\"Whether the loss on d=-3 signals a trend or a one-off\",\"Peer forward ROI of 0.038 is only marginally positive\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 959,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000561,
+ "request_id": "req_011Cg7UsZP4s7AqRKqo5rqTz",
+ "ts": "2026-10-17T08:19:04+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Both matured days lost money (d-2 ROI -0.096, d-1 ROI -0.15), so last_3d.roi is -0.121 and blended_roi is -0.335, with peers at fwd_roi_1_3d -0.435. Still, only 2 spend days and no profit days is thin evidence for pausing. A buyer cut the budget from 6.35 to 4.44 23.1h ago and lock_24h is true, so I defer to that recent human action and keep the current budget.\",\"key_evidence\":[\"last_3d.roi = -0.121 with loss_days = 2, profit_days = 0\",\"blended_roi = -0.335; peers fwd_roi_1_3d = -0.435 (n = 12)\",\"buyer.lock_24h = true; last_human_action down 6.35 to 4.44, 23.1h ago\"],\"uncertainty\":[\"Only 2 spend days, so the loss trend may be noise rather than persistent\",\"Whether the buyer's budget cut already fixes the losses once the lock expires\",\"Peer group n = 12 is moderate and may not match this adset closely\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 539,
+  "output_tokens": 662,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000406,
+ "request_id": "req_011Cg7t6PwqE4JoMH3vd3hmG",
+ "ts": "2026-10-17T13:23:34+00:00"
+}

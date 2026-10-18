@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"last_3d.roi is -0.06 with 2 loss days vs 1 profit day, and blended_roi 0.088 is below the +0.10 proven-winner bar, so no scale-up. The matured losses are not persistent enough to justify a pause or cut. The buyer cut budget from 12.7 to 8.89 via ui_adjust_budget 24.5h ago, so I am not moving it again. Peers fwd_roi_1_3d is 0.171 (n=11), which argues for patience. Net: mixed and roughly break-even.\",\"key_evidence\":[\"last_3d.roi = -0.06 (2 loss days, 1 profit day)\",\"blended_roi = 0.088, below the +0.10 scale-up threshold\",\"buyer.last_human_action: down 12.7 to 8.89, 24.5h ago\",\"peers.fwd_roi_1_3d = 0.171, n = 11\"],\"uncertainty\":[\"Whether the 24.5h-old buyer budget cut has had time to take effect\",\"Whether the D-5 to D-1 losses persist or were noise (only one profitable day of five)\",\"Whether the peer forward ROI of 0.171 holds for this adset given the small spend base\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 781,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000475,
+ "request_id": "req_011Cg9Mz7ViX4QVZPQhiXC89",
+ "ts": "2026-10-18T08:09:56+00:00"
+}

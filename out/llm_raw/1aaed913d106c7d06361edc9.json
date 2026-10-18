@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":4.38,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 4, three matured profit days, last_3d.roi 0.398 above +0.10, and blended_roi 0.21 above +0.10. Yesterday's roi 0.248 is positive, so the declining trend does not argue against scaling. The buyer's last action raised budget 1.27 to 3.81 about 65h ago, outside the 24h lock, with net 48h change 0. Scale up about 15% to 4.38.\",\"key_evidence\":[\"last_3d.roi=0.398 with profit_days=3, loss_days=0\",\"blended_roi=0.21 (blend_weight_own 0.36)\",\"trend_last_day_vs_prior=declining but matured d-1 roi=0.248 is positive\",\"buyer.last_human_action up 1.27->3.81 at 64.7h ago, lock_24h=false\"],\"uncertainty\":[\"Spend is small (11.21 over 3 days), so own ROI is noisy\",\"Peer forward ROI 0.105 from n=16 is modest\",\"Declining trend from 0.717 to 0.248 may continue into a weaker day\",\"Lesson history is empty, so no prior outcome of scaling this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 591,
+  "output_tokens": 897,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2116
+ },
+ "cost_usd": 0.000772,
+ "request_id": "req_011Cg7sUQTqHsBXEGGdfZdQG",
+ "ts": "2026-10-17T13:15:27+00:00"
+}

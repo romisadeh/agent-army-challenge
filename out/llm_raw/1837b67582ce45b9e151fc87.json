@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured data is strongly profitable (3d ROI 0.485, 2 profit days of 3, blended 0.435), which would normally support scaling. But a human cut the budget 53.24 to 42.6 only 14.3h ago and the 24h lock is active, so I won't override it. Yesterday's loss (-0.221) is a single bad day, not a trend, so no further cut. Hold.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 53.24->42.6 14.3h ago\",\"last_3d ROI 0.485 (2 profit days, 1 loss day)\",\"blended_roi 0.435 vs peers fwd ROI 0.027 (n=15)\",\"matured d-1 ROI -0.221 on spend 53.77\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether yesterday's loss is noise or the start of a decline\",\"Spend exceeding 1.25x budget and duplicate rows may distort the figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 372,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005408,
+ "request_id": "req_011Cg7UHYCBJrCLLY9bsh6mj",
+ "ts": "2026-10-17T08:11:21+00:00"
+}

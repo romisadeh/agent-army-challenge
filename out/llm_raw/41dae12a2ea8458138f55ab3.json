@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is about -0.03, essentially break-even. The 3-day ROI is -0.068 with mixed days (1 profit, 2 loss), and yesterday was -0.33 after a declining trend. That is not consistent enough for a pause or cut. The budget of $1.91 is reconstructed and spend is well above it, so the budget data is unreliable. Keep and watch.\",\"key_evidence\":[\"blended_roi -0.029\",\"last_3d roi -0.068 (2 loss days, 1 profit day)\",\"D-1 roi -0.33 on spend 8.39\",\"flag spend_exceeds_1.25x_budget, budget_reconstructed\"],\"uncertainty\":[\"Actual current budget is unclear (reconstructed $1.91 vs daily spend of $8-12)\",\"Whether the declining trend continues\",\"Small sample: only 5 days of age and $31 spend in 3 days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 626,
+  "output_tokens": 344,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005066,
+ "request_id": "req_011Cg7V56yA2KrvBUvzYW7p4",
+ "ts": "2026-10-17T08:21:39+00:00"
+}

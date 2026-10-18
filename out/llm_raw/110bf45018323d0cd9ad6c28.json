@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.roi is 0.021, below the +0.10 bar, and only 2 of 3 matured days were profitable with yesterday at 0.131. blended_roi 0.12 leans on peers (weight 0.33, fallback peer set). The buyer raised budget 2.92 to 6.35 about 17h ago, so a scale-up would only agree with them. Spend (3.68 yesterday) sits well under the 6.35 budget, so more budget may not add spend. Hold until the buyer lock clears and the new budget has matured data.\",\"key_evidence\":[\"last_3d.roi = 0.021 (below +0.10 scale threshold)\",\"blended_roi = 0.12 with blend_weight_own = 0.33\",\"buyer.last_human_action: up 2.92 to 6.35, 17h ago, lock_24h = true\",\"matured_days d-1 roi = 0.131, d-2 roi = -0.188\"],\"uncertainty\":[\"Peer evidence is fallback_level 1 with n = 8, so it is weak\",\"Own spend is small (about 3.3 to 3.7 per day), so blending leans on peers\",\"Whether the 6.35 budget is actually being spent at that level\",\"Buyer intent behind the large recent increase\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 1199,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000681,
+ "request_id": "req_011Cg9LYmCmUQQvG6qiWTvdP",
+ "ts": "2026-10-18T07:51:07+00:00"
+}

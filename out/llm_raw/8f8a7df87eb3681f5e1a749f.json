@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":1.52,\"confidence\":0.5,\"reasoning\":\"Four of five matured days are profitable and blended_roi is 0.324, with peers fwd_roi_1_3d 0.215 (n=15). Budget.current 1.27 is reconstructed from metadata and spend exceeds 1.25x budget, so the base for any % change is unreliable. Escalate; if forced, scale up about 20% to 1.52.\",\"key_evidence\":[\"matured_days: 4 of 5 days ROI positive, d-2 ROI -0.574\",\"blended_roi 0.324, blend_weight_own 0.32\",\"peers fwd_roi_1_3d 0.215, n=15\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True daily budget (metadata reconstruction may be wrong)\",\"Whether spend overrun is real or a budget-data error\",\"Peer evidence weight at spend ~9.45 over 3 days\",\"Single losing day d-2 could recur\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 621,
+  "output_tokens": 1229,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000695,
+ "request_id": "req_011Cg7UC9H9JEAe8mwTH9zyL",
+ "ts": "2026-10-17T08:10:11+00:00"
+}

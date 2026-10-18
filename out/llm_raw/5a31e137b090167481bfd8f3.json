@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured 3-day ROI is +44% (2 profit days, 1 loss) and blended ROI is +0.402, so the adset is profitable. But the buyer raised the budget from 7.62 to 12.7 about 17h ago and the 24h lock is active, so I should not override it. Spend of ~$40-60/day is well above the $12.7 budget, which is flagged as an anomaly. Holding is the safest choice.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 7.62->12.7 16.9h ago\",\"last_3d ROI 0.442 (2 profit days, 1 loss day)\",\"blended_roi 0.402 vs peers fwd ROI 0.084 (n=15)\",\"flag spend_exceeds_1.25x_budget; D-1 spend 59.59 vs budget 12.7\"],\"uncertainty\":[\"Why spend is far above the $12.7 budget (data error or budget history)\",\"ROI is volatile day to day (-0.26 to +0.84)\",\"Peers forward ROI is much weaker than own results\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 398,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00557,
+ "request_id": "req_011Cg7SEPsJbqnyLd7JT7vR9",
+ "ts": "2026-10-17T07:44:25+00:00"
+}

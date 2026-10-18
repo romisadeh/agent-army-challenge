@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"Buyer doubled budget 19h ago (6.35 to 12.7) and the 24h lock is active, so I should not override without strong evidence. Matured evidence is thin and roughly break-even: 3d ROI 0.023 on $18 spend, yesterday -0.077, blended ROI 0.09. No consistent profit to justify scaling and no consistent loss to justify cutting.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 6.35->12.7 19.1h ago\",\"last_3d ROI 0.023 on $18.02 spend (2 profit days, 1 loss day)\",\"blended_roi 0.09 (peers fwd ROI 0.15, n=11)\",\"D-1 ROI -0.077 on $9.18 spend\"],\"uncertainty\":[\"Effect of the doubled budget on efficiency is not yet visible in matured data\",\"Small spend makes ROI estimates noisy\",\"Peer ROI may not reflect this adset's response to the budget increase\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 376,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005394,
+ "request_id": "req_011Cg7UwZoVAghfgr55PVMwG",
+ "ts": "2026-10-17T08:19:57+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is 7 days old with 2 of last 3 days profitable, but last_3d ROI is only +0.039 and blended ROI is +0.083, both below the +0.10 proven-winner threshold. A buyer raised budget 8.0 to 13.6 about 17h ago and the 24h lock is active, so I should not stack another change. Spend exceeds 1.25x budget, so the data is somewhat unreliable.\",\"key_evidence\":[\"last_3d.roi=0.039 (below 0.10 threshold)\",\"blended_roi=0.083\",\"buyer.lock_24h=true; budget raised 8.0->13.6 16.8h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's budget increase will lift or dilute ROI\",\"Spend overshoot vs budget may distort the daily figures\",\"Day -4 ROI of 1.027 is on small spend and may inflate the 3-day picture\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 371,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005395,
+ "request_id": "req_011Cg7saCTBxgmdw287JARQC",
+ "ts": "2026-10-17T13:16:44+00:00"
+}

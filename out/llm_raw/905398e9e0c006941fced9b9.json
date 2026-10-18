@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Own 3-day ROI is +8.1% with 2 of 3 profitable days and yesterday +9.4% on $12.94 spend. Peers are negative at -30.7% (n=12, band fallback), which pulls blended ROI to -10.4%. The buyer doubled the budget 38h ago. The evidence is mixed and spend is thin, so I would neither scale up nor cut.\",\"key_evidence\":[\"last_3d roi=0.081 (spend $22.02, 2 profit days / 1 loss day)\",\"blended_roi=-0.104 (peers fwd_roi_1_3d=-0.307, n=12)\",\"matured d-1 roi=0.094 on spend $12.94\",\"buyer raised budget 6.35->12.7 38.2h ago\"],\"uncertainty\":[\"Whether the performance after the budget doubling holds up at the higher spend level\",\"Peer segment is a fallback band and may not match this adset\",\"Only 3 days of data and $22 total spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 368,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00518,
+ "request_id": "req_011Cg7SoxQpNQre2H8iB4t1N",
+ "ts": "2026-10-17T07:52:00+00:00"
+}

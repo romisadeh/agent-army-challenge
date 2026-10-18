@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Adset is only 2 spend days old, so it does not qualify as a proven winner (needs 4+). Last_3d ROI is +0.16 with 1 profit and 1 loss day, but blended_roi is -0.041 and peers forward ROI is -0.133 (n=13). Yesterday was -0.193 and trend_last_day_vs_prior is declining. Budget is reconstructed and spend exceeds 1.25x budget, so the numbers are not fully reliable. Evidence is mixed and near break-even, so no change.\",\"key_evidence\":[\"blended_roi = -0.041\",\"last_3d.roi = 0.16 with 1 profit day and 1 loss day\",\"matured_days D-1 roi = -0.193, trend_last_day_vs_prior = declining\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the declining trend continues into D-0 and D+1\",\"Reliability of the reconstructed budget of 3.81 and the spend overage\",\"Peer forward ROI of -0.133 over n=13 may not match this adset\",\"A second losing day would justify scale_down or pause\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 516,
+  "output_tokens": 812,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000479,
+ "request_id": "req_011Cg7su2kJv9AHBHdQWktet",
+ "ts": "2026-10-17T13:21:00+00:00"
+}

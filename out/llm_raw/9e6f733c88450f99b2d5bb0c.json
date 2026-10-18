@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Age 8 with 2 of 3 matured days profitable, last_3d.roi 0.17 and blended_roi 0.131 would normally make this a scale-up candidate. I'm keeping because buyer.last_human_action was a deliberate ui_adjust_budget down (25.4 to 17.78) 24.5h ago, with net_budget_change_48h -7.62. trend_last_day_vs_prior is declining and yesterday's roi is -0.036. Peer fwd_roi_1_3d is -0.013 (n=30).\",\"key_evidence\":[\"buyer.last_human_action: down 25.4->17.78, 24.5h ago\",\"last_3d.roi 0.17, profit_days 2, loss_days 1\",\"trend_last_day_vs_prior: declining; matured_days d-1 roi -0.036\",\"peers.fwd_roi_1_3d -0.013, n=30\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate response to a known issue the card does not show\",\"Peer forward ROI is slightly negative, so the expected gain from scaling is unclear\",\"spend_exceeds_1.25x_budget flag makes the budget-to-spend relationship less reliable\",\"Whether yesterday's dip is noise or the start of a decline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 993,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000579,
+ "request_id": "req_011Cg7ssYqkNotseca1KACRu",
+ "ts": "2026-10-17T13:20:41+00:00"
+}

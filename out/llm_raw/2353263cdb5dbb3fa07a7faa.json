@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.67,\"confidence\":0.5,\"reasoning\":\"Mixed matured evidence: last_3d ROI 0.163 with 2 profit days and 1 loss day, blended_roi 0.088, and peer fwd ROI about 0 (n=31), so no consistent profit or loss trend to act on. The buyer cut budget 3.81 to 2.67 about 24.5h ago with no lock and no notes, so I leave that setting in place. The spend_exceeds_1.25x_budget flag (e.g. 10.24 spend on a 3.81 budget) makes the budget reading unreliable.\",\"key_evidence\":[\"blended_roi 0.088 with blend_weight_own 0.54\",\"last_3d: profit_days 2, loss_days 1, roi 0.163\",\"peers fwd_roi_1_3d -0.0, n 31\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-vs-budget mismatch means the true daily budget differs from the 2.67 card value\",\"Whether the buyer's 24.5h-old reduction reflects information about performance\",\"Peer forward ROI is flat with a fairly small segment spread\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 917,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000538,
+ "request_id": "req_011Cg7SdKjQYfjtXMpgFVmFw",
+ "ts": "2026-10-17T07:49:38+00:00"
+}

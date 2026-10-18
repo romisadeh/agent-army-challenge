@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last_3d ROI is +0.163 with 2 profit days, but blended_roi is 0.088, below the +0.10 winner bar. A buyer cut budget 3.81 to 2.67 24.5h ago (net -2.41 over 48h), a deliberate action I should not override without strong evidence. The spend_exceeds_1.25x_budget flag makes the budget figures unreliable, so a human should settle this.\",\"key_evidence\":[\"buyer.last_human_action: down, 3.81 to 2.67, 24.5h ago\",\"blended_roi: 0.088 (below +0.10 threshold)\",\"last_3d.roi: 0.163, profit_days 2, loss_days 1\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag means the real daily budget differs from 2.67\",\"Whether the buyer cut was driven by information not on the card\",\"Peer forward ROI is -0.0 (n=31), so the peer signal is flat rather than clearly positive\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 942,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000553,
+ "request_id": "req_011Cg7svCgdXvakQHK6qKN4e",
+ "ts": "2026-10-17T13:21:17+00:00"
+}

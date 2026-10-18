@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three consecutive matured loss days (last_3d roi -0.326, spend 20.79, revenue 14.01) and a declining trend (trend_last_day_vs_prior) show a consistent loss, not one bad day. blended_roi is -0.113 despite peers at +0.109, because own history carries weight 0.51. The buyer already cut budget 5.69 to 3.42 with no lock. Confidence is capped by the spend_exceeds_1.25x_budget flag and the small absolute stakes.\",\"key_evidence\":[\"last_3d.roi -0.326 over 3 loss days\",\"blended_roi -0.113\",\"trend_last_day_vs_prior declining\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Peer forward ROI of +0.109 (n=23, band fallback) could mean recovery\",\"Actual daily spend exceeds the 3.42 budget, so the budget figure may be stale\",\"Buyer's reason for the 24.6h-ago cut is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1574,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000867,
+ "request_id": "req_011Cg7SeQxhzjMzHWvAEsba1",
+ "ts": "2026-10-17T07:49:55+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI is positive (0.156) and the 3-day ROI is 0.265, but the last two matured days lost money (D-2 -0.202, D-1 -0.236) and trend is declining. A buyer cut budget 3.81 to 2.67 48.5h ago, outside the lock. Flags show meta_conversions_gt_clicks and spend exceeding 1.25x budget, so tracking may be unreliable. A human should settle this.\",\"key_evidence\":[\"blended_roi=0.156 with blend_weight_own=0.43\",\"matured_days D-2 roi=-0.202 and D-1 roi=-0.236\",\"trend_last_day_vs_prior=declining\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether conversion tracking is inflated (conversions exceed clicks)\",\"Why spend (5.59) runs well above budget (2.67) on D-2\",\"Whether the buyer's down-adjust was a deliberate loss response\",\"Whether the two losing days are noise after the earlier profit day\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 656,
+  "output_tokens": 875,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000522,
+ "request_id": "req_011Cg7TvZp5gywceHU9TZWZL",
+ "ts": "2026-10-17T08:06:38+00:00"
+}

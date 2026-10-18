@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.62,\"reasoning\":\"Tiny adset with a $3.18 budget. Last 3d ROI is +0.022 on $12.89 spend (1 profit day, 2 loss days), which is roughly break-even. Blended ROI is +0.118, and peers at +0.18 (n=6) are mildly positive. Yesterday was profitable (+0.287). Evidence is too thin and mixed to scale up or cut. The buyer cut the budget 46h ago, so keeping it respects that call.\",\"key_evidence\":[\"last_3d roi 0.022 on spend 12.89 (2 loss days, 1 profit day)\",\"blended_roi 0.118, peers fwd_roi_1_3d 0.18 (n=6)\",\"buyer cut budget 6.35 to 3.18, 46h ago\",\"flag: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why spend exceeds the budget (spend vs budget flag)\",\"Whether the buyer's cut reflected information not on the card\",\"Very small spend makes daily ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 646,
+  "output_tokens": 389,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005556,
+ "request_id": "req_011Cg7UfEwDUPgupyGtn6fTL",
+ "ts": "2026-10-17T08:16:15+00:00"
+}

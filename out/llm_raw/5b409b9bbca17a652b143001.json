@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured history is a proven-winner profile: age 5, 2 of last 3 days profitable, last_3d.roi 0.685, blended_roi 0.284. Against scaling: buyer.last_human_action was a deliberate budget cut 3.81 to 2.54 22h ago with lock_24h true, trend_last_day_vs_prior is declining, yesterday ROI was -0.469, and the data_quality_flag spend_exceeds_1.25x_budget applies (4.79 spend vs 2.54 budget). A human should settle the buyer cut versus the history.\",\"key_evidence\":[\"last_3d.roi=0.685 with 2 profit days of 3\",\"buyer.last_human_action: down 3.81->2.54, hours_ago 22, lock_24h true\",\"trend_last_day_vs_prior=declining, matured_days d-1 roi -0.469\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 2.54 budget reflects the buyer's intended level or a stale value (budget.source is buyer_log_before_window)\",\"Why spend runs about 1.9x the stated budget on d-1\",\"Whether the declining trend continues after the buyer's cut\",\"Peer forward ROI is only 0.011 (n=32), much weaker than own history\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 1133,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000649,
+ "request_id": "req_011Cg7spiZZGpbdYtFztyE76",
+ "ts": "2026-10-17T13:20:03+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":15.25,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is -0.099 with 2 loss days and 1 profit day. Yesterday was -0.599 on 3.86 spend, and trend_last_day_vs_prior is declining. blended_roi is -0.169 and peers are -0.245 (n=22, fallback level 1). Spend is about $7/day against a $19.05 budget, and the budget is reconstructed, so the budget figure is uncertain. The evidence leans negative but is thin and the absolute losses are small, so a modest 20% cut is reasonable.\",\"key_evidence\":[\"last_3d.roi = -0.099 (loss_days 2, profit_days 1)\",\"blended_roi = -0.169\",\"peers.fwd_roi_1_3d = -0.245, n = 22\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"budget.current is reconstructed from metadata, and actual spend runs well below it\",\"Peer evidence is a fallback band, not an exact match\",\"Only 3 matured days; a single bad day could be noise\",\"No buyer notes or recent human actions to weigh\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 532,
+  "output_tokens": 883,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000513,
+ "request_id": "req_011Cg7U6k1Hia7isfTyuUU6c",
+ "ts": "2026-10-17T08:08:56+00:00"
+}

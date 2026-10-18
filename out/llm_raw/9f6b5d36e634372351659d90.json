@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.4,\"reasoning\":\"Evidence is mixed and thin. The adset is only 2 spend days old, so the proven-winner rule does not apply. last_3d.roi is +0.18 with 1 profit day and 1 loss day, but blended_roi is -0.029 and peers forward ROI is -0.113 (n=10). Yesterday was -0.62 on spend 2.64 and trend_last_day_vs_prior is declining. Budget was reconstructed and spend exceeds 1.25x budget, so the numbers are unreliable. No change until the data is clearer.\",\"key_evidence\":[\"blended_roi = -0.029\",\"last_3d.roi = 0.18 with 1 profit day and 1 loss day\",\"matured_days d=-1 roi = -0.62 and trend_last_day_vs_prior = declining\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the reconstructed budget of 1.27 is accurate\",\"Whether the declining trend continues over the next matured day\",\"Peer forward ROI is negative with n=10, so it is only moderately informative\",\"Age is 2 spend days, so the adset has little history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 514,
+  "output_tokens": 758,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000452,
+ "request_id": "req_011Cg7t4i1iE39dBX1i1Zg8e",
+ "ts": "2026-10-17T13:23:11+00:00"
+}

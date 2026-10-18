@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Qualifies as a proven winner: age 6, 3 of 3 profitable days, last_3d ROI 0.691, blended ROI 0.621, improving trend. But a buyer raised budget 53.85 to 66.55 (+24%) 18.5h ago and lock_24h is true. Not overriding a fresh deliberate human action; the raise already scales it. Revisit after the lock expires.\",\"key_evidence\":[\"last_3d roi 0.691, 3 profit days, 0 loss\",\"blended_roi 0.621\",\"buyer lock_24h true, budget raised to 66.55 18.5h ago\",\"peers fwd_roi_1_3d -0.035 (n=15)\"],\"uncertainty\":[\"Whether the buyer intends further changes after the recent raise\",\"Peers forward ROI is slightly negative, suggesting possible regression\",\"Duplicate perf rows were removed, so figures may be slightly off\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 349,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005131,
+ "request_id": "req_011Cg7stPkLCTiY8waEX2Lnu",
+ "ts": "2026-10-17T13:20:50+00:00"
+}

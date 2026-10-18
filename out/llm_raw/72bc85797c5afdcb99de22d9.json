@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: only 1 of last 3 matured days profitable (matured_days d-3 only), though last_3d.roi 0.539 and blended_roi 0.223 are positive. Yesterday lost (roi -0.694) and trend_last_day_vs_prior is declining. Buyer cut budget 3.81 to 2.48 22h ago, lock_24h is true, and net_budget_change_48h is -1.33, so I won't override that. Mixed evidence favors no change while the lock is active.\",\"key_evidence\":[\"matured_days d-1 roi -0.694, d-2 roi -1.0, d-3 roi 4.747\",\"blended_roi 0.223 with blend_weight_own 0.32\",\"buyer.last_human_action ui_adjust_budget down, hours_ago 22.0, lock_24h true\",\"trend_last_day_vs_prior declining\"],\"uncertainty\":[\"Whether the d-2 and d-1 losses are noise or a persisting trend after the buyer's cut\",\"data_quality_flag spend_exceeds_1.25x_budget may mean actual spend differs from the 2.48 budget\",\"Peer forward ROI 0.078 is modest, though n=23 is reasonably sized\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 1194,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000683,
+ "request_id": "req_011Cg9Lygm4ybuAKGE6jGPF4",
+ "ts": "2026-10-18T07:56:45+00:00"
+}

@@ -1,0 +1,65 @@
+[
+ {
+  "id": "L-001",
+  "segment": "age 4+ / neutral",
+  "text": "keep with positive 3-day history, day matured positive: cost $20.92 in regret over 17 cases (week of 2026-06-10)",
+  "evidence": [
+   "730119465202368916",
+   "730125516653624607",
+   "730127988250776273",
+   "730128434697262830",
+   "730131057235610353",
+   "730133839938058150",
+   "31190610559771",
+   "31191755212537",
+   "730111639108940228",
+   "730114417339432425"
+  ],
+  "status": "proposed"
+ },
+ {
+  "id": "L-002",
+  "segment": "age 4+ / neutral",
+  "text": "keep with positive 3-day history, day matured negative: cost $3.74 in regret over 4 cases (week of 2026-06-10)",
+  "evidence": [
+   "31167350331032",
+   "31191755212537",
+   "730119979220314198",
+   "730119979220314198"
+  ],
+  "status": "proposed"
+ },
+ {
+  "id": "L-003",
+  "segment": "age 1-3 / neutral",
+  "text": "keep with positive 3-day history, day matured positive: cost $3.40 in regret over 3 cases (week of 2026-06-10)",
+  "evidence": [
+   "730160773718100684",
+   "31196655967182",
+   "730125012394613412"
+  ],
+  "status": "proposed"
+ },
+ {
+  "id": "L-004",
+  "segment": "age 4+ / neutral",
+  "text": "keep with negative 3-day history, day matured positive: cost $2.48 in regret over 3 cases (week of 2026-06-10)",
+  "evidence": [
+   "31626016833981",
+   "31124145056204",
+   "730124434859064417"
+  ],
+  "status": "proposed"
+ },
+ {
+  "id": "L-005",
+  "segment": "age 1-3 / neutral",
+  "text": "keep with negative 3-day history, day matured positive: cost $1.86 in regret over 3 cases (week of 2026-06-10)",
+  "evidence": [
+   "730124633804344724",
+   "730112373699429645",
+   "730183556611520386"
+  ],
+  "status": "proposed"
+ }
+]

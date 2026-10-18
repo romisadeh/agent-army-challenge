@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Adset is only 3 spend days old, so the proven-winner scale-up rule does not apply. Matured last_3d ROI is -0.083 with 2 loss days and yesterday at -0.384, trend declining. Blended_roi of 0.121 rests mostly on peers (blend_weight_own 0.34). A buyer ui_adjust_budget down 3.05 to 2.44 fired 14.3h ago with lock_24h true, and net_budget_change_48h is -1.37. Evidence is mixed, so keep and respect the lock.\",\"key_evidence\":[\"last_3d.roi = -0.083, loss_days 2 vs profit_days 1\",\"trend_last_day_vs_prior = declining, matured d-1 roi -0.384\",\"buyer.lock_24h = true, last_human_action down 3.05 to 2.44 at 14.3h ago\",\"blended_roi = 0.121 with blend_weight_own 0.34 (peer-led)\"],\"uncertainty\":[\"Whether peer forward ROI (fwd_roi_1_3d 0.227, n 33, fallback level 1) holds for this adset\",\"Whether the spend_exceeds_1.25x_budget flag means real overspend or a reporting issue\",\"Whether the buyer's down-move was a deliberate cut that should persist\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 819,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00049,
+ "request_id": "req_011Cg9MGGWmxxwXwgArtgBd3",
+ "ts": "2026-10-18T08:00:29+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.85,\"confidence\":0.45,\"reasoning\":\"Last_3d ROI 0.067 and blended_roi 0.048 are positive but below the +0.10 proven-winner bar, so no scale-up. Peers fwd_roi_1_3d is -0.003 (n=31), roughly break-even. A buyer cut budget from 12.64 to 8.85 about 24.5h ago, and the spend_exceeds_1.25x_budget flag makes the budget-to-spend relationship unreliable. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.roi = 0.067 (below +0.10 threshold)\",\"blended_roi = 0.048\",\"peers.fwd_roi_1_3d = -0.003, n=31\",\"buyer.last_human_action: down 12.64 to 8.85, 24.5h ago\"],\"uncertainty\":[\"Whether spend exceeding budget by 1.25x reflects a real delivery issue or a data error\",\"Whether the buyer's recent cut was a deliberate view on performance that would argue for staying lower\",\"Whether the d-1 gain (ROI 0.281) persists or was noise after the cut\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 997,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000581,
+ "request_id": "req_011Cg7sp66px1FRHhLM9LJeg",
+ "ts": "2026-10-17T13:19:54+00:00"
+}

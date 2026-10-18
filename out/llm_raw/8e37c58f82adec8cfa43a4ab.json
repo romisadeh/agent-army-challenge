@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":237.5,\"confidence\":0.55,\"reasoning\":\"Proven-winner pattern: age 12 spend days, profit_days 2 with loss_days 0, last_3d.roi 0.14 (>0.10), blended_roi 0.137 (>0.10). Last human action was an up-move (213.89 to 254) 63.9h ago, outside the 48h window, and net_budget_change_48h is 0. Peers are weak (fwd_roi 0.013, n=14). The spend_exceeds_1.25x_budget flag adds uncertainty, so I am keeping confidence moderate. Recommend +10%.\",\"key_evidence\":[\"last_3d.roi = 0.14, profit_days = 2, loss_days = 0\",\"blended_roi = 0.137 with blend_weight_own = 0.97\",\"buyer.net_budget_change_48h = 0.0; last up-move 63.9h ago\",\"peers.fwd_roi_1_3d = 0.013, n = 14\"],\"uncertainty\":[\"data_quality_flags spend_exceeds_1.25x_budget may indicate budget or spend misattribution\",\"Yesterday spend 126.78 was well below budget 215.9, so the true capacity to absorb a raise is unclear\",\"Peer forward ROI is near break-even, so the forward outlook for scaling is weak\",\"Budget was set by rule_engine_before_window, not by a human, and the reason for the drop from 254 is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 1485,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000826,
+ "request_id": "req_011Cg7sbTtu6gVREfLJqJd8J",
+ "ts": "2026-10-17T13:17:05+00:00"
+}

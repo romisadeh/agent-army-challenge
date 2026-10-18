@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner profile (age 5, 2 of 3 days profitable, last_3d ROI 0.629, blended 0.33), but a buyer cut the budget 6.35 to 5.08 just 0.4h ago with a 24h lock, citing a midnight spike. Yesterday was negative (-0.258) on $7.05 spend, above budget. Overriding a deliberate recent buyer action is not warranted; keep.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->5.08, 0.4h ago, lock_24h true\",\"last_3d.roi 0.629 with 2 profit days, 1 loss day\",\"matured d=-1 ROI -0.258 on spend 7.05, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the midnight spike will recur and overspend again\",\"Whether yesterday's loss is noise or the start of a decline\",\"Small absolute spend makes ROI volatile\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 678,
+  "output_tokens": 379,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005569,
+ "request_id": "req_011Cg9LvkXwra1FjziVp13bd",
+ "ts": "2026-10-18T07:56:03+00:00"
+}

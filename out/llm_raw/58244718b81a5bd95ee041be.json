@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"A human cut budget 6.35 to 4.13 0.5h ago and lock_24h is true, which conflicts with the numbers. last_3d ROI is 0.855 on 10.49 spend with 2 profit days and 1 loss day, and yesterday was profitable (ROI 1.788). Blended ROI is 0.318, but peer forward ROI is only 0.037 with n=42. Evidence is mixed and the recent deliberate buyer action should be settled by a human. If forced, keep the current budget of 4.13.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 6.35->4.13, 0.5h ago, lock_24h true\",\"last_3d.roi 0.855 with profit_days 2 and loss_days 1\",\"blended_roi 0.318 vs peers.fwd_roi_1_3d 0.037 (n=42)\"],\"uncertainty\":[\"Whether the buyer's cut reflects information not on the card\",\"Peer forward ROI is near break-even, so the profit signal may not persist\",\"Revenue for D-1 is matured, but a single day is not a trend\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 901,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000532,
+ "request_id": "req_011Cg7UFGxb4DqfqHsCCdF9T",
+ "ts": "2026-10-17T08:10:51+00:00"
+}

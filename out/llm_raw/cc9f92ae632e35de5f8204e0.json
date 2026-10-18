@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":20.45,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 4, three of three matured days profitable, last_3d.roi 0.585 well above +0.10, blended_roi 0.292 above +0.10, trend improving, no buyer lock or notes. Default scale of about 15% applies. Confidence is tempered by the budget_reconstructed flag on budget.current and by spend (about 4.27/day) running well below the 17.78 budget, so the extra budget may not be fully used.\",\"key_evidence\":[\"last_3d.roi = 0.585 with 3 profit_days and 0 loss_days\",\"blended_roi = 0.292 (blend_weight_own 0.39)\",\"age_spend_days = 4, trend_last_day_vs_prior = improving\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Whether budget.current (17.78) is accurate given the reconstruction flag\",\"Spend runs well below budget, so a higher budget may not raise spend\",\"Peer forward ROI of 0.105 is only modestly above the threshold\",\"Only 4 days of history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 558,
+  "output_tokens": 821,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000488,
+ "request_id": "req_011Cg7tXKEWcrNj8mern2CEh",
+ "ts": "2026-10-17T13:29:12+00:00"
+}

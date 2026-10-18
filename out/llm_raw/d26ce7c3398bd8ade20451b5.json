@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":4.98,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is +0.026 with 2 loss days vs 1 profit day, and blended_roi is -0.128 with peers at -0.337 (n=5). Trend is flat. The buyer already cut 8.89 to 6.22 24.5h ago, and a further 20% step continues that direction. The spend_exceeds_1.25x_budget flag means the daily budget may not be the real cap, so the cut may not bind. Losses are small in dollars.\",\"key_evidence\":[\"blended_roi -0.128\",\"last_3d.roi 0.026 with loss_days 2 vs profit_days 1\",\"peers.fwd_roi_1_3d -0.337 n=5\",\"buyer.last_human_action down 8.89->6.22 24.5h ago\"],\"uncertainty\":[\"Spend exceeds budget (flag), so budget changes may not limit real spend\",\"Only 2 of 5 matured days profitable; 3-day window is small\",\"Peer evidence is from n=5\",\"Whether the buyer's cut is still taking effect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 1124,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000648,
+ "request_id": "req_011Cg9N5WkbNAniFiXj86mMR",
+ "ts": "2026-10-18T08:11:11+00:00"
+}

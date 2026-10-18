@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Adset is aged 3 spend days, so the proven-winner rule (4+ days) does not apply. last_3d.roi is 0.068, below the +0.10 threshold, and trend_last_day_vs_prior is declining with yesterday at -0.422. blended_roi 0.292 is positive mainly because peers (fwd_roi 0.401, n=17) carry weight, with own weight only 0.33. Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the base is unreliable. Hold rather than change.\",\"key_evidence\":[\"last_3d.roi = 0.068 (below +0.10)\",\"matured_days d=-1 roi = -0.422, trend declining\",\"age_spend_days = 3 (below 4+ threshold)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the declining trend continues after D-1\",\"Whether the reconstructed budget of 2.54 is accurate\",\"Peer forward ROI (0.401) may not transfer to this adset's own performance\",\"One more matured day above +0.10 would make it a scale-up candidate\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 557,
+  "output_tokens": 764,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000459,
+ "request_id": "req_011Cg7tjHY9165jESQyfGmhK",
+ "ts": "2026-10-17T13:31:55+00:00"
+}

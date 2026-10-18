@@ -1,0 +1,5 @@
+31273956645572 2026-06-11 @ 14:30 local: rule R02 cut (SUCCESS) 13.6017 -> 10.8814 | agent keep  conf 0.5 | roi_seen -0.095 corrected -0.095 blended 0.046 | adj: []
+31626016833981 2026-06-10 @ 17:30 local: rule R02 cut ("No budget to change") nan -> nan | agent keep  conf 0.4 | roi_seen -0.107 corrected -0.107 blended -0.047 | adj: []
+31626016833981 2026-06-12 @ 17:00 local: rule R02 cut ("No budget to change") nan -> nan | agent keep  conf 0.6 | roi_seen -0.06 corrected -0.06 blended -0.068 | adj: []
+31302925337341 2026-06-08 @ 05:00 local: rule R10 cut (SUCCESS) 254.0 -> 215.9 | agent keep  conf 0.6 | roi_seen 0.0 corrected 0.449 blended 0.221 | adj: []
+LLM calls: 0, cost $0.0000

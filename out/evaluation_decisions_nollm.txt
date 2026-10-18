@@ -1,0 +1,38 @@
+== Coverage (plan items 11, 16)
+  2026-06-10: 223 active adsets; auto_keep 54 (24% of adsets, 1.8% of 3-day spend); routes {'llm_review': 167, 'auto_keep': 54, 'escalate': 1, 'deterministic': 1}; day-1 adsets with no decision by design: 69 (12% of D's spend)
+  2026-06-11: 188 active adsets; auto_keep 68 (36% of adsets, 2.9% of 3-day spend); routes {'auto_keep': 68, 'llm_review': 119, 'escalate': 1}; day-1 adsets with no decision by design: 212 (20% of D's spend)
+  2026-06-12: 317 active adsets; auto_keep 201 (63% of adsets, 7.7% of 3-day spend); routes {'llm_review': 115, 'auto_keep': 201, 'escalate': 1}; day-1 adsets with no decision by design: 145 (12% of D's spend)
+  actions: {'keep': 586, 'scale_up': 87, 'escalate': 25, 'pause': 8, 'scale_down': 22}; requires_approval: 97; portfolio-trimmed: 3
+  shrink check: adsets left on keep/escalate carried 57% of D's spend among active adsets
+
+== Primary metric: counterfactual absolute profit and spend vs what actually happened (day D, rest of day)
+  agent            executable  : {"n_actions": 27, "low": {"spend": 18.24, "profit": 0.89}, "central": {"spend": 18.24, "profit": 1.33}, "high": {"spend": 18.24, "profit": 1.78}}
+  agent            if_approved : {"n_actions": 114, "low": {"spend": 145.35, "profit": 9.93}, "central": {"spend": 145.35, "profit": 14.62}, "high": {"spend": 145.35, "profit": 19.31}}
+  no-LLM ablation  executable  : {"n_actions": 27, "low": {"spend": 18.24, "profit": 0.89}, "central": {"spend": 18.24, "profit": 1.33}, "high": {"spend": 18.24, "profit": 1.78}}
+  no-LLM ablation  if_approved : {"n_actions": 114, "low": {"spend": 145.35, "profit": 9.93}, "central": {"spend": 145.35, "profit": 14.62}, "high": {"spend": 145.35, "profit": 19.31}}
+  (profit/spend deltas in $, by marginal-ROI scenario m = 0.5 / 0.75 / 1.0; pause uses the day's average ROI)
+
+== Direction accuracy on matured outcome (D+D1 where D+1 exists). Assumption: label band +-10% ROI (>= +10% up, <= -10% down, else neutral). The harmful rate is the safety number; accuracy alone rewards activity
+  agent, all decisions: graded 285 of 728: correct 61 (21%), harmful 33 (12%), neither 191 (67%)
+  agent, route llm_review: graded 235 of 401: correct 59 (25%), harmful 33 (14%), neither 143 (61%)
+  agent, route deterministic: no gradable decisions
+  agent, route auto_keep: graded 50 of 323: correct 2 (4%), harmful 0 (0%), neither 48 (96%)
+  agent, action scale_up: graded 85 of 87: correct 36 (42%), harmful 33 (39%), neither 16 (19%)
+  agent, action scale_down: graded 3 of 22: correct 3 (100%), harmful 0 (0%), neither 0 (0%)
+  agent, action pause: no gradable decisions
+  agent, action keep: graded 197 of 586: correct 22 (11%), harmful 0 (0%), neither 175 (89%)
+  no-LLM ablation, llm_review cards: graded 235 of 401: correct 59 (25%), harmful 33 (14%), neither 143 (61%)
+  agent,           llm_review cards: graded 235 of 401: correct 59 (25%), harmful 33 (14%), neither 143 (61%)
+
+== Escalations graded twice (plan item 10): n = 25
+  as the proposed action: graded 19 of 25: correct 6 (32%), harmful 11 (58%), neither 2 (11%)
+  as the default keep:    graded 22 of 25: correct 2 (9%), harmful 0 (0%), neither 20 (91%)
+
+== Calibration (plan item 4)
+ raw LLM confidence vs the LLM's own action:
+  (no graded LLM decisions)
+ capped confidence vs the final action (LLM cards):
+  (no graded LLM decisions)
+
+== Feedback loop run on this week's ledger (out/ledger.jsonl -> out/calibration.json, out/lessons.json)
+  proposed lessons (need human activation): 0

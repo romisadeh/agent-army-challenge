@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":5.08,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.2 with 2 loss days vs 1 profit day, and blended_roi is -0.064. The losses (d-3, d-2) are not clearly persistent since d-1 was profitable (roi 0.16) and trend_last_day_vs_prior is flat. The buyer already cut budget 6.35 to 5.08 about 70h ago, so no lock, but the change is outside the 48h window. The spend_exceeds_1.25x_budget flag weakens budget-based reads. Peers are slightly positive (fwd_roi 0.036, n=21). Evidence is mixed, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.2 with loss_days 2, profit_days 1\",\"blended_roi = -0.064 (blend_weight_own 0.42)\",\"trend_last_day_vs_prior = flat; d-1 roi 0.16\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the d-3 and d-2 losses are noise or a persisting decline\",\"Whether the spend above budget distorts the spend and ROI figures\",\"Whether the 5.08 budget cut is still taking effect\",\"Peer forward ROI is only a weak signal (fwd 0.036)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 853,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000509,
+ "request_id": "req_011Cg7t8rYHTh97TXfTvEzGU",
+ "ts": "2026-10-17T13:24:08+00:00"
+}

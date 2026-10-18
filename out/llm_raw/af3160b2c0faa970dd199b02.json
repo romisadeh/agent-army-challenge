@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is age 5 with 2 of last 3 days profitable, last_3d ROI +0.685 and blended ROI +0.284, which would normally qualify it as a proven winner. However, a buyer cut budget 3.81 to 2.54 22h ago (lock_24h true), yesterday was -0.47 with a declining trend, and spend exceeded 1.25x budget, so the data is unreliable. Scaling up would override a recent deliberate buyer decision, so hold.\",\"key_evidence\":[\"last_3d.roi=0.685 (2 profit days, 1 loss day)\",\"buyer last action: down 3.81->2.54, 22h ago, lock_24h=true\",\"d-1 ROI -0.469, trend declining\",\"flag spend_exceeds_1.25x_budget; peers fwd ROI 0.011 (n=32)\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether spend overrun distorts recent ROI\",\"Tiny spend base (~$4-5/day) makes ROI noisy\",\"Peer forward ROI is near break-even\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 408,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005733,
+ "request_id": "req_011Cg7tqWGH2foBgqUBEVaZg",
+ "ts": "2026-10-17T13:33:18+00:00"
+}

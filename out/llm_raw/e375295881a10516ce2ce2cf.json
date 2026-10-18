@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Budget is tiny ($1.27) and the buyer cut it 23.2h ago, so the 24h lock is active. Matured data is mixed: last_3d ROI +0.039 (1 profit day, 2 loss days), but the last two days had zero revenue. Blended ROI -0.179 and peers -0.314 lean negative. Absolute dollars at stake are small, so a keep is low-risk. Scaling is unjustified, and pausing would override the recent human action.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 1.9->1.27 23.2h ago\",\"last_3d ROI 0.039 (2 loss days, 1 profit day)\",\"blended_roi -0.179; peers fwd_roi_1_3d -0.314 (n=6)\",\"d-2 and d-1 revenue 0.0 on spend 5.04 and 2.78\"],\"uncertainty\":[\"Spend exceeded 1.25x budget, so the true budget enforcement is unclear\",\"Revenue is sparse and lumpy, so ROI is dominated by one day (d-3)\",\"Whether the buyer plans further cuts or a pause\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 648,
+  "output_tokens": 423,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0059,
+ "request_id": "req_011Cg7UzazFJae5LAN2677k3",
+ "ts": "2026-10-17T08:20:38+00:00"
+}

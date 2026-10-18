@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is 0.392 with 2 profit days and blended ROI 0.365 (w=0.91), which supports scaling. But the adset is off_by_rule_today after R01 killed it at 02:30 on immature data, the buyer raised budget 65h ago (7.62 to 12.7), and rules cut it yesterday to 10.16. Peer forward ROI is only 0.09, and spend exceeds 1.25x budget. A human should settle whether to re-enable. If forced, I would scale up about 20% to 12.19.\",\"key_evidence\":[\"last_3d.roi=0.392, profit_days=2, loss_days=1\",\"blended_roi=0.365 with blend_weight_own=0.91\",\"status_at_window=off_by_rule_today; rules.acted_today R01 kill at 02:30\",\"buyer.last_human_action up 7.62->12.7, hours_ago=64.9\"],\"uncertainty\":[\"Whether the R01 kill and yesterday's R02 cuts reflect real losses or immature morning data\",\"Peer forward ROI of 0.09 over n=26 is modest\",\"Whether spend exceeding budget means the budget field understates actual delivery\",\"Why the adset was cut back from the buyer's 12.7 budget\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 839,
+  "output_tokens": 1456,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000831,
+ "request_id": "req_011Cg7Ue7n5r8P21vgqdwHgr",
+ "ts": "2026-10-17T08:16:04+00:00"
+}

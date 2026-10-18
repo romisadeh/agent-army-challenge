@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Three matured loss days (last_3d roi -0.157, trend declining) and blended_roi -0.067 point down, but the buyer cut budget 6.22 to 4.36 only 24.5h ago and spend exceeds budget per data_quality_flags, so the budget figure may not reflect actual delivery. Peer forward ROI is +0.061 (n=21). Thin evidence and a recent deliberate action argue for no change today.\",\"key_evidence\":[\"last_3d.roi = -0.157 with 3 loss days, 0 profit days\",\"blended_roi = -0.067, blend_weight_own = 0.59\",\"buyer.last_human_action: down 6.22->4.36, 24.5h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether actual delivered budget matches the 4.36 card value given the spend-exceeds-budget flag\",\"Whether the 24.5h-old buyer cut has had time to show effect\",\"Peer forward ROI +0.061 could mean the losses are noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 1051,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000606,
+ "request_id": "req_011Cg7ScdG5N3tfvtv8tb2gL",
+ "ts": "2026-10-17T07:49:29+00:00"
+}

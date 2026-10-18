@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":10.16,\"confidence\":0.55,\"reasoning\":\"Three matured days, all losing (last_3d.loss_days=3, profit_days=0), with last_3d.roi -0.406 and blended_roi -0.348. Peers forward ROI is -0.307 (n=12), which supports the weakness. Spend is small (14.27) and the last day improved vs prior, so I chose a modest 20% cut rather than a pause. Budget 12.7 is flagged as reconstructed, so the base figure is uncertain.\",\"key_evidence\":[\"last_3d.roi=-0.406 with 3 loss days, 0 profit days\",\"blended_roi=-0.348\",\"peers.fwd_roi_1_3d=-0.307 (n=12)\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Budget 12.7 is reconstructed from end-of-week metadata, so the actual current budget may differ\",\"Only 3 days of data and small spend; the adset is still in learning\",\"Trend improved on the last day, which could signal a turnaround\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 794,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000471,
+ "request_id": "req_011Cg7tBEh6s7RFotiia3yYy",
+ "ts": "2026-10-17T13:24:40+00:00"
+}

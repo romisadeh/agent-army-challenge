@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Mixed and near break-even. last_3d.roi is -0.079 with 2 profit days and 1 loss day, which fails the proven-winner test (needs > +0.10). blended_roi is -0.043 and peers fwd_roi is -0.009. Trend is declining, which argues against scaling. Buyer raised budget 5.08 to 8.43 about 38h ago, no lock active, so the change is recent and too early to judge. Hold to see the response to the increase.\",\"key_evidence\":[\"last_3d.roi = -0.079 (1 loss day, 2 profit days)\",\"blended_roi = -0.043\",\"peers.fwd_roi_1_3d = -0.009 (n=14)\",\"trend_last_day_vs_prior = declining\",\"buyer.last_human_action: up 5.08 to 8.43, 38.1h ago\"],\"uncertainty\":[\"Whether the 66% buyer budget increase 38h ago is driving the declining trend\",\"Whether D-1 ROI of +0.061 signals recovery or continued decline\",\"Peer evidence is moderate (n=14) and fwd ROI is near zero\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 746,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000457,
+ "request_id": "req_011Cg9MtfnFZjzeG6Q7PHxJh",
+ "ts": "2026-10-18T08:08:44+00:00"
+}

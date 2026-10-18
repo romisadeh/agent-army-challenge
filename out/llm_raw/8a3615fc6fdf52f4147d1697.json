@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":1.77,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner criteria: age_spend_days 4, two of last three matured days profitable (d-3, d-2), last_3d.roi 0.117 above 0.10, blended_roi 0.128 above 0.10. Yesterday was only slightly negative (-0.038) with a flat trend, and there is no buyer action or lock. The budget_reconstructed and spend_exceeds_1.25x flags make the current budget value uncertain, so the step is a modest 10%.\",\"key_evidence\":[\"last_3d.roi = 0.117 (2 profit days, 1 loss day)\",\"blended_roi = 0.128, blend_weight_own = 0.37\",\"trend_last_day_vs_prior = flat, d-1 roi = -0.038\",\"budget.current = 1.61 with data_quality flag budget_reconstructed\"],\"uncertainty\":[\"Current budget is reconstructed from end-of-week metadata, so the actual daily budget may differ from 1.61\",\"Spend exceeds budget by about 1.65x on d-4, so the base for a 10% step may be wrong\",\"Only 3 matured days of own history; peer forward ROI (n=17) is the main support\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 578,
+  "output_tokens": 1134,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000646,
+ "request_id": "req_011Cg9MMS1vGVbXWRgSa7Poy",
+ "ts": "2026-10-18T08:01:42+00:00"
+}

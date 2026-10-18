@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner criteria (age 6, 2 of 3 days profitable, last_3d ROI 0.328, blended 0.233), which would normally mean scale up. But a buyer cut the budget from 16.51 to 11.56 only 0.5h ago with a 24h lock. Yesterday was negative (-0.153) on a spend of 21.96, a declining trend, and spend exceeded budget. I will not override the deliberate human action, so keep.\",\"key_evidence\":[\"buyer.last_human_action: down 16.51->11.56, 0.5h ago, lock_24h=true\",\"last_3d.roi 0.328, 2 profit days / 1 loss day\",\"blended_roi 0.233\",\"d-1 ROI -0.153 on spend 21.96, trend declining\"],\"uncertainty\":[\"Why the buyer cut the budget (no note)\",\"Whether yesterday's overspend vs budget drove the weak ROI\",\"Peer forward ROI is only 0.038, so the upside from scaling is modest\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 384,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005549,
+ "request_id": "req_011Cg9M3osKJWjvxYvxjV6Ci",
+ "ts": "2026-10-18T07:57:39+00:00"
+}

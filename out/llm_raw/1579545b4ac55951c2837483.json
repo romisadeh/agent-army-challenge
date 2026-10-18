@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"A human raised the budget 21.2h ago (11.56 to 17.91) and the 24h lock is active, so I won't override it. Matured data is mixed: last_3d ROI is +0.075 with 2 loss days and 1 profit day, and blended ROI is +0.066, which is roughly break-even. That is too weak to scale up and too weak to cut or pause.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 11.56->17.91 21.2h ago\",\"last_3d ROI 0.075 (2 loss days, 1 profit day)\",\"blended_roi 0.066, peers fwd ROI 0.044 (n=52)\",\"D-2 ROI -0.153, D-1 ROI -0.074, trend declining\"],\"uncertainty\":[\"How the adset performs after the recent budget increase has not fully matured\",\"Whether the declining trend continues at the higher budget\",\"Why the buyer raised the budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 354,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005172,
+ "request_id": "req_011Cg7Ukjstq8JQvuwfEPE1b",
+ "ts": "2026-10-17T08:17:30+00:00"
+}

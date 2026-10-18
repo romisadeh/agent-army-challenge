@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":32.64,\"confidence\":0.6,\"reasoning\":\"Matured profit is positive: last_3d ROI 0.181 over 3 profit days, blended_roi 0.179, peer fwd ROI 0.172 (n=6). A buyer ui_adjust_budget up to 32.64 happened 18.5h ago and lock_24h is true, so I am not changing budget again. Daily ROI is uneven (0.045 on D-2, 0.163 on D-1) and the trend is flat, so the evidence does not justify a scale-up now.\",\"key_evidence\":[\"last_3d.roi = 0.181 with profit_days = 3, loss_days = 0\",\"blended_roi = 0.179 (blend_weight_own 0.78)\",\"buyer.lock_24h = true; last_human_action up 27.2 to 32.64, 18.5h ago\",\"trend_last_day_vs_prior = flat\"],\"uncertainty\":[\"Whether the D-2 dip (ROI 0.045) is noise or the start of a decline\",\"Whether the 24h lock expires before the next window, allowing a scale-up\",\"Peer sample is small (n=6)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 807,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000485,
+ "request_id": "req_011Cg7V2Xv1bRUZZomizngph",
+ "ts": "2026-10-17T08:21:05+00:00"
+}

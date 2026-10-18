@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":116.6,\"confidence\":0.66,\"reasoning\":\"Three of three recent days were profitable (last_3d ROI 0.161, 0 loss days), and all five matured days were positive. Blended ROI is 0.166, with peers at 0.245 (n=5). Yesterday was the strongest day (ROI 0.282). A +20% step from 97.17 gives 116.60. Spend runs above budget, so I keep the step modest.\",\"key_evidence\":[\"last_3d: 3 profit days, 0 loss days, ROI 0.161\",\"blended_roi 0.166; peers fwd_roi_1_3d 0.245 (n=5)\",\"D-1 ROI 0.282 on spend 103.85\",\"flag: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend exceeding 1.25x budget may mean actual spend is not controlled by budget alone\",\"ROI margin is moderate (~16%) so a scale-up could dilute efficiency\",\"Last human budget increase was 46h ago; the effect of that increase is still unfolding\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 383,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00549,
+ "request_id": "req_011Cg7V1cLPriGdfE3GN1fk1",
+ "ts": "2026-10-17T08:20:52+00:00"
+}

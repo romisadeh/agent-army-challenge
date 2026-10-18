@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has only 3 spend days, so it is not a proven winner (needs 4+). A buyer cut the budget 22h ago (10.16 to 6.1) and the 24h lock is active, so a deliberate human action should not be overridden. Yesterday was negative (-0.18) with a declining trend. Spend exceeded 1.25x budget, which makes the numbers less reliable. Blended ROI is positive at 0.282, so pausing is not warranted.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 10.16->6.1 22h ago\",\"age_spend_days=3 (<4)\",\"last_3d.roi=0.417 but d-1 roi=-0.18, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget while noting 'weekend boost' (note conflicts with the direction)\",\"Whether spend over budget distorts the ROI figures\",\"Small spend base, with the d-3 ROI of 2.25 on only $3.92 spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 399,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005629,
+ "request_id": "req_011Cg9M5bmqhBVzDQwx9jCyA",
+ "ts": "2026-10-18T07:58:04+00:00"
+}

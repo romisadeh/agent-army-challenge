@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Last 3 matured days show 2 loss days and 1 profit day, with last_3d ROI -0.187 and blended_roi -0.018, roughly break-even. Peer forward ROI is +0.077 (n=26, fallback level 1). Two losses are not a clear consistent trend, and the budget is reconstructed from metadata with spend above 1.25x budget, so the evidence is thin and mixed.\",\"key_evidence\":[\"last_3d.roi = -0.187 (loss_days 2, profit_days 1)\",\"blended_roi = -0.018, blend_weight_own 0.36\",\"peers.fwd_roi_1_3d = 0.077, n = 26\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget value is reconstructed from metadata and may not match the true daily budget\",\"Whether d-2 and d-1 losses mark a real downtrend or are noise\",\"Peer signal is a band fallback with moderate sample size\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 884,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000519,
+ "request_id": "req_011Cg7SvTrHHUcB17omqJzBS",
+ "ts": "2026-10-17T07:53:30+00:00"
+}

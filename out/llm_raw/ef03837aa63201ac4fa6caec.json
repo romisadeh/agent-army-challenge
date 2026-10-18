@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":58.0,\"confidence\":0.58,\"reasoning\":\"Last 3 matured days were all profitable (ROI 0.48 on $28.93 spend). Blended ROI is 0.332 and peers are positive at 0.117 (n=15). Spend is far below the $53.34 budget, so a modest ~9% raise is low risk. The budget is reconstructed and spend is small and volatile, so I'm keeping the step small.\",\"key_evidence\":[\"last_3d: 3 profit days, ROI 0.48, spend $28.93\",\"blended_roi 0.332\",\"peers fwd_roi_1_3d 0.117 (n=15)\",\"budget.current 53.34 vs yesterday spend 16.48\"],\"uncertainty\":[\"Budget was reconstructed from metadata, so the true current budget may differ\",\"Daily spend is low and volatile, so ROI estimates are noisy\",\"Day -4 was a loss at -0.57 ROI, and day -5 was about break-even\",\"Since spend is well under budget, a budget increase may not raise spend at all\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 594,
+  "output_tokens": 376,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005322,
+ "request_id": "req_011Cg7UF1B5GPZsRYWKakAt3",
+ "ts": "2026-10-17T08:10:47+00:00"
+}

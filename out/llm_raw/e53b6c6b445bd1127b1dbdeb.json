@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner criteria on numbers (age 5, 3 profit days, last_3d ROI 0.202, blended 0.133). But a buyer raised budget 5.08 to 8.89 only 14.1h ago with lock_24h true, and net_budget_change_48h is +3.81. Trend is declining (0.581, 0.012, 0.093). Overriding a fresh deliberate buyer action is not warranted; let the new budget play out.\",\"key_evidence\":[\"buyer.lock_24h=true, last action up 5.08->8.89 14.1h ago\",\"last_3d roi=0.202, 3 profit days, 0 loss days\",\"blended_roi=0.133, peers fwd_roi 0.078 (n=23)\",\"trend_last_day_vs_prior=declining; day -2 ROI 0.012, day -1 ROI 0.093\"],\"uncertainty\":[\"How performance responds to the 75% budget increase\",\"Flag extreme_roi_gt_5 comes from day -5 (ROI 5.829) and inflates the history\",\"Small spend base (~$6/day) makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 637,
+  "output_tokens": 417,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2116
+ },
+ "cost_usd": 0.010734,
+ "request_id": "req_011Cg9LsbRv5Fdfqi6uRGDTM",
+ "ts": "2026-10-18T07:55:20+00:00"
+}

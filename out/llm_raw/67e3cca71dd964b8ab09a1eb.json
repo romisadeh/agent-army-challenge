@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset has 8 spend days and last_3d ROI of +0.265 with blended ROI +0.156, but only 1 of 3 days profitable, so it misses the proven-winner rule. The last two matured days were negative (-0.202, -0.236) and the trend is declining. Spend is tiny (budget $2.67). Data flags (spend over 1.25x budget, conversions > clicks) lower trust. A buyer cut the budget 48h ago. Keeping is the safer call.\",\"key_evidence\":[\"last_3d profit_days=1, loss_days=2\",\"last_3d.roi=+0.265, blended_roi=+0.156\",\"d-1 ROI -0.236, trend declining\",\"buyer cut budget 3.81->2.67 48.5h ago\"],\"uncertainty\":[\"Whether the spend-over-budget and conversions>clicks flags distort ROI\",\"Small sample: $14.99 spend over 3 days\",\"Whether the late-arriving revenue will lift d-1 ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 656,
+  "output_tokens": 376,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005495,
+ "request_id": "req_011Cg9LtaGkkm6dt97Pk7b7g",
+ "ts": "2026-10-18T07:55:33+00:00"
+}

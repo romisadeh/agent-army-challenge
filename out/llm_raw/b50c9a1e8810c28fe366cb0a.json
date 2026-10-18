@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Age is 3 spend days, so the proven-winner rule does not apply. last_3d.roi is -0.099 and blended_roi is only 0.029, which is roughly break-even and mixed. Yesterday's ROI was -0.276 with trend_last_day_vs_prior declining, but that is one loss day. A ui_adjust_budget down was made 17.2h ago with lock_24h true, so I defer to the buyer's recent move. The spend_exceeds_1.25x_budget flag makes yesterday's spend unreliable.\",\"key_evidence\":[\"last_3d.roi -0.099 with 1 loss day of 3\",\"blended_roi 0.029\",\"buyer.lock_24h true, last_human_action down 5.08 to 4.06 at 17.2h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether yesterday's -0.276 is the start of a persistent loss trend or noise\",\"Whether spend overrun to 5.71 against budget 4.06 distorts yesterday's ROI\",\"Peer forward ROI of 0.094 over n=6 is weak evidence\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 783,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000471,
+ "request_id": "req_011Cg9LaEGjDMcqT2DSCHT8p",
+ "ts": "2026-10-18T07:51:25+00:00"
+}

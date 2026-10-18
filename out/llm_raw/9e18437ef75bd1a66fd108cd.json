@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Last_3d ROI is -0.042 and blended_roi is -0.029, roughly break-even, not a proven winner (needs >+0.10). Matured days d-3 to d-1 net slightly negative (revenue 32.14 on spend 33.54) with trend_last_day_vs_prior declining. Buyer raised budget 15.24 to 21.59 18.4h ago and lock_24h is true, so an in-lock change would override a recent human call without strong evidence. Keep.\",\"key_evidence\":[\"last_3d.roi = -0.042 (profit_days 2, loss_days 1)\",\"blended_roi = -0.029, peers.fwd_roi_1_3d = -0.007\",\"buyer.last_human_action up 15.24 to 21.59, 18.4h ago, lock_24h true\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether the 18.4h-old buyer scale-up is working; the next day's matured ROI would show it\",\"Whether yesterday's -0.269 ROI on 19.79 spend is noise or the start of a persistent loss\",\"Peer evidence is n=15 with a near-zero forward ROI, so it is weak\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 632,
+  "output_tokens": 1014,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000591,
+ "request_id": "req_011Cg9My2oQY81NbCQNe9qQA",
+ "ts": "2026-10-18T08:09:42+00:00"
+}

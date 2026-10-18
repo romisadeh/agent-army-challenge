@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi 0.049 is below +0.10, blended_roi 0.013 is near break-even, and only 1 of 3 matured days was profitable (profit_days 1, loss_days 2). Peers forward ROI is -0.101 (n=8). Trend is flat, so no clear decline. Budget is reconstructed and spend exceeds 1.25x budget, so the numbers are unreliable. Keep is the best fit for thin, mixed evidence.\",\"key_evidence\":[\"last_3d.roi=0.049\",\"blended_roi=0.013\",\"last_3d profit_days=1 loss_days=2\",\"peers.fwd_roi_1_3d=-0.101 n=8\"],\"uncertainty\":[\"budget.current=6.35 is reconstructed and far below the ~22/day spend, so the true daily budget is unknown\",\"Peer forward ROI is negative and could drag results further\",\"Scaling would be premature with mixed day-level results\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 820,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00049,
+ "request_id": "req_011Cg9Lb9xnwBigAzzDhRn8F",
+ "ts": "2026-10-18T07:51:38+00:00"
+}

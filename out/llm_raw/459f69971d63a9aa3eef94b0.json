@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Meets proven-winner tests: age 6, last_3d.roi 0.428, blended_roi 0.167, 2 of 3 profit days. But buyer made a ui_adjust_budget cut 2.29 to 1.83 0.4h ago with lock_24h true, and net 48h change is -0.46. Yesterday roi -0.081 and trend declining. Flags meta_conversions_gt_clicks and spend_exceeds_1.25x_budget undermine reliability. A human should settle this conflict.\",\"key_evidence\":[\"buyer.last_human_action: down 2.29->1.83, hours_ago 0.4, lock_24h true\",\"last_3d.roi 0.428 with profit_days 2 of 3\",\"blended_roi 0.167, peers fwd_roi_1_3d 0.038 (n=40)\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut budget: may reflect information not on the card\",\"Whether the conversions>clicks flag inflates revenue and ROI\",\"Whether the -0.081 yesterday marks a real reversal given the declining trend\",\"Peer forward ROI is only 0.038, a weaker signal than own 3-day ROI\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 659,
+  "output_tokens": 834,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000504,
+ "request_id": "req_011Cg9MKRvej3s1wjAqiX63P",
+ "ts": "2026-10-18T08:01:12+00:00"
+}

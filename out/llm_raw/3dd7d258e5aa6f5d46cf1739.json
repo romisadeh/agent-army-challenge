@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is -0.019 and last_3d.roi is -0.034, so the adset is roughly break-even, not a proven winner (last_3d.roi must exceed +0.10). Matured days are mixed: two profit days and one loss day, with trend flat. Buyer raised budget 23.08 to 29.43 about 18h ago and lock_24h is true, so no change is appropriate. Peer forward ROI of 0.022 is weakly positive with n=13.\",\"key_evidence\":[\"blended_roi = -0.019\",\"last_3d.roi = -0.034 with 2 profit / 1 loss days\",\"buyer.lock_24h = true, last up-adjust 18.4h ago\",\"peers.fwd_roi_1_3d = 0.022 (n=13)\"],\"uncertainty\":[\"Whether the 18h-old budget increase is yet producing better returns\",\"Peer ROI sample is modest\",\"Whether a further matured profitable day would justify a scale-up after the lock expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 634,
+  "output_tokens": 714,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000442,
+ "request_id": "req_011Cg9NC77VKvtiHW8hYxEyY",
+ "ts": "2026-10-18T08:12:38+00:00"
+}

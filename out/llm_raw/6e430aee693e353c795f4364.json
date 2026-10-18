@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":2.29,\"confidence\":0.6,\"reasoning\":\"All 3 matured days were profitable (profit_days 3, loss_days 0) with last_3d ROI 0.298 and blended_roi 0.348, clearly positive. Peers forward ROI 0.401 (n=17, fallback 0) supports it. Last day fell to 0.083 (trend declining), and budget is reconstructed with spend above 1.25x budget, so I take a modest 20% step.\",\"key_evidence\":[\"last_3d.profit_days: 3, loss_days: 0\",\"blended_roi: 0.348 (blend_weight_own 0.52)\",\"peers.fwd_roi_1_3d: 0.401, n: 17\",\"matured_days d=-1 roi: 0.083, trend_last_day_vs_prior: declining\"],\"uncertainty\":[\"budget.current 1.91 is reconstructed from end-of-week metadata and spend exceeds budget, so the true daily budget may differ\",\"last matured day ROI dropped sharply to 0.083\",\"small absolute spend (21.34 over 3 days) makes the ROI reading noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 556,
+  "output_tokens": 813,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000481,
+ "request_id": "req_011Cg7SsnqxG7NtCmfgz6HwC",
+ "ts": "2026-10-17T07:52:53+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.5,\"reasoning\":\"Mixed matured evidence: last_3d ROI 0.214 with 2 profit days and 1 loss day, blended_roi 0.143 (own weight 0.35), and peers fwd_roi 0.105 with n=16. Yesterday lost (-0.242) and trend is declining, but one bad day after profit is noise. Buyer raised budget 3x 41h ago with no lock, so no reversal is warranted yet. Spend exceeds budget flag makes the budget baseline uncertain.\",\"key_evidence\":[\"last_3d.roi=0.214, profit_days=2, loss_days=1\",\"blended_roi=0.143, blend_weight_own=0.35\",\"peers.fwd_roi_1_3d=0.105, n=16\",\"buyer.last_human_action up 1.27->3.81, hours_ago=41.1\"],\"uncertainty\":[\"Whether the 3x budget increase 41h ago is still absorbing spend or is driving yesterday's loss\",\"Data flag spend_exceeds_1.25x_budget may mean budget.current does not reflect actual daily spend\",\"Declining trend could signal fatigue if D-1 loss persists\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 575,
+  "output_tokens": 873,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000513,
+ "request_id": "req_011Cg7SKgmwXkBwPbTVypRkX",
+ "ts": "2026-10-17T07:45:38+00:00"
+}

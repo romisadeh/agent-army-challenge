@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.115 with 2 loss days of 3, blended_roi is -0.082, and yesterday's ROI was -0.58 with trend declining. That argues against scaling. The buyer cut budget from 1.9 to 1.27 17.2h ago and lock_24h is true, so I defer to that recent action rather than move it again. Peers (fwd -0.064, n=14) are also negative but not clearly enough to justify a pause. Spend exceeded budget (flag), so the cut may not have taken full effect.\",\"key_evidence\":[\"last_3d.roi = -0.115 (2 loss days of 3)\",\"matured_days D-1 roi = -0.58, trend declining\",\"buyer.last_human_action: down 1.9 to 1.27, 17.2h ago, lock_24h true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag means the earlier cut has not been delivered in full\",\"Whether yesterday's -0.58 persists after the budget cut takes effect\",\"Peer forward ROI is only moderately negative and may not hold for this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 813,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000489,
+ "request_id": "req_011Cg9M2iXZxgX3gDEa4epw3",
+ "ts": "2026-10-18T07:57:25+00:00"
+}

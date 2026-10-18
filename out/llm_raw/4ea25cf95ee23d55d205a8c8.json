@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is +0.20 with one profit day (d-2 ROI 0.496) and one break-even day (d-1 ROI 0.0), but blended ROI is only 0.192 and peers are -0.021. A buyer raised budget 213.89 to 254 about 11h ago under a 24h lock, while the card shows budget.current 215.9. Yesterday's R10 cut fired on immature data. Today's partial ROI is unreliable before noon. Conflicting signals and a lock warrant human review.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget up 213.89->254 at 10.9h ago, lock_24h true\",\"matured_days d-2 roi 0.496, d-1 roi -0.0 with spend 319.76\",\"blended_roi 0.192 vs peers fwd_roi_1_3d -0.021 (n=6)\",\"data_quality_flags: spend_exceeds_1.25x_budget, today_partial delay_factor 0.69\"],\"uncertainty\":[\"Whether budget is 215.9 or the buyer's 254 is live today (budget source conflict)\",\"Whether the buyer raised budget knowing something the numbers do not show\",\"Peer forward ROI is negative, which would support a cut if the matured trend holds\",\"Today's partial ROI correction is only an estimate before noon\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 723,
+  "output_tokens": 959,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00057,
+ "request_id": "req_011Cg7VDDdjZGYhG26oRqiYy",
+ "ts": "2026-10-17T08:23:31+00:00"
+}

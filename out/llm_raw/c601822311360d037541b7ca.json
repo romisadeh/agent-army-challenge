@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.056 (own 3d ROI 0.05 with 2 loss days of 3, peers -0.119), and trend_last_day_vs_prior is declining. Evidence is mixed and near break-even on small spend. A human ui_adjust_budget down happened 17.2h ago and lock_24h is true, so I leave the budget unchanged. spend_exceeds_1.25x_budget means the budget figure may be unreliable.\",\"key_evidence\":[\"blended_roi -0.056\",\"last_3d roi 0.05, loss_days 2, profit_days 1\",\"buyer.lock_24h true, last_human_action down 17.2h ago\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether current budget 2.13 is the true delivered budget given spend exceeds it\",\"Whether the D-1 loss (roi -0.667) continues the declining trend\",\"Peer forward ROI is from n=5 only\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 688,
+  "output_tokens": 797,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000486,
+ "request_id": "req_011Cg7Uy8cDTj9YYQKadv2Fr",
+ "ts": "2026-10-17T08:20:19+00:00"
+}

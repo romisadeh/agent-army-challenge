@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":12.7,\"confidence\":0.55,\"reasoning\":\"Blended ROI 0.212 is positive and peers forward ROI is 0.17, but matured results are mixed: last_3d has 2 loss days and 1 profit day, with the profit driven by D-1 (roi 0.988). The 5-day total is still positive (about +0.23). The buyer doubled budget 14.2h ago and lock_24h is true, so I hold the current $12.7 rather than override a recent human action. Trend is improving.\",\"key_evidence\":[\"blended_roi = 0.212 with blend_weight_own 0.39\",\"last_3d: loss_days 2, profit_days 1, roi 0.276\",\"buyer.lock_24h = true; last human action up 6.35 to 12.7, 14.2h ago\",\"peers.fwd_roi_1_3d = 0.17 (n=23)\"],\"uncertainty\":[\"Whether the D-1 profit (roi 0.988) persists or was a one-day spike\",\"Whether the 2x budget increase from 14.2h ago is still ramping and will change spend efficiency\",\"Whether the post-increase ROI holds at the higher budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 782,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000472,
+ "request_id": "req_011Cg7UtDfRyfq7D1aYWUtvB",
+ "ts": "2026-10-17T08:19:13+00:00"
+}

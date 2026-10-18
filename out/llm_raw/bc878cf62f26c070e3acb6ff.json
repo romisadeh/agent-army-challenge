@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is age 3 spend days, so the 4+ day proven-winner rule does not apply. Last_3d ROI is +0.214 and blended_roi is +0.143, but yesterday was a loss (-0.242) and trend_last_day_vs_prior is declining. The buyer raised budget 1.27 to 3.81 about 41h ago, and spend_exceeds_1.25x_budget (day -1 spend 5.04 vs budget 3.81) makes the spend base unreliable. Evidence is mixed, so hold.\",\"key_evidence\":[\"age_spend_days: 3 (below the 4+ proven-winner threshold)\",\"last_3d.roi: 0.214 with 2 profit days of 3\",\"trend_last_day_vs_prior: declining, matured_days d=-1 roi -0.242\",\"buyer.last_human_action: up 1.27 to 3.81, hours_ago 41.1\"],\"uncertainty\":[\"Whether the 41h-old buyer budget increase has had enough time to show a stable ROI\",\"Whether the spend_exceeds_1.25x_budget flag means the spend figures are misstated\",\"Whether day -1 loss persists or is noise after the budget jump\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 575,
+  "output_tokens": 982,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00057,
+ "request_id": "req_011Cg7sdFij52kMVfpYvvbML",
+ "ts": "2026-10-17T13:17:27+00:00"
+}

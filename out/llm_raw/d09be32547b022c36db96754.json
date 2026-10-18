@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Two matured loss days, 0 profit days, last_3d.roi -0.47, blended_roi -0.445, and trend_last_day_vs_prior declining. Yesterday ROI was -0.917 on spend 2.30. Peers fwd_roi_1_3d -0.435 (n=12, fallback_level 0) agree the adset keeps losing. Not a proven winner. Budget data is reconstructed and spend exceeds budget, so the reading is less certain, but the losses persist across days.\",\"key_evidence\":[\"last_3d.roi=-0.47 with loss_days=2, profit_days=0\",\"blended_roi=-0.445 (blend_weight_own=0.29)\",\"peers.fwd_roi_1_3d=-0.435, n=12\",\"trend_last_day_vs_prior=declining\"],\"uncertainty\":[\"budget.current 3.81 is reconstructed and spend exceeds 1.25x budget, so true budget may differ\",\"adset is only 2 spend days old and may still be in learning\",\"peer sample is a fallback-free but modest n=12\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 518,
+  "output_tokens": 933,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000539,
+ "request_id": "req_011Cg7ssBGE2MJC2NiJHD8WA",
+ "ts": "2026-10-17T13:20:35+00:00"
+}

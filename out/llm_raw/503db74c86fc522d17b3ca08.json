@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.75,\"reasoning\":\"Matured last_3d shows roi -0.932 on 10.27 spend with 2 loss days and 0 profit days. blended_roi is -0.634 and peers in the same segment show fwd_roi_1_3d -0.481 (n=19). Losses persist over several days, not one bad day. The buyer already cut budget 2.54 to 1.4 forty-five hours ago, which points the same way. Flag spend_exceeds_1.25x_budget adds some uncertainty to spend figures, but revenue is near zero.\",\"key_evidence\":[\"last_3d.roi = -0.932 on spend 10.27\",\"blended_roi = -0.634, peers fwd_roi_1_3d = -0.481 (n=19)\",\"matured_days D-3 and D-2 revenue 0.7 and 0.0 with roi -0.882 and -1.0\",\"buyer last_human_action down 2.54 to 1.4, 45.2h ago\"],\"uncertainty\":[\"spend_exceeds_1.25x_budget flag may mean spend figures are overstated\",\"D-4 was slightly profitable (roi 0.114), so the losing streak is only 3 days\",\"Whether the buyer intended a reduction as a step before pausing\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 765,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000465,
+ "request_id": "req_011Cg7t7xEpAmU5EwC5rrE9C",
+ "ts": "2026-10-17T13:23:55+00:00"
+}

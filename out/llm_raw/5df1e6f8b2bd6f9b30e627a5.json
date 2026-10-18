@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":1.22,\"confidence\":0.62,\"reasoning\":\"Three matured loss days (last_3d ROI -0.314, 0 profit days) and blended ROI -0.31 with peers at -0.307 (n=12) all point the same way. Spend is tiny, so absolute impact is minimal. A modest 20% cut is safer than pausing; the human already cut budget 24.5h ago, and the 'scaling winner' note is stale and contradicted by the data.\",\"key_evidence\":[\"last_3d: 3 loss days, 0 profit days, ROI -0.314\",\"blended_roi -0.31\",\"peers fwd_roi_1_3d -0.307 (n=12)\",\"buyer cut budget 1.9 -> 1.52 24.5h ago\"],\"uncertainty\":[\"Data flags: conversions > clicks and spend above 1.25x budget reduce trust in the data\",\"Very small spend (last_3d $11.89) makes ROI noisy\",\"Stale 'scaling winner' note from 46h ago conflicts with the numbers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 654,
+  "output_tokens": 373,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005412,
+ "request_id": "req_011Cg7TrUKaQFYwvSBaGg7rz",
+ "ts": "2026-10-17T08:05:41+00:00"
+}

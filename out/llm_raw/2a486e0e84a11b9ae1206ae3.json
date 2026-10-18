@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"A buyer ui_adjust_budget cut from 3.81 to 3.05 happened 0.4h ago and lock_24h is true, so I should not override it without strong evidence. Matured numbers are mixed: last_3d.roi is 0.049 (below the +0.10 proven-winner bar), with 2 profit days and 1 loss day, and blended_roi is 0.141. peers.fwd_roi_1_3d is 0.188 (n=7). The data_quality_flag spend_exceeds_1.25x_budget adds doubt. A human should settle whether to scale back up or hold.\",\"key_evidence\":[\"buyer.last_human_action: down 3.81->3.05, 0.4h ago, lock_24h true\",\"last_3d.roi 0.049, profit_days 2, loss_days 1\",\"blended_roi 0.141, peers.fwd_roi_1_3d 0.188 n=7\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer cut was a deliberate view of a weakening trend or a routine adjustment\",\"Whether the spend-over-budget flag makes the matured spend and ROI unreliable\",\"Whether day -2 loss (roi -0.336) is noise or the start of a decline\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 646,
+  "output_tokens": 864,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000518,
+ "request_id": "req_011Cg9MYxjvCEatPNoj8W3Qq",
+ "ts": "2026-10-18T08:04:16+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Passes proven-winner tests: age 4, 2 of 3 days profitable, last_3d.roi 0.289 and blended_roi 0.151. However, yesterday was clearly negative (roi -0.336) with trend_last_day_vs_prior declining, and buyer.net_budget_change_48h is -3.81, a recent downward move. Spend_exceeds_1.25x_budget flag also makes the budget baseline unreliable. Hold for now.\",\"key_evidence\":[\"last_3d.roi 0.289, blended_roi 0.151\",\"matured_days d-1 roi -0.336, trend declining\",\"buyer.net_budget_change_48h -3.81\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the d-1 loss is noise or the start of a persistent decline\",\"Whether spend above budget means the true daily budget differs from 1.27\",\"Reason for the 48h budget cut and whether the buyer wants it held\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 961,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000564,
+ "request_id": "req_011Cg9LapEP8Cdujj3eaKkfi",
+ "ts": "2026-10-18T07:51:34+00:00"
+}

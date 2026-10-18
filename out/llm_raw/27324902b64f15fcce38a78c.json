@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner criteria (age 9, 2 of 3 days profitable, last_3d ROI 0.678, blended 0.425), but a buyer cut the budget from 3.81 to 2.67 only 0.5h ago with a 24h lock. Overriding a deliberate, very recent human action without strong evidence is not appropriate. Spend is also tiny and flagged as exceeding 1.25x budget, so data is noisy. Hold budget.\",\"key_evidence\":[\"buyer.last_human_action: down 3.81->2.67, 0.5h ago\",\"buyer.lock_24h: true\",\"last_3d.roi: 0.678 (2 profit days, 1 loss)\",\"blended_roi: 0.425\"],\"uncertainty\":[\"Why the buyer reduced budget despite profitable trend\",\"Spend exceeding 1.25x budget flag may distort ROI\",\"Very small spend volumes make ROI volatile\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 683,
+  "output_tokens": 356,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005349,
+ "request_id": "req_011Cg9MM9vXY5kcZizk6heYE",
+ "ts": "2026-10-18T08:01:34+00:00"
+}

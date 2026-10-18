@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":58.67,\"confidence\":0.55,\"reasoning\":\"Meets the proven-winner criteria: age 10 days, 2 of the last 3 matured days profitable, last_3d ROI +0.219, blended ROI +0.138. Yesterday ROI was +0.967 and the trend is improving. There is no buyer lock or note, and no rule actions. Spend is well below budget and the budget was reconstructed, so I'm taking a modest +10% step.\",\"key_evidence\":[\"last_3d.roi=0.219 (2 profit days, 1 loss day)\",\"blended_roi=0.138, peers fwd_roi_1_3d=0.047 (n=12)\",\"trend_last_day_vs_prior=improving, d-1 ROI 0.967\",\"budget.current=53.34 vs d-1 spend 7.99\"],\"uncertainty\":[\"Budget was reconstructed from metadata, so the true current budget may differ\",\"Small daily spend (about $5-10), so ROI is volatile\",\"Spend is far below budget, so raising it may not change delivery\",\"Peer forward ROI is only mildly positive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 710,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.008659,
+ "request_id": "req_011Cg7tr7pCKTPyaB6CiTz2T",
+ "ts": "2026-10-17T13:33:29+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last_3d ROI is -0.233 with 2 loss days and yesterday at -0.917, so this is not a scale-up candidate, and the recent matured losses argue against scaling. The losses are not clearly persistent, though: blended_roi is +0.091 (peer-led at blend weight 0.3), and d-3 was profitable. Budget is reconstructed from metadata and spend exceeds 1.25x budget, which makes the budget baseline unreliable. Evidence is mixed, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.233 (2 loss days, 1 profit day)\",\"matured_days d=-1 roi = -0.917 on spend 0.91\",\"blended_roi = 0.091 with blend_weight_own 0.3\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the budget of 2.54 is accurate given the reconstructed-budget flag\",\"Whether the losses persist over the next matured day or are noise\",\"Peer forward ROI (0.227, n=33, fallback band) may not match this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 591,
+  "output_tokens": 998,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000579,
+ "request_id": "req_011Cg9M5w2iuk5AeCDvkeKPG",
+ "ts": "2026-10-18T07:58:09+00:00"
+}

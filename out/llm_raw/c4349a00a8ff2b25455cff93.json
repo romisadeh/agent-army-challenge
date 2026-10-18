@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":19.8,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age 9 spend days, last_3d.roi 0.165 with 3 profit days, blended_roi 0.145, peers fwd_roi 0.108. Scale-up is the default, but buyer.lock_24h is true after a human ui_adjust_budget up 17.2h ago, and rules.acted_yesterday shows an auto R02 cut that succeeded. The lock and the auto-cut conflict with a scale-up, so a human should settle it. If forced, scale up about 15% to 19.80.\",\"key_evidence\":[\"last_3d.roi=0.165, profit_days=3, loss_days=0\",\"blended_roi=0.145, peers.fwd_roi_1_3d=0.108 (n=24)\",\"buyer.lock_24h=true, last_human_action up 10.87 to 17.22 at 17.2h ago\",\"rules.acted_yesterday R02 cut at roi_seen -0.14\"],\"uncertainty\":[\"Whether the 24h lock blocks any budget change this window\",\"Whether R02 yesterday's cut changed the live budget (card shows 17.22 from buyer log)\",\"Whether the D-4 loss (roi -0.228) signals a fading trend despite trend flat\",\"Whether the engine echo flag hides rows that affect the buyer history\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 1300,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000741,
+ "request_id": "req_011Cg9Mi7BB8dWqAaeg2GWKo",
+ "ts": "2026-10-18T08:06:21+00:00"
+}

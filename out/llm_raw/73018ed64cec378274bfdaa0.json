@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.119 and last_3d ROI is -0.229, with yesterday at -0.631 and trend declining, so there is no proven-winner case to scale. The data is weak: spend_exceeds_1.25x_budget flags yesterday's 5.03 spend against a 2.54 budget, and the 3-day record is only 2 profit days to 1 loss. A buyer cut budget 17.2h ago and the 24h lock is active. Keep until the next matured read, avoiding a cut on a flagged, mixed record.\",\"key_evidence\":[\"buyer.last_human_action: down 3.81->2.54, 17.2h ago, lock_24h true\",\"blended_roi -0.119; last_3d.roi -0.229\",\"matured_days d-1 roi -0.631 on spend 5.03; data_quality_flags spend_exceeds_1.25x_budget\",\"trend_last_day_vs_prior declining; peers fwd_roi_1_3d -0.064 (n=14)\"],\"uncertainty\":[\"Whether yesterday's 5.03 spend reflects true delivery or a tracking error\",\"Whether the buyer's cut was made on data the card does not show\",\"Whether the next matured day confirms the decline or reverts to the 2 profitable days seen earlier\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 948,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000557,
+ "request_id": "req_011Cg9MSz394JLJHHwQXZaAR",
+ "ts": "2026-10-18T08:02:55+00:00"
+}

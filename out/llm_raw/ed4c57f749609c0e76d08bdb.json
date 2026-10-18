@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.62,\"reasoning\":\"A human raised the budget 14.1h ago (5.08 to 8.43, +66%), so the 24h lock is active. Matured data is mixed: 2 profit days and 1 loss day in the last 3d, ROI 0.27 on only $14.25 spend. Blended ROI is 0.136, the peer forward ROI is 0.04, and yesterday was roughly break-even and declining. The evidence is too thin to scale further or override the buyer.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 5.08->8.43 14.1h ago\",\"last_3d ROI 0.27 on spend $14.25 (2 profit / 1 loss days)\",\"blended_roi 0.136, peers fwd_roi_1_3d 0.04 (n=41)\",\"d-1 ROI 0.028, trend declining\"],\"uncertainty\":[\"Effect of the recent 66% budget increase on efficiency is not yet visible in matured data\",\"Small spend makes daily ROI very noisy\",\"Whether the buyer has further plans for this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 393,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005558,
+ "request_id": "req_011Cg7UDqDW93anh8vbDHtPa",
+ "ts": "2026-10-17T08:10:31+00:00"
+}

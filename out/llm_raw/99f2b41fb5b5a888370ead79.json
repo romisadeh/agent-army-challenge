@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured results are roughly break-even and mixed: last_3d ROI is -0.079 with 2 profit days and 1 loss day, blended_roi is -0.043, and peers sit at -0.009. Yesterday's ROI was only +0.061 on spend 9.5 above budget 8.43. The buyer scaled up 38h ago (no lock), and the trend is declining. The evidence does not support a move in either direction, so holding is the safer choice.\",\"key_evidence\":[\"last_3d.roi = -0.079 (2 profit days, 1 loss day)\",\"blended_roi = -0.043 vs peers.fwd_roi_1_3d = -0.009\",\"matured_days d=-1 roi 0.061, spend 9.5 vs budget 8.43\",\"buyer.last_human_action up 5.08->8.43, 38.1h ago\"],\"uncertainty\":[\"Whether the declining trend continues after the recent buyer scale-up\",\"Whether yesterday's overspend (spend 9.5 vs budget 8.43) reflects delivery spikes that will persist\",\"Peer sample is moderate (n=14) and own spend is small, so blend leans on peers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 786,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000475,
+ "request_id": "req_011Cg7UrF3yEcA9ybsLU5K1T",
+ "ts": "2026-10-17T08:18:45+00:00"
+}

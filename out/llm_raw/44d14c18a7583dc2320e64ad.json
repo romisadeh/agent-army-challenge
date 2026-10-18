@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.61,\"confidence\":0.5,\"reasoning\":\"Adset is 3 spend days old, below the 4+ day proven-winner threshold. Last_3d ROI 0.093 and blended_roi 0.075 are positive but thin, with 2 profit days and 1 loss day. Trend is flat and peers forward ROI is 0.065 (n=13). Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the budget baseline is unreliable. Evidence is mixed, so keep.\",\"key_evidence\":[\"age_spend_days: 3 (below 4+ threshold)\",\"last_3d.roi: 0.093, profit_days 2, loss_days 1\",\"blended_roi: 0.075, peers.fwd_roi_1_3d: 0.065\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget baseline is reconstructed and spend far exceeds the stated 1.61 budget, so true spend level is unclear\",\"Only 3 matured days; one more profitable day at age 4 would make it a scale-up candidate\",\"Peer forward ROI is near the own ROI, so no strong directional signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 746,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000449,
+ "request_id": "req_011Cg7u1mgG4TYPVgBBmbx12",
+ "ts": "2026-10-17T13:35:38+00:00"
+}

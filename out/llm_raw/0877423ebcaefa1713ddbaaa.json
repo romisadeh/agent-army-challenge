@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Three consecutive matured loss days (last_3d ROI -0.341, 0 profit days, revenue 9.07 on spend 13.75) after the buyer tripled budget 1.27 to 3.81 about 89h ago. Blended ROI of 0.274 is positive only because peers (fwd_roi 0.697, n=5) carry weight at w=0.41. Losses are consistent but the peer signal is positive, so I hold rather than cut. Spend exceeds budget flag adds noise.\",\"key_evidence\":[\"last_3d.loss_days=3, profit_days=0, roi=-0.341\",\"blended_roi=0.274 with blend_weight_own=0.41\",\"peers.fwd_roi_1_3d=0.697, n=5\",\"buyer.last_human_action up 1.27->3.81, hours_ago=89\"],\"uncertainty\":[\"Whether the post-scale losses continue at the 3.81 budget or are a scaling-learning effect\",\"Peer sample of n=5 is small\",\"Spend exceeds budget flag may distort spend-based metrics\",\"Whether a scale-down to about 3.05 would be warranted if losses persist tomorrow\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 1232,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000696,
+ "request_id": "req_011Cg7SGSCWDozcDyEJ7hnZk",
+ "ts": "2026-10-17T07:44:56+00:00"
+}

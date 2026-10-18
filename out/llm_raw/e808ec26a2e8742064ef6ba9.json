@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":2.13,\"confidence\":0.55,\"reasoning\":\"Own matured data is consistently losing: 3 of 3 days negative, 3-day ROI -0.297 on $9.54 spend, trend declining. Blended ROI of 0.168 is positive only because peers (fwd_roi 0.39, n=23, fallback level 1) carry 68% weight. A buyer cut 3.81 to 2.67 happened 24.5h ago and has no lock, so its effect is not yet visible. Recommend scale_down to about 2.13 (-20%) if forced, but a human should settle the conflict.\",\"key_evidence\":[\"last_3d.roi = -0.297 with loss_days = 3, profit_days = 0\",\"blended_roi = 0.168 driven by peers.fwd_roi_1_3d = 0.39 (fallback_level 1)\",\"buyer.last_human_action: down 3.81 to 2.67, 24.5h ago\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether the buyer's 24h-old cut has taken effect in the matured days\",\"Peer reliability at fallback level 1 with n=23\",\"spend_exceeds_1.25x_budget flag may distort spend-to-budget reading\",\"Whether forward peer ROI applies to this adset's audience\"],\"proposed_if_escalated\":\"scale_down\"}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 1564,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000864,
+ "request_id": "req_011Cg7SiWJHtfaQnZm3Zs6LC",
+ "ts": "2026-10-17T07:50:51+00:00"
+}

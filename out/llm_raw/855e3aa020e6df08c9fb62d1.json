@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Own 3-day ROI is +0.214 on $10.20 spend with two profit days (last_3d), but spend is small (blend_weight_own 0.34) and blended_roi is -0.016, pulled down by peers at -0.133 (n=13). Last day ROI fell to 0.097 and trend is declining. The budget is reconstructed from metadata. Evidence is mixed and thin, so no change.\",\"key_evidence\":[\"blended_roi = -0.016 with blend_weight_own 0.34\",\"last_3d roi 0.214, profit_days 2, spend 10.2\",\"peers fwd_roi_1_3d -0.133, n=13\",\"trend_last_day_vs_prior declining; budget_reconstructed flag\"],\"uncertainty\":[\"Only two matured days appear on the card; the third day's detail is unclear\",\"Whether the budget of 12.19 reflects the true live budget (reconstructed flag)\",\"Whether the declining trend continues into D-0 and beyond\",\"Peer forward ROI may not represent this adset's behaviour\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 499,
+  "output_tokens": 624,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000381,
+ "request_id": "req_011Cg7SU6wiiErj3QYdWbPeq",
+ "ts": "2026-10-17T07:47:31+00:00"
+}

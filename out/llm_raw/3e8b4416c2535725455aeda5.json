@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age 10, last_3d.roi 0.117 with 2 of 3 profit days, blended_roi 0.135, peers fwd_roi 0.172. Normally a scale-up candidate, but buyer.last_human_action was a budget cut (19.05 to 15.24, 24.4h ago), which the rules list as a reason to hold. Trend is flat, no data flags.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down, 24.4h ago\",\"last_3d.roi 0.117, profit_days 2 of 3\",\"blended_roi 0.135 with peers fwd_roi 0.172 (n=22)\"],\"uncertainty\":[\"Whether the buyer's 24h-old cut was deliberate or a test, and why net_budget_change_48h is +8.38\",\"Whether the budget cut reflects a view on reach or saturation not visible on the card\",\"Only one loss day (D-3) in the window, so the profit trend could still hold\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 993,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00058,
+ "request_id": "req_011Cg9MpNYoaCgRMakBT97Pv",
+ "ts": "2026-10-18T08:07:45+00:00"
+}

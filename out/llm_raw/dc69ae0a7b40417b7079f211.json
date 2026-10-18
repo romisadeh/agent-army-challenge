@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":1.02,\"confidence\":0.55,\"reasoning\":\"Age 3 spend days, so not a proven winner. Blended_roi -0.201 and fwd peer ROI -0.307 are both negative. Two of three matured days lost, with yesterday at -0.281 and trend declining. Last_3d roi 0.005 is near break-even, so the signal is mixed. Budget is reconstructed and spend exceeds 1.25x budget, which lowers confidence. A modest 20% cut limits exposure.\",\"key_evidence\":[\"blended_roi=-0.201\",\"peers.fwd_roi_1_3d=-0.307 (n=12)\",\"matured_days d=-1 roi=-0.281, trend_last_day_vs_prior=declining\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget value is reconstructed from metadata, so the true current budget may differ\",\"Last_3d roi of 0.005 is near break-even and one profitable day (d=-2, +0.266) is noisy\",\"Peer group is a band fallback with n=12\",\"Spend exceeding budget may indicate spend-tracking issues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 547,
+  "output_tokens": 882,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000517,
+ "request_id": "req_011Cg7u3dwVLb5udjeCUhcck",
+ "ts": "2026-10-17T13:36:04+00:00"
+}

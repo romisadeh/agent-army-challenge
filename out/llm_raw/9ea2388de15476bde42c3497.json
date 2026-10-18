@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"A buyer cut budget from 6.35 to 1.9 22h ago and the 24h lock is active, so I'm not overriding it. Evidence conflicts: last_3d ROI is +0.238 but 2 of 3 days lost, yesterday was -1.0 on 5.04 spend, blended_roi is -0.037, and peers fwd ROI is -0.223. Spend exceeds budget 1.25x, so the budget-based reading is unreliable.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->1.9, hours_ago 22, lock_24h true\",\"blended_roi -0.037 with peers fwd_roi_1_3d -0.223 (n=6)\",\"matured_days d=-1: revenue 0.0, spend 5.04\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut reflects knowledge not on the card\",\"Whether spend over budget indicates a delivery or reporting issue\",\"Whether the -1.0 day is noise after a +1.807 day\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 703,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000435,
+ "request_id": "req_011Cg7UNnBSzgYzWBFc9RpWz",
+ "ts": "2026-10-17T08:12:33+00:00"
+}

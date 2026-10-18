@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 2 spend days old with $9.33 total spend. Both matured days lost money (ROI -0.096 and -0.15), and blended ROI is -0.335 because peers are weak (-0.435, n=12). A buyer cut the budget 23.1h ago, so the 24h lock is active. Spend is tiny, so a pause is not warranted yet, and overriding the buyer is not justified. Keep and revisit after the lock expires.\",\"key_evidence\":[\"blended_roi -0.335\",\"last_3d roi -0.121 on $9.33 spend, 0 profit days\",\"buyer lock_24h true, budget cut 6.35->4.44 23.1h ago\",\"peers fwd_roi_1_3d -0.435, n=12\"],\"uncertainty\":[\"Only 2 days of data, so the trend is unreliable\",\"Peer ROI is negative, but own ROI is only mildly negative\",\"Whether the buyer plans to pause or cut further\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 539,
+  "output_tokens": 362,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005121,
+ "request_id": "req_011Cg7t6hrqzBnEAtm1pChKd",
+ "ts": "2026-10-17T13:23:37+00:00"
+}

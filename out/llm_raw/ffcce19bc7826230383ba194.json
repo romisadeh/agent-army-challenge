@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.89,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.098 with loss_days 1, and blended_roi 0.05 is below the +0.10 threshold. Trend_last_day_vs_prior is declining and yesterday's roi was -0.357. The budget rose from 5.08 to 8.89 about 38h ago, so scaling again now would stack on a fresh change. Peers forward ROI is +0.185 (n=5), which argues against cutting. Evidence is mixed and near break-even, so hold budget and reassess on the next matured days.\",\"key_evidence\":[\"last_3d.roi = -0.098 (loss_days 1, profit_days 2)\",\"blended_roi = 0.05 with blend_weight_own 0.48\",\"trend_last_day_vs_prior = declining; matured_days d-1 roi = -0.357\",\"buyer.last_human_action up 5.08 to 8.89, 38.1h ago\"],\"uncertainty\":[\"Whether the d-1 loss is noise or the start of a persistent decline\",\"Peer forward ROI (+0.185) rests on only n=5 adsets\",\"Spend runs below the 8.89 budget, so the budget may not be the binding constraint\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 1032,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0006,
+ "request_id": "req_011Cg9MeU2vu7hzFoT73yE63",
+ "ts": "2026-10-18T08:05:31+00:00"
+}

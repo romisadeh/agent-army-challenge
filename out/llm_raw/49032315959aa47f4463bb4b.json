@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is only 2 spend days old, below the 4-day threshold for proven-winner treatment. Blended_roi is -0.336 and peers fwd_roi_1_3d is -0.435 (n=12), so it leans negative. But last_3d.roi is -0.144 with 1 loss and 1 profit day, and yesterday was break-even with trend improving. That is mixed, not a persistent matured loss, so no change. Budget is reconstructed from metadata, so the current figure is uncertain.\",\"key_evidence\":[\"blended_roi -0.336 with blend_weight_own 0.34\",\"last_3d.roi -0.144, loss_days 1, profit_days 1\",\"peers.fwd_roi_1_3d -0.435, n=12\",\"trend_last_day_vs_prior improving; matured d=-1 roi 0.002\"],\"uncertainty\":[\"Only 2 matured spend days; age below the 4-day proven-winner threshold\",\"budget_reconstructed flag means budget.current may be inaccurate\",\"If the next matured day is clearly negative, a scale_down or pause would be justified\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 501,
+  "output_tokens": 795,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000469,
+ "request_id": "req_011Cg7soN5jmxednxx8Jg9RN",
+ "ts": "2026-10-17T13:19:43+00:00"
+}

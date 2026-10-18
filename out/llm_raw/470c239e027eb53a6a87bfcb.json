@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last 3d ROI is 0.49 with 2 profit days, but yesterday's ROI was -0.024 and trend is declining. Blended ROI 0.223 (w=0.4) is positive, yet peer forward ROI is only 0.041 (n=54). Buyer cut budget 12.7 to 10.16 about 24h ago with no lock. Evidence is mixed and modestly positive, so no change, respecting the recent buyer adjustment.\",\"key_evidence\":[\"last_3d.roi=0.49, profit_days=2, loss_days=1\",\"matured_days D-1 roi=-0.024, trend_last_day_vs_prior=declining\",\"blended_roi=0.223 vs peers.fwd_roi_1_3d=0.041 (n=54)\",\"buyer.last_human_action: down 12.7->10.16, hours_ago=24.4\"],\"uncertainty\":[\"Whether yesterday's slight loss is noise or the start of a decline\",\"Whether the buyer's recent cut was meant to hold budget at 10.16\",\"Peer forward ROI is weak relative to own 3-day ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 782,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000469,
+ "request_id": "req_011Cg7UnS87QuaTNPS3RHghL",
+ "ts": "2026-10-17T08:17:54+00:00"
+}

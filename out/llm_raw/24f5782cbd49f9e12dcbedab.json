@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Age is 3 spend days, so the proven-winner rule does not apply. last_3d.roi is -0.086 with trend_last_day_vs_prior declining and yesterday at -0.382, while blended_roi is only 0.083. Buyer tripled budget from 1.27 to 3.81 41h ago (net +2.54 in 48h), and two R08 kill attempts this morning FAILED/NOOP. Conflicting signals and a human should settle the budget and rule state. Proposed action is keep.\",\"key_evidence\":[\"last_3d.roi = -0.086 (1 loss day, 2 profit days)\",\"trend_last_day_vs_prior = declining; matured d=-1 roi -0.382\",\"buyer.last_human_action: ui_update_budget 1.27 to 3.81, 41.1h ago\",\"rules.acted_today_before_window: 2 R08 kill attempts FAILED/NOOP\"],\"uncertainty\":[\"Whether the failed kill attempts left the adset in an unknown state\",\"Whether the buyer's 3x increase was intentional given the recent loss\",\"Peer forward ROI 0.161 (n=30, band fallback) may not transfer to this adset\",\"Only 3 matured days; one bad day could be noise\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 960,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00057,
+ "request_id": "req_011Cg7tZyk5SPzJ6fLKUv9kv",
+ "ts": "2026-10-17T13:29:49+00:00"
+}

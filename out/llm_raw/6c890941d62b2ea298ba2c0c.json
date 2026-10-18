@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.9,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: blended_roi is -0.037, below the +0.10 threshold, and yesterday was a full loss (roi -1.0, declining trend). The buyer cut the budget 6.35 to 1.9 only 22h ago and the 24h lock is active, so I should not override it. Spend is tiny, and pausing on thin data is unwarranted. Spend also exceeds 1.25x budget, which weakens the numbers.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->1.9, 22h ago, lock_24h=true\",\"blended_roi -0.037 (peers fwd_roi -0.223, n=6)\",\"last_3d roi 0.238 on only $13.53 spend, 1 profit day vs 2 loss days\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget\",\"Whether the overspend flag reflects a budget-delivery issue\",\"Very small spend makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 378,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005493,
+ "request_id": "req_011Cg9MNGGKAR9L8c3Avg6Ej",
+ "ts": "2026-10-18T08:01:50+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer cut budget from 5.08 to 4.06 17.2h ago and lock_24h is true, so I won't override it. Adset is 3 spend days old, below the 4+ proven-winner threshold. last_3d ROI is -0.099 and blended_roi only 0.029, with yesterday at -0.276 and trend declining. Evidence is mixed and near break-even, so hold.\",\"key_evidence\":[\"buyer.last_human_action: down 5.08->4.06, 17.2h ago, lock_24h true\",\"last_3d.roi -0.099 with 1 loss day of 3\",\"blended_roi 0.029, peers fwd_roi_1_3d 0.094 (n=6)\",\"trend_last_day_vs_prior declining; matured_days d=-1 roi -0.276\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag means actual spend is higher than the card's budget figure\",\"Whether the 0.094 peer forward ROI signals recovery after the buyer's cut\",\"Whether yesterday's loss persists over the next matured days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 623,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000391,
+ "request_id": "req_011Cg7tDVtTEPNLEx6LVMAsm",
+ "ts": "2026-10-17T13:25:10+00:00"
+}

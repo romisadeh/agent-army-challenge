@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.073 with only 1 of 3 days profitable, and blended_roi is 0.09, below the +0.10 threshold. Yesterday's roi was -0.394 and trend_last_day_vs_prior is declining. Peers (fwd_roi 0.157, n=11, fallback) are positive, but the buyer raised budget 2.92 to 6.35 only 41h ago. Evidence is mixed and roughly break-even, so hold.\",\"key_evidence\":[\"last_3d.roi = -0.073 (1 profit day of 3)\",\"blended_roi = 0.09 (below +0.10)\",\"matured_days d=-1 roi = -0.394, trend declining\",\"peers.fwd_roi_1_3d = 0.157, n=11, fallback_level 1\"],\"uncertainty\":[\"Whether the declining trend continues or yesterday is noise\",\"Peer evidence is band fallback, not an exact segment match\",\"Recent buyer scale-up 41h ago may still be ramping, so results may not reflect the new budget yet\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 1027,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000598,
+ "request_id": "req_011Cg9MXtfZZkiGeduZKN3bS",
+ "ts": "2026-10-18T08:04:02+00:00"
+}

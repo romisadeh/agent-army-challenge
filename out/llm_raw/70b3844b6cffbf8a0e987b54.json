@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":14.22,\"confidence\":0.55,\"reasoning\":\"Age is 2 spend days, so it is not a proven winner (needs 4+). Last 3d ROI is -0.068 with 1 loss and 1 profit day, and yesterday was -0.201 with a declining trend. Blended ROI is only 0.068 and sits on a peer fallback (n=46). A buyer cut budget 17.2h ago and the 24h lock is active, so I should not override it. Evidence is mixed and near break-even, so keep.\",\"key_evidence\":[\"buyer.lock_24h = true; last_human_action down 17.78 to 14.22, 17.2h ago\",\"last_3d.roi = -0.068; loss_days 1, profit_days 1\",\"matured_days d=-1 roi = -0.201; trend_last_day_vs_prior = declining\",\"age_spend_days = 2; blended_roi = 0.068 (peer fallback_level 1, n=46)\"],\"uncertainty\":[\"Whether the buyer's down-move was a deliberate call on this adset's trend\",\"Whether the peer forward ROI of 0.181 holds given fallback_level 1\",\"Whether the declining trend continues into today's matured data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 549,
+  "output_tokens": 711,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000432,
+ "request_id": "req_011Cg7smUwvZUhEHHfViy2uK",
+ "ts": "2026-10-17T13:19:17+00:00"
+}

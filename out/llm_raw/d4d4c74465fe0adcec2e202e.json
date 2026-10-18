@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is -0.056 with 2 profit days and 1 loss day, and blended_roi is -0.068. That is roughly break-even and mixed, not a persistent matured loss, so no scale-down. It fails the proven-winner test (last_3d.roi must exceed +0.10), so no scale-up. The peer forward ROI of -0.097 (n=9) leans negative, and budget_reconstructed flags uncertainty in the budget figure.\",\"key_evidence\":[\"last_3d.roi = -0.056 (2 profit days, 1 loss day)\",\"blended_roi = -0.068 with blend_weight_own 0.7\",\"peers.fwd_roi_1_3d = -0.097, n=9\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Budget of 15.54 is reconstructed from metadata, so the true daily budget may differ\",\"Peer forward ROI is negative and could signal a slow decline\",\"Matured history is only 4 days, so a trend is hard to read\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 564,
+  "output_tokens": 758,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000457,
+ "request_id": "req_011Cg7tAvqZ8SMj6fdURdF8w",
+ "ts": "2026-10-17T13:24:35+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.62,\"reasoning\":\"Persistent matured losses: last_3d.roi -0.494 with 0 profit days out of 3, and blended_roi -0.398 with peers fwd_roi_1_3d -0.307 (n=12). Yesterday's -0.282 is improving, but still negative after a loss streak. Buyer already cut budget 7.62 to 5.33 about 24h ago, which did not fix returns. No lock, no notes. The spend_exceeds_1.25x_budget flag means budget and spend data may be inconsistent, lowering confidence.\",\"key_evidence\":[\"last_3d.roi = -0.494, loss_days = 3, profit_days = 0\",\"blended_roi = -0.398, blend_weight_own = 0.49\",\"peers.fwd_roi_1_3d = -0.307, n = 12\",\"buyer.last_human_action: down 7.62 to 5.33, 24.5h ago\"],\"uncertainty\":[\"Spend exceeds 1.25x budget flag: true daily spend or budget may be misread\",\"Yesterday's improving trend (-0.282 vs -0.569) could mean recovery\",\"Partial-day revenue for D-1 is already matured, so the reading is final\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 988,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000577,
+ "request_id": "req_011Cg7steGTy4roge3ZA5Qst",
+ "ts": "2026-10-17T13:20:56+00:00"
+}

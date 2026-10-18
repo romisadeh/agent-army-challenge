@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI 0.172 and last_3d ROI 0.183 look positive, but only 1 of last 3 matured days was profitable, so the proven-winner rule fails. trend_last_day_vs_prior is declining and yesterday's ROI was -0.103. A buyer scaled up 7.62 to 12.7 about 41h ago, and rule R02 cut today before the window with one failed. Spend (72.16) exceeds budget (10.16) by far more than 1.25x, so the budget field may be stale. A human should settle this.\",\"key_evidence\":[\"last_3d.roi=0.183 with loss_days=2, profit_days=1\",\"buyer.last_human_action up 7.62->12.7, hours_ago=40.9\",\"rules.acted_today_before_window R02 cut, one SUCCESS and one FAILED/NOOP\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 10.16 is accurate given matured spend of about 58/day\",\"Whether the buyer's recent scale-up and today's rule cut conflict about the intended budget level\",\"Whether the day-by-day ROI swings (0.841 on D-2) reflect a real trend or noise\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 777,
+  "output_tokens": 1038,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000618,
+ "request_id": "req_011Cg9Ltphuf7J1yjkbqM6JU",
+ "ts": "2026-10-18T07:55:39+00:00"
+}

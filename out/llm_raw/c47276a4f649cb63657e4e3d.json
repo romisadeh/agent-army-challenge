@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is +0.29 with only 1 profit day against 2 loss days, and the last day is -0.003 with a declining trend. Blended ROI is 0.166 and peers forward ROI is 0.105 (n=16). The buyer scaled up 17h ago (3.81 to 6.35) and the lock is active. Evidence is mixed and spend is small, so hold budget unchanged.\",\"key_evidence\":[\"last_3d.roi=0.29, profit_days=1, loss_days=2\",\"blended_roi=0.166, peers.fwd_roi_1_3d=0.105 (n=16)\",\"buyer.lock_24h=true, last_human_action up 3.81->6.35 17h ago\",\"trend_last_day_vs_prior=declining\"],\"uncertainty\":[\"Whether the 17h-old buyer scale-up is working once the next matured days land\",\"Whether the declining trend continues or D-1 is noise\",\"Peer evidence is only moderately strong at n=16\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 560,
+  "output_tokens": 704,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000427,
+ "request_id": "req_011Cg7SEg59CEF1ZHLibDbxN",
+ "ts": "2026-10-17T07:44:29+00:00"
+}

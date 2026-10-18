@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Spend is tiny ($10.77 over 3d, budget $3.81), so evidence is thin. Own 3d ROI is -0.092 with 2 profit days and 1 loss day, while blended ROI is +0.072 and peers are +0.161. That is neither consistent profit nor consistent loss. The ADSET_OFF metadata flag conflicts with active status, so the data is unclear. Keep.\",\"key_evidence\":[\"last_3d roi -0.092, profit_days 2, loss_days 1, spend $10.77\",\"blended_roi 0.072 (own weight 0.35)\",\"peers fwd_roi_1_3d 0.161, n=30\",\"flags: metadata_status_end_of_week:ADSET_OFF, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the adset is actually off, given the ADSET_OFF metadata flag vs active status\",\"Spend exceeding 1.25x budget may mean the budget figure is stale\",\"Very small spend makes daily ROI noisy\",\"Budget was raised 64.7h ago and the effect has not been fully observed\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 413,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0057,
+ "request_id": "req_011Cg7RuLB2m2dbHeWret5vc",
+ "ts": "2026-10-17T07:40:06+00:00"
+}

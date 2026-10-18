@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer raised budget 1.27 to 3.81 about 23h ago, and the 24h lock is active, so this needs a human. Matured data is weak: last_3d ROI -0.182 with 2 loss days of 3, and the last day fell to -0.217. Blended ROI is -0.023, close to break-even, and peers are only band-fallback (n=26, fwd ROI 0.077). Spend exceeds budget per the data-quality flag. Holding the new budget while the data settles is the cautious default.\",\"key_evidence\":[\"buyer.last_human_action: ui_update_budget 1.27->3.81, hours_ago 23.0, lock_24h true\",\"last_3d.roi -0.182, loss_days 2, profit_days 1\",\"blended_roi -0.023 (blend_weight_own 0.38)\",\"peers.fwd_roi_1_3d 0.077, n 26, fallback_level 1\"],\"uncertainty\":[\"Whether the 3.81 budget itself caused the drop or the drop is day-to-day variance\",\"Peer evidence is band-fallback and may not match this adset\",\"Reason for the buyer's up-move (notes are empty)\",\"Whether the spend_exceeds_budget flag indicates a tracking error\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 907,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000533,
+ "request_id": "req_011Cg7Sq4L3gJ9tQe3ANBZWH",
+ "ts": "2026-10-17T07:52:16+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Buyer cut budget 2.67 to 1.74 via ui_adjust_budget 22h ago, lock_24h is true, and net_budget_change_48h is -0.93, so a deliberate human action is recent. Numbers conflict: blended_roi 0.156 and peers fwd_roi 0.239 look positive, but last_3d.roi 0.024 fails the proven-winner bar (>0.10), yesterday roi was -0.363 with a declining trend, and spend exceeds 1.25x budget. A human should settle this.\",\"key_evidence\":[\"buyer.last_human_action: down 2.67->1.74, 22h ago, lock_24h true\",\"last_3d.roi 0.024 with 2 profit / 1 loss days\",\"matured_days D-1 roi -0.363, trend_last_day_vs_prior declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer cut was a deliberate response to yesterday's loss or a routine adjustment\",\"Whether the spend overrun distorts the budget-based reading\",\"Whether the D-1 loss persists or is noise after good earlier days\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 658,
+  "output_tokens": 818,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000496,
+ "request_id": "req_011Cg9MaDUieuAuiGXkuNy69",
+ "ts": "2026-10-18T08:04:32+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Performance is consistently profitable: 3 profit days, 3d ROI 0.199, blended ROI 0.17, and peers at 0.134. But budget.current of $1.27 is a reconstructed value, while yesterday's spend was $8.95 and the 3d spend was $23.75, so spend runs far above budget. A scale step cannot be sized reliably from a budget we can't trust. A human should confirm the real CBO budget.\",\"key_evidence\":[\"last_3d ROI 0.199, 3 profit days, 0 loss days\",\"blended_roi 0.17, peers fwd_roi_1_3d 0.134 (n=17)\",\"budget.current 1.27 vs d-1 spend 8.95\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current daily budget is unknown (reconstructed from metadata)\",\"Adset is only 4 days old with small spend\",\"CBO may allocate spend at campaign level, so the adset-level budget may not bind\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 388,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005408,
+ "request_id": "req_011Cg7U4J3GRLYAqwVfG4EJF",
+ "ts": "2026-10-17T08:08:21+00:00"
+}

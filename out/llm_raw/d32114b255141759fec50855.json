@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Proven-winner profile: age 6 spend days, last_3d.roi 0.364 with 2 profit days, and blended_roi 0.23. Conflicts: buyer cut budget 6.35 to 5.08 about 24h ago (net_budget_change_48h -1.27) and last_3d trend is declining. Data flag spend_exceeds_1.25x_budget (d-1 spend 6.45 vs 5.08) makes the budget baseline unclear. A human should settle this. If forced, I would scale up about 10%.\",\"key_evidence\":[\"last_3d.roi=0.364, profit_days=2 of 3\",\"blended_roi=0.23, peers.fwd_roi_1_3d=0.107 (n=27)\",\"buyer.last_human_action: down 6.35->5.08, 24.4h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the midnight-spike reset was a deliberate cap the buyer wants kept\",\"Whether the d-1 overspend reflects budget misconfiguration\",\"Whether the declining trend persists after the budget reset\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 1125,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000652,
+ "request_id": "req_011Cg9Mgd8frAqDx2jaAv9Z9",
+ "ts": "2026-10-18T08:06:00+00:00"
+}

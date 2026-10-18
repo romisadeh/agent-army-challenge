@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":2.5,\"confidence\":0.45,\"reasoning\":\"Matured days D-4 to D-1 all lost money and the 3-day ROI is -0.285 with trend declining. Blended ROI is only -0.028 because peers forward ROI is +0.077 (fallback level 1, n=26), so the picture is mixed. No lock and the last human action was 24.6h ago. A modest cut of about 18% fits the consistent losses without pausing on thin evidence.\",\"key_evidence\":[\"last_3d.roi = -0.285, loss_days 3\",\"matured_days: all four days ROI negative\",\"blended_roi = -0.028, blend_weight_own 0.29\",\"peers.fwd_roi_1_3d = 0.077, fallback_level 1, n=26\"],\"uncertainty\":[\"Peer evidence is band-level fallback, so it may not reflect this adset\",\"Spend is very small, so the 3-day ROI is noisy\",\"Prior buyer cut from 5.08 to 3.05 may already be sufficient\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 602,
+  "output_tokens": 1033,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000595,
+ "request_id": "req_011Cg7SgrzBwc5NksnM67Vup",
+ "ts": "2026-10-17T07:50:26+00:00"
+}

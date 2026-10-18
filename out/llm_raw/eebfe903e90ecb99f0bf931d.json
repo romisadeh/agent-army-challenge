@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":13.6,\"confidence\":0.45,\"reasoning\":\"Mixed, near break-even matured results: last_3d.roi 0.039 and blended_roi 0.083 both fall below the +0.10 proven-winner bar, and the one loss day (d-2, roi -0.228) was not a sustained trend. A human raised budget 8.0 to 13.6 16.8h ago with lock_24h true, so I hold budget. Spend exceeds 1.25x budget per data_quality_flags.\",\"key_evidence\":[\"last_3d.roi = 0.039, blended_roi = 0.083\",\"last_3d: 2 profit days, 1 loss day\",\"buyer.lock_24h = true, last human up 8.0 to 13.6 at 16.8h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 13.6 budget increase is working yet, since only one matured day (d-1, roi 0.203) has run at that level\",\"Peer forward ROI 0.165 (n=27, band fallback) could support scaling if the lock expires and the next days stay profitable\",\"Reliability of spend figures given the spend-exceeds-budget flag\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 810,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000489,
+ "request_id": "req_011Cg7sZtNjsmcbkfvVbxH4N",
+ "ts": "2026-10-17T13:16:40+00:00"
+}

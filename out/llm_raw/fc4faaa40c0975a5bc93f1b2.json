@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.54,\"confidence\":0.4,\"reasoning\":\"Matured last_3d ROI is -0.233 with 2 loss days and 1 profit day, and D-1 is -0.917. Blended_roi is +0.091, lifted by peers (fwd_roi 0.227, n=33, fallback level 1). Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the budget baseline is unreliable. Evidence is mixed and thin, so no change.\",\"key_evidence\":[\"last_3d.roi = -0.233 (2 loss days, 1 profit day)\",\"matured_days D-1 roi = -0.917\",\"blended_roi = 0.091 with blend_weight_own 0.3\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 2.54 is accurate, since it is reconstructed from metadata\",\"Whether the D-1 loss is noise or the start of a sustained decline\",\"Peer signal is band fallback with only n=33\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 591,
+  "output_tokens": 814,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000485,
+ "request_id": "req_011Cg7U81wkgwWzeWhpH31Fh",
+ "ts": "2026-10-17T08:09:14+00:00"
+}

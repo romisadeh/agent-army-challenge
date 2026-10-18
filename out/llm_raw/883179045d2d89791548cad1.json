@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset meets the proven-winner thresholds on paper (age 4, 3 profit days, last_3d ROI 0.296, blended 0.171), but the data is unreliable. Daily budget is $1.27, spend is tiny ($10.41 over 3d), and flags show extreme_roi_gt_5 and spend_exceeds_1.25x_budget. Yesterday ROI was ~0 and the trend is declining. Scaling a $1.27 budget by 20% is immaterial, so keep.\",\"key_evidence\":[\"data_quality_flags: extreme_roi_gt_5, spend_exceeds_1.25x_budget\",\"last_3d: ROI 0.296 on spend $10.41, 3 profit days\",\"d-1 ROI 0.004, trend declining\",\"budget.current 1.27\"],\"uncertainty\":[\"Whether the budget of $1.27 is accurate given spend exceeds 1.25x budget\",\"Whether the d-4 ROI of 8.6 on $0.24 spend is noise inflating the profit-day count\",\"Whether peer ROI 0.105 holds as spend scales\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 620,
+  "output_tokens": 413,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005805,
+ "request_id": "req_011Cg7tejXStnCD7HRdCucyG",
+ "ts": "2026-10-17T13:30:59+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 3 spend days old, so it is not a proven winner. last_3d ROI is -0.099 and blended ROI is +0.029, roughly break-even. Yesterday was -0.276 on a declining trend. A buyer cut the budget 17h ago and a 24h lock is active, so scaling up would override them. Spend exceeded 1.25x budget, which is a data flag. Budget is tiny at $4.06, so the downside is small. Keep.\",\"key_evidence\":[\"last_3d.roi -0.099 (2 profit days, 1 loss day)\",\"blended_roi +0.029\",\"buyer lock_24h true, budget cut 5.08->4.06 17.2h ago\",\"age_spend_days 3, yesterday ROI -0.276 declining\"],\"uncertainty\":[\"Whether spend overrun above budget distorts yesterday's loss\",\"Very small sample: $10.11 total spend over 3 days\",\"Reason for the buyer's cut is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 368,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005277,
+ "request_id": "req_011Cg9LaYLAw2UQbGpLrQdFc",
+ "ts": "2026-10-18T07:51:29+00:00"
+}

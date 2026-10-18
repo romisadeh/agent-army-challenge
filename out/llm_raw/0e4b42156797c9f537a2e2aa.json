@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":21.95,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner criteria (age 22, 3/3 profit days, last_3d ROI 0.152, blended 0.155), so scale-up would be the default. But a buyer cut the budget 17.2h ago (24.38 to 21.95) and lock_24h is true, so I should not override a deliberate human action without strong evidence. The spend_exceeds_1.25x_budget flag adds doubt about spend and budget alignment. Holding is the safer call.\",\"key_evidence\":[\"buyer.last_human_action: down 24.38->21.95, 17.2h ago, lock_24h=true\",\"last_3d: 3 profit days, ROI 0.152\",\"blended_roi 0.155, peers fwd_roi 0.168 (n=21)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer reduced the budget (note is null)\",\"Whether the spend overshoot distorts ROI\",\"Whether the lock should be respected or the adset scaled once it expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 387,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005579,
+ "request_id": "req_011Cg9N6M9B3sKgREkmcPjtr",
+ "ts": "2026-10-18T08:11:20+00:00"
+}

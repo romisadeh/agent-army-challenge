@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Own last 3 days are all losses (ROI -0.341 on $13.75 spend), so this is not a proven winner and scaling is unjustified. The blended ROI of +0.274 relies on peers (n=5, fwd ROI 0.697) and spend is small, so it is unreliable. Budget is tiny ($3.81) and the loss is a few dollars, so pausing is not warranted. Keep and watch.\",\"key_evidence\":[\"last_3d.roi -0.341, 0 profit days / 3 loss days\",\"blended_roi 0.274 (own weight 0.41)\",\"peers fwd_roi_1_3d 0.697, n=5\",\"budget.current 3.81, flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Peer forward ROI may not apply to this adset given its own losses\",\"Spend exceeding budget by over 1.25x may distort the daily numbers\",\"Very small sample: only about $14 of spend in 3 days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 366,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005319,
+ "request_id": "req_011Cg7tZ5eFeaNnJRhBDK8Hm",
+ "ts": "2026-10-17T13:29:35+00:00"
+}

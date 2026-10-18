@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Own 3-day ROI is +6.8% on only $21.20 spend, and yesterday was the best day (+26.9%, improving). Peers (n=7) forward ROI is -29.7%, which drags blended ROI to -10.9%. Evidence is mixed and thin, with only two modestly profitable days and a reconstructed budget. That supports neither scaling up nor cutting. The budget is small at $8.89, so the downside of keeping is limited.\",\"key_evidence\":[\"last_3d roi +0.068 on spend $21.20 (2 profit days, 1 loss day)\",\"d-1 roi +0.269, trend improving\",\"peers fwd_roi_1_3d -0.297 (n=7)\",\"blended_roi -0.109\"],\"uncertainty\":[\"Peer forward ROI is negative and could signal fading performance\",\"Budget was reconstructed from metadata (flag budget_reconstructed)\",\"Very low spend means results are noisy\",\"Day -2 was only break-even\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 529,
+  "output_tokens": 369,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005122,
+ "request_id": "req_011Cg7UBsimHzGf4M4TtyLLV",
+ "ts": "2026-10-17T08:10:04+00:00"
+}

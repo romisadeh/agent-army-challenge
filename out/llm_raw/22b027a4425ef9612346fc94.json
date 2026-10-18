@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":4.5,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner criteria on own data: age 4 spend days, 3 of 3 profitable days, last_3d ROI +0.528, improving trend (yesterday +0.747). Blended ROI is -0.018 (not >0.10) only because peers (-0.307, n=12) pull it down with a small own weight of 0.35. The buyer raised budget 17h ago in the same direction, so scaling up agrees with them. A lock is active, so a human reviews. The step is about +18%.\",\"key_evidence\":[\"last_3d.roi=+0.528, profit_days=3, loss_days=0\",\"trend_last_day_vs_prior=improving (D-1 ROI 0.747)\",\"blended_roi=-0.018 with peers fwd_roi -0.307 (n=12)\",\"buyer raised budget 2.03->3.81 17.2h ago, lock_24h=true\"],\"uncertainty\":[\"Small spend ($10.60 over 3d) makes own ROI noisy\",\"Peer ROI is negative and may reflect regression to the mean\",\"Budget was nearly doubled recently; performance at the higher budget is untested\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 594,
+  "output_tokens": 421,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2177
+ },
+ "cost_usd": 0.01084,
+ "request_id": "req_011Cg9LWXoZ2kBdrcwFQ3j1G",
+ "ts": "2026-10-18T07:50:35+00:00"
+}

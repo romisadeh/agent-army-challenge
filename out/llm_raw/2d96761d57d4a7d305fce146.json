@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is positive at 0.282 and 2 of 3 matured days were profitable, but yesterday ROI was -0.18 with a declining trend. A deliberate human cut from 10.16 to 6.1 22h ago is under a 24h lock, and the note 'weekend boost' suggests the cut was intentional. Spend of 8.34 exceeds budget 6.1 (1.25x flag), so the reading is noisy. Keep until the lock expires and the trend is clearer.\",\"key_evidence\":[\"blended_roi: 0.282\",\"buyer.lock_24h: true (down adjust 10.16 to 6.1, 22h ago)\",\"matured_days d=-1 roi: -0.18, trend_last_day_vs_prior: declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the weekend boost has ended, so the human cut may be a settled decision\",\"Spend vs budget mismatch (8.34 vs 6.1) may distort the ROI reading\",\"Peer forward ROI of 0.134 is modest and based on n=17\",\"Whether the negative day-1 result is noise or the start of a trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 940,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000549,
+ "request_id": "req_011Cg7U7Nv3PtbMwRkiwtfZ5",
+ "ts": "2026-10-17T08:09:05+00:00"
+}

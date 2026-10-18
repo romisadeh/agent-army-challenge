@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"All four matured days are profitable (roi 0.062, 0.013, 0.406, 0.073) and last_3d roi is 0.157 with blended_roi 0.135, which supports scaling up. However, the buyer cut budget from 26.26 to 18.39 only 24.5h ago without a lock, and the spend_exceeds_1.25x_budget flag means the budget figure may not reflect actual delivery. Reversing a recent deliberate cut needs a human decision. Peer forward roi is weak (0.035, n=11).\",\"key_evidence\":[\"matured_days: 4 of 4 profitable, roi 0.013 to 0.406\",\"buyer.last_human_action: down 26.26->18.39, hours_ago 24.5, lock_24h false\",\"data_quality_flags: spend_exceeds_1.25x_budget\",\"peers.fwd_roi_1_3d: 0.035, n=11\"],\"uncertainty\":[\"Why the buyer cut budget; the note is null and there are no lessons\",\"Whether spend above budget means the budget cap is not binding, which would change the effective scale\",\"Peer forward roi of 0.035 suggests much lower future returns than the own 3-day roi of 0.157\",\"Whether the cut was a reaction to a prior loss not shown on the card\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 611,
+  "output_tokens": 1042,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000601,
+ "request_id": "req_011Cg7SpCtTF12Ca3HBFkbU8",
+ "ts": "2026-10-17T07:52:06+00:00"
+}

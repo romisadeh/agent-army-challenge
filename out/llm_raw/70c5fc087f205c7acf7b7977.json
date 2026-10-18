@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer cut budget 17.2h ago and the 24h lock is active, so a deliberate human action should not be overridden. Blended ROI is -0.287 and peers forward ROI is -0.374, but own 3-day ROI is only -0.163 on small spend ($13.98) with one profitable day. Evidence is thin and not consistent enough to pause. Keep the reduced budget.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 13.21 from 16.51, 17.2h ago\",\"blended_roi=-0.287, peers fwd_roi_1_3d=-0.374 (n=9)\",\"last_3d roi=-0.163, spend 13.98, 2 loss days / 1 profit day\",\"yesterday roi=-0.367 on spend 9.56\"],\"uncertainty\":[\"Whether yesterday's loss is noise given the spend jump from 2.81 to 9.56\",\"Whether peer weakness persists for this adset\",\"Buyer's reasoning for the cut is not noted\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005382,
+ "request_id": "req_011Cg7SzDwUsAgQLaTWgCd3K",
+ "ts": "2026-10-17T07:54:20+00:00"
+}

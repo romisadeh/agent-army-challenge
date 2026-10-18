@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last_3d ROI is -0.01 with 2 profit days and 1 loss day, so it is not a proven winner (needs last_3d.roi > +0.10 and blended_roi > +0.10; blended is 0.049). Yesterday was -0.144 with a declining trend, which argues against scaling. The buyer cut budget 24.5h ago (54.61 to 43.69), so I won't override it. Peer forward ROI of 0.556 is a fallback band with n=22, and spend_exceeds_1.25x_budget makes the reading less reliable. Keep and reassess tomorrow.\",\"key_evidence\":[\"last_3d.roi = -0.01 (2 profit, 1 loss day)\",\"trend_last_day_vs_prior = declining, matured_days[-1].roi = -0.144\",\"blended_roi = 0.049 (below +0.10 scale threshold)\",\"buyer.last_human_action: down 54.61 to 43.69, 24.5h ago\"],\"uncertainty\":[\"Whether yesterday's loss is noise or the start of a persistent decline\",\"Peer ROI 0.556 is a band fallback (n=22) and could indicate upside if reliable\",\"spend_exceeds_1.25x_budget flag: day -1 spend 89.65 vs budget 43.69 may distort ROI\",\"Reason for the buyer's down move is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 883,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000525,
+ "request_id": "req_011Cg7siSffp3ktmrRMDfJBX",
+ "ts": "2026-10-17T13:18:36+00:00"
+}

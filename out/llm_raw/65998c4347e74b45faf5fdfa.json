@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is 0.039 (not above 0.10), blended_roi is -0.179, and trend_last_day_vs_prior is declining with two loss days in the last three. Losses are not yet clearly persistent, and the buyer cut budget 1.9 to 1.27 23.2h ago with lock_24h true. The spend_exceeds_1.25x_budget flag makes budget-based reads unreliable. Hold budget under the lock.\",\"key_evidence\":[\"buyer.last_human_action: down 1.9->1.27, 23.2h ago, lock_24h true\",\"last_3d.roi 0.039 with 2 loss days of 3\",\"blended_roi -0.179; peers.fwd_roi_1_3d -0.314 (n=6)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-vs-budget flag means the budget figure is wrong, which would change the sizing picture\",\"Whether the declining trend continues into D-0 and D+1 (peers point negative)\",\"Whether the buyer's cut was a deliberate loss-cutting decision that should be respected\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 648,
+  "output_tokens": 977,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000574,
+ "request_id": "req_011Cg9N2xgijcFQt9pzEJEd5",
+ "ts": "2026-10-18T08:10:36+00:00"
+}

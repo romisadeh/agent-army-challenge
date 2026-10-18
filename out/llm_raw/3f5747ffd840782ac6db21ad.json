@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.064 with own 3-day ROI -0.20 over spend 14.76 (2 loss days, 1 profit day). Peers forward ROI is +0.036 (n=21, fallback 0). Evidence is mixed and near break-even, and the last human action was a downward adjustment 69.8h ago with no lock. Losses are not yet a consistent trend, so no change.\",\"key_evidence\":[\"blended_roi -0.064\",\"last_3d roi -0.2 with loss_days 2 and profit_days 1\",\"peers fwd_roi_1_3d 0.036 n=21\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend exceeds budget, so the reported spend base may be off\",\"Peer sample is moderate and forward ROI is only slightly positive\",\"Trend is flat and the last day was +0.16 ROI, which could mark a turn\",\"Small spend leans heavily on peer ROI (w=0.42)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 682,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000421,
+ "request_id": "req_011Cg7SqhSxAgBhi74S3hP9V",
+ "ts": "2026-10-17T07:52:24+00:00"
+}

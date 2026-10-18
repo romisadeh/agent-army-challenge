@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.85,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI 0.067 and blended ROI 0.048 are positive but below the +0.10 proven-winner threshold, and peers forward ROI is -0.003, so the case is weak. Matured days are mixed (2 profit, 1 loss). The buyer cut budget 12.64 to 8.85 about 24h ago (net -10.58 over 48h), so scaling up would override that. Spend exceeds budget (flag spend_exceeds_1.25x_budget), so the budget figure is unreliable.\",\"key_evidence\":[\"last_3d.roi = 0.067, blended_roi = 0.048\",\"peers.fwd_roi_1_3d = -0.003 (n=31)\",\"buyer.last_human_action: down 12.64 to 8.85, 24.5h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend/budget mismatch means the budget is not the real spend cap\",\"Whether the buyer's downward move was a deliberate call on performance\",\"Whether the 24h-ago cut is already reflected in the matured trend\",\"Whether the day-ahead peer forward ROI turns negative\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 905,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000535,
+ "request_id": "req_011Cg7tpWSvNGRt5CNWAHW5C",
+ "ts": "2026-10-17T13:33:06+00:00"
+}

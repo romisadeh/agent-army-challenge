@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.012 with 2 loss days vs 1 profit day, and blended_roi 0.039 is below the +0.10 bar. Yesterday's roi -0.116 and trend_last_day_vs_prior declining argue against scaling up. A buyer cut budget 7.62 to 6.86 17.2h ago under lock_24h, and I won't scale further against that. Losses are small and peers fwd_roi_1_3d 0.106 is positive, so no pause or scale-down case. Spend exceeds budget per data_quality_flags, so the budget baseline is unreliable.\",\"key_evidence\":[\"last_3d.roi = -0.012, loss_days 2, profit_days 1\",\"blended_roi = 0.039, below +0.10 threshold\",\"buyer.last_human_action: down 7.62 to 6.86, 17.2h ago, lock_24h true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 1.25x spend-over-budget flag means actual delivered spend differs from the card's budget figure\",\"Whether the declining trend continues on D-0 or reverses\",\"Peer forward ROI n=5 is a weak signal\",\"Reason behind buyer's 17h-ago budget cut and the +3.05 net 48h change\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 1103,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000635,
+ "request_id": "req_011Cg7tjrexsiaWG4rDMwPEf",
+ "ts": "2026-10-17T13:32:04+00:00"
+}

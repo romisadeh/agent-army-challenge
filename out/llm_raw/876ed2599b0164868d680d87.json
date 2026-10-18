@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is 0.35 with 2 profit days and 1 loss day, and blended_roi is 0.198, so the adset is profitable but the evidence is mixed. The buyer cut budget from 3.81 to 2.67 only 24.5h ago (no lock), and yesterday's ROI was -0.137 with trend declining. Spend 3.43 exceeds budget 2.67 (flagged). Hold budget and reassess after the next matured day.\",\"key_evidence\":[\"last_3d.roi = 0.35 (2 profit, 1 loss day)\",\"blended_roi = 0.198 vs peers fwd_roi_1_3d = 0.106 (n=15)\",\"buyer.last_human_action: down 3.81->2.67, 24.5h ago\",\"matured_days D-1 roi = -0.137, trend declining\"],\"uncertainty\":[\"Whether the decline on D-1 continues or is one-day noise\",\"Why the buyer cut budget 24.5h ago (no note given)\",\"Spend exceeding budget by ~1.28x may distort actual daily spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 610,
+  "output_tokens": 926,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000543,
+ "request_id": "req_011Cg7SFzf7azvTxsSLv4nxA",
+ "ts": "2026-10-17T07:44:49+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is 0.002 (break-even), with own 3-day ROI at -0.036 on spend 160.06 and mixed days (2 profit, 1 loss). The loss day is D-2 and the trend is improving. The peer forward ROI of 0.298 is only a band fallback (level 1, n=31). The buyer cut budget 48.5h ago with no lock. Evidence is mixed and near break-even, so no change.\",\"key_evidence\":[\"blended_roi=0.002\",\"last_3d.roi=-0.036 with profit_days=2, loss_days=1\",\"trend_last_day_vs_prior=improving\",\"peers.fallback_level=1, fwd_roi_1_3d=0.298\"],\"uncertainty\":[\"data_quality_flags spend_exceeds_1.25x_budget: spend on D-2 (89.65) is about 2x budget, so the budget or spend figures may be wrong\",\"peer benchmark is a fallback band, not an exact match\",\"buyer reduced budget 48.5h ago; the reason is unknown\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 660,
+  "output_tokens": 776,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000473,
+ "request_id": "req_011Cg7U6Bn3yKhueBT8XGoGP",
+ "ts": "2026-10-17T08:08:48+00:00"
+}

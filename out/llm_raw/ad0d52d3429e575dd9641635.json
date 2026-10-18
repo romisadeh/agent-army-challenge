@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Two matured loss days (-9.6%, -15%) on tiny spend ($9.33 over 3d), blended ROI -0.335 driven by weak peers (-0.435, n=12). A human cut budget 23h ago and the 24h lock is active, so I should not override it. Spend is too small for a pause to matter; budget is already reduced. Hold and re-evaluate after lock expires.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 6.35->4.44 23.1h ago\",\"last_3d ROI -0.121 over $9.33 spend, 2 loss days, 0 profit days\",\"blended_roi -0.335, peers fwd_roi_1_3d -0.435 (n=12)\",\"age_spend_days=2, matured_days ROI -0.096 and -0.15\"],\"uncertainty\":[\"Only 2 days of data at very low spend\",\"Peers suggest further losses; pause may be warranted after lock expires\",\"Reason for the buyer's cut is not noted\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 539,
+  "output_tokens": 376,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005212,
+ "request_id": "req_011Cg7SoEJW6JRKM1qKvHU41",
+ "ts": "2026-10-17T07:51:51+00:00"
+}

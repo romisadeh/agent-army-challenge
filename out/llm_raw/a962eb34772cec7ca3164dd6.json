@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three profitable matured days (3d ROI 0.167, blended 0.18) and peers at 0.412 support the adset, but ROI faded to 0.05 yesterday. The buyer cut budget from 115.67 to 80.98 about 24.5h ago, so I won't override that. Spend exceeded 1.25x budget, which muddies the picture. Holding is the safer choice.\",\"key_evidence\":[\"last_3d: 3 profit days, ROI 0.167\",\"blended_roi 0.18; peers fwd_roi 0.412 (n=6)\",\"d-1 ROI 0.05 on spend 100.99\",\"buyer cut budget 115.67 to 80.98, 24.5h ago\"],\"uncertainty\":[\"Whether the d-1 ROI drop to 0.05 is noise or the start of a decline\",\"Why spend exceeded 1.25x budget\",\"Why the buyer cut the budget (no note)\",\"Peer sample is small (n=6) and uses a fallback band\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 371,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00531,
+ "request_id": "req_011Cg7Sk2GsPdwTxZYtjcwf2",
+ "ts": "2026-10-17T07:51:07+00:00"
+}

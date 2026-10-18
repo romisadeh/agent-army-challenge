@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is -0.027 with 2 loss days and 1 profit day, and blended_roi is only 0.059 with own weight 0.29. The adset is 3 spend days old, so it does not meet the 4+ day proven-winner test. Buyer raised budget 3.81 to 6.35 15.2h ago and lock_24h is true, so I won't override that. Trend is improving and peers show 0.094, but the evidence is mixed and near break-even. Keep and reassess after the lock expires.\",\"key_evidence\":[\"last_3d.roi = -0.027 (2 loss days, 1 profit day)\",\"age_spend_days = 3 (below 4+ winner threshold)\",\"buyer.lock_24h = true, budget up 3.81 to 6.35 15.2h ago\",\"blended_roi = 0.059, peers fwd_roi_1_3d = 0.094 (n=6)\"],\"uncertainty\":[\"Whether the improving trend on D-1 persists over the next 1-3 days\",\"Peer estimate rests on n=6 and could shift the blend\",\"Effect of the recent budget increase has not yet matured\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 737,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000446,
+ "request_id": "req_011Cg7swBRFkdfYALecr6QMn",
+ "ts": "2026-10-17T13:21:29+00:00"
+}

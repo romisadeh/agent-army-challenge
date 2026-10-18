@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer cut budget 1.9 to 1.27 23.2h ago and the 24h lock is active. Matured 5-day ROI is negative (about -0.15 overall) with 0 revenue on D-1 and D-2, blended_roi -0.179, and peers fwd_roi -0.314. Numbers conflict with the recent buyer action, so a human should decide. Spend exceeds budget 1.25x, so the spend figures need checking.\",\"key_evidence\":[\"blended_roi = -0.179\",\"peers.fwd_roi_1_3d = -0.314 (n=6)\",\"matured_days d=-1 and d=-2 revenue = 0.0\",\"buyer.lock_24h = true, last action down 1.9 to 1.27\"],\"uncertainty\":[\"Whether spend_exceeds_1.25x_budget means the budget or spend field is wrong\",\"Whether the buyer cut was based on information not on the card\",\"Only 6 peers, so forward ROI is weak evidence\"],\"proposed_if_escalated\":\"pause\"}",
+ "usage": {
+  "input_tokens": 648,
+  "output_tokens": 877,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000522,
+ "request_id": "req_011Cg7UzChZKdCMfu2sW7kd2",
+ "ts": "2026-10-17T08:20:34+00:00"
+}

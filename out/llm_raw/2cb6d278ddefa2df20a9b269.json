@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three matured loss days in last_3d (ROI -0.494, spend 19.02, profit_days 0) and blended_roi -0.398 with peers at -0.307 show a persistent loss, not one bad day. Buyer already cut budget 7.62 to 5.33 24.5h ago, and pausing is consistent with that direction. The trend is improving, and the spend_exceeds_1.25x_budget flag adds doubt about budget figures, so confidence is moderate.\",\"key_evidence\":[\"last_3d.roi -0.494 with loss_days 3, profit_days 0\",\"blended_roi -0.398 (blend_weight_own 0.49)\",\"peers.fwd_roi_1_3d -0.307 with n 12\",\"buyer.last_human_action direction down, hours_ago 24.5\"],\"uncertainty\":[\"Trend_last_day_vs_prior is improving (D-1 -0.282 vs D-2 -0.569), which could signal recovery\",\"Budget reading may be wrong given spend_exceeds_1.25x_budget flag\",\"Small total spend (19.02) limits how strongly the loss is established\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1082,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000624,
+ "request_id": "req_011Cg7tuWEQzQT39bn7wVvX4",
+ "ts": "2026-10-17T13:34:15+00:00"
+}

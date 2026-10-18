@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is -0.311 with 2 loss days and 1 profit day, and blended_roi is -0.128, but peers are roughly break-even (fwd_roi_1_3d -0.015, n=13) and the last day is slightly positive (+0.036). The evidence is mixed and the budget is tiny at $1.27. A human touched the adset 0.4h ago (same budget) and lock_24h is true, so I keep without change.\",\"key_evidence\":[\"last_3d.roi = -0.311 (2 loss days, 1 profit day)\",\"blended_roi = -0.128 with blend_weight_own 0.38\",\"peers.fwd_roi_1_3d = -0.015 (n=13)\",\"buyer.lock_24h = true, last action ui_adjust_budget 0.4h ago\"],\"uncertainty\":[\"Whether the recent buyer touch was a deliberate hold or just a check\",\"Whether the -0.69 and -0.23 loss days reflect a trend or noise on a very small budget\",\"Spend exceeds 1.25x budget, so actual daily spend may differ from the stated budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 782,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000475,
+ "request_id": "req_011Cg7U5qC3Z92r29Rxw3KR5",
+ "ts": "2026-10-17T08:08:43+00:00"
+}

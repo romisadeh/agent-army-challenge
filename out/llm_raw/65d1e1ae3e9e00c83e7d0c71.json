@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Adset is off by rule R05 after an immature 02:00 kill (roi -1.0 on $0.25 spend). Buyer raised budget 1.27 to 3.81 15.1h ago, lock_24h is true. Matured D-1 ROI is -0.459 on $2.35 spend, with 1 loss day and 0 profit days. Blended ROI is -0.28 at 11% own weight, and peers forward ROI is -0.259 (n=19). Evidence points to losses, but there is only one matured day and a recent deliberate buyer increase conflicts with it. A human should settle this.\",\"key_evidence\":[\"buyer.last_human_action: up 1.27->3.81, 15.1h ago, lock_24h true\",\"last_3d: loss_days 1, profit_days 0, roi -0.459, spend 2.35\",\"blended_roi -0.28 with blend_weight_own 0.11\",\"peers fwd_roi_1_3d -0.259, n=19\"],\"uncertainty\":[\"Only one matured day exists; age_spend_days is 1\",\"Whether the buyer's 3x increase had a rationale not recorded in notes\",\"Whether the 02:00 rule kill on immature data was correct\",\"Peer segment fallback_level 0 gives some but limited support\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 809,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000479,
+ "request_id": "req_011Cg7U119hF4NQ2fz4fgtvQ",
+ "ts": "2026-10-17T08:07:38+00:00"
+}

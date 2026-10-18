@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.4,\"reasoning\":\"Own 3-day ROI is 0.534 on $18.68 spend and blended ROI is 0.312, both positive, with 2 profit days and 1 loss day. However, yesterday showed zero revenue on $3.33 spend, the trend is declining, and the flag metadata_status_end_of_week:ADSET_OFF suggests the adset may have stopped partway through. Peer forward ROI is only 0.105 (n=16). The budget was raised 67h ago with no lock. Evidence is mixed, so hold budget.\",\"key_evidence\":[\"last_3d.roi = 0.534 on spend 18.68\",\"blended_roi = 0.312\",\"matured_days d=-1 revenue 0.0 on spend 3.33\",\"data_quality_flags includes metadata_status_end_of_week:ADSET_OFF\"],\"uncertainty\":[\"Whether the adset was actually off for part of yesterday, which would explain zero revenue\",\"Whether the declining trend continues over the next day\",\"Peer forward ROI of 0.105 is only modestly positive\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 794,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000478,
+ "request_id": "req_011Cg7Rubo8YtqLD6DSMQiHH",
+ "ts": "2026-10-17T07:40:10+00:00"
+}

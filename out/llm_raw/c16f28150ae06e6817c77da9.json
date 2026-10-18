@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":24.97,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is barely positive (last_3d.roi 0.022, 2 profit days, 1 loss day) and blended_roi is 0.003, essentially break-even. Peers show forward ROI of -0.062 over n=6, which leans negative. A human budget cut 14.2h ago is under lock_24h, so the evidence is mixed and thin. No change is the right call.\",\"key_evidence\":[\"blended_roi = 0.003\",\"last_3d.roi = 0.022 with 2 profit days and 1 loss day\",\"peers.fwd_roi_1_3d = -0.062 (n=6)\",\"buyer.lock_24h = true, last human action down 14.2h ago\"],\"uncertainty\":[\"Whether the peer downside (n=6) reflects this adset's trajectory\",\"Whether the buyer's recent cut was a deliberate signal about performance\",\"Whether D-1 ROI of 0.056 holds as a trend or was noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 598,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000379,
+ "request_id": "req_011Cg7UoJRY6tFXUcFZSz6P9",
+ "ts": "2026-10-17T08:18:06+00:00"
+}

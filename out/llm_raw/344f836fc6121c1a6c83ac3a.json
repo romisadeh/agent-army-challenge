@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 3 spend days old, so it is not a proven winner. Last 3d ROI is +0.025 on $11.05 spend, with 2 of 3 days losing and a declining trend (yesterday -0.653). Blended ROI of +0.13 leans on peers, since own weight is 0.36. Budget is a tiny $3.81 and was reconstructed, and spend exceeds 1.25x budget, so the data is unreliable. Evidence is mixed, so no change.\",\"key_evidence\":[\"last_3d.roi=0.025 (1 profit day, 2 loss days)\",\"blended_roi=0.13 with blend_weight_own=0.36\",\"trend_last_day_vs_prior=declining; d-1 roi=-0.653\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Actual budget is uncertain because it was reconstructed from metadata\",\"Yesterday's low spend ($1.83) makes its ROI noisy\",\"Peer segment is age 4+ while this adset is age 3\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 548,
+  "output_tokens": 400,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005519,
+ "request_id": "req_011Cg9MHACnqb326mv9tEraW",
+ "ts": "2026-10-18T08:00:40+00:00"
+}

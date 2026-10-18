@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is positive (0.212) with 2 profit days and 1 loss day, and blended ROI (0.34) and peer forward ROI (0.417, n=14) are both positive. Yesterday was a loss (-0.574) and the trend is declining. The budget figure is flagged as reconstructed and spend exceeds 1.25x budget on several days, so the $1.27 base cannot anchor a scaling step. Evidence is mixed and the budget is unreliable, so no change.\",\"key_evidence\":[\"last_3d.roi = 0.212, profit_days 2, loss_days 1\",\"blended_roi = 0.34, peers.fwd_roi_1_3d = 0.417 (n=14)\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week, spend_exceeds_1.25x_budget\",\"trend_last_day_vs_prior = declining, matured d-1 roi = -0.574\"],\"uncertainty\":[\"Whether budget.current = 1.27 is accurate; spend of 4.46 and 5.58 on single days suggests the true daily budget may be much higher\",\"Whether yesterday's loss is a one-day dip or the start of a decline\",\"Whether the peer forward ROI holds for this adset's actual spend level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 589,
+  "output_tokens": 1140,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000648,
+ "request_id": "req_011Cg7SWdwM5RAepUpwroA3V",
+ "ts": "2026-10-17T07:48:08+00:00"
+}

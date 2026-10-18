@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is 0.783 with 2 profit days and 0 loss days, and blended ROI is 0.238. But yesterday's ROI fell to 0.188 (trend declining), peer forward ROI is -0.133 on n=13, and spend is thin at 13.6 (w=0.4). A human cut budget 15.1h ago and lock_24h is true, so I keep the current budget and do not override the lock on mixed evidence.\",\"key_evidence\":[\"last_3d.roi = 0.783 (2 profit days, 0 loss days)\",\"blended_roi = 0.238, blend_weight_own = 0.4\",\"peers.fwd_roi_1_3d = -0.133, n = 13\",\"buyer.lock_24h = true, last_human_action down 15.1h ago\"],\"uncertainty\":[\"Whether yesterday's decline (0.188 ROI) continues or is noise\",\"Whether peer forward ROI (-0.133) applies to this adset given the strong own history\",\"Reason for the buyer's downward adjust, which is not in the notes\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 821,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000482,
+ "request_id": "req_011Cg7SRnrj5CPzgmx64fzNh",
+ "ts": "2026-10-17T07:47:00+00:00"
+}

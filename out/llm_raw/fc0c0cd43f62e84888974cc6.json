@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":10.57,\"confidence\":0.55,\"reasoning\":\"Matured losses persist: last_3d.roi -0.163 with 2 loss days vs 1 profit day, trend_last_day_vs_prior declining, and D-1 roi -0.367. blended_roi -0.287 and peers fwd_roi_1_3d -0.374 (n=9) agree. The buyer cut budget 17.2h ago (lock_24h true), so a further ~20% cut agrees with their direction. Pausing is a reasonable alternative given the persistent losses.\",\"key_evidence\":[\"last_3d.roi = -0.163 (2 loss days, 1 profit day)\",\"blended_roi = -0.287, peers fwd_roi_1_3d = -0.374 (n=9)\",\"trend_last_day_vs_prior = declining, matured_days d=-1 roi = -0.367\",\"buyer.last_human_action: down 16.51->13.21, 17.2h ago, lock_24h true\"],\"uncertainty\":[\"Whether the losses are a persistent trend or noise from a small budget (spend $13.98 over 3 days)\",\"Whether the buyer's recent cut was meant as a step before pausing\",\"Peer sample at band fallback level is only moderately reliable\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 998,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000581,
+ "request_id": "req_011Cg9LcbHZuSP1yk7BGkqEM",
+ "ts": "2026-10-18T07:51:59+00:00"
+}

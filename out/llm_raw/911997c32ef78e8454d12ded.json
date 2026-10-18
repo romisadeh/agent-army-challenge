@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Budget is $1.27 while recent daily spend was $9-27, so the budget field looks wrong or stale (spend_exceeds_1.25x_budget flag, net_budget_change_48h -19.05). The numbers are roughly break-even (last_3d roi -0.032, blended -0.05, peers -0.106), so this is not a proven winner. Budget data can't be trusted, so a human should confirm the real budget. If forced, I would keep.\",\"key_evidence\":[\"budget.current 1.27 vs yesterday spend 9.40\",\"data_quality_flags: spend_exceeds_1.25x_budget\",\"last_3d.roi -0.032 with 2 profit days, 1 loss day\",\"blended_roi -0.05, peers fwd_roi_1_3d -0.106\"],\"uncertainty\":[\"Actual current budget is unclear (1.27 may be stale or wrong)\",\"Buyer cut budget by 19.05 in 48h; the reason is unknown\",\"Revenue on recent days is thin and noisy, so the trend is hard to read\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 397,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005625,
+ "request_id": "req_011Cg7so5QsvZDqYw4X5ossy",
+ "ts": "2026-10-17T13:19:39+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer cut budget 3.81 to 2.48 22h ago and the 24h lock is active. Matured 3-day ROI is 0.539 over 9.21 spend (1 profit day, 2 loss days), yesterday ROI was -0.694, and trend is declining. Blended ROI 0.223 and peer forward ROI 0.078 are positive but weak. Spend exceeds 1.25x budget. Numbers conflict with the recent deliberate human decision, so a human should settle it.\",\"key_evidence\":[\"buyer.last_human_action: down 3.81->2.48, 22h ago, lock_24h true\",\"last_3d.roi 0.539, loss_days 2, profit_days 1\",\"matured_days D-1 roi -0.694, trend_last_day_vs_prior declining\",\"blended_roi 0.223 vs peers.fwd_roi_1_3d 0.078 (n=23)\"],\"uncertainty\":[\"Whether the buyer cut was based on information not on the card\",\"Whether the D-5 and D-2 zero-revenue days reflect tracking or delivery issues\",\"Reliability of spend exceeding budget flag at a 2.48 daily budget\",\"Whether the declining trend continues over the next matured day\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 893,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00053,
+ "request_id": "req_011Cg7U2FZPf6nQFzUxHdzsk",
+ "ts": "2026-10-17T08:07:55+00:00"
+}

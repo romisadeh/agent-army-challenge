@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.62,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.012 with 2 loss days of 3, and blended ROI is only +0.039. Yesterday was -0.116 on a declining trend, so scaling up is unsupported. Losses are small and not persistent enough to pause or cut. The buyer lowered budget 17h ago (lock_24h), so I will not override it. Spend of $9.77 against a $6.86 budget flags a data issue.\",\"key_evidence\":[\"last_3d.roi -0.012 (2 loss, 1 profit days)\",\"blended_roi 0.039\",\"buyer cut budget 7.62->6.86, 17.2h ago, lock_24h true\",\"flag spend_exceeds_1.25x_budget; yesterday spend 9.77 vs budget 6.86\"],\"uncertainty\":[\"Why spend overshoots the budget (ABO delivery or a logging problem)\",\"Whether the buyer's cut signals a view on this adset\",\"Small spend volume makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 378,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005443,
+ "request_id": "req_011Cg7tkJcfb98PAYwhVVSYS",
+ "ts": "2026-10-17T13:32:07+00:00"
+}

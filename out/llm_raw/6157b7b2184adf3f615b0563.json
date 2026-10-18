@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is +0.312, with 2 profitable days of the last 3 (3d ROI 0.534), but spend is small (~$18.68) and yesterday was a zero-revenue loss on $3.33. The budget was raised 67h ago. Data flags (spend over 1.25x budget, ADSET_OFF metadata status) reduce trust. Evidence is too thin to scale up or cut, so keep.\",\"key_evidence\":[\"last_3d ROI 0.534 on $18.68 spend (2 profit days, 1 loss day)\",\"blended_roi 0.312 (own weight 0.48, peers 0.105 n=16)\",\"d-1 revenue 0.0 on spend 3.33, ROI -1.0, trend declining\",\"flags: spend_exceeds_1.25x_budget, metadata_status ADSET_OFF\"],\"uncertainty\":[\"Whether d-1 zero revenue is noise or the start of a decline\",\"Whether the ADSET_OFF metadata flag means the adset is actually off or scheduled to stop\",\"Small sample: only $18.68 spend over 3 days\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 412,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00575,
+ "request_id": "req_011Cg7RuuNYw5SAEsMB9QcMa",
+ "ts": "2026-10-17T07:40:14+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is -0.181 with 2 loss days out of 3 and a declining trend, but blended_roi is +0.132 because peers are strong (0.39, n=23, fallback level 1). A buyer cut budget 6.35 to 3.81 17.2h ago under a 24h lock. Yesterday's spend of 6.43 exceeds the 3.81 budget, and spend_exceeds_1.25x_budget suggests the budget state is uncertain. Numbers and buyer action conflict, so a human should settle it.\",\"key_evidence\":[\"last_3d.roi = -0.181 with profit_days 1 and loss_days 2\",\"buyer.last_human_action: down 6.35 to 3.81, hours_ago 17.2, lock_24h true\",\"blended_roi = 0.132 with blend_weight_own 0.45 (peers fwd_roi 0.39, n=23, fallback)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the actual live budget is 3.81 given matured spend of 6.43 on D-1\",\"Whether the buyer's cut is still justified if the peer forward ROI holds\",\"Whether the -0.678 yesterday on 6.43 spend is persistent loss or noise after one profitable day\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 1089,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000629,
+ "request_id": "req_011Cg7tn8cDCtbjLkW9vdkm6",
+ "ts": "2026-10-17T13:32:35+00:00"
+}

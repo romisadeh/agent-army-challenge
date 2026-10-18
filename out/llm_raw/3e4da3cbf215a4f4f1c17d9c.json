@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":10.87,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is only +0.063 on $31 spend, with 2 profit days and 1 loss day (d-3 at -0.228). Blended ROI of 0.069 is positive but thin, and the peer ROI of 0.078 is close to it. Today's partial reading (-0.095 at 60% elapsed, delay_factor 1.0) is too unreliable to act on. The budget data conflicts (spend exceeds 1.25x budget, and the buyer's last up-adjust to 13.6 doesn't match current 10.87), so no change until that is clarified.\",\"key_evidence\":[\"last_3d.roi = 0.063 (2 profit, 1 loss)\",\"blended_roi = 0.069 vs peers.fwd_roi_1_3d = 0.078\",\"today_partial.roi_corrected = -0.095 at share_of_day_elapsed 0.6\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 10.87 is correct given the buyer's 13.6 up-adjust 45h ago\",\"Whether today's partial revenue (delay_factor 1.0) is complete\",\"Whether the positive trend holds once today's revenue matures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 767,
+  "output_tokens": 1219,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000705,
+ "request_id": "req_011Cg7VBMoo21Y6HbgGYshgC",
+ "ts": "2026-10-17T08:23:07+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":7.62,\"confidence\":0.55,\"reasoning\":\"Adset is not a proven winner: last_3d.roi is -0.156 with 2 loss days vs 1 profit day, and blended_roi is -0.205 (own weight 0.67). Peers forward ROI is -0.307 (n=12, band fallback). Yesterday's roi is -0.002 with trend flat, so the loss is not clearly worsening. The buyer already cut budget 19.05 to 9.52 46h ago; a further 20% cut continues that direction and limits losses while evidence is thin.\",\"key_evidence\":[\"last_3d.roi = -0.156, loss_days 2 / profit_days 1\",\"blended_roi = -0.205\",\"peers.fwd_roi_1_3d = -0.307 (n=12)\",\"buyer.last_human_action: down 19.05 to 9.52, 46.1h ago\"],\"uncertainty\":[\"Data flag spend_exceeds_1.25x_budget: actual budget may differ from buyer-log 9.52\",\"Only 4 matured days; yesterday roughly break-even\",\"Small adset spend means peers weigh heavily in blended ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 618,
+  "output_tokens": 977,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000572,
+ "request_id": "req_011Cg7twb9e4UvgPouFi91MB",
+ "ts": "2026-10-17T13:34:42+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer locked budget 24h (acted 18.9h ago). The note says \\\"CPM spiked, cutting\\\" but the direction logged is up (4.83 to 8.2), so the note and the action conflict. Matured data is mixed: 1 profit day, 2 loss days, but 3d ROI is +0.53 and yesterday was +2.1. Blended ROI is +0.26, peers are near flat, and spend is small. Holding is the safest choice.\",\"key_evidence\":[\"buyer.lock_24h=true, last action up 4.83->8.2 18.9h ago\",\"last_3d ROI 0.532 on $17.53 spend (1 profit day, 2 loss days)\",\"blended_roi 0.261, peers fwd_roi_1_3d 0.023 (n=40)\",\"matured d-1 ROI 2.107 after d-2 -0.31\"],\"uncertainty\":[\"Buyer note says cutting but the logged change was an increase\",\"Small spend makes daily ROI very noisy\",\"Whether the budget increase actually took effect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 666,
+  "output_tokens": 390,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005606,
+ "request_id": "req_011Cg7UY83YcHbi4ypvT3pHh",
+ "ts": "2026-10-17T08:14:39+00:00"
+}

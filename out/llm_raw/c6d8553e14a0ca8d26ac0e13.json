@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":7.3,\"confidence\":0.6,\"reasoning\":\"Meets proven-winner test: age 6 (4+ days), 2 of last 3 matured days profitable, last_3d.roi 0.109 > 0.10, blended_roi 0.108 > 0.10. Last human action was an upward budget change (3.81 to 6.35, 43h ago), not a cut, and the lock is off. Trend is flat and there are no data quality flags. Scale up about 15%, within limits.\",\"key_evidence\":[\"last_3d.roi=0.109 with profit_days=2 of 3\",\"blended_roi=0.108 (blend_weight_own=0.43)\",\"peers.fwd_roi_1_3d=0.107, n=27, fallback_level 0\",\"buyer.last_human_action direction=up, hours_ago=43\"],\"uncertainty\":[\"Margins are thin, ROI only about 0.11, so the edge may not hold after scaling\",\"Spend is small (about $4-6/day), so the 3-day ROI is noisy\",\"Revenue for scaled spend may saturate; the d-2 loss shows some volatility\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 623,
+  "output_tokens": 668,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000417,
+ "request_id": "req_011Cg9MeAisvsepD8pHqjCSj",
+ "ts": "2026-10-18T08:05:25+00:00"
+}

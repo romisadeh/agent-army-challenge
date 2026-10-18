@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Age 9 and last_3d.roi 0.537 with blended_roi 0.292 meet the proven-winner test, and d-2 and d-1 were profitable, so the default is scale_up about 15%. A 24h lock is active after a buyer raised budget 8.2 to 14.55 eighteen hours ago, and the buyer note 'CPM spiked, cutting' from 42.9h ago conflicts with that raise. Trend is declining but d-1 ROI is still positive, so this is not clear enough to override the buyer. A human should settle the intent.\",\"key_evidence\":[\"last_3d.roi = 0.537, blended_roi = 0.292\",\"buyer.last_human_action: up 8.2 to 14.55, 18.4h ago, lock_24h true\",\"buyer.notes: 'CPM spiked, cutting' at 42.9h ago\",\"trend_last_day_vs_prior = declining, matured_days d-1 roi 0.103\"],\"uncertainty\":[\"Whether the buyer's raise superseded the CPM-cutting note or the note is stale\",\"Whether the declining trend reflects rising CPM that will hurt scaling\",\"Peer forward ROI of 0.029 is only modestly positive\",\"Single-day roi swings in matured_days are large (d-2 at 2.107)\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 1095,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000634,
+ "request_id": "req_011Cg9N8CLuAkwwTfj8TcW6g",
+ "ts": "2026-10-18T08:11:47+00:00"
+}

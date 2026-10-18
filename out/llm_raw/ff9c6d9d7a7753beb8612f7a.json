@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.6,\"reasoning\":\"Adset has 5 spend days, 2 of the last 3 matured days profitable, last_3d ROI +0.213 and blended ROI +0.125, so it nominally qualifies as a proven winner. However, a buyer cut the budget 6.35 to 3.81 only 17.2h ago (lock_24h true), and a note says they are trimming the original after duplicating to a new audience. Yesterday was break-even and the trend is declining. Scaling up would override a deliberate buyer action, so hold.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->3.81, 17.2h ago, lock_24h=true\",\"buyer note (69h ago): duplicated to new audience, trimming original\",\"last_3d.roi=0.213, blended_roi=0.125, 2 of 3 days profitable\",\"trend_last_day_vs_prior=declining; d-1 ROI -0.01\"],\"uncertainty\":[\"Whether the duplicated audience is absorbing the budget the buyer intends to shift away\",\"Spend exceeded 1.25x budget, so spend/budget figures may be unreliable\",\"Very small spend base (about $13 over 3d) makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 640,
+  "output_tokens": 439,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.006105,
+ "request_id": "req_011Cg7tzGWoLfkyH8woNXDvh",
+ "ts": "2026-10-17T13:35:17+00:00"
+}

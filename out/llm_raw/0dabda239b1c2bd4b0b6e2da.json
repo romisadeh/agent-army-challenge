@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured days are mixed: D-2 profit (roi 0.105) and D-1 loss (roi -0.496 on 6.73 spend). last_3d roi is -0.295 and blended_roi is only 0.025, which rests on a fallback peer group (n=29, fwd_roi 0.187). Spend is small, so peers carry weight. The buyer raised budget 38h ago, which is more recent than the 'CPM spiked, cutting' note, and no lock is active. Evidence is too thin to move budget.\",\"key_evidence\":[\"blended_roi 0.025\",\"last_3d roi -0.295, loss_days 1, profit_days 1\",\"peers fallback_level 2, n 29\",\"buyer last_human_action up 3.81->6.32, 38.1h ago\"],\"uncertainty\":[\"Peer group is a fallback with n=29 and a coarse flag\",\"Trend is declining and D-1 loss may continue\",\"Buyer note about CPM spike conflicts with the later upward budget change\",\"Only two matured days exist at age 2\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 892,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000521,
+ "request_id": "req_011Cg7Up3TAaUj6rCRhTxVHB",
+ "ts": "2026-10-17T08:18:17+00:00"
+}

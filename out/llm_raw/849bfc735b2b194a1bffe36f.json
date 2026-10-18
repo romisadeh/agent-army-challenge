@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.89,\"confidence\":0.55,\"reasoning\":\"Buyer cut budget 12.7 to 8.89 thirty minutes ago and a 24h lock is active, so I leave it alone. Matured 3-day ROI is -0.257 (2 loss days, 1 profit day) and blended ROI is -0.181, which is losing but not a consistent trend. Peers forward ROI is -0.113 (n=13). Last day improved to +0.239 on spend 6.06, so the trend is improving. Evidence is mixed and the buyer action agrees with the numbers, so no change.\",\"key_evidence\":[\"last_3d.roi = -0.257 (2 loss days, 1 profit day)\",\"blended_roi = -0.181 with blend_weight_own 0.47\",\"buyer.last_human_action: down 12.7 to 8.89, 0.5h ago, lock_24h true\",\"trend_last_day_vs_prior = improving\"],\"uncertainty\":[\"Spend exceeds 1.25x budget flag, so true daily spend may differ from the 8.89 budget\",\"Peer evidence is from a fallback-level-0 segment and may not transfer to this adset\",\"Whether the improving last day (+0.239) persists or was noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 649,
+  "output_tokens": 788,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000478,
+ "request_id": "req_011Cg7UKrU5po5squxLxA8Mo",
+ "ts": "2026-10-17T08:11:54+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is only +0.059 on $8.42 spend, with one profit day and one loss day, and d-1 shows zero revenue. Blended ROI is -0.192 and peer forward ROI is -0.297 (n=7). Evidence is mixed and thin, with no consistent matured profit or loss. Budget is only $1.27 and spend exceeds budget, so the card's budget data is unreliable. No change until the trend is clearer.\",\"key_evidence\":[\"last_3d.roi = 0.059 (1 profit day, 1 loss day)\",\"blended_roi = -0.192\",\"peers.fwd_roi_1_3d = -0.297, n=7\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Card says loss_days=1, but d-1 (ROI -1.0, revenue 0) and d-2 (ROI -0.281) both look like losses, so the count may be wrong\",\"Actual daily budget is uncertain because it was reconstructed from metadata\",\"Peer evidence is moderate (n=7) and negative, which could justify a pause if the next days confirm losses\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 578,
+  "output_tokens": 830,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000491,
+ "request_id": "req_011Cg7UPt3wtUQ32vVf5x45F",
+ "ts": "2026-10-17T08:12:48+00:00"
+}

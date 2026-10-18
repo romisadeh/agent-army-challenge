@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":5.08,\"confidence\":0.55,\"reasoning\":\"Last_3d ROI is only +0.04 (mixed: 2 profit days, 1 loss day), which fails the proven-winner bar of last_3d.roi > +0.10 despite blended_roi 0.136. The buyer cut budget 6.35 to 5.08 about 20h ago and lock_24h is true, so I won't override that. Yesterday's ROI is +0.036 and the trend is flat. Evidence is thin and near break-even, so hold.\",\"key_evidence\":[\"last_3d.roi = 0.04 (below +0.10 scale threshold)\",\"buyer.last_human_action: ui_adjust_budget down, 20.2h ago, lock_24h true\",\"blended_roi = 0.136 with blend_weight_own 0.35\",\"matured_days d-1 roi = 0.036, trend_last_day_vs_prior flat\"],\"uncertainty\":[\"Whether the buyer's recent down-cut was made for a reason not on the card\",\"Peer forward ROI (0.188, n=7) could mean real upside if own ROI firms up\",\"Only 4 spend days, so the 3-day window is short\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 599,
+  "output_tokens": 783,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000473,
+ "request_id": "req_011Cg9MJVH2iCF5AGwdSUnGU",
+ "ts": "2026-10-18T08:00:59+00:00"
+}

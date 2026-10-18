@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer cut budget from 8.89 to 6.22 only 0.5h ago and the 24h lock is active, so no change is allowed now. Matured evidence is weak: last_3d.roi 0.023 with 2 loss days and 1 profit day, blended_roi -0.082, and peers fwd_roi_1_3d -0.245 with n=22. Not a proven winner and not clearly losing enough to pause. The spend_exceeds_1.25x_budget flag adds noise. Keep and re-review after the lock.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 8.89->6.22, 0.5h ago, lock_24h true\",\"last_3d.roi 0.023 with loss_days 2, profit_days 1\",\"blended_roi -0.082 (blend_weight_own 0.61)\",\"peers.fwd_roi_1_3d -0.245, n 22\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag means actual spend is above the budget being used for ROI context\",\"Whether the buyer's down-move reflects information beyond the card\",\"Peer evidence is band fallback (level 1), so it is less specific\",\"Whether the trend stays flat or declines after the lock expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 887,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000526,
+ "request_id": "req_011Cg9MS2b9wBXDx66JPryQW",
+ "ts": "2026-10-18T08:02:41+00:00"
+}

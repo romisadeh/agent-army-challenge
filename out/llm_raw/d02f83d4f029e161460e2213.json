@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.5,\"reasoning\":\"Adset is only 3 spend days old, so it is not a proven-winner candidate. last_3d.roi is -0.141 with 2 loss days, but blended_roi is -0.009, roughly break-even, and peers.fwd_roi_1_3d is +0.077 (fallback, n=26). Trend is declining and yesterday was -0.561. Buyer cut budget 5.08 to 3.81 about 40h ago, so I hold rather than add a second cut on thin evidence.\",\"key_evidence\":[\"last_3d.roi = -0.141 (2 loss days, 1 profit day)\",\"blended_roi = -0.009 with blend_weight_own 0.39\",\"trend_last_day_vs_prior = declining; matured d=-1 roi -0.561\",\"buyer.last_human_action: down 5.08 to 3.81, 39.9h ago\"],\"uncertainty\":[\"Peer evidence is band fallback with n=26, so it is weak\",\"spend_exceeds_1.25x_budget flag may mean spend figures are overstated relative to the current budget\",\"Whether the 3-day loss streak persists into D-0 and D+1\",\"Yesterday's loss was on only 1.88 spend, so it is a small-sample reading\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 583,
+  "output_tokens": 1047,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000604,
+ "request_id": "req_011Cg9LZDGB2mzVbZxhqH6qp",
+ "ts": "2026-10-18T07:51:13+00:00"
+}

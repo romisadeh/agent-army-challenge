@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.61,\"confidence\":0.4,\"reasoning\":\"Not a proven winner: only 1 of last 3 matured days profitable and last_3d.roi 0.009 fails the >0.10 bar; blended_roi 0.1 is at, not above, threshold. Yesterday roi -0.173 and trend_last_day_vs_prior declining argue against scaling, but the 5-day record is roughly break-even, not clearly losing. Budget is flagged budget_reconstructed and spend exceeds 1.25x budget, so the budget figure is unreliable. Keep and reassess tomorrow.\",\"key_evidence\":[\"last_3d.roi = 0.009 with loss_days 2, profit_days 1\",\"trend_last_day_vs_prior = declining, matured_days d-1 roi -0.173\",\"blended_roi = 0.1, peers fwd_roi_1_3d 0.143 (n=11)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the budget metadata of 1.61 is accurate given the reconstruction flag\",\"Whether the yesterday loss is noise or the start of a persistent decline\",\"Peer forward ROI of 0.143 may not apply if this adset's trend keeps weakening\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 925,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000545,
+ "request_id": "req_011Cg9N2HhSrSf9Fp9adtDyT",
+ "ts": "2026-10-18T08:10:27+00:00"
+}

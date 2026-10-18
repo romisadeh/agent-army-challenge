@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Meets the proven-winner thresholds on paper (age 5, 2 of 3 days profitable, last_3d ROI 0.511, blended 0.156), but a buyer cut the budget 3.81 to 2.29 about 24.6h ago, which is within 48h. Data quality flags (conversions > clicks, spend > 1.25x budget) make the numbers less reliable. Trend is declining and spend is tiny, so hold.\",\"key_evidence\":[\"buyer last action: down 3.81->2.29, 24.6h ago\",\"last_3d roi 0.511 on spend $8.39\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\",\"trend_last_day_vs_prior: declining; d-1 roi 0.121\"],\"uncertainty\":[\"Why the buyer reduced the budget\",\"Whether the d-2 ROI of 1.41 is a data artifact given the conversions>clicks flag\",\"Peer forward ROI is only 0.007, so the edge may not persist\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 390,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005573,
+ "request_id": "req_011Cg7sxTEYEz4EoNr8UhngX",
+ "ts": "2026-10-17T13:21:45+00:00"
+}

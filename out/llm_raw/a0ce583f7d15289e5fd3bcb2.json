@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Last 3d ROI is -0.012 on $26 spend, essentially break-even, with blended ROI at +0.039 and peers at +0.106. Evidence is mixed and spend is tiny, so neither scaling nor pausing is justified. A buyer cut the budget 17h ago and the 24h lock is active, so I should not override it. Spend exceeded 1.25x budget, which is a minor data flag.\",\"key_evidence\":[\"last_3d ROI -0.012 (1 profit day, 2 loss days, spend $26.14)\",\"blended_roi 0.039; peers fwd ROI 0.106 (n=5)\",\"buyer lock_24h true, down from 7.62 to 6.86 17.2h ago\",\"flag spend_exceeds_1.25x_budget; yesterday ROI -0.116\"],\"uncertainty\":[\"Whether yesterday's decline continues or is noise at such small spend\",\"Why spend exceeds budget (ABO overspend or a stale budget value)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 373,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005332,
+ "request_id": "req_011Cg7SShmuuQiTcFmLa8iSm",
+ "ts": "2026-10-17T07:47:12+00:00"
+}

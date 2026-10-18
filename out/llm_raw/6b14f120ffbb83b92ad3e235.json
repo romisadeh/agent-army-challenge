@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"A buyer raised budget 4.83 to 8.2 18.9h ago and the 24h lock is active. Note says 'CPM spiked, cutting' against an 'up' direction, which is contradictory. Matured 3-day ROI is 0.532 but only 1 of 3 days was profitable, and D-5 to D-2 mixed. Blended ROI is 0.261 with peers at 0.023 (n=40). Mixed evidence plus a recent deliberate human action warrants a human call.\",\"key_evidence\":[\"buyer.last_human_action: up 4.83->8.2, hours_ago 18.9, lock_24h true\",\"last_3d: roi 0.532, profit_days 1, loss_days 2, spend 17.53\",\"blended_roi 0.261 vs peers fwd_roi_1_3d 0.023 (n=40)\",\"buyer note 'CPM spiked, cutting' conflicts with direction up\"],\"uncertainty\":[\"Whether the buyer's cut intent was executed or superseded\",\"Whether D-1 profit (ROI 2.107 on 5.69 spend) persists or is noise\",\"Peer forward ROI is near break-even, limiting upside for scaling\",\"Spend (~5-7/day) runs well below the 8.2 budget, so the budget is not the binding constraint\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 666,
+  "output_tokens": 1029,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0006,
+ "request_id": "req_011Cg7UXjCrLMor98emxjT79",
+ "ts": "2026-10-17T08:14:35+00:00"
+}

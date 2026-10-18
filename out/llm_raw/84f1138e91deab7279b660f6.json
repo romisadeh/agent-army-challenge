@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.68,\"reasoning\":\"Matured data is profitable: 4 of the last 5 days had positive ROI, with yesterday at +0.345 on $9.87. Blended ROI is +0.183. However, a buyer raised the budget from 6.35 to 12.7 21.2h ago, so the 24h lock is active. A rule cut it to 10.16 this morning on immature data (roi_seen -0.21). Spend is tiny, so absolute impact is small. Do not override the buyer lock; hold.\",\"key_evidence\":[\"buyer.lock_24h=true, last action up 6.35->12.7, 21.2h ago\",\"last_3d ROI 0.273 on $17.41 spend (2 profit days, 1 loss day)\",\"blended_roi 0.183 vs peers fwd ROI 0.104 (n=26)\",\"R02 cut at 06:00 on immature data (roi_seen -0.21, spend 3.44)\"],\"uncertainty\":[\"Whether the buyer wants the rule cut reversed back to 12.7\",\"Small spend makes ROI noisy\",\"Only 7 days of spend history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 702,
+  "output_tokens": 403,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005808,
+ "request_id": "req_011Cg7UgdVp5v2Rp2AuDDoF3",
+ "ts": "2026-10-17T08:16:34+00:00"
+}

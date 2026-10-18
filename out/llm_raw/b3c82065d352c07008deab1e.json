@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is -0.073 (loss_days 2, profit_days 1) and the last day declined to -0.394, but blended_roi is +0.09 with peer fwd_roi_1_3d 0.157. Evidence is mixed and near break-even, so no change. The buyer raised budget 2.92 to 6.35 about 41h ago, and spend runs well below that budget, so a cut or scale now would be premature.\",\"key_evidence\":[\"last_3d.roi = -0.073 with loss_days 2, profit_days 1\",\"matured_days d-1 roi = -0.394, trend_last_day_vs_prior = declining\",\"blended_roi = 0.09 (blend_weight_own 0.29)\",\"buyer.last_human_action up 2.92 to 6.35, 41h ago\"],\"uncertainty\":[\"Peer baseline is band fallback (level 1) with n=11, so weak\",\"Spend (about 1.2 to 3.7/day) is far below the 6.35 budget, so the recent raise has not been tested\",\"Whether the declining last day is noise or the start of a trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 823,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000493,
+ "request_id": "req_011Cg7UYQU1T8yoRfYfvLGEt",
+ "ts": "2026-10-17T08:14:44+00:00"
+}

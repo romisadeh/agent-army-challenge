@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured data is clearly losing: last_3d.roi -0.251 with 3 loss days and 0 profit days, blended_roi -0.232, and yesterday at -1.0 with zero revenue. Peers are also negative (fwd_roi_1_3d -0.202). The buyer already cut budget 3.42 to 1.90 about 23h ago and lock_24h is true, so I'm holding at current budget rather than overriding the lock. Pause is the likely next step once the lock expires if losses persist.\",\"key_evidence\":[\"last_3d.roi = -0.251 with loss_days = 3, profit_days = 0\",\"blended_roi = -0.232, peers.fwd_roi_1_3d = -0.202\",\"buyer.last_human_action: down 3.42 to 1.90, 23.2h ago, lock_24h = true\",\"data_quality_flags: spend_exceeds_1.25x_budget (spend 3.84 vs budget 1.9)\"],\"uncertainty\":[\"Spend exceeds budget by about 2x on D-1, so the budget field may be stale or the cap is not applied, which could make the buyer's cut less effective than it looks\",\"Whether the buyer's cut is still in effect or was partly reverted in the ui_update_budget event\",\"Pausing now, despite the lock, would be justified if losses continue after the lock expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 1085,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000625,
+ "request_id": "req_011Cg7t9n6Rmmq9nXn5fA5Vt",
+ "ts": "2026-10-17T13:24:21+00:00"
+}

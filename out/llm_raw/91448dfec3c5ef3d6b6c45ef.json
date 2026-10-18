@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":12.01,\"confidence\":0.58,\"reasoning\":\"Proven-winner pattern: age_spend_days 9, last_3d.profit_days 3 of 3, last_3d.roi 0.294 and blended_roi 0.182, both above +0.10. The buyer's down-move was 69.8h ago, outside the 48h window (net_budget_change_48h 0.0, lock_24h false), so it does not block scaling. Last day stayed profitable (roi 0.128, trend flat). Peers fwd_roi_1_3d is -0.021 (n=30), a caution, so I propose a modest 10% step.\",\"key_evidence\":[\"last_3d.roi 0.294, profit_days 3, loss_days 0\",\"blended_roi 0.182 with blend_weight_own 0.64\",\"buyer.last_human_action down 69.8h ago, net_budget_change_48h 0.0\",\"peers.fwd_roi_1_3d -0.021 with n 30\"],\"uncertainty\":[\"Peer forward ROI is negative, suggesting possible regression after scaling\",\"Scaling a 3-day winner may not hold at higher budget\",\"Matured days are only 4 spend days of history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 839,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.0005,
+ "request_id": "req_011Cg7t5g2vYmPmGkhD1atA8",
+ "ts": "2026-10-17T13:23:24+00:00"
+}

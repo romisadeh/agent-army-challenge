@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":4.06,\"confidence\":0.5,\"reasoning\":\"Adset is aged 4 days but not a proven winner: last_3d.roi is -0.123 with 2 loss days and 1 profit day, and blended_roi is -0.083 with peers at -0.064. Losses are small in absolute terms (about -1.18 over 3 days). A buyer cut budget 5.08 to 4.06 about 41h ago, and the spend_exceeds_1.25x_budget flag adds noise. Evidence is mixed and thin, so hold the budget.\",\"key_evidence\":[\"last_3d.roi = -0.123 (2 loss days, 1 profit day)\",\"blended_roi = -0.083, blend_weight_own = 0.32\",\"peers.fwd_roi_1_3d = -0.064, n = 14\",\"buyer.last_human_action: down 5.08 to 4.06, 41.2h ago\"],\"uncertainty\":[\"Whether the losing trend persists past D-1 (last day only -0.016)\",\"Buyer's reason for the 41h-old cut; they may expect further weakness\",\"Spend exceeding budget flag may distort effective spend level\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 918,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000542,
+ "request_id": "req_011Cg9MYZhL8Ge6PPvWYqUZw",
+ "ts": "2026-10-18T08:04:11+00:00"
+}

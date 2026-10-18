@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":89.08,\"confidence\":0.55,\"reasoning\":\"Matured profile qualifies as a proven winner: age 34 days, last_3d.profit_days 3, last_3d.roi 0.167, blended_roi 0.18, peers fwd_roi 0.412. But buyer.last_human_action cut budget 115.67 to 80.98 (-30%) 24.5h ago, and net_budget_change_48h is -34.69. Scaling up reverses a deliberate recent human cut, so a human should settle it. Yesterday's roi was 0.05 with trend flat. Would scale up about 10% to 89.08 if forced.\",\"key_evidence\":[\"last_3d.roi 0.167 with profit_days 3, loss_days 0\",\"blended_roi 0.18, peers fwd_roi_1_3d 0.412 (n=6, fallback_level 1)\",\"buyer.last_human_action: down 115.67 to 80.98, hours_ago 24.5\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut budget 24.5h ago (note is null)\",\"Whether spend above budget distorts the ROI reading\",\"Peer evidence is band fallback with n=6\",\"Yesterday's roi fell to 0.05 from 0.268 two days earlier\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 1232,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000699,
+ "request_id": "req_011Cg7u2tQcBLDTJQQ17RmDa",
+ "ts": "2026-10-17T13:35:55+00:00"
+}

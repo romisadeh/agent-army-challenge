@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Meets proven-winner criteria: age 5, 2 of 3 matured days profitable, last_3d.roi 0.511 and blended_roi 0.156 both above 0.10. But the buyer cut budget 3.81 to 2.29 about 25h ago (ui_adjust_budget, no note), trend_last_day_vs_prior is declining (D-1 ROI 0.121 vs 1.41), and flags meta_conversions_gt_clicks and spend_exceeds_1.25x_budget undermine the numbers. Peer fwd_roi is only 0.007. A human should settle this.\",\"key_evidence\":[\"last_3d.roi=0.511, blended_roi=0.156\",\"buyer.last_human_action: down 3.81\u21922.29, hours_ago 24.6\",\"trend_last_day_vs_prior=declining\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's down move reflected info not on the card\",\"Reliability of conversion data given conversions > clicks and spend 1.8x budget on D-1\",\"Whether D-1 ROI 0.121 is the start of a decline or noise\",\"Peer forward ROI of 0.007 suggests little upside\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 1334,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000751,
+ "request_id": "req_011Cg7swy2QfsWTc4Dd5pmGe",
+ "ts": "2026-10-17T13:21:42+00:00"
+}

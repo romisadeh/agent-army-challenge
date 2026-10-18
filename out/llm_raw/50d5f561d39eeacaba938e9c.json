@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Meets the proven-winner profile on paper (age 4, 2 of 3 days profitable, last_3d ROI 0.169, blended 0.19). But the budget is $1.91, reconstructed from metadata, while daily spend is ~$10-12, so spend_exceeds_1.25x_budget. Any percentage scale-up off $1.91 would be meaningless. ROI is also declining (0.598, 0.083, -0.03). The true budget must be confirmed by a human before acting.\",\"key_evidence\":[\"budget.current=1.91 vs yesterday spend 10.76\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"last_3d.roi=0.169, blended_roi=0.19, 2 of 3 days profitable\",\"trend_last_day_vs_prior=declining; d-1 ROI -0.03\"],\"uncertainty\":[\"Actual current daily budget (CBO, metadata likely wrong)\",\"Whether the ROI decline continues or yesterday was noise\",\"Small absolute spend means thin sample\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 589,
+  "output_tokens": 407,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005671,
+ "request_id": "req_011Cg9MWApMmuKzK6Xe76kcq",
+ "ts": "2026-10-18T08:03:37+00:00"
+}

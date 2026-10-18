@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":4.38,\"confidence\":0.55,\"reasoning\":\"Proven-winner profile: age 5, last_3d.roi 0.213 and blended_roi 0.125 both above +0.10, and 2 of the last 3 matured days were profitable. But buyer.last_human_action was a deliberate down-trim (6.35 to 3.81) 17.2h ago, lock_24h is true, and the note says the adset was duplicated to a new audience. Yesterday's ROI was only -0.01 and the trend is declining, so the numbers don't clearly override that call. A human should settle it.\",\"key_evidence\":[\"last_3d.roi 0.213; blended_roi 0.125\",\"buyer.last_human_action: down 6.35->3.81, 17.2h ago, lock_24h true\",\"buyer.notes: duplicated to new audience, trimming original\",\"matured_days d-1 roi -0.01; trend_last_day_vs_prior declining\"],\"uncertainty\":[\"Whether the audience duplication makes the original's history less reliable going forward\",\"Whether yesterday's spend of 5.13 (above budget 3.81, flagged spend_exceeds_1.25x_budget) reflects the old budget of 6.35\",\"Only 4 matured days; the d-4 loss sits outside last_3d\",\"Peer forward ROI of 0.066 is weaker than own history\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 640,
+  "output_tokens": 1186,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000679,
+ "request_id": "req_011Cg7tyqH1Fw2p9GEXUXz9C",
+ "ts": "2026-10-17T13:35:13+00:00"
+}

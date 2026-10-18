@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Three consecutive matured profit days (d-3 to d-1) and last_3d ROI 0.585 on $12.81 spend support a positive view. However, blended_roi is only 0.292 with blend weight 0.39, peer forward ROI is 0.105 (n=16), and total spend is thin. Daily spend (about $5) is far below budget.current 17.78, and that budget is flagged as reconstructed from metadata, so a budget change may not add spend. Keep until the budget is verified and more matured days accumulate.\",\"key_evidence\":[\"last_3d.roi=0.585 with profit_days=3, loss_days=0\",\"blended_roi=0.292, blend_weight_own=0.39\",\"peers.fwd_roi_1_3d=0.105, n=16\",\"budget.current=17.78 vs matured daily spend about 5; flag budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Whether budget.current=17.78 is the true live budget (reconstructed flag)\",\"Whether the adset is budget-constrained; spend is well under budget\",\"Peer forward ROI (0.105) is much lower than own 3-day ROI\",\"Only 4 days of history and $12.81 total spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 558,
+  "output_tokens": 1053,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000601,
+ "request_id": "req_011Cg7SEzDnLR42zqz7HeC5h",
+ "ts": "2026-10-17T07:44:35+00:00"
+}

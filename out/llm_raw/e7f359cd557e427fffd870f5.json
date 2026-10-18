@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":2.74,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.profit_days is 0 and last_3d.roi is -0.326, with three straight loss days and trend_last_day_vs_prior declining. blended_roi is -0.113, below zero. The buyer already cut budget 5.69 to 3.42 (ui_adjust_budget, 24.6h ago), so a further 20% step down agrees with their direction. Peers (fwd_roi 0.109, n=23) argue against a full pause.\",\"key_evidence\":[\"last_3d.profit_days = 0, loss_days = 3, roi = -0.326\",\"blended_roi = -0.113 (blend_weight_own 0.51)\",\"buyer.last_human_action: down 5.69 to 3.42, 24.6h ago\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"data_quality_flag spend_exceeds_1.25x_budget means the budget reading may be off; d=-1 spend 4.56 vs budget 3.42\",\"budget.source is buyer_log_before_window, not a live read\",\"peers fallback_level 1 band with forward ROI +0.109 could mean recovery\",\"losses span only about $20 of spend, so the signal is modest\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 995,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000581,
+ "request_id": "req_011Cg7txDwD6af9uPAaK9PXf",
+ "ts": "2026-10-17T13:34:51+00:00"
+}

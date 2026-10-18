@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured ROI is near break-even: last_3d roi -0.019 on spend 9.78, with 2 loss days and 1 profit day. blended_roi is -0.01 and peers fwd_roi_1_3d is -0.005 (n=14, fallback 0), so there is no consistent matured loss to justify a cut or pause. The buyer already cut budget 2.29 to 1.83 24.4h ago, and the card has data quality flags (conversions exceed clicks, spend above 1.25x budget). Hold and re-check tomorrow.\",\"key_evidence\":[\"last_3d.roi = -0.019 (2 loss days, 1 profit day)\",\"blended_roi = -0.01, peers fwd_roi_1_3d = -0.005 (n=14)\",\"buyer.last_human_action: down 2.29 to 1.83, 24.4h ago\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the conversion-vs-click and spend-over-budget flags indicate tracking errors that distort ROI\",\"Whether the declining trend continues over the next day\",\"Whether the buyer's recent cut was meant to be the start of a wind-down\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 664,
+  "output_tokens": 753,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000462,
+ "request_id": "req_011Cg7UxD2bBtBGkU93DpTFo",
+ "ts": "2026-10-17T08:20:06+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Three profitable matured days (last_3d ROI 0.152, 0 loss days) and blended ROI 0.155 would normally support a modest scale-up. But the buyer cut budget 24.38 to 21.95 only 17.2h ago and lock_24h is true, so overriding it without strong evidence is not warranted. Spend also exceeded 1.25x budget, which is a data flag. Holding is the safer choice.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 24.38->21.95 17.2h ago\",\"last_3d: 3 profit days, ROI 0.152, spend 81.04\",\"blended_roi 0.155, peers fwd_roi_1_3d 0.168 (n=21)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer reduced the budget, since no note was left\",\"Whether spend above budget distorts the ROI readings\",\"Modest ROI margins, with day -1 only 0.078\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 378,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00544,
+ "request_id": "req_011Cg7V3yeqxprE98BCco1zD",
+ "ts": "2026-10-17T08:21:24+00:00"
+}

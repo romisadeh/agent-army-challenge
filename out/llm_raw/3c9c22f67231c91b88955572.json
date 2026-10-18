@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":15.54,\"confidence\":0.45,\"reasoning\":\"Blended_roi 0.007 is essentially break-even. Last_3d roi -0.114 with 2 loss days and 1 profit day is negative, but peers fwd_roi_1_3d 0.302 (n=29) is strongly positive and blend_weight_own 0.71 keeps the blend near zero. Mixed evidence, no consistent matured loss or profit trend. Budget is reconstructed, so the basis is uncertain. Hold.\",\"key_evidence\":[\"blended_roi=0.007\",\"last_3d.roi=-0.114 (loss_days 2, profit_days 1)\",\"peers.fwd_roi_1_3d=0.302 n=29\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Reconstructed budget value (15.54) may not match the live setting\",\"Peer forward ROI could be optimistic for this segment\",\"Whether the -3 to -1 loss streak persists beyond D-1\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 884,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00052,
+ "request_id": "req_011Cg7UWigq7CGxehBEkNv1C",
+ "ts": "2026-10-17T08:14:21+00:00"
+}

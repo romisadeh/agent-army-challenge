@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is positive (last_3d.roi 0.187, 2 profit days vs 1 loss day) and blended_roi is 0.119, but the evidence is mixed: D-3 lost money and trend is flat. Budget is tiny ($1.27) and reconstructed from metadata, and spend (16.08 over 3d) exceeds budget, so the scale base is unreliable. Peer forward ROI is only 0.065. No change until budget and trend are confirmed.\",\"key_evidence\":[\"last_3d.roi 0.187 with 2 profit days and 1 loss day\",\"blended_roi 0.119 (blend_weight_own 0.45)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"peers.fwd_roi_1_3d 0.065 (n=13)\"],\"uncertainty\":[\"Whether budget.current 1.27 is accurate, since it was reconstructed from end-of-week metadata\",\"Whether the spend-over-budget gap signals a delivery or budget-tracking issue\",\"Whether the positive 3-day ROI persists once D-1 revenue fully matures or the peer forward ROI of 0.065 holds\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 770,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000458,
+ "request_id": "req_011Cg7SNEPGedSHdo8zSefct",
+ "ts": "2026-10-17T07:46:12+00:00"
+}

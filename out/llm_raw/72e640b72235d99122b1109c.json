@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is only 0.03 with 2 profit days and 1 loss day, and yesterday's ROI was 0.089 on a flat trend. Blended ROI is 0.091, weighted 0.69 to own data, and peers (n=33, fallback level 1) show 0.227 forward ROI. The evidence is mildly positive but thin. The buyer raised budget from 26.92 to 39.62 about 14 hours ago and the 24h lock is active, so I should not override that deliberate action. Keep is the right call.\",\"key_evidence\":[\"last_3d.roi=0.03 (2 profit, 1 loss day)\",\"blended_roi=0.091 (blend_weight_own=0.69)\",\"buyer.last_human_action up 26.92->39.62, 14.4h ago, lock_24h=true\",\"peers.fwd_roi_1_3d=0.227, n=33, fallback_level=1\"],\"uncertainty\":[\"Whether the 39.62 budget performs at scale, since it was only set 14 hours ago\",\"Peer evidence is a band fallback, so it may not match this adset\",\"Matured results for D-1 and D-2 after the budget increase\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 579,
+  "output_tokens": 725,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000439,
+ "request_id": "req_011Cg7UA1u6GiBhhiKMShaus",
+ "ts": "2026-10-17T08:09:40+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Both matured days lost money (D-2 ROI -0.296, D-1 ROI -0.917), so last_3d shows 2 loss days and 0 profit days at ROI -0.47. Blended ROI is -0.445 and peers forward ROI is -0.435 (n=12, fallback 0), so both own and peer evidence point to losses. No buyer lock or notes. Budget reconstruction and spend-over-budget flags lower confidence.\",\"key_evidence\":[\"last_3d.loss_days=2, profit_days=0\",\"last_3d.roi=-0.47\",\"blended_roi=-0.445\",\"peers.fwd_roi_1_3d=-0.435 (n=12)\"],\"uncertainty\":[\"Budget was reconstructed from metadata and spend exceeds 1.25x budget, so the budget figure may be wrong\",\"Only 2 matured days at age 2; a short history\",\"Day-3 data is absent from matured_days\",\"Revenue on D-1 may be incomplete if the card's maturity assumption is wrong\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 518,
+  "output_tokens": 737,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000439,
+ "request_id": "req_011Cg7Sa6TcdXPzLtudaky2z",
+ "ts": "2026-10-17T07:48:53+00:00"
+}

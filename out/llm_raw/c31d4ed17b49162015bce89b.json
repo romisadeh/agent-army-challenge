@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":21.0,\"confidence\":0.55,\"reasoning\":\"Three consecutive matured profit days (d-3 ROI 0.284, d-2 0.743, d-1 0.559) and last_3d ROI 0.543 support a modest increase. blended_roi 0.31 is clearly positive with own weight 0.5. Peer forward ROI is weak (0.075, n=22). The budget is reconstructed from metadata, and average daily spend (~6.7) sits well below the 17.78 budget, so the change may not bind.\",\"key_evidence\":[\"last_3d.profit_days=3, loss_days=0\",\"last_3d.roi=0.543 on spend 20.23\",\"blended_roi=0.31 with blend_weight_own=0.5\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Budget value of 17.78 is reconstructed, so the true current budget may differ\",\"Spend runs far below budget, so an increase may not raise actual spend\",\"Peer forward ROI is only 0.075 with n=22\",\"Only 5 matured days of history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 590,
+  "output_tokens": 1007,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000581,
+ "request_id": "req_011Cg7TxeMF9c3UkCaWPCbTZ",
+ "ts": "2026-10-17T08:07:06+00:00"
+}

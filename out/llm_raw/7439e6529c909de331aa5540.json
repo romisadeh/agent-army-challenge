@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Blended ROI is modestly positive (0.114) and peers are stronger (0.166, n=24), but own 3-day ROI is only 0.072 with one loss day, and yesterday was -0.206 with a declining trend. Spend (24.98 over 3d) far exceeds the reconstructed $1.27 budget, so the budget baseline is unreliable. Evidence is mixed and the absolute profit at stake is tiny, so no change.\",\"key_evidence\":[\"blended_roi=0.114 (own 0.56 weight, peers 0.166 n=24)\",\"last_3d: profit_days=2, loss_days=1, roi=0.072\",\"matured_days d=-1 roi=-0.206, trend declining\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True daily budget: metadata reconstructed and spend is ~6x the stated budget\",\"Whether yesterday's loss is the start of a sustained decline or noise\",\"Peer forward ROI is only weakly applicable given the blend weight\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 610,
+  "output_tokens": 735,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000447,
+ "request_id": "req_011Cg7UjWJJR4yEnigZyRAG7",
+ "ts": "2026-10-17T08:17:14+00:00"
+}

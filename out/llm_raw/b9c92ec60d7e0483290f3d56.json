@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured numbers look profitable: last_3d.roi 0.705 with 3 profit days, blended_roi 0.258, peers fwd_roi 0.037 (n=42). But buyer ui_adjust_budget moved budget 12.7 to 10.16 0.4h ago, lock_24h is true, and net_budget_change_48h is 8.89. Adset is only 3 spend days, so it is not a clean proven winner. Deliberate recent human cut conflicts with the numbers; a human should settle it. Trend is declining.\",\"key_evidence\":[\"buyer.last_human_action: down 12.7->10.16, 0.4h ago, lock_24h true\",\"last_3d.roi 0.705, profit_days 3, loss_days 0\",\"blended_roi 0.258, blend_weight_own 0.33\",\"trend_last_day_vs_prior: declining\"],\"uncertainty\":[\"Why the buyer cut budget 0.4h ago (no note); a hidden reason may justify it\",\"Only 3 spend days, so the winner status is unproven\",\"Peer forward ROI is weak at 0.037\",\"Yesterday's ROI 0.602 is positive but the trend is declining\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 839,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000497,
+ "request_id": "req_011Cg9M7HgE6yyGyD1qkQmyn",
+ "ts": "2026-10-18T07:58:27+00:00"
+}

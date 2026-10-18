@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset meets proven-winner metrics (age 5, last_3d.roi 0.318, blended_roi 0.173, 2 of 3 profit days), but buyer.lock_24h is true after a ui_update_budget up 3.81 to 6.35 just 19h ago. The budget is already moving in the scale direction. Yesterday's roi of -0.025 with trend declining is weak, so I hold for one cycle rather than stacking another increase inside the lock. Revisit tomorrow.\",\"key_evidence\":[\"buyer.lock_24h: true\",\"buyer.last_human_action: up 3.81->6.35, 19h ago\",\"last_3d.roi: 0.318, blended_roi: 0.173\",\"matured_days D-1 roi: -0.025, trend_last_day_vs_prior: declining\"],\"uncertainty\":[\"Whether the lock blocks any change this window or only buyer-initiated ones\",\"Whether the 6.35 budget has been spent long enough to judge its effect\",\"Peer forward ROI of 0.078 is modest relative to own history\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 994,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2116
+ },
+ "cost_usd": 0.000824,
+ "request_id": "req_011Cg9Lriv6fXvTbmZd7aXAw",
+ "ts": "2026-10-18T07:55:11+00:00"
+}

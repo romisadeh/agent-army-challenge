@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny budget ($2.07) after a buyer cut 24.5h ago. Last 3d ROI is -0.133 on $13.40 spend, with two straight zero-revenue days, but the earlier days were strongly profitable (D-5 2.12, D-3 1.02). Blended ROI is +0.111 with peers at +0.275 (n=17). Evidence is mixed and the stakes are small, so neither scaling nor pausing is justified.\",\"key_evidence\":[\"last_3d roi -0.133 on spend 13.4 (2 loss days, 1 profit day)\",\"matured D-2 and D-1 revenue 0.0\",\"blended_roi 0.111, peers fwd_roi_1_3d 0.275 (n=17)\",\"buyer cut budget 3.18 -> 2.07 24.5h ago\"],\"uncertainty\":[\"Whether two zero-revenue days are noise at this tiny spend or a real decline\",\"Spend exceeds 1.25x budget, so the real spend level is unclear\",\"Whether the buyer cut signals intent to wind the adset down\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 403,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005698,
+ "request_id": "req_011Cg7UhjYUh4imeKH7Nzfou",
+ "ts": "2026-10-17T08:16:49+00:00"
+}

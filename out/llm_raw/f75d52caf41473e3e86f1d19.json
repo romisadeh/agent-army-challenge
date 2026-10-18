@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured last_3d ROI is +0.187 with 2 profit days vs 1 loss, and blended_roi is +0.119, so the economics lean positive. But age_spend_days is 3, below the 4+ proven-winner threshold, and peers' forward ROI is only +0.065. The budget is reconstructed from metadata and spend exceeds 1.25x budget (D-1 spend 10.73 vs budget 1.27), so the base for any % step is unreliable. A human should confirm the real budget before scaling.\",\"key_evidence\":[\"last_3d.roi = 0.187, profit_days 2 / loss_days 1\",\"blended_roi = 0.119, blend_weight_own 0.45\",\"budget.current 1.27 with flag budget_reconstructed:metadata_end_of_week\",\"age_spend_days = 3 (below 4+ winner rule)\"],\"uncertainty\":[\"True daily budget (current 1.27 looks inconsistent with D-1 spend 10.73)\",\"Whether the adset qualifies as a proven winner once age reaches 4 days\",\"Peer forward ROI of +0.065 is only modestly positive\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 961,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000556,
+ "request_id": "req_011Cg7sfu2711yN5FzUnEUco",
+ "ts": "2026-10-17T13:18:02+00:00"
+}

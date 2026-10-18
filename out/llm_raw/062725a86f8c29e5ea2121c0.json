@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured ROI is positive (3d 0.169, blended 0.19, peers 0.223 with n=18), which would normally justify a modest scale-up. But the budget of $1.91 is reconstructed and recent spend ($10.76 yesterday) is far above it, so the budget figure can't be trusted and a percentage change has no reliable base. ROI is also declining (0.598, 0.083, -0.03).\",\"key_evidence\":[\"budget.current=1.91 vs D-1 spend 10.76\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"last_3d roi=0.169 (2 profit days, 1 loss day)\",\"blended_roi=0.19, peers fwd_roi 0.223 n=18\"],\"uncertainty\":[\"Actual current daily budget in Meta\",\"Whether the declining ROI trend continues\",\"Small spend base (~$30 over 3d) makes ROI noisy\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 589,
+  "output_tokens": 364,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005192,
+ "request_id": "req_011Cg7UWUFArSzuU58gUx3KD",
+ "ts": "2026-10-17T08:14:16+00:00"
+}

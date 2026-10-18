@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":12.19,\"confidence\":0.6,\"reasoning\":\"Matured data is profitable: last_3d ROI 0.392 (2 profit days, 1 loss), blended ROI 0.365, and yesterday was +0.52. The kill rule at 02:30 fired on tiny spend ($8.38) with immature data. The adset is off by rule today, so this implies a reactivation at a +20% budget step. Spend running well above budget (70 vs 10.16) is a data flag, so I keep the step modest.\",\"key_evidence\":[\"last_3d roi 0.392 (2 profit days, 1 loss)\",\"blended_roi 0.365 with own weight 0.91\",\"D-1 roi 0.52 on spend 70.03\",\"R01 kill at 02:30 on spend_seen 8.38, roi_seen -0.47\"],\"uncertainty\":[\"Spend far exceeds budget (70 vs 10.16), so the true budget and spend behavior are unclear\",\"Peer forward ROI is only 0.09, well below own ROI\",\"ROI is volatile day to day (-0.26 to +0.84)\",\"Reactivating an adset that rules turned off needs a human decision\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 839,
+  "output_tokens": 414,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.006192,
+ "request_id": "req_011Cg7Uefxqwj3mG6ZxH1AiR",
+ "ts": "2026-10-17T08:16:08+00:00"
+}

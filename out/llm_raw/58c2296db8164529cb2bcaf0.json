@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"The adset looks like a proven-winner candidate: age 7, 2 of the last 3 days profitable, last_3d ROI +0.334 and blended ROI +0.208. Scaling is argued against by several fields: a buyer cut the budget from 3.81 to 2.67 about 24h ago, yesterday was negative (-0.202) with a declining trend, and the data flags (conversions > clicks, spend above 1.25x budget) make the numbers less reliable. Holding is the safer call.\",\"key_evidence\":[\"last_3d.roi=0.334 (2 profit days, 1 loss day)\",\"buyer.last_human_action=down 3.81->2.67, 24.5h ago\",\"d-1 roi=-0.202, trend_last_day_vs_prior=declining\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer cut the budget\",\"Whether the flagged data (conversions > clicks, overspend) distorts ROI\",\"Whether yesterday's loss is noise on small spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 408,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 2116
+ },
+ "cost_usd": 0.010618,
+ "request_id": "req_011Cg7sWF9YemRLms2uJpctn",
+ "ts": "2026-10-17T13:15:50+00:00"
+}

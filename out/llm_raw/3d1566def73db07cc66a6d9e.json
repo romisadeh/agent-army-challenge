@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Proven-winner profile: age 6, last_3d.roi 0.27 with 2 of 3 days profitable, blended_roi 0.136, so a 10-20% scale-up is the default. But lock_24h is true after a human ui_adjust_budget up 5.08 to 8.43 14.1h ago, and trend_last_day_vs_prior is declining. Peers fwd_roi_1_3d is only 0.04. The lock and the declining trend conflict with the scale-up signal, so a human should settle it. If forced, scale up about 15% to roughly 9.70.\",\"key_evidence\":[\"last_3d.roi=0.27 with 2 profit days of 3\",\"blended_roi=0.136\",\"buyer.lock_24h=true, last_human_action up 5.08->8.43 14.1h ago\",\"trend_last_day_vs_prior=declining; peers.fwd_roi_1_3d=0.04\"],\"uncertainty\":[\"Whether the 14h-old human scale-up was deliberate and expected to be followed by more\",\"Whether the declining trend continues after d-1 ROI of 0.028\",\"Peer forward ROI of 0.04 is well below the adset's own 3-day ROI\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 1356,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000762,
+ "request_id": "req_011Cg9MBcmHkX6EBknaCqDTF",
+ "ts": "2026-10-18T07:59:28+00:00"
+}

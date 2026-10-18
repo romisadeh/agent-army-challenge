@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":18.29,\"confidence\":0.5,\"reasoning\":\"Blended ROI is 0.163 and last_3d ROI is 0.155 with 2 profit days out of 3, so the adset is profitable on average. However, a buyer ui_adjust_budget down 17.2h ago sets lock_24h=true, and yesterday's ROI was -0.141 with trend declining. The mandate favors profit, but the lock and the mixed recent days argue against a change today. Keep the current budget and reassess after the lock expires.\",\"key_evidence\":[\"blended_roi=0.163\",\"last_3d.roi=0.155 with profit_days=2, loss_days=1\",\"buyer.lock_24h=true, last_human_action down 20.32->18.29 17.2h ago\",\"matured_days d=-1 roi=-0.141, trend_last_day_vs_prior=declining\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag reflects real overspend or a data error\",\"Whether the buyer's down-adjustment reflected information not on the card\",\"Peer forward ROI 0.19 (n=21) suggests upside if the recent decline is noise\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 781,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000474,
+ "request_id": "req_011Cg7V1vLNYvZP9iNkkhoWn",
+ "ts": "2026-10-17T08:20:57+00:00"
+}

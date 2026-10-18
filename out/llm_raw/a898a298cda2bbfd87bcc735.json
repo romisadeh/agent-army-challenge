@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI (last_3d.roi 0.334) and blended_roi (0.208) look like a proven-winner profile, which argues for scale-up. But the buyer cut budget 3.81 to 2.67 about 24.5h ago (net -1.14 in 48h), and scaling up would override that recent deliberate action. Data flags meta_conversions_gt_clicks and spend_exceeds_1.25x_budget (d-1 spend 5.59 vs budget 2.67) make the numbers less reliable. A human should settle it.\",\"key_evidence\":[\"last_3d.roi=0.334 with 2 profit days of 3\",\"blended_roi=0.208, peers fwd_roi_1_3d=0.101 (n=13)\",\"buyer.last_human_action: down 3.81->2.67, hours_ago 24.5\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate reduction or a test that has since ended\",\"Whether the conversion-vs-click and spend-vs-budget flags distort the revenue figures\",\"Whether the d-1 loss (roi -0.202) is noise or the start of a decline (trend declining)\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 982,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000575,
+ "request_id": "req_011Cg7tVZkpL6WLiSQbG9n2j",
+ "ts": "2026-10-17T13:28:50+00:00"
+}

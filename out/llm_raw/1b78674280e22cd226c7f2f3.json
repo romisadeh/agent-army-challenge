@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":21.34,\"confidence\":0.55,\"reasoning\":\"All 5 matured days were profitable and last_3d shows 3 profit days with ROI 0.455. blended_roi is 0.338 with own weight 0.67, so the blend is clearly positive. Peer forward ROI is weaker at 0.097 (n=26). Last day declined (0.354 vs 0.559). Budget is reconstructed from metadata and spend exceeds 1.25x budget, so the base is uncertain. A modest +20% step limits exposure.\",\"key_evidence\":[\"matured_days: 5 of 5 profitable, D-1 roi 0.354\",\"last_3d.roi 0.455, profit_days 3, loss_days 0\",\"blended_roi 0.338 with blend_weight_own 0.67\",\"peers.fwd_roi_1_3d 0.097, n 26\"],\"uncertainty\":[\"budget.current is reconstructed from metadata, so the true base may differ\",\"peer forward ROI is much lower than own ROI\",\"last-day ROI decline may signal fading performance\",\"spend exceeds 1.25x budget flag\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 605,
+  "output_tokens": 819,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000489,
+ "request_id": "req_011Cg7UfVxbpkYgx5d7UjNpE",
+ "ts": "2026-10-17T08:16:20+00:00"
+}

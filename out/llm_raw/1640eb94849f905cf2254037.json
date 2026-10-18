@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":24.97,\"confidence\":0.55,\"reasoning\":\"Adset is near break-even: last_3d.roi 0.022 and blended_roi 0.003 are far below the +0.10 proven-winner bar, and peers.fwd_roi_1_3d is -0.062 (n=6). Buyer made a ui_adjust_budget down 14.2h ago and lock_24h is true, so no change is allowed. Trend is flat. Keep at current budget.\",\"key_evidence\":[\"last_3d.roi = 0.022\",\"blended_roi = 0.003\",\"buyer.lock_24h = true, last action down 14.2h ago\",\"peers.fwd_roi_1_3d = -0.062 (n=6)\"],\"uncertainty\":[\"Whether the recent down-adjustment reflects a deliberate buyer view the card does not show\",\"Peer evidence is modest (n=6) and could shift the blend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 560,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000362,
+ "request_id": "req_011Cg9Mr1ruyizn5AzUQY1b9",
+ "ts": "2026-10-18T08:08:07+00:00"
+}

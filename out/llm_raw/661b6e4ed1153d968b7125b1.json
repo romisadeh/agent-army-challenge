@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":10.16,\"confidence\":0.45,\"reasoning\":\"Adset is only 2 spend days old, below the 4-day proven-winner threshold. The buyer moved budget down 15.1h ago and lock_24h is true, so I will not override that. Blended_roi 0.238 and last_3d.roi 0.783 look positive, but trend_last_day_vs_prior is declining, last day ROI is only 0.188, and peers fwd_roi_1_3d is -0.133 (n=13). Evidence is mixed, so hold.\",\"key_evidence\":[\"age_spend_days: 2 (below 4-day proven-winner threshold)\",\"buyer.last_human_action: down 12.7 to 10.16, 15.1h ago, lock_24h true\",\"peers.fwd_roi_1_3d: -0.133 (n=13)\",\"trend_last_day_vs_prior: declining, matured_days d=-1 roi 0.188\"],\"uncertainty\":[\"Whether the 48h down-move was a deliberate cap that should persist\",\"Whether peer forward ROI (-0.133) or own 3-day ROI (0.783, spend only 13.6) better predicts the next 1-3 days\",\"Whether the declining trend continues into D-0 once the budget change settles\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 533,
+  "output_tokens": 817,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000483,
+ "request_id": "req_011Cg7sjEWiSKyYgb12njFyr",
+ "ts": "2026-10-17T13:18:47+00:00"
+}

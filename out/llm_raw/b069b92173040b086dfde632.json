@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.5,\"reasoning\":\"Last 3 matured days show 2 profit days and 1 loss day (roi_3d 0.534), and blended_roi is 0.312, which is positive. However, the most recent day (d=-1) had zero revenue on 3.33 spend, trend_last_day_vs_prior is declining, and peers forward ROI is only 0.105 (n=16). The buyer raised budget 67h ago (outside the 24h lock), so the change has had little time to show results. The evidence is mixed, so holding budget is the best choice.\",\"key_evidence\":[\"last_3d.roi = 0.534 (2 profit, 1 loss)\",\"matured_days d=-1 roi = -1.0 on spend 3.33\",\"blended_roi = 0.312, blend_weight_own = 0.48\",\"trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether the d=-1 zero-revenue day is a one-off or the start of a decline\",\"Peer forward ROI of 0.105 is only moderately supportive (n=16)\",\"Spend exceeds 1.25x budget, so budget figures may be off\",\"Effect of the 67h-old buyer budget increase is not yet visible\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 607,
+  "output_tokens": 1313,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000736,
+ "request_id": "req_011Cg7SCs29TSKpsMSKdouXK",
+ "ts": "2026-10-17T07:44:07+00:00"
+}

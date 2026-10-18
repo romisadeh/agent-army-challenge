@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":6.35,\"confidence\":0.5,\"reasoning\":\"Adset is age 3 spend days, below the 4+ proven-winner threshold. Matured days are mixed: 1 profit day, 2 loss days, and last_3d.roi is 0.29 but driven by D-3. Yesterday's roi is -0.003 with trend_last_day_vs_prior declining. Buyer scaled up 17h ago (lock_24h true), so a further increase would be a judgment call. blended_roi 0.166 is positive but leans on peers (weight 0.33). Hold budget and reassess after more matured days.\",\"key_evidence\":[\"last_3d.roi 0.29 with loss_days 2 and profit_days 1\",\"matured_days D-1 roi -0.003, trend_last_day_vs_prior declining\",\"age_spend_days 3 (below 4+ proven-winner rule)\",\"buyer.last_human_action up 3.81->6.35 17h ago, lock_24h true\"],\"uncertainty\":[\"Whether D-2 and D-1 losses persist or were noise after the buyer's increase\",\"Peer forward ROI (0.105, n=16) may not match this adset's trajectory\",\"Next day's matured result will show whether the 3.81->6.35 scale-up is holding\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 560,
+  "output_tokens": 810,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000483,
+ "request_id": "req_011Cg7tWzMx5ZG34XP452BTR",
+ "ts": "2026-10-17T13:29:08+00:00"
+}

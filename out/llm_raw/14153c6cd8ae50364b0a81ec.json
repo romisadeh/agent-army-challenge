@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Buyer scaled budget 3.81 to 6.35 about 15h ago and the 24h lock is active, so no change. Matured last_3d ROI is -0.027 with 2 loss days and 1 profit day, which is mixed and near break-even. Blended ROI is only 0.059 and the last day improved (ROI 0.281), but the new budget has not yet produced a full matured day.\",\"key_evidence\":[\"buyer.lock_24h = true\",\"buyer.last_human_action: up 3.81 -> 6.35, 15.2h ago\",\"last_3d.roi = -0.027, loss_days 2, profit_days 1\",\"blended_roi = 0.059, peers fwd_roi_1_3d = 0.094 (n=6)\"],\"uncertainty\":[\"Whether the 67% buyer scale-up at 6.35 holds profit once full days mature at the new budget\",\"Blend weight is low (0.29), so peer ROI drives the estimate\",\"Only 3 matured days of history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 677,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000414,
+ "request_id": "req_011Cg7Se7nquv2CDo32B85pv",
+ "ts": "2026-10-17T07:49:47+00:00"
+}

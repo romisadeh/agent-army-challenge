@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Three straight matured loss days (last_3d.roi -0.157, trend declining, D-1 roi -0.283) and blended_roi -0.067 argue against scaling. Peers forward ROI is +0.061 (n=21), a counterweight. Budget data conflicts: spend_exceeds_1.25x_budget flag and daily spend of 4-12 vs budget 4.36. A human cut the budget 24.5h ago (6.22 to 4.36), so the numbers and buyer action need a human check.\",\"key_evidence\":[\"last_3d.roi = -0.157 with 3 loss days, 0 profit days\",\"blended_roi = -0.067 (blend_weight_own 0.59)\",\"data_quality_flags: spend_exceeds_1.25x_budget (budget.current 4.36)\",\"buyer.last_human_action: down 6.22 to 4.36, 24.5h ago\"],\"uncertainty\":[\"Whether the actual daily budget is 4.36 or higher, given spend runs well above it\",\"Whether the losing streak persists or the peer forward ROI of +0.061 is more representative\",\"Effect of the 24h-old buyer cut on D+1 results\"],\"proposed_if_escalated\":\"scale_down\"}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 988,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000577,
+ "request_id": "req_011Cg7suZt4NQLT9FKSM8wNW",
+ "ts": "2026-10-17T13:21:08+00:00"
+}

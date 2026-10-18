@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":17.91,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d.roi 0.075 and blended_roi 0.066 are below the +0.10 bar, and only 1 of the last 3 matured days was profitable (d-3). Trend_last_day_vs_prior is declining and d-1 ROI is -0.074. The buyer raised budget 11.56 to 17.91 21.2h ago and lock_24h is true, so I should not override that without stronger evidence. Peers fwd_roi 0.044 (n=52) is modestly positive. Evidence is mixed and near break-even, so keep.\",\"key_evidence\":[\"last_3d.roi = 0.075\",\"blended_roi = 0.066\",\"matured_days d-2 and d-1 both losing, d-3 profitable\",\"buyer.last_human_action up 11.56->17.91 21.2h ago, lock_24h true\"],\"uncertainty\":[\"Whether the declining trend reverses after the lock expires\",\"Peer forward ROI of 0.044 is only moderately positive\",\"Whether the buyer's recent increase was based on information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 629,
+  "output_tokens": 776,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000472,
+ "request_id": "req_011Cg9MnozTKVA8D8x6HyEph",
+ "ts": "2026-10-18T08:07:23+00:00"
+}

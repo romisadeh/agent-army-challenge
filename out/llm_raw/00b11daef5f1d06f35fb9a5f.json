@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":11.2,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.011 and last_3d ROI is -0.012, roughly break-even with a declining trend (last_day_vs_prior). The 5-day matured ROI is about +0.12, so losses are not consistent enough to justify a cut or pause. Buyer cut budget 16 to 11.2 about 24.5h ago with no lock, so keep the new level and let it mature. Peers (-0.008, n=14) agree with flat performance.\",\"key_evidence\":[\"blended_roi=-0.011\",\"last_3d.roi=-0.012 with 2 loss days, 1 profit day\",\"peers.fwd_roi_1_3d=-0.008 (n=14)\",\"buyer.last_human_action: down 16.0->11.2, 24.5h ago\"],\"uncertainty\":[\"Declining trend on d-1 (ROI -0.327) could mean further deterioration\",\"spend_exceeds_1.25x_budget flag suggests budget or spend data may be off\",\"Only 10 days of age and a small 3-day spend base gives a weak own-history signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 651,
+  "output_tokens": 985,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000576,
+ "request_id": "req_011Cg7UtaRbrYjPruoqkqoGq",
+ "ts": "2026-10-17T08:19:18+00:00"
+}

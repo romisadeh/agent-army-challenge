@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age 5 spend days, last_3d.roi 0.504 with 2 of 3 days profitable, blended_roi 0.29, and yesterday profitable (0.695) with trend improving. The buyer doubled budget 7.62 to 20.32 only 16.9h ago with lock_24h true, and no note says hold. Peers are flat (fwd_roi_1_3d -0.003, n=32), so the blend rests mostly on own history. Escalate; if forced, scale_up about 13% to ~23.0.\",\"key_evidence\":[\"last_3d.roi 0.504, profit_days 2 of 3\",\"blended_roi 0.29 (peer fwd_roi -0.003, n=32)\",\"buyer.lock_24h true, last action up 7.62->20.32 at 16.9h ago\",\"trend_last_day_vs_prior improving\"],\"uncertainty\":[\"Whether the 24h lock blocks any change before the human reviews\",\"Peer ROI near break-even suggests the winning run may not persist\",\"Only 4 matured days, one of them a loss (-0.375 on D-3)\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 593,
+  "output_tokens": 1431,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000796,
+ "request_id": "req_011Cg7shFXRRtcDMFMtzp6zU",
+ "ts": "2026-10-17T13:18:24+00:00"
+}

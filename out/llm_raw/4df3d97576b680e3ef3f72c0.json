@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is age 3 spend days, so it does not meet the 4+ day proven-winner test. last_3d.roi is 0.07 with 2 loss days, and matured yesterday is -0.091 with a declining trend. blended_roi 0.114 is only modestly positive, and the 24h lock is active after a buyer cut to 2.03 forty minutes ago. Budget flag spend_exceeds_1.25x_budget means spend is unreliable. Hold the buyer's budget and reassess tomorrow.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 2.54\u21922.03, hours_ago 0.4, lock_24h true\",\"last_3d.roi 0.07 with loss_days 2 vs profit_days 1\",\"trend_last_day_vs_prior: declining; matured_days d=-1 roi -0.091\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend-over-budget flag means actual delivery exceeds the budget and inflates spend\",\"Whether peers fwd_roi_1_3d 0.134 (n=17) holds for this adset\",\"Whether the buyer's cut reflects information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 582,
+  "output_tokens": 785,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000472,
+ "request_id": "req_011Cg9MbgoocAaz32oEF4mtQ",
+ "ts": "2026-10-18T08:04:52+00:00"
+}

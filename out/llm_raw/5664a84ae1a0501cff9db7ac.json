@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset: budget $2.29 and 3-day spend of only $8.39. Last 3 days ROI is +0.511 (2 profit days, 1 loss), but peers' forward ROI is ~0.007 and blended ROI is 0.156. The buyer cut budget from 3.81 to 2.29 about 24h ago. Evidence is thin and the data-quality flags weaken trust, so no change.\",\"key_evidence\":[\"last_3d roi 0.511 on spend 8.39\",\"blended_roi 0.156, peers fwd_roi_1_3d 0.007 (n=32)\",\"buyer cut budget 3.81->2.29 24.6h ago\",\"flags: spend_exceeds_1.25x_budget, meta_conversions_gt_clicks\"],\"uncertainty\":[\"Whether the 1.41 ROI day was noise given tiny spend\",\"Reliability of revenue given conversions exceeding clicks\",\"Why the buyer reduced budget\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 625,
+  "output_tokens": 367,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005294,
+ "request_id": "req_011Cg7SfRT1Zrm9veJjCZzrF",
+ "ts": "2026-10-17T07:50:04+00:00"
+}

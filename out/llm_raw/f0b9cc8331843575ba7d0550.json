@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"A buyer cut budget 15.8h ago and the 24h lock is active, so I won't override it without strong evidence. Matured data is mixed: last_3d ROI is -0.051 with 2 loss days, and the last two days are negative with a declining trend. Blended ROI of 0.038 leans heavily on peers (blend_weight_own 0.54, peer fwd ROI 0.142, n=12). Spend exceeds 1.25x budget, which weakens the reading. Hold and reassess after the lock expires.\",\"key_evidence\":[\"buyer.lock_24h = true (down 4.27 to 3.81, 15.8h ago)\",\"last_3d.roi = -0.051 with loss_days 2, profit_days 1\",\"trend_last_day_vs_prior = declining\",\"blended_roi 0.038 vs own 3d ROI -0.051\"],\"uncertainty\":[\"Whether the D-1 and D-2 losses persist once the buyer's budget cut takes effect\",\"Peer forward ROI is the main support for blended ROI; own signal is negative\",\"Spend-exceeds-budget flag may distort spend figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 638,
+  "output_tokens": 745,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000455,
+ "request_id": "req_011Cg7UmQCkJy8Lr99wtxbzM",
+ "ts": "2026-10-17T08:17:40+00:00"
+}

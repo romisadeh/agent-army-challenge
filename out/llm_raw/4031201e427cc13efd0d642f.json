@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3 days are modestly profitable (ROI 0.067, 2 profit days, 1 loss day) and yesterday was strong at 0.281, but blended ROI is only 0.048 and peers are flat at -0.003. The buyer cut budget 24.5h ago. Evidence is too thin and mixed to scale up, and there are no consistent losses to justify cutting. Spend ran above budget, which adds noise.\",\"key_evidence\":[\"last_3d ROI 0.067 (2 profit days, 1 loss day)\",\"blended_roi 0.048\",\"peers fwd_roi_1_3d -0.003 (n=31)\",\"buyer cut budget 12.64 to 8.85, 24.5h ago\"],\"uncertainty\":[\"Why the buyer reduced the budget\",\"Whether spend exceeding 1.25x budget distorts ROI\",\"Peers are flat, so the profit may not persist\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 345,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005048,
+ "request_id": "req_011Cg7SXWnWKokuQrDzPsmmH",
+ "ts": "2026-10-17T07:48:17+00:00"
+}

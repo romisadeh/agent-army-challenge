@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Spend is tiny ($8.42 over 3d) and budget is only $1.27, so any move has negligible dollar impact. Own 3d ROI is +5.9% (1 profit day, 1 loss day), yesterday had only $0.17 spend, and blended ROI is -19.2% because peers are weak at -29.7%. Evidence is mixed and thin, which does not support scaling or a pause. Budget is reconstructed and spend exceeds 1.25x budget, so the budget figure is unreliable.\",\"key_evidence\":[\"last_3d roi 0.059 on spend 8.42\",\"blended_roi -0.192 (w=0.3)\",\"peers fwd_roi_1_3d -0.297, n=7\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget value $1.27 is reconstructed and may be wrong\",\"Yesterday's near-zero spend ($0.17) gives little information\",\"Peer ROI is negative, so the adset may drift down if losses continue\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 578,
+  "output_tokens": 396,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00549,
+ "request_id": "req_011Cg7UQDFMBTxhBhH9LUc9t",
+ "ts": "2026-10-17T08:12:52+00:00"
+}

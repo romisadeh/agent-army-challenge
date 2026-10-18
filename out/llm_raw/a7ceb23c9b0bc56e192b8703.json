@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Profit days 3 of 5 and blended_roi 0.114 favor scaling, but last_3d.roi 0.072 misses the proven-winner bar and trend_last_day_vs_prior is declining with d=-1 at -0.206. Budget.current 1.27 is reconstructed from metadata, and yesterday's spend of 5.3 is about 4x budget, so the base for any change is unreliable. A human should confirm the budget before changing it.\",\"key_evidence\":[\"data_quality_flags: budget_reconstructed:metadata_end_of_week, spend_exceeds_1.25x_budget\",\"blended_roi 0.114 with blend_weight_own 0.56\",\"last_3d.roi 0.072 (below +0.10 proven-winner threshold)\",\"trend_last_day_vs_prior: declining; matured_days d=-1 roi -0.206\"],\"uncertainty\":[\"True daily budget (1.27 may be wrong given spend 5.3 on d=-1)\",\"Whether the d=-1 loss is noise or the start of a decline\",\"Peer forward ROI 0.166 rests on n=24 and may not transfer to this adset\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 610,
+  "output_tokens": 1222,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000693,
+ "request_id": "req_011Cg9MmSmjLzvM6EHtXU6MX",
+ "ts": "2026-10-18T08:07:06+00:00"
+}

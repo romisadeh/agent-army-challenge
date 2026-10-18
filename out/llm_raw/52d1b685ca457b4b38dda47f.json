@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset has only 3 spend days, so it is not a proven winner (needs 4+). Last 3d ROI is +0.093 with 2 of 3 days profitable, but blended ROI is only +0.075, below the +0.10 bar. The budget is reconstructed at $1.61 and spend exceeds 1.25x budget, so the budget figure is unreliable. Evidence is thin and mildly positive, so hold.\",\"key_evidence\":[\"age_spend_days=3 (below the 4+ threshold)\",\"blended_roi=0.075 (below 0.10)\",\"last_3d: 2 profit days, 1 loss day, roi 0.093 on $11.60 spend\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current budget is unknown, since it was reconstructed from metadata\",\"Spend is small, so ROI is noisy\",\"Peer forward ROI is only +0.065 (n=13)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 370,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005213,
+ "request_id": "req_011Cg7t1S4SRn4JE3HffqmUY",
+ "ts": "2026-10-17T13:22:25+00:00"
+}

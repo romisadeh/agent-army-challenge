@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":13.97,\"confidence\":0.6,\"reasoning\":\"Proven-winner profile: age_spend_days 4, last_3d.roi 0.26 with 2 profit days, blended_roi 0.296, trend improving, peers fwd_roi 0.319 (n=22). However, buyer.last_human_action was a deliberate budget doubling (6.35 to 12.7) 14.1h ago with lock_24h true, and the card has no evidence against scaling. Escalate rather than override the lock. If forced, scale up 10% to about 13.97.\",\"key_evidence\":[\"last_3d.roi=0.26 with profit_days=2 and loss_days=1\",\"blended_roi=0.296 and peers.fwd_roi_1_3d=0.319 (n=22)\",\"buyer.lock_24h=true; ui_update_budget 6.35->12.7 at hours_ago=14.1\",\"trend_last_day_vs_prior=improving\"],\"uncertainty\":[\"Whether the buyer's doubling was intended to be permanent or a test\",\"Whether the d-2 loss (roi -0.384) signals instability at higher spend\",\"Peer evidence is from a broader band, not this adset's own history at the new budget\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 879,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000522,
+ "request_id": "req_011Cg9MxMZkE2y9zDn4PjvDM",
+ "ts": "2026-10-18T08:09:34+00:00"
+}

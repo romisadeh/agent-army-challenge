@@ -1,0 +1,191 @@
+== Agent vs legacy rules on the same day (effective rule action = first successful kill/cut on D)
+   graded on day D's matured ROI (any spend): a kill/cut is right if the day matured at <= -10%, wrong if >= +10%
+  rule acted on 11 active adset-days; before the 10:00 window on 6
+  2026-06-10 31554978465845 rule R08 kill at 18:00, saw ROI -0.89 on $4.67 -> day matured at -0.90 ($4.67) | agent at 10:00: escalate->scale_up conf 0.45 | rule right, agent wrong
+  2026-06-10 31626016833981 rule R02 cut at 22:30, saw ROI -0.06 on $58.83 -> day matured at -0.16 ($68.39) | agent at 10:00: keep conf 0.65 | rule right, agent neither
+  2026-06-11 31167350331032 rule R01 kill at 05:00, saw ROI -1.00 on $0.71 -> day matured at -1.00 ($0.93) | agent at 10:00: pause conf 0.636 | rule right, agent right
+  2026-06-11 31191755212537 rule R02 cut at 08:30, saw ROI -0.16 on $22.48 -> day matured at +0.52 ($70.03) | agent at 10:00: keep conf 0.25 | rule wrong, agent neither
+  2026-06-11 31273956645572 rule R02 cut at 14:30, saw ROI -0.10 on $8.55 -> day matured at +0.12 ($16.52) | agent at 10:00: keep conf 0.775 | rule wrong, agent neither
+  2026-06-11 31278865310814 rule R05 kill at 02:00, saw ROI -1.00 on $0.25 -> day matured at -0.41 ($0.37) | agent at 10:00: keep conf 0.36 | rule right, agent neither
+  2026-06-11 31626016833981 rule R07 cut at 05:30, saw ROI -0.48 on $15.43 -> day matured at +0.15 ($53.80) | agent at 10:00: keep conf 0.837 | rule wrong, agent neither
+  2026-06-11 31818629447720 rule R06 kill at 12:30, saw ROI -0.36 on $3.04 -> day matured at -0.34 ($3.11) | agent at 10:00: keep conf 0.363 | rule right, agent neither
+  2026-06-12 31191755212537 rule R01 kill at 02:30, saw ROI -0.46 on $8.38 -> day matured at +0.30 ($9.45) | agent at 10:00: scale_up conf 0.8 | rule wrong, agent right
+  2026-06-12 31243712380589 rule R02 cut at 06:00, saw ROI -0.19 on $3.44 -> day matured at +0.08 ($7.05) | agent at 10:00: scale_up conf 0.734 | rule neither, agent neither
+  2026-06-12 31626016833981 rule R02 cut at 18:00, saw ROI -0.07 on $19.42 -> day matured at -0.15 ($20.22) | agent at 10:00: keep conf 0.8 | rule right, agent neither
+  tally: rule neither / agent neither: 1, rule right / agent neither: 4, rule right / agent right: 1, rule right / agent wrong: 1, rule wrong / agent neither: 3, rule wrong / agent right: 1
+
+== Agent vs human buyers on the same day (ui_* budget changes on D; only adsets a buyer touched)
+buyer_on_D  down  up
+agent_dir           
+down           3   0
+neutral       51  68
+up            39  26
+
+  disagreements: 158 (agent keep while buyer moved counts as a disagreement)
+  2026-06-11 730122709357812221 ACC-01 budget 3.81 | agent escalate  (neutral, conf 0.35) | buyer up +8.89  | outcome up ROI 0.12 on $193
+  2026-06-10 730122709357812221 ACC-01 budget 1.27 | agent escalate  (neutral, conf 0.455) | buyer up +2.54  | outcome up ROI 0.18 on $162
+  2026-06-10 730119979220314198 ACC-03 budget 66.55 | agent scale_up 79.86 (up, conf 0.7) | buyer down -23.95  | outcome up ROI 0.33 on $111
+  2026-06-12 730122709357812221 ACC-01 budget 12.7 | agent escalate  (neutral, conf 0.7) | buyer up +12.7  | outcome down ROI -0.36 on $72
+  2026-06-12 730127988250776273 ACC-01 budget 97.17 | agent keep  (neutral, conf 0.841) | buyer down -29.15  | outcome up ROI 0.11 on $66
+  2026-06-10 730115798095752516 ACC-03 budget 14.22 | agent keep  (neutral, conf 0.629) | buyer up +25.4  | outcome neutral ROI 0.07 on $56
+  2026-06-12 730119979220314198 ACC-03 budget 68.0 | agent scale_up 81.6 (up, conf 0.879) | buyer down -24.49  | outcome down ROI -0.29 on $49
+  2026-06-11 730131057235610353 ACC-02 budget 24.38 | agent scale_up 29.26 (up, conf 0.84) | buyer down -8.53  | outcome neutral ROI 0.08 on $46
+  2026-06-10 730128434697262830 ACC-02 budget 17.42 | agent keep  (neutral, conf 0.7) | buyer up +7.98  | outcome up ROI 0.15 on $44
+  2026-06-11 730115798095752516 ACC-03 budget 39.62 | agent keep  (neutral, conf 0.829) | buyer down -14.65  | outcome neutral ROI -0.04 on $41
+  2026-06-10 730177201267065733 ACC-06 budget 12.97 | agent keep  (neutral, conf 0.65) | buyer up +3.76  | outcome neutral ROI 0.08 on $38
+  2026-06-11 730177201267065733 ACC-06 budget 16.73 | agent keep  (neutral, conf 0.7) | buyer up +12.7  | outcome neutral ROI -0.06 on $36
+  2026-06-10 730119875479397057 ACC-06 budget 17.78 | agent scale_up 19.56 (up, conf 0.5) | buyer down -1.78  | outcome neutral ROI 0.0 on $34
+  2026-06-11 730128434697262830 ACC-02 budget 20.32 | agent scale_up 24.38 (up, conf 0.824) | buyer down -7.11  | outcome down ROI -0.17 on $32
+  2026-06-11 31273956645572 ACC-04 budget 13.6 | agent keep  (neutral, conf 0.775) | buyer up +6.35  | outcome up ROI 0.26 on $32
+  2026-06-10 730114082710212228 ACC-02 budget 6.86 | agent keep  (neutral, conf 0.65) | buyer up +12.19  | outcome up ROI 0.19 on $31
+  2026-06-10 730124434859064417 ACC-06 budget 2.67 | agent keep  (neutral, conf 0.7) | buyer up +6.22  | outcome down ROI -0.13 on $29
+  2026-06-11 730111022034813676 ACC-06 budget 11.56 | agent escalate 13.87 (up, conf 0.45) | buyer down -2.41  | outcome down ROI -0.18 on $28
+  2026-06-11 730114082710212228 ACC-02 budget 15.24 | agent scale_up 18.29 (up, conf 0.767) | buyer down -3.81  | outcome neutral ROI 0.04 on $28
+  2026-06-10 730117576322941540 ACC-06 budget 8.85 | agent keep  (neutral, conf 0.853) | buyer up +8.93  | outcome up ROI 0.31 on $27
+  2026-06-10 730124633804344724 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.39) | buyer up +8.89  | outcome up ROI 0.34 on $24
+  2026-06-11 730117576322941540 ACC-06 budget 14.22 | agent scale_up 17.06 (up, conf 0.834) | buyer down -3.56  | outcome up ROI 0.22 on $23
+  2026-06-11 730119875479397057 ACC-06 budget 11.2 | agent keep  (neutral, conf 0.7) | buyer down -4.8  | outcome down ROI -0.17 on $20
+  2026-06-12 730124434859064417 ACC-06 budget 21.59 | agent keep  (neutral, conf 0.65) | buyer up +6.35  | outcome up ROI 0.63 on $20
+  2026-06-11 730133839938058150 ACC-06 budget 8.2 | agent keep  (neutral, conf 0.691) | buyer up +6.35  | outcome up ROI 0.25 on $20
+  2026-06-11 730114417339432425 ACC-06 budget 6.35 | agent keep  (neutral, conf 0.699) | buyer up +6.35  | outcome up ROI 0.57 on $20
+  2026-06-11 31190610559771 ACC-04 budget 2.67 | agent keep  (neutral, conf 0.45) | buyer up +5.81  | outcome up ROI 0.59 on $19
+  2026-06-11 730125516653624607 ACC-02 budget 10.16 | agent scale_up 12.19 (up, conf 0.712) | buyer down -3.56  | outcome neutral ROI -0.09 on $17
+  2026-06-10 730133839938058150 ACC-06 budget 4.83 | agent keep  (neutral, conf 0.15) | buyer up +3.37 [CPM spiked, cutting] | outcome up ROI 0.8 on $16
+  2026-06-12 730131057235610353 ACC-02 budget 21.95 | agent scale_up 26.34 (up, conf 0.885) | buyer down -2.2  | outcome neutral ROI 0.1 on $16
+  2026-06-10 730125087398796770 ACC-02 budget 6.35 | agent keep  (neutral, conf 0.56) | buyer down -1.27  | outcome neutral ROI -0.03 on $15
+  2026-06-10 730130505344597328 ACC-05 budget 12.7 | agent keep  (neutral, conf 0.7) | buyer down -3.81  | outcome neutral ROI -0.04 on $14
+  2026-06-10 730114417339432425 ACC-06 budget 2.54 | agent keep  (neutral, conf 0.45) | buyer up +3.81  | outcome up ROI 0.69 on $14
+  2026-06-10 730113018329189375 ACC-02 budget 10.16 | agent scale_up 11.18 (up, conf 0.508) | buyer down -4.06 [weekend boost] | outcome down ROI -0.22 on $14
+  2026-06-12 730115798095752516 ACC-03 budget 24.97 | agent keep  (neutral, conf 0.763) | buyer down -12.49  | outcome down ROI -0.24 on $13
+  2026-06-11 730121683624182281 ACC-03 budget 2.44 | agent keep  (neutral, conf 0.689) | buyer up +10.26  | outcome up ROI 0.26 on $12
+  2026-06-10 730114281522580260 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.471) | buyer up +8.89  | outcome up ROI 0.37 on $12
+  2026-06-12 730177201267065733 ACC-06 budget 29.43 | agent keep  (neutral, conf 0.808) | buyer down -10.3  | outcome down ROI -0.29 on $12
+  2026-06-11 730127795690969821 ACC-06 budget 2.67 | agent keep  (neutral, conf 0.626) | buyer up +4.72  | outcome up ROI 0.34 on $11
+  2026-06-11 730130498832619200 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.278) | buyer up +5.13  | outcome up ROI 0.12 on $11
+  2026-06-12 730114082710212228 ACC-02 budget 15.24 | agent scale_up 18.29 (up, conf 0.836) | buyer down -6.1  | outcome down ROI -0.16 on $11
+  2026-06-11 730112373699429645 ACC-06 budget 2.54 | agent keep  (neutral, conf 0.496) | buyer up +5.99  | outcome up ROI 0.59 on $10
+  2026-06-10 31167350331032 ACC-04 budget 6.35 | agent escalate 7.62 (up, conf 0.45) | buyer down -3.17  | outcome down ROI -1.0 on $10
+  2026-06-11 31694974403917 ACC-04 budget 4.43 | agent scale_up 5.32 (up, conf 0.712) | buyer down -1.89  | outcome down ROI -0.22 on $10
+  2026-06-12 730128434697262830 ACC-02 budget 18.29 | agent escalate 21.95 (up, conf 0.45) | buyer down -9.15  | outcome down ROI -0.25 on $10
+  2026-06-10 730121683624182281 ACC-03 budget 3.81 | agent keep  (neutral, conf 0.572) | buyer down -1.37  | outcome up ROI 0.29 on $9
+  2026-06-12 730125087398796770 ACC-02 budget 12.7 | agent keep  (neutral, conf 0.679) | buyer up +12.7  | outcome up ROI 0.73 on $9
+  2026-06-12 31190610559771 ACC-04 budget 8.48 | agent keep  (neutral, conf 0.721) | buyer up +19.05  | outcome up ROI 0.42 on $9
+  2026-06-11 730119487809115633 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.35) | buyer up +8.89  | outcome up ROI 0.75 on $9
+  2026-06-11 31239959394500 ACC-04 budget 5.08 | agent escalate 6.1 (up, conf 0.45) | buyer down -1.27 [budget reset after midnight spike] | outcome up ROI 0.14 on $9
+  2026-06-11 730118943503085684 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.605) | buyer up +2.55  | outcome up ROI 0.34 on $9
+  2026-06-10 730119465202368916 ACC-06 budget 3.05 | agent keep  (neutral, conf 0.45) | buyer up +3.3  | outcome up ROI 1.21 on $9
+  2026-06-10 31558558342930 ACC-04 budget 3.81 | agent escalate 4.57 (up, conf 0.45) | buyer down -1.33  | outcome neutral ROI -0.09 on $9
+  2026-06-11 730129450634378122 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.345) | buyer up +1.27  | outcome neutral ROI 0.04 on $9
+  2026-06-10 730112373699429645 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.364) | buyer down -1.27  | outcome up ROI 0.6 on $9
+  2026-06-11 730114281522580260 ACC-06 budget 10.16 | agent scale_up 12.19 (up, conf 0.677) | buyer down -2.54  | outcome down ROI -0.11 on $9
+  2026-06-11 730119465202368916 ACC-06 budget 4.13 | agent scale_up 4.96 (up, conf 0.636) | buyer down -2.22  | outcome up ROI 0.55 on $8
+  2026-06-10 31209740459647 ACC-04 budget 6.35 | agent keep  (neutral, conf 0.591) | buyer down -3.17  | outcome neutral ROI 0.04 on $8
+  2026-06-11 31558558342930 ACC-04 budget 2.48 | agent keep  (neutral, conf 0.15) | buyer up +2.6  | outcome up ROI 0.14 on $8
+  2026-06-10 730127686569001839 ACC-05 budget 6.35 | agent keep  (neutral, conf 0.575) | buyer down -4.45  | outcome down ROI -1.0 on $8
+  2026-06-10 31499956809569 ACC-04 budget 6.35 | agent scale_up 7.62 (up, conf 0.644) | buyer down -3.17  | outcome down ROI -1.0 on $8
+  2026-06-10 730118943503085684 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.586) | buyer up +2.54  | outcome up ROI 0.16 on $7
+  2026-06-10 730172018151815904 ACC-03 budget 2.67 | agent scale_up 3.2 (up, conf 0.7) | buyer down -0.93  | outcome down ROI -0.25 on $7
+  2026-06-11 730113018329189375 ACC-02 budget 6.1 | agent escalate 7.32 (up, conf 0.15) | buyer down -2.29  | outcome down ROI -0.26 on $7
+  2026-06-11 730121282923468195 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.263) | buyer up +2.54  | outcome up ROI 0.19 on $7
+  2026-06-12 730117576322941540 ACC-06 budget 14.22 | agent scale_up 17.06 (up, conf 0.834) | buyer down -4.97  | outcome down ROI -0.14 on $7
+  2026-06-10 730125157442067292 ACC-02 budget 3.42 | agent keep  (neutral, conf 0.745) | buyer up +9.28  | outcome up ROI 0.2 on $7
+  2026-06-11 730115490245309167 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.27) | buyer up +2.54  | outcome down ROI -0.19 on $6
+  2026-06-10 730131929701188206 ACC-02 budget 6.35 | agent keep  (neutral, conf 0.618) | buyer down -3.81  | outcome down ROI -0.55 on $6
+  2026-06-11 730111639108940228 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.552) | buyer up +3.81  | outcome up ROI 1.28 on $6
+  2026-06-12 730116715642536551 ACC-01 budget 6.32 | agent keep  (neutral, conf 0.5) | buyer up +12.7  | outcome up ROI 0.59 on $6
+  2026-06-10 730150929494844775 ACC-05 budget 6.35 | agent keep  (neutral, conf 0.312) | buyer up +6.35  | outcome up ROI 0.8 on $6
+  2026-06-12 730130498832619200 ACC-01 budget 6.4 | agent keep  (neutral, conf 0.434) | buyer up +12.65  | outcome up ROI 0.68 on $6
+  2026-06-12 730127795690969821 ACC-06 budget 8.53 | agent keep  (neutral, conf 0.65) | buyer up +6.35  | outcome up ROI 0.41 on $6
+  2026-06-10 730122555309628988 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.645) | buyer up +2.54  | outcome up ROI 0.62 on $6
+  2026-06-12 31124145056204 ACC-04 budget 8.89 | agent keep  (neutral, conf 0.606) | buyer up +6.35  | outcome up ROI 1.31 on $6
+  2026-06-12 730117900317539969 ACC-06 budget 8.43 | agent keep  (neutral, conf 0.662) | buyer up +0.46  | outcome up ROI 0.68 on $6
+  2026-06-12 730121683624182281 ACC-03 budget 12.7 | agent scale_up 15.24 (up, conf 0.696) | buyer down -4.57  | outcome down ROI -0.15 on $6
+  2026-06-10 730126527884690880 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.358) | buyer up +2.54  | outcome down ROI -0.13 on $5
+  2026-06-11 730126527884690880 ACC-06 budget 2.67 | agent keep  (neutral, conf 0.545) | buyer down -1.14  | outcome up ROI 0.57 on $5
+  2026-06-12 730125516653624607 ACC-02 budget 9.14 | agent scale_up 10.97 (up, conf 0.778) | buyer down -4.02  | outcome down ROI -0.33 on $5
+  2026-06-11 730162747561997773 ACC-02 budget 3.05 | agent scale_up 3.66 (up, conf 0.572) | buyer down -1.27  | outcome neutral ROI 0.04 on $5
+  2026-06-12 730112373699429645 ACC-06 budget 8.53 | agent scale_up 10.24 (up, conf 0.644) | buyer down -2.98  | outcome down ROI -0.39 on $5
+  2026-06-10 31554978465845 ACC-04 budget 3.81 | agent escalate 4.57 (up, conf 0.45) | buyer down -1.91  | outcome down ROI -0.9 on $5
+  2026-06-11 31499956809569 ACC-04 budget 2.07 | agent keep  (neutral, conf 0.15) | buyer down -1.11  | outcome down ROI -1.0 on $4
+  2026-06-10 730150812662227028 ACC-05 budget 6.35 | agent keep  (neutral, conf 0.303) | buyer up +6.35  | outcome up ROI 0.36 on $4
+  2026-06-12 730114281522580260 ACC-06 budget 10.16 | agent scale_up 12.19 (up, conf 0.687) | buyer down -3.05  | outcome down ROI -0.2 on $4
+  2026-06-10 730192108559844581 ACC-02 budget 1.9 | agent keep  (neutral, conf 0.45) | buyer up +0.64  | outcome down ROI -0.13 on $4
+  2026-06-10 730131055006514133 ACC-05 budget 3.81 | agent keep  (neutral, conf 0.306) | buyer down -1.37  | outcome down ROI -0.52 on $4
+  2026-06-10 730156675027409700 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.344) | buyer up +2.54  | outcome up ROI 0.76 on $4
+  2026-06-11 730150929494844775 ACC-05 budget 12.7 | agent keep  (neutral, conf 0.52) | buyer down -5.08  | outcome up ROI 0.67 on $4
+  2026-06-11 730125263319729979 ACC-06 budget 1.83 | agent scale_up 2.01 (up, conf 0.5) | buyer down -0.46  | outcome down ROI -0.34 on $4
+  2026-06-10 730132393309052497 ACC-05 budget 2.54 | agent keep  (neutral, conf 0.309) | buyer up +2.54  | outcome up ROI 0.23 on $4
+  2026-06-12 730129450634378122 ACC-02 budget 5.08 | agent keep  (neutral, conf 0.499) | buyer up +1.27  | outcome up ROI 0.16 on $4
+  2026-06-12 730131579628248110 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.378) | buyer up +12.7  | outcome up ROI 0.41 on $4
+  2026-06-10 730127959620269389 ACC-05 budget 6.35 | agent keep  (neutral, conf 0.316) | buyer down -2.29  | outcome down ROI -0.29 on $4
+  2026-06-11 730125738085033886 ACC-03 budget 2.67 | agent scale_up 3.2 (up, conf 0.651) | buyer down -1.68  | outcome down ROI -0.54 on $4
+  2026-06-10 730110190485390584 ACC-02 budget 3.81 | agent escalate 4.57 (up, conf 0.45) | buyer down -2.54  | outcome down ROI -0.43 on $4
+  2026-06-12 730121282923468195 ACC-01 budget 3.81 | agent keep  (neutral, conf 0.383) | buyer up +8.89  | outcome up ROI 0.59 on $4
+  2026-06-12 31694974403917 ACC-04 budget 4.43 | agent scale_up 5.32 (up, conf 0.723) | buyer down -1.64  | outcome down ROI -0.64 on $3
+  2026-06-12 730121054145158163 ACC-01 budget 3.81 | agent keep  (neutral, conf 0.29) | buyer up +2.54  | outcome down ROI -0.12 on $3
+  2026-06-12 730111639108940228 ACC-06 budget 5.08 | agent scale_up 6.1 (up, conf 0.597) | buyer down -1.52  | outcome up ROI 0.26 on $3
+  2026-06-12 730168549344013312 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.363) | buyer up +2.54  | outcome up ROI 0.1 on $3
+  2026-06-11 730127686569001839 ACC-05 budget 1.9 | agent keep  (neutral, conf 0.3) | buyer down -0.63  | outcome down ROI -1.0 on $3
+  2026-06-12 31558558342930 ACC-04 budget 5.08 | agent keep  (neutral, conf 0.603) | buyer down -1.88  | outcome down ROI -0.26 on $3
+  2026-06-10 730111165025674105 ACC-02 budget 1.9 | agent keep  (neutral, conf 0.75) | buyer down -0.63  | outcome neutral ROI 0.04 on $3
+  2026-06-12 730188716765660042 ACC-01 budget 3.81 | agent keep  (neutral, conf 0.281) | buyer up +8.89  | outcome up ROI 1.64 on $3
+  2026-06-11 730130505344597328 ACC-05 budget 6.22 | agent keep  (neutral, conf 0.813) | buyer down -2.67  | outcome neutral ROI -0.06 on $3
+  2026-06-12 730115490245309167 ACC-01 budget 3.81 | agent scale_up 4.19 (up, conf 0.378) | buyer down -1.41  | outcome down ROI -0.93 on $3
+  2026-06-11 730132393309052497 ACC-05 budget 5.08 | agent keep  (neutral, conf 0.35) | buyer down -2.64  | outcome down ROI -0.32 on $3
+  2026-06-12 31239959394500 ACC-04 budget 5.08 | agent scale_up 5.59 (up, conf 0.5) | buyer down -1.52  | outcome down ROI -0.37 on $3
+  2026-06-11 730119959190863707 ACC-05 budget 5.08 | agent keep  (neutral, conf 0.379) | buyer down -1.27  | outcome down ROI -0.21 on $3
+  2026-06-12 730131468079569872 ACC-03 budget 5.08 | agent keep  (neutral, conf 0.385) | buyer down -2.34  | outcome down ROI -0.63 on $3
+  2026-06-12 730179534900076891 ACC-01 budget 6.4 | agent keep  (neutral, conf 0.299) | buyer up +6.35  | outcome up ROI 0.66 on $2
+  2026-06-11 730110190485390584 ACC-02 budget 1.27 | agent keep  (neutral, conf 0.594) | buyer up +1.27  | outcome down ROI -0.5 on $2
+  2026-06-10 730111660330956057 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.504) | buyer down -2.54  | outcome down ROI -0.74 on $2
+  2026-06-12 730135016891241063 ACC-02 budget 5.08 | agent keep  (neutral, conf 0.386) | buyer down -3.18  | outcome down ROI -0.89 on $2
+  2026-06-12 730117093264226298 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.685) | buyer up +5.08  | outcome up ROI 0.8 on $2
+  2026-06-12 730126527884690880 ACC-06 budget 2.67 | agent keep  (neutral, conf 0.633) | buyer up +3.68  | outcome up ROI 1.5 on $2
+  2026-06-12 730115451617748648 ACC-02 budget 5.08 | agent keep  (neutral, conf 0.376) | buyer down -3.18  | outcome down ROI -0.54 on $2
+  2026-06-12 31209740459647 ACC-04 budget 3.18 | agent keep  (neutral, conf 0.547) | buyer up +3.17  | outcome up ROI 1.03 on $2
+  2026-06-12 730122555309628988 ACC-06 budget 3.81 | agent scale_up 4.57 (up, conf 0.637) | buyer down -1.33  | outcome down ROI -0.33 on $2
+  2026-06-12 730116447002708596 ACC-05 budget 6.35 | agent keep  (neutral, conf 0.363) | buyer down -4.45  | outcome down ROI -0.58 on $2
+  2026-06-12 730156675027409700 ACC-06 budget 3.81 | agent scale_up 4.57 (up, conf 0.593) | buyer down -1.41  | outcome down ROI -0.71 on $2
+  2026-06-12 730117124109309101 ACC-03 budget 3.81 | agent keep  (neutral, conf 0.373) | buyer down -0.76  | outcome up ROI 0.46 on $2
+  2026-06-10 730130006681702129 ACC-02 budget 1.6 | agent keep  (neutral, conf 0.58) | buyer up +0.94  | outcome down ROI -0.13 on $2
+  2026-06-12 730150929494844775 ACC-05 budget 7.62 | agent keep  (neutral, conf 0.564) | buyer down -3.96  | outcome down ROI -0.32 on $2
+  2026-06-10 730119801657625147 ACC-05 budget 5.08 | agent keep  (neutral, conf 0.279) | buyer down -3.81  | outcome down ROI -1.0 on $2
+  2026-06-12 730115820570273151 ACC-02 budget 2.54 | agent keep  (neutral, conf 0.368) | buyer down -1.27  | outcome down ROI -0.63 on $2
+  2026-06-12 730162747561997773 ACC-02 budget 2.54 | agent scale_up 3.05 (up, conf 0.648) | buyer down -1.27  | outcome down ROI -0.96 on $2
+  2026-06-12 730119568344307064 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.378) | buyer down -1.98  | outcome down ROI -0.19 on $2
+  2026-06-11 730150812662227028 ACC-05 budget 12.7 | agent keep  (neutral, conf 0.508) | buyer down -11.43  | outcome down ROI -0.55 on $2
+  2026-06-12 730145818928346722 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.275) | buyer up +5.08  | outcome up ROI 0.99 on $2
+  2026-06-12 730113018329189375 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.65) | buyer down -2.54  | outcome down ROI -0.2 on $2
+  2026-06-12 730126105134999394 ACC-02 budget 3.81 | agent keep  (neutral, conf 0.368) | buyer down -1.27  | outcome up ROI 1.24 on $2
+  2026-06-10 730133449847980886 ACC-05 budget 3.81 | agent keep  (neutral, conf 0.632) | buyer down -1.83  | outcome down ROI -0.39 on $1
+  2026-06-11 730192108559844581 ACC-02 budget 2.03 | agent keep  (neutral, conf 0.5) | buyer down -0.51  | outcome down ROI -0.2 on $1
+  2026-06-11 730122691141682218 ACC-05 budget 5.08 | agent keep  (neutral, conf 0.425) | buyer down -3.81  | outcome up ROI 0.39 on $1
+  2026-06-11 730127959620269389 ACC-05 budget 4.06 | agent keep  (neutral, conf 0.15) | buyer down -1.22  | outcome down ROI -0.1 on $1
+  2026-06-12 730172018151815904 ACC-03 budget 2.54 | agent keep  (neutral, conf 0.2) | buyer down -1.27  | outcome down ROI -0.5 on $1
+  2026-06-12 730120994981117060 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.344) | buyer up +2.54  | outcome up ROI 0.48 on $1
+  2026-06-12 730126881362912356 ACC-02 budget 6.35 | agent keep  (neutral, conf 0.364) | buyer down -5.08  | outcome down ROI -1.0 on $1
+  2026-06-12 730183556611520386 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.268) | buyer up +2.54  | outcome up ROI 6.28 on $1
+  2026-06-10 730150234616497093 ACC-06 budget 2.54 | agent keep  (neutral, conf 0.45) | buyer down -1.27  | outcome down ROI -0.88 on $1
+  2026-06-12 730125738085033886 ACC-03 budget 2.13 | agent keep  (neutral, conf 0.35) | buyer down -0.86  | outcome down ROI -0.23 on $1
+  2026-06-12 730127248458779163 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.268) | buyer up +2.54  | outcome up ROI 0.46 on $1
+  2026-06-12 730128836048301741 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.338) | buyer up +2.54  | outcome unclear ROI 0.35 on $1
+  2026-06-11 730131929701188206 ACC-02 budget 2.54 | agent keep  (neutral, conf 0.35) | buyer down -0.76  | outcome unclear ROI -0.12 on $1
+  2026-06-10 730115622422491215 ACC-05 budget 3.81 | agent keep  (neutral, conf 0.286) | buyer down -2.54  | outcome unclear ROI -0.88 on $1
+  2026-06-12 730110245237439923 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.271) | buyer up +2.54  | outcome unclear ROI 1.1 on $1
+  2026-06-12 730110190485390584 ACC-02 budget 2.54 | agent keep  (neutral, conf 0.591) | buyer down -1.27  | outcome unclear ROI -1.0 on $1
+  2026-06-12 730115891169413527 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.344) | buyer up +2.54  | outcome unclear ROI 1.79 on $1
+  2026-06-11 730131055006514133 ACC-05 budget 2.44 | agent keep  (neutral, conf 0.35) | buyer down -1.17  | outcome unclear ROI -0.61 on $1
+  2026-06-10 730128237963253682 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.352) | buyer down -1.27  | outcome unclear ROI -0.17 on $1
+  2026-06-12 730127935224481935 ACC-06 budget 1.27 | agent keep  (neutral, conf 0.345) | buyer up +2.54  | outcome unclear ROI 1.12 on $1
+  2026-06-12 730124530082785923 ACC-01 budget 1.27 | agent keep  (neutral, conf 0.275) | buyer up +2.54  | outcome unclear ROI 0.67 on $1
+  2026-06-12 730119959190863707 ACC-05 budget 3.81 | agent keep  (neutral, conf 0.45) | buyer down -2.29  | outcome unclear ROI -0.29 on $1
+  2026-06-10 730124934416626981 ACC-06 budget 3.81 | agent keep  (neutral, conf 0.584) | buyer down -1.27  | outcome unclear ROI -1.0 on $0
+  tally: buyer right / agent wrong: 108, buyer wrong / agent right: 15, buyer wrong / agent wrong: 23, unclear / unclear: 12
+
+== Timing: rules that fired on D before the agent's 10:00 window
+  31167350331032 2026-06-11: rule R01 kill at 05:00, saw ROI -1.00 on $0.71 (immature); day matured at -1.00; agent at 10:00 on matured history: pause
+  31191755212537 2026-06-11: rule R02 cut at 08:30, saw ROI -0.16 on $22.48 (immature); day matured at +0.52; agent at 10:00 on matured history: keep
+  31278865310814 2026-06-11: rule R05 kill at 02:00, saw ROI -1.00 on $0.25 (immature); day matured at -0.41; agent at 10:00 on matured history: keep
+  31626016833981 2026-06-11: rule R07 cut at 05:30, saw ROI -0.48 on $15.43 (immature); day matured at +0.15; agent at 10:00 on matured history: keep
+  31191755212537 2026-06-12: rule R01 kill at 02:30, saw ROI -0.46 on $8.38 (immature); day matured at +0.30; agent at 10:00 on matured history: scale_up
+  31243712380589 2026-06-12: rule R02 cut at 06:00, saw ROI -0.19 on $3.44 (immature); day matured at +0.08; agent at 10:00 on matured history: scale_up

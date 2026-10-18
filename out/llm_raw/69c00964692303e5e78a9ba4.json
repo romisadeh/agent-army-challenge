@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Blended ROI is -0.075 (own 3d ROI -0.054 over $20.97 spend, 2 profit days and 1 loss day; peers -0.097, n=9). The losses are small and mixed, not a clear matured loss trend. Buyer cut budget 5.08 to 3.56 24.5h ago with no lock. Spend exceeds budget 1.25x, so budget tracking is unreliable. Not enough to scale down or pause.\",\"key_evidence\":[\"blended_roi = -0.075\",\"last_3d.roi = -0.054 with profit_days 2, loss_days 1\",\"peers.fwd_roi_1_3d = -0.097, n = 9\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget flag: actual daily spend may be well above the 3.56 budget, so the effective spend level is unknown\",\"Trend is declining, and D-1 ROI was -0.547 on a small budget\",\"Peer group is ACC-06 age 4+ and may not match this adset\",\"Buyer's recent downward cut may reflect information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 983,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000572,
+ "request_id": "req_011Cg7SrEGMdnmrsqSsHNFxF",
+ "ts": "2026-10-17T07:52:33+00:00"
+}

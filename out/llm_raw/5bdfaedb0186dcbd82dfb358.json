@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Proven-winner profile: age 9 days, last_3d.roi 0.678, blended_roi 0.425, 2 of 3 matured days profitable, peers fwd_roi 0.193 (n=15). But buyer ui_adjust_budget cut 3.81 to 2.67 only 0.5h ago with lock_24h true, and the note says slow ramp per playbook. Spend exceeds 1.25x budget flag adds doubt about budget.current. A recent deliberate buyer cut conflicts with the numbers, so a human should settle it.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 3.81->2.67, 0.5h ago, lock_24h true\",\"last_3d.roi 0.678, blended_roi 0.425\",\"peers.fwd_roi_1_3d 0.193, n=15\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut reflects information not on the card, such as the slow-ramp playbook\",\"budget.current may be stale given spend exceeds 1.25x budget\",\"Only 3 matured days; d-2 was a loss and the improving trend is one day\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 683,
+  "output_tokens": 1298,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000738,
+ "request_id": "req_011Cg9MLfKq3P7JTf316q4k5",
+ "ts": "2026-10-18T08:01:30+00:00"
+}

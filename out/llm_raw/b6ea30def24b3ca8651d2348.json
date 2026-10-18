@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"Losses persist across matured days: last_3d.roi is -0.932 with 2 loss days and 0 profit days, and blended_roi is -0.634. Peers forward ROI is -0.481 (n=19, fallback 0). Yesterday's spend was only 0.23. The buyer already cut budget 2.54 to 1.4 about 45h ago, net -1.14 over 48h, with no lock or hold note, which points the same way. The spend_exceeds_1.25x_budget flag makes the spend-to-budget relationship less reliable.\",\"key_evidence\":[\"last_3d.roi = -0.932, profit_days = 0\",\"blended_roi = -0.634; peers.fwd_roi_1_3d = -0.481 (n=19)\",\"buyer.last_human_action: down 2.54 to 1.4, 45.2h ago; lock_24h false\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Spend (10.27 over 3d) far exceeds budget.current 1.4, so the true daily spend level is unclear\",\"Whether the 2.54 budget period was the cause of the decline or a separate issue\",\"Only 4 matured days of history; the adset is 5 spend days old\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 920,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000543,
+ "request_id": "req_011Cg7u7YgLqSJ9ECX8s9N7t",
+ "ts": "2026-10-17T13:36:57+00:00"
+}

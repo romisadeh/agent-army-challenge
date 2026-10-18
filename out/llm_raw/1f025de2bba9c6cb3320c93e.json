@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Blended ROI is -0.042, near break-even, and the 3-day ROI of -0.165 has 2 loss days against 1 profit day with a declining trend. A 24h lock is active after a deliberate buyer cut 20.4h ago, and the card has no clear sustained loss to justify overriding it. Peer forward ROI of 0.1 (n=23, fallback level) leans positive. Evidence is mixed, so hold the budget.\",\"key_evidence\":[\"blended_roi = -0.042\",\"last_3d.roi = -0.165 with loss_days 2, profit_days 1\",\"buyer.lock_24h = true; last_human_action down 2.73 to 1.9, 20.4h ago\",\"peers.fwd_roi_1_3d = 0.1, n = 23, fallback_level 1\"],\"uncertainty\":[\"Spend exceeds budget (flag spend_exceeds_1.25x_budget), so the true budget and spend pacing are unclear\",\"Peer benchmark is a band fallback, not a close match\",\"Whether the buyer's cut was a deliberate judgment on losses or a routine adjustment\",\"Whether the D-1 loss of -0.694 is the start of a sustained decline\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 944,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000552,
+ "request_id": "req_011Cg7SQ2buNkkoQ8XXnrAHf",
+ "ts": "2026-10-17T07:46:37+00:00"
+}

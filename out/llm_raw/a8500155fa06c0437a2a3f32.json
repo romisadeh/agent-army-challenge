@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Three matured days were profitable (last_3d profit_days 3, roi 0.296), and blended_roi is 0.171 with peers at 0.105 (n=16). But the last day is only 0.004 ROI and trend_last_day_vs_prior is declining, so the profit is thin. Spend (4.91 on d-2) exceeds budget.current 1.27 by far, so the budget field may be wrong. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.profit_days=3, roi=0.296\",\"blended_roi=0.171 vs peers fwd_roi_1_3d=0.105 (n=16)\",\"matured_days d-1 roi=0.004, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 1.27 reflects the true daily budget given spend above it\",\"Whether the declining last day signals a real trend or noise\",\"Peer evidence is from a broad segment, not this adset's history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 620,
+  "output_tokens": 886,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000524,
+ "request_id": "req_011Cg7SMFKZSXNxjEK54BWtZ",
+ "ts": "2026-10-17T07:45:59+00:00"
+}

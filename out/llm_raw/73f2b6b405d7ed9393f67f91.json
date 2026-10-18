@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is -0.107 with 2 loss days and a declining trend, and blended ROI is -0.077 (own weight 0.92). Peers forward ROI is +0.279 (n=10, fallback 0), so the signal is mixed. Budget was already cut today by R07 to 39.6, and spend exceeds budget 1.25x. Losses are mild, not consistent enough to pause or cut again.\",\"key_evidence\":[\"blended_roi=-0.077\",\"last_3d.roi=-0.107 with loss_days=2, profit_days=1\",\"peers.fwd_roi_1_3d=0.279, n=10\",\"budget.current=39.6 after R07 cut today\"],\"uncertainty\":[\"Budget reference is unclear: spend_exceeds_1.25x_budget flag and yesterday's spend of 68.39 vs current 39.6\",\"Peer forward ROI could be stronger than own trend if the decline reverses\",\"Whether the 05:30 cut has fully taken effect before the window\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 839,
+  "output_tokens": 900,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000553,
+ "request_id": "req_011Cg7U2t28QncQCMnyTWnn9",
+ "ts": "2026-10-17T08:08:03+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":58.67,\"confidence\":0.55,\"reasoning\":\"Age 10 days, last_3d.roi 0.219 above +0.10, blended_roi 0.138 above +0.10, and 2 of 3 matured days profitable, so it meets the proven-winner test. No buyer action, lock, notes, or budget change in 48h. trend_last_day_vs_prior is improving. Peers are only modestly positive (fwd 0.047, n=12). Step kept at 10% for the reconstructed budget base.\",\"key_evidence\":[\"last_3d.roi=0.219, profit_days=2, loss_days=1\",\"blended_roi=0.138 (blend_weight_own=0.53)\",\"buyer.last_human_action=null, lock_24h=false, net_budget_change_48h=0.0\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"budget.current 53.34 is reconstructed from metadata, so the true base may differ\",\"d-3 ROI -0.57 and d-4 ROI -0.029 show the profit is not yet stable\",\"peer forward ROI of 0.047 is weak evidence\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 562,
+  "output_tokens": 949,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000552,
+ "request_id": "req_011Cg7sqRywU2YJxoqSDQ68L",
+ "ts": "2026-10-17T13:20:12+00:00"
+}

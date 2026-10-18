@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Adset is only 3 spend days old, so the 4+ day proven-winner rule does not apply. last_3d.roi is -0.092 and blended_roi is 0.072, below the +0.10 threshold, with mixed days (2 profit, 1 loss). The trend is flat. A human raised budget 1.27 to 3.81 about 65h ago, and net_budget_change_48h is 0. The spend_exceeds_1.25x_budget flag adds doubt. Evidence is thin and mixed, so keep.\",\"key_evidence\":[\"last_3d.roi = -0.092 (profit_days 2, loss_days 1)\",\"blended_roi = 0.072, below +0.10\",\"age_spend_days = 3, below the 4+ threshold\",\"buyer.last_human_action: up 1.27 to 3.81, 64.7h ago\"],\"uncertainty\":[\"Whether the 3.81 budget is stable, given the spend_exceeds_1.25x_budget flag\",\"Peer forward ROI of 0.161 (n=30, band fallback) is only a weak signal\",\"D-3 profit may be noise rather than a trend, and one more matured day would clarify it\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 768,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000463,
+ "request_id": "req_011Cg7tUUqNRz5k6SywzkXQ6",
+ "ts": "2026-10-17T13:28:35+00:00"
+}

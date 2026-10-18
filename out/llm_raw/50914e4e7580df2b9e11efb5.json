@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Meets the proven-winner profile (age 5, 3 profitable days, last_3d ROI +0.35, blended +0.188). However, a buyer cut the budget from 6.32 to 4.43 only 0.5h ago with a 24h lock active. Overriding a deliberate human action needs strong evidence, and the spend is tiny. The extreme_roi_gt_5 flag comes from the $0.24 day at D-5. Keep and respect the lock.\",\"key_evidence\":[\"buyer.last_human_action: down 6.32->4.43, 0.5h ago\",\"buyer.lock_24h: true\",\"last_3d: roi 0.35, 3 profit days, 0 loss days\",\"blended_roi: 0.188\"],\"uncertainty\":[\"Why the buyer cut the budget despite profitable days\",\"Tiny spend ($13.63 over 3d) makes ROI noisy\",\"Two of the three days were near break-even (D-4, D-2)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 636,
+  "output_tokens": 360,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005295,
+ "request_id": "req_011Cg9M1adXBMbq5UPsAmVtN",
+ "ts": "2026-10-18T07:57:10+00:00"
+}

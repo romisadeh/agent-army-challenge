@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3d ROI is +1.47 on only $11.07 spend, with 2 profit days and 1 loss day. Yesterday was a loss (ROI -0.605), and the 3d result depends on one strong day (d-2, ROI 3.63). Peer forward ROI is only +0.04, and blended ROI of 0.55 leans on thin own data. The budget is reconstructed and spend exceeds 1.25x budget, so the data is unreliable. Evidence is too thin and mixed to scale; the losses are too small to pause.\",\"key_evidence\":[\"last_3d roi 1.47 on spend $11.07 (2 profit days, 1 loss day)\",\"d-1 roi -0.605 after d-2 roi 3.626\",\"peers fwd_roi_1_3d 0.041 (n=54)\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"True current budget is uncertain because it was reconstructed and spend exceeds 1.25x of it\",\"Whether d-2's high ROI was a one-off from small spend\",\"Whether the declining trend continues\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 417,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005696,
+ "request_id": "req_011Cg7V7DLCnQSBCe4apGZdR",
+ "ts": "2026-10-17T08:22:08+00:00"
+}

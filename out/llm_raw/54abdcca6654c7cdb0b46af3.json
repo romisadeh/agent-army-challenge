@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":1.46,\"confidence\":0.6,\"reasoning\":\"Age 19 spend days, 2 of last 3 matured days profitable, last_3d.roi 0.555 and blended_roi 0.324 both above +0.10, so it is a proven-winner scale candidate. Trend improving and peers fwd_roi 0.215 (n=15) support it. Budget is a 15% step. Flags say budget was reconstructed from metadata and spend exceeds 1.25x budget, so the base budget may be off, which lowers confidence.\",\"key_evidence\":[\"last_3d.roi=0.555 with 2 profit days, 1 loss day\",\"blended_roi=0.324 (blend_weight_own 0.32)\",\"trend_last_day_vs_prior=improving\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget 1.27 is reconstructed from metadata, so the true current budget and the 15% step may be wrong\",\"Spend (3.02 on D-1) is well above budget 1.27, which suggests the budget field is not the live cap\",\"Only 5 matured days; D-2 showed a loss of -0.574 ROI\",\"Peer evidence is from a broad segment (fallback_level 0, n=15)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 621,
+  "output_tokens": 1091,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000629,
+ "request_id": "req_011Cg9MAci3AhnLQoRLc797d",
+ "ts": "2026-10-18T07:59:13+00:00"
+}

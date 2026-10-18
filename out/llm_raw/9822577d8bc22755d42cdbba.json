@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is 0.027, below the +0.10 threshold, and yesterday's roi is 0.012 with trend_last_day_vs_prior declining. Blended_roi 0.11 is positive but built on peers (n=30, band fallback) with only 0.38 own weight. The budget was reconstructed from a later log row and the card carries extreme_roi_gt_5, so the budget baseline is uncertain. Mixed, near break-even evidence supports keep.\",\"key_evidence\":[\"last_3d.roi = 0.027\",\"matured_days d=-1 roi = 0.012, trend declining\",\"blended_roi = 0.11 with blend_weight_own 0.38\",\"data_quality_flags: budget_reconstructed, extreme_roi_gt_5\"],\"uncertainty\":[\"Whether budget 5.08 is the true current daily budget\",\"Whether d=-4 outlier (roi 5.829) is inflating the trend\",\"Peer forward ROI reliability at fallback level 1\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 577,
+  "output_tokens": 769,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000464,
+ "request_id": "req_011Cg7tUCdJq5fexZGA25U8y",
+ "ts": "2026-10-17T13:28:29+00:00"
+}

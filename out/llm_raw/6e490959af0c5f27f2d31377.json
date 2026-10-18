@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Blended ROI is -0.336 and peers forward ROI is -0.435 (n=12), so the adset leans negative. However, own history is only 2 spend days, last_3d.roi is -0.144 with one loss and one profit day, and yesterday's matured ROI is about break-even (0.002) with trend_last_day_vs_prior improving. Losses have not clearly persisted, and the small budget of 8.89 limits downside. No buyer lock or notes apply. Keep and re-check tomorrow.\",\"key_evidence\":[\"blended_roi = -0.336\",\"last_3d.roi = -0.144 (1 loss day, 1 profit day)\",\"matured_days D-1 roi = 0.002, trend improving\",\"peers.fwd_roi_1_3d = -0.435, n=12\"],\"uncertainty\":[\"Only 2 spend days of own history, so the trend may be noise\",\"Peer group is weak if the matching is loose\",\"A further loss day on D-1 would favour scale_down or pause\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 501,
+  "output_tokens": 799,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000471,
+ "request_id": "req_011Cg7totbuJSiMNmyR8NvVa",
+ "ts": "2026-10-17T13:32:57+00:00"
+}

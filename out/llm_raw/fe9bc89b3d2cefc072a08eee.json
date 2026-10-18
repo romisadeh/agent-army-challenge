@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Last_3d ROI is -0.327 with 2 loss days and 1 profit day, and trend is declining, so it fails the proven-winner test. A buyer raised budget from 2.48 to 5.08 via ui_update_budget 21.3h ago and lock_24h is true, so the numbers conflict with a recent deliberate action. Blended ROI 0.049 is near break-even. Peers forward ROI is 0.275 (n=17). A human should settle this.\",\"key_evidence\":[\"buyer.last_human_action: up 2.48->5.08, 21.3h ago, lock_24h true\",\"last_3d.roi -0.327, loss_days 2, profit_days 1\",\"trend_last_day_vs_prior declining\",\"blended_roi 0.049 vs peers.fwd_roi_1_3d 0.275\"],\"uncertainty\":[\"Whether the budget increase has had enough time to show effect on matured data\",\"Peer evidence strength at n=17 with fallback_level 0\",\"Whether the buyer has context on creative or audience changes not on the card\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 831,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000499,
+ "request_id": "req_011Cg9MjcVZJGmMQwhTkTTVh",
+ "ts": "2026-10-18T08:06:40+00:00"
+}

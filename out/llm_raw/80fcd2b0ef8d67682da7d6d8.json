@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Evidence is mixed and near break-even. last_3d.roi is -0.01 with 2 profit days and 1 loss day, and yesterday's roi was -0.144 with trend_last_day_vs_prior declining. blended_roi is 0.049, below the +0.10 proven-winner bar. The buyer cut budget 54.61 to 43.69 about 24h ago, so I am not scaling against that. Spend exceeded budget (data_quality_flags), so I am holding rather than moving budget.\",\"key_evidence\":[\"last_3d.roi = -0.01\",\"blended_roi = 0.049\",\"matured_days d-1 roi = -0.144, trend declining\",\"buyer.last_human_action down 54.61 to 43.69, 24.5h ago\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag means the real budget is higher than 43.69, which would change the ROI read\",\"Whether yesterday's loss is noise after two profitable days or the start of a persistent decline\",\"Peer forward ROI of 0.556 (n=22, band fallback) is a weak signal\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 884,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000527,
+ "request_id": "req_011Cg7ti9rWRR15VtYqN6R81",
+ "ts": "2026-10-17T13:31:39+00:00"
+}

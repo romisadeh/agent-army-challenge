@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":23.4,\"confidence\":0.5,\"reasoning\":\"Numbers favor scaling: last_3d.roi 0.148 and blended_roi 0.143 both exceed +0.10, with 2 profit days of 3 and age 9 days. But buyer.last_human_action was a ui_adjust_budget cut from 25.4 to 20.32 0.4h ago, lock_24h is true, and net_budget_change_48h is +2.9. That deliberate recent cut conflicts with the proven-winner signal, so a human should settle it. Flag spend_exceeds_1.25x_budget adds doubt.\",\"key_evidence\":[\"last_3d.roi=0.148 (2 profit, 1 loss days)\",\"blended_roi=0.143, peers fwd_roi_1_3d=0.12 (n=14)\",\"buyer.last_human_action: down 25.4->20.32, 0.4h ago, lock_24h=true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's cut was a deliberate hold or a reaction to D-3 loss (-0.006 ROI on 46.16 spend)\",\"Budget history: spend exceeded budget on several days, so true budget per day is unclear\",\"Whether the 0.458 ROI on D-1 is a sustained trend or noise\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 1040,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000606,
+ "request_id": "req_011Cg9MQi8rnPC3HsTpDfnzv",
+ "ts": "2026-10-18T08:02:24+00:00"
+}

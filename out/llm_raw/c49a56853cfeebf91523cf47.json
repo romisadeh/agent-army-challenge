@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":106.89,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 35, last_3d.profit_days 3 with roi 0.125 (>0.10), and blended_roi 0.134 (>0.10). Yesterday's ROI 0.147 and trend_last_day_vs_prior is flat. The last human action was an up-move, so scaling is in the same direction. The 24h lock and spend_exceeds_1.25x_budget flag are noted; the matured ROI figures are still usable. Step is +10%.\",\"key_evidence\":[\"last_3d.roi = 0.125 with profit_days 3, loss_days 0\",\"blended_roi = 0.134 (blend_weight_own 0.94)\",\"buyer.last_human_action: up 80.98 to 97.17, 21.9h ago, lock_24h true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"lock_24h may block the change until the lock expires\",\"spend exceeding budget means a higher budget may not raise spend\",\"peer evidence is thin (n=5)\",\"daily ROI dipped to 0.05 on D-2 and the trend is flat\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 1031,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000601,
+ "request_id": "req_011Cg9MNZDY3NVGxT7CS5GMA",
+ "ts": "2026-10-18T08:01:55+00:00"
+}

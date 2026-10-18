@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"The adset meets proven-winner criteria: age 30, 3 of 3 profitable days, last_3d ROI 0.189 and blended ROI 0.137. But a buyer cut the budget from 17.78 to 14.22 only 0.4 hours ago, with a 24h lock active. A deliberate recent human action should not be overridden, so I hold the budget and revisit after the lock expires.\",\"key_evidence\":[\"buyer.last_human_action: down 17.78->14.22, 0.4h ago\",\"buyer.lock_24h: true\",\"last_3d: ROI 0.189, 3 profit days, 0 loss days\",\"blended_roi: 0.137\"],\"uncertainty\":[\"Why the buyer reduced the budget despite profitable days\",\"Whether spend_exceeds_1.25x_budget distorted the recent ROI readings\",\"Peer forward ROI is only 0.027, weaker than the adset's own results\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 642,
+  "output_tokens": 349,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005197,
+ "request_id": "req_011Cg9MBPQdKkR5L1gJT1hyL",
+ "ts": "2026-10-18T07:59:21+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Lock_24h is active after a deliberate buyer cut from 53.24 to 42.6 fourteen hours ago, and the evidence does not clearly justify overriding it. Blended ROI is 0.435 and last_3d ROI is 0.485, but last day ROI is -0.221 and trend is declining. Peers forward ROI is only 0.027 (n=15). Spend exceeds budget by about 1.25x, so budget data needs checking. Mixed evidence supports no change.\",\"key_evidence\":[\"buyer.last_human_action: down 53.24->42.6, hours_ago 14.3, lock_24h true\",\"blended_roi 0.435 with blend_weight_own 0.89\",\"peers.fwd_roi_1_3d 0.027, n 15\",\"trend_last_day_vs_prior: declining; matured_days d=-1 roi -0.221\"],\"uncertainty\":[\"Whether the buyer's cut reflects information not on the card\",\"Whether spend above budget (data flag spend_exceeds_1.25x_budget) distorts ROI\",\"Whether the decline continues or is one-day noise\",\"Peer forward ROI is weak and well below own history\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 853,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000511,
+ "request_id": "req_011Cg7UHC5hnkw5GfsNdPoGF",
+ "ts": "2026-10-17T08:11:17+00:00"
+}

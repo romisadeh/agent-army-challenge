@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":1.4,\"confidence\":0.55,\"reasoning\":\"Adset is 3 spend days old, so the proven-winner default (age 4+) does not apply. Still, matured profit leans positive: last_3d.profit_days 2 vs loss_days 1, last_3d.roi 0.187, blended_roi 0.119 with blend_weight_own 0.45. Peer fwd_roi_1_3d is 0.065 (n=13). Budget is reconstructed from metadata and spend exceeds 1.25x budget, so I propose a modest +10% step rather than more.\",\"key_evidence\":[\"last_3d.profit_days=2, loss_days=1\",\"blended_roi=0.119\",\"peers.fwd_roi_1_3d=0.065 (n=13)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Actual current budget may differ from reconstructed 1.27, which changes the target amount\",\"Only 3 matured days; d=-3 was a loss\",\"Peer forward ROI is well below own 3-day ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 917,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000535,
+ "request_id": "req_011Cg7tgDpL7dp1obqczDJug",
+ "ts": "2026-10-17T13:31:15+00:00"
+}

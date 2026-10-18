@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has 5 spend days, 2 of last 3 matured days profitable, last_3d ROI +0.685 and blended ROI +0.284, so it looks like a proven-winner candidate. However, a buyer cut the budget 3.81 to 2.54 only 22h ago and the 24h lock is active. Yesterday was negative (-0.469) with a declining trend. Spend is also above 1.25x budget. Do not override the buyer; keep.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 3.81->2.54 22h ago\",\"last_3d.roi=0.685 with 2 profit days, 1 loss day\",\"matured d-1 roi=-0.469, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer reduced the budget\",\"Whether spend overshoot distorts recent ROI\",\"Tiny spend base (about $4-5/day) makes ROI noisy\",\"Peer fwd ROI is only +0.011\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 388,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005521,
+ "request_id": "req_011Cg7sqACAwe7sdngEuQzZs",
+ "ts": "2026-10-17T13:20:07+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.27,\"confidence\":0.55,\"reasoning\":\"Matured 3-day ROI is -0.115 with 2 loss days and a declining trend, and blended_roi is -0.082, so the direction is mildly negative. The evidence is thin: the loss is small, peers are only slightly negative (fwd_roi_1_3d -0.064, n=14), and the spend-over-budget flag makes the spend figures suspect. A human cut budget 17.2h ago and lock_24h is true, so I keep the current $1.27 and do not override the buyer action.\",\"key_evidence\":[\"blended_roi -0.082 with blend_weight_own 0.35\",\"last_3d roi -0.115, loss_days 2, profit_days 1\",\"buyer.lock_24h true; last_human_action down 1.9 to 1.27 at 17.2h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether spend is overstated relative to budget, which would make the true ROI different\",\"Whether the D-1 loss (roi -0.58) continues or is one-day noise\",\"Whether the lock expires before the next review, after which a pause could be justified\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 774,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000467,
+ "request_id": "req_011Cg7U4YmJAKGype2ECLoan",
+ "ts": "2026-10-17T08:08:26+00:00"
+}

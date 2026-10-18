@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":20.45,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 5 (4+), all three matured days profitable (d-3 0.284, d-2 0.743, d-1 0.559), last_3d.roi 0.543 > 0.10, blended_roi 0.31 > 0.10. No buyer lock, notes, or 48h budget change. Budget_reconstructed flag affects the budget base, not the ROI numbers. Scale up about 15% from 17.78. Peer forward ROI 0.075 is modest, so confidence is moderate.\",\"key_evidence\":[\"last_3d.roi=0.543 with 3 profit days, 0 loss days\",\"matured_days d-3..d-1 all ROI>0.28\",\"blended_roi=0.31, age_spend_days=5\",\"buyer.net_budget_change_48h=0.0, notes empty\"],\"uncertainty\":[\"Budget 17.78 is reconstructed from metadata, so the base for the step is approximate\",\"Peer forward ROI 0.075 suggests gains may fade\",\"trend_last_day_vs_prior flat, not clearly rising\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 590,
+  "output_tokens": 858,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000509,
+ "request_id": "req_011Cg9Lv485fPALKKFZGJAhu",
+ "ts": "2026-10-18T07:55:55+00:00"
+}

@@ -1,0 +1,110 @@
+{
+ "adset_id": "31626016833981",
+ "account": "ACC-04",
+ "decision_date": "2026-06-11",
+ "window": "10:00 local (UTC+3); all performance below is matured (through D-1)",
+ "age_spend_days": 13,
+ "status_at_window": "active",
+ "budget": {
+  "current": 39.6,
+  "source": "rule_engine_before_window",
+  "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+  "budget_type": "ABO"
+ },
+ "matured_days": [
+  {
+   "d": -5,
+   "spend": 85.59,
+   "revenue": 138.37,
+   "roi": 0.617
+  },
+  {
+   "d": -4,
+   "spend": 117.86,
+   "revenue": 115.1,
+   "roi": -0.023
+  },
+  {
+   "d": -3,
+   "spend": 84.56,
+   "revenue": 90.98,
+   "roi": 0.076
+  },
+  {
+   "d": -2,
+   "spend": 82.65,
+   "revenue": 62.18,
+   "roi": -0.248
+  },
+  {
+   "d": -1,
+   "spend": 68.39,
+   "revenue": 57.28,
+   "roi": -0.162
+  }
+ ],
+ "last_3d": {
+  "spend": 235.6,
+  "revenue": 210.44,
+  "roi": -0.107,
+  "loss_days": 2,
+  "profit_days": 1
+ },
+ "trend_last_day_vs_prior": "declining",
+ "peers": {
+  "segment": "ACC-04 / age 4+ / -50..-10%",
+  "n": 10,
+  "fallback_level": 0,
+  "fwd_roi_1_3d": 0.279
+ },
+ "blended_roi": -0.077,
+ "blend_weight_own": 0.92,
+ "buyer": {
+  "last_human_action": {
+   "hours_ago": 88.7,
+   "event": "ui_adjust_budget",
+   "from": 103.14,
+   "to": 82.51,
+   "direction": "down",
+   "note": null
+  },
+  "net_budget_change_48h": 0.0,
+  "lock_24h": false,
+  "notes": []
+ },
+ "rules": {
+  "acted_yesterday": [
+   {
+    "rule": "R02",
+    "action": "cut",
+    "local_time": "17:30",
+    "response": "FAILED/NOOP",
+    "roi_seen": -0.15,
+    "spend_seen": 40.49
+   },
+   {
+    "rule": "R02",
+    "action": "cut",
+    "local_time": "22:30",
+    "response": "SUCCESS",
+    "roi_seen": -0.1,
+    "spend_seen": 58.83
+   }
+  ],
+  "acted_today_before_window": [
+   {
+    "rule": "R07",
+    "action": "cut",
+    "local_time": "05:30",
+    "response": "SUCCESS",
+    "roi_seen": -0.51,
+    "spend_seen": 15.43
+   }
+  ]
+ },
+ "data_quality_flags": [
+  "engine_echo_rows_in_buyer_log_excluded",
+  "spend_exceeds_1.25x_budget"
+ ],
+ "lessons": []
+}

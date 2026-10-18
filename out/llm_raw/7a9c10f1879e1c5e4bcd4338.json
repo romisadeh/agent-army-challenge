@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Last_3d ROI is +0.176 with 2 profit days, but blended_roi is only 0.077, below the +0.10 proven-winner bar, and peers fwd_roi is 0.006 (near break-even). Yesterday ROI was -0.017 and trend is declining. A buyer cut budget 7.62 to 1.27 24.5h ago (net -2.54 over 48h), so scaling up would override them. Spend exceeds 1.25x budget, so budget and spend figures are unreliable. Evidence is mixed, so hold.\",\"key_evidence\":[\"last_3d.roi = 0.176 (2 profit, 1 loss day)\",\"blended_roi = 0.077 (below +0.10 threshold)\",\"buyer.last_human_action: down 7.62 to 1.27, 24.5h ago\",\"peers.fwd_roi_1_3d = 0.006, n=31\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag means the budget figure is wrong\",\"Whether yesterday's -0.017 ROI marks the start of a sustained decline\",\"Reason behind the buyer's budget cut, which the card does not record\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 613,
+  "output_tokens": 965,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000566,
+ "request_id": "req_011Cg7th1m4wNwmrNQSfxuaZ",
+ "ts": "2026-10-17T13:31:24+00:00"
+}

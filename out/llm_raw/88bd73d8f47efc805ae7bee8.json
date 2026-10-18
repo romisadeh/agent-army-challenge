@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Own 3-day ROI is about break-even (-0.01) with 2 profit days and 1 loss day. Yesterday was the worst day (-0.144) on the highest spend ($89.65), and the trend is declining. Blended ROI of 0.049 is only mildly positive, so scaling up isn't justified. The loss is too small and recent to pause or cut. The buyer cut the budget 24.5h ago to $43.69 and spend ran well above budget, so I'll hold.\",\"key_evidence\":[\"last_3d roi -0.01 (2 profit days, 1 loss day)\",\"d-1 roi -0.144 on spend 89.65\",\"blended_roi 0.049, peers fwd_roi 0.556 (n=22)\",\"flag spend_exceeds_1.25x_budget; buyer cut 54.61->43.69 24.5h ago\"],\"uncertainty\":[\"Whether the spend overshoot beyond budget will continue and drive further losses\",\"Adset is only 5 days old, so the history is short\",\"Peer ROI of 0.556 is a fallback-band estimate and may be optimistic\",\"Whether yesterday's late revenue will improve d-1 ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 432,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00595,
+ "request_id": "req_011Cg7SR2PYZxMEhTfPGznJE",
+ "ts": "2026-10-17T07:46:49+00:00"
+}

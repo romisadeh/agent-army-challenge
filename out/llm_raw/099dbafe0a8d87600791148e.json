@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Mixed evidence: last_3d.roi is -0.2 with 2 loss days and 1 profit day, and blended_roi is -0.064 (near break-even). Peers' forward ROI is +0.036 (n=21). The buyer cut budget 6.35 to 5.08 about 70h ago, outside the 48h window and with no lock. data_quality_flags shows spend exceeds 1.25x budget, so the readings are less reliable. Losses are small in absolute terms. Hold and re-check next window.\",\"key_evidence\":[\"last_3d.roi = -0.2 (2 loss days, 1 profit day)\",\"blended_roi = -0.064 vs peers fwd_roi_1_3d = 0.036 (n=21)\",\"data_quality_flags: spend_exceeds_1.25x_budget\",\"buyer.last_human_action: down 6.35->5.08, 69.8h ago, lock_24h false\"],\"uncertainty\":[\"Whether spend above budget (7.52 vs 5.08 on D-3) distorts the ROI readings\",\"Whether the losing trend persists over the next matured day\",\"Whether the peer cohort's positive forward ROI applies to this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 1021,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000594,
+ "request_id": "req_011Cg7u8ak9ACkc2tshf6f4H",
+ "ts": "2026-10-17T13:37:11+00:00"
+}

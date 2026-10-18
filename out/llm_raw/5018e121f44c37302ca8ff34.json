@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Last 3d ROI is +0.334 with 2 of 3 days profitable and blended ROI is +0.208, which is positive. But spend is tiny (about $16.89 over 3d), yesterday was -0.202, and the buyer cut the budget 24.5h ago. Data flags say spend exceeded 1.25x budget and conversions exceeded clicks. Evidence is too thin to scale and too positive to cut, so hold.\",\"key_evidence\":[\"last_3d roi 0.334, 2 profit days / 1 loss day, spend $16.89\",\"blended_roi 0.208 (own weight 0.46), peers fwd_roi_1_3d 0.101 n=13\",\"buyer cut budget 3.81 -> 2.67 24.5h ago\",\"data_quality_flags: meta_conversions_gt_clicks, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer reduced the budget and whether they would want it restored\",\"Reliability of revenue and conversion data given the conversions>clicks flag\",\"Whether yesterday's -0.202 is noise or the start of a decline on tiny spend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 424,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005862,
+ "request_id": "req_011Cg7RvQdgzJt9GK8EVtJgQ",
+ "ts": "2026-10-17T07:40:21+00:00"
+}

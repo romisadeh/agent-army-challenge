@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured data shows two losing days (D-2 ROI -0.096, D-1 ROI -0.15), last_3d ROI -0.121, and blended_roi -0.335 with peers at -0.435 over n=12. Losses are consistent but spend is small and the adset is only 2 days old. Buyer cut budget 6.35 to 4.44 23.1h ago and lock_24h is true, so a human already acted and the lock forbids a change today. Keep is the right default.\",\"key_evidence\":[\"blended_roi -0.335\",\"last_3d roi -0.121 with 2 loss_days, 0 profit_days\",\"buyer.lock_24h true, last human down 6.35 to 4.44 23.1h ago\",\"peers fwd_roi_1_3d -0.435, n=12\"],\"uncertainty\":[\"Whether the losses persist beyond two days given the young age\",\"Whether the lock expires and a pause is warranted on the next window\",\"Whether the buyer's min-ROAS bid strategy is set too tight for this audience\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 539,
+  "output_tokens": 382,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000264,
+ "request_id": "req_011Cg7SnzKdJpDfxdLcKKs9N",
+ "ts": "2026-10-17T07:51:47+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Three matured days are mixed: last_3d.roi is 0.093 (below the +0.10 bar), blended_roi is 0.075, and only age_spend_days 3 (below the 4+ proven-winner threshold). The budget is unreliable: data_quality_flags show budget_reconstructed and spend_exceeds_1.25x_budget, with spend about 3.9/day against a 1.61 budget. Profit is marginal, so keep until the budget is verified.\",\"key_evidence\":[\"last_3d.roi = 0.093, blended_roi = 0.075\",\"age_spend_days = 3 (below 4+ threshold)\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\",\"matured_days: 2 profit, 1 loss (d=-3 at -0.144)\"],\"uncertainty\":[\"Actual current daily budget, since it is reconstructed from metadata\",\"Whether the d=-3 loss is noise or the start of a trend\",\"Peer forward ROI of 0.065 (n=13) is only modestly positive\",\"Whether the adset clears age 4 with a positive streak next day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 545,
+  "output_tokens": 671,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000411,
+ "request_id": "req_011Cg7t1BScdJkcJd2Xf7ufM",
+ "ts": "2026-10-17T13:22:22+00:00"
+}

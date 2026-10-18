@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"pause\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3 matured days: 3 loss days, 0 profit, last_3d.roi -0.398, blended_roi -0.16, trend declining. Yesterday ROI -0.608 on spend 1.52. Buyer already cut budget 2.79 to 1.68 24.6h ago (net -3.4 over 48h), yet losses persist. Peers fwd ROI only +0.039 with n=22. Flag spend_exceeds_1.25x_budget means spend is above budget, so the budget figure is unreliable. Losses persist after the buyer cut, which argues against keeping it running.\",\"key_evidence\":[\"last_3d.roi = -0.398, loss_days = 3, profit_days = 0\",\"blended_roi = -0.16, peers.fwd_roi_1_3d = 0.039 (n=22)\",\"buyer.last_human_action: down 2.79 to 1.68, 24.6h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 24.6h-old buyer budget cut has had enough time to take effect\",\"Budget figure may be inaccurate given spend exceeds budget\",\"Peer forward ROI is slightly positive, suggesting possible recovery\",\"Only 4 matured days; the -4 day was profitable\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 477,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000321,
+ "request_id": "req_011Cg7ske1cdfpc8aFLMQGGd",
+ "ts": "2026-10-17T13:19:04+00:00"
+}

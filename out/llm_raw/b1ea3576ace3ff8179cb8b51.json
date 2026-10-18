@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Meets the proven-winner screen: age 6 spend days, last_3d.roi 0.109 and blended_roi 0.108 both above +0.10, and 2 of 3 matured days profitable. Scale-up is held because a buyer cut budget 6.32 to 4.43 about 24.5h ago (buyer.last_human_action, net_budget_change_48h 3.16). Yesterday was a small loss (-0.01) with trend_last_day_vs_prior declining. The spend_exceeds_1.25x_budget flag also weakens budget reliability.\",\"key_evidence\":[\"last_3d.roi = 0.109 and blended_roi = 0.108\",\"buyer.last_human_action: down, 24.5h ago, 6.32 to 4.43\",\"matured_days d=-1 roi = -0.01, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's 24h-old cut reflected information not on the card\",\"Whether actual spend (6.54 vs budget 4.43) indicates the budget is misread, which would change scaling math\",\"Peer forward ROI of 0.107 from n=27 is only moderately informative\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 641,
+  "output_tokens": 1034,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000602,
+ "request_id": "req_011Cg9Mm4FtZQrWBXih7Kzqy",
+ "ts": "2026-10-18T08:07:00+00:00"
+}

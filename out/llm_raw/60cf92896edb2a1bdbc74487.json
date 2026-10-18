@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":8.53,\"confidence\":0.55,\"reasoning\":\"Adset is not a proven winner: last_3d.roi is 0.045 (below +0.10), with 2 loss days and 1 profit day, and blended_roi is 0.012, near break-even. Peers are slightly negative (fwd_roi_1_3d -0.007). A buyer raised budget 17.2h ago (lock_24h true, net +4.72 over 48h), so I hold at 8.53 rather than override the recent human action.\",\"key_evidence\":[\"last_3d.roi = 0.045 with loss_days 2 / profit_days 1\",\"blended_roi = 0.012, peers fwd_roi_1_3d = -0.007\",\"buyer.lock_24h = true, last_human_action up 5.08 to 8.53 at 17.2h ago\",\"trend_last_day_vs_prior = improving\"],\"uncertainty\":[\"Whether the improving D-1 trend (+0.256 ROI) persists or is a single-day spike\",\"Whether the 17h-old buyer increase has had enough time to show its effect\",\"Peer forward ROI is based on n=15 and only a modest band\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 600,
+  "output_tokens": 770,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000466,
+ "request_id": "req_011Cg9N3LyRW9KRoGBMuQXqX",
+ "ts": "2026-10-18T08:10:40+00:00"
+}

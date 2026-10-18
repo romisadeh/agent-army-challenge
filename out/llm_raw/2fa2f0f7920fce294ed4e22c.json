@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Roughly break-even: last_3d ROI -0.019 on $9.78 spend, blended ROI -0.01, peers -0.005. Does not meet proven-winner criteria (last_3d ROI not above +0.10). Losses are small and not persistent enough to pause. A buyer cut the budget 24h ago, and the data flags (spend over 1.25x budget, conversions above clicks) lower trust in the numbers. Hold.\",\"key_evidence\":[\"last_3d.roi -0.019 (1 profit day, 2 loss days)\",\"blended_roi -0.01; peers fwd_roi_1_3d -0.005 (n=14)\",\"buyer cut budget 2.29->1.83 24.4h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget, meta_conversions_gt_clicks\"],\"uncertainty\":[\"Whether the spend-over-budget flag is distorting recent ROI\",\"Whether the declining trend continues\",\"Revenue attribution reliability given conversions exceed clicks\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 664,
+  "output_tokens": 388,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005631,
+ "request_id": "req_011Cg9MzouKiEDDZ46FFMvyv",
+ "ts": "2026-10-18T08:10:05+00:00"
+}

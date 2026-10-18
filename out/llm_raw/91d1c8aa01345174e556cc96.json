@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":2.14,\"confidence\":0.55,\"reasoning\":\"Matured losses persist: last_3d.roi -0.297 with 3 loss days and 0 profit days, and trend_last_day_vs_prior is declining. Buyer already moved budget down 3.81 to 2.67 about 24h ago, so a further step down agrees with that direction. Blended_roi 0.168 is propped up by weak peers (fallback_level 1), so it does not justify keeping budget. Spend exceeds 1.25x budget, so the spend figures need checking. Not a pause on 3 days alone, so a ~20% cut.\",\"key_evidence\":[\"last_3d.roi = -0.297 with loss_days = 3, profit_days = 0\",\"trend_last_day_vs_prior = declining\",\"buyer.last_human_action: down 3.81 to 2.67, 24.5h ago\",\"peers.fallback_level = 1, n = 23\"],\"uncertainty\":[\"Spend exceeds 1.25x budget flag may mean actual daily spend is higher than the card's budget\",\"Peer forward ROI (0.39) could signal recovery if the losing streak is noise\",\"Whether the pause threshold is met if losses continue tomorrow\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 630,
+  "output_tokens": 940,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000555,
+ "request_id": "req_011Cg7u26xdce6UbKZ8fjyKp",
+ "ts": "2026-10-17T13:35:44+00:00"
+}

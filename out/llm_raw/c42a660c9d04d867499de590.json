@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Performance is profitable (3 of 3 days, last_3d ROI +0.298, blended +0.348), but the adset has only 3 spend days, so it is not a proven winner (needs 4+). Budget is $1.91 against $11.85 spend yesterday, and the budget is reconstructed, so scaling from it is unreliable. Yesterday's ROI fell to 0.083 on a declining trend. Holding.\",\"key_evidence\":[\"age_spend_days=3 (below 4+ winner threshold)\",\"budget.current=1.91 vs yesterday spend 11.85, flags budget_reconstructed and spend_exceeds_1.25x_budget\",\"last_3d roi=0.298, profit_days=3, blended_roi=0.348\",\"trend_last_day_vs_prior=declining, d-1 roi=0.083\"],\"uncertainty\":[\"True current budget is unknown because it was reconstructed from metadata\",\"Whether yesterday's ROI drop to 0.083 is noise or a start of decline\",\"Small total spend ($21.34) leaves 3-day ROI statistically thin\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 556,
+  "output_tokens": 407,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005617,
+ "request_id": "req_011Cg9LXECgF8aJuSPvRKEUr",
+ "ts": "2026-10-18T07:50:44+00:00"
+}

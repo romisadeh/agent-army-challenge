@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":11.0,\"confidence\":0.5,\"reasoning\":\"Blended ROI is -0.221 (w=0.48 on own 3d ROI -0.042, peers fwd -0.386). Matured 5-day ROI is about -0.05 on $21.40 spend, roughly break-even but negative. Last human action was a 41h-old downscale, not locked. Trend is improving, but blended and peer evidence both point down. A ~17% step respects the $-per-day limit and avoids a pause on near-break-even data.\",\"key_evidence\":[\"blended_roi=-0.221\",\"last_3d.roi=-0.042 with loss_days=1\",\"peers.fwd_roi_1_3d=-0.386 (n=18, band fallback)\",\"buyer.last_human_action direction=down 41.2h ago, lock_24h=false\"],\"uncertainty\":[\"Peer fallback band is broad and may not match this adset\",\"Own 5-day ROI is near break-even and trend_last_day_vs_prior is improving\",\"Small budget means small absolute loss either way\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 1050,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000607,
+ "request_id": "req_011Cg7UbU1v4kQCzsj7wZHor",
+ "ts": "2026-10-17T08:15:27+00:00"
+}

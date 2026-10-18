@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":2.54,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is only 0.083 on $9.51 spend, with one loss day (D-1 ROI -0.256) and a declining trend. Blended ROI is 0.032 and peer forward ROI is 0.008, so the result is roughly break-even with thin evidence. Buyer cut budget 22h ago and lock_24h is true, so I'm leaving it unchanged rather than overriding that call. Spend exceeds budget per the data-quality flag.\",\"key_evidence\":[\"blended_roi=0.032\",\"last_3d roi=0.083, loss_days=1, profit_days=2\",\"peers fwd_roi_1_3d=0.008 (n=33)\",\"buyer lock_24h=true, down 3.81->2.54 22h ago\"],\"uncertainty\":[\"Whether the D-1 loss is noise or the start of a downtrend\",\"Why spend exceeds 1.25x budget and whether real daily spend is higher than the card shows\",\"Whether the buyer's cut was based on information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 668,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00041,
+ "request_id": "req_011Cg7STX7FS9J5NvtT9AxaT",
+ "ts": "2026-10-17T07:47:23+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Aged adset (70 spend days) with a small budget of $15.54. Last 3 days ROI is -0.114 with 2 loss days and 1 profit day, so it fails the proven-winner test. Blended ROI is roughly break-even at +0.007. Peers are positive at +0.302 (n=29), but own losses do not justify scaling up. Losses are mild and not persistent across 5 days (3 profit, 2 loss), so pausing or cutting is not warranted. Keep.\",\"key_evidence\":[\"last_3d.roi -0.114 (2 loss days, 1 profit day)\",\"blended_roi +0.007\",\"peers fwd_roi_1_3d +0.302 (n=29)\",\"matured 5d: 3 profitable days, 2 losing, spend ~$15/day\"],\"uncertainty\":[\"Budget was reconstructed from metadata, so the true current budget may differ\",\"Peer ROI is positive, so recovery is plausible but unconfirmed by own data\",\"Daily ROI is noisy at ~$15 spend per day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 595,
+  "output_tokens": 391,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005523,
+ "request_id": "req_011Cg9MWpMLRLRRGBQJ3iN7f",
+ "ts": "2026-10-18T08:03:45+00:00"
+}

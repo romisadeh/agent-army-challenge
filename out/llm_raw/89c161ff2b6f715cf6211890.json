@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is positive (last_3d.roi 0.685) and blended_roi is 0.284, but yesterday lost money (d-1 roi -0.469) and trend is declining. Peer forward ROI is only 0.011. A buyer cut to 2.54 happened 22h ago with lock_24h true. Spend 4.79 on d-1 exceeds both budget and the 1.25x flag, so the budget field may be stale. Mixed evidence plus a recent human action: a human should settle it.\",\"key_evidence\":[\"last_3d.roi 0.685 over 13.64 spend\",\"blended_roi 0.284, peers fwd_roi_1_3d 0.011 (n=32)\",\"buyer ui_update_budget 3.81->2.54, hours_ago 22, lock_24h true\",\"data_quality_flags spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether budget.current 2.54 is actually the live cap given spend 4.79 on d-1\",\"Whether the d-1 loss is noise after two profitable days\",\"Whether the buyer's cut was a deliberate response to a known issue\",\"Peer forward ROI near zero suggests limited upside from scaling\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 609,
+  "output_tokens": 1059,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000609,
+ "request_id": "req_011Cg7SXktLHTNrPjDKwbwVF",
+ "ts": "2026-10-17T07:48:23+00:00"
+}

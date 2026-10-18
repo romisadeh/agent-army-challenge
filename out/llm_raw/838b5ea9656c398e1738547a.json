@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Matured last_3d ROI is -0.056 on $47.52 spend, with 2 profit days and 1 loss day, so the signal is mixed and close to break-even. blended_roi is -0.068 and peers are -0.097 (n=9), both slightly negative. Scaling up is not supported and a single bad day (d-2, ROI -0.338) is noise, not a trend. Pausing or cutting is not justified on this evidence. Budget is flagged as reconstructed, so keep the current budget unchanged.\",\"key_evidence\":[\"last_3d.roi = -0.056 (2 profit days, 1 loss day)\",\"blended_roi = -0.068 with blend_weight_own 0.7\",\"peers.fwd_roi_1_3d = -0.097, n=9\",\"data_quality_flags: budget_reconstructed:metadata_end_of_week\"],\"uncertainty\":[\"Budget of 15.54 is reconstructed from metadata, so the true current budget may differ\",\"Peer sample of 9 is modest\",\"A sustained loss run over the next 1-2 days would justify a scale-down\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 564,
+  "output_tokens": 716,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000433,
+ "request_id": "req_011Cg7St86qtmaU1XLm2ZsQe",
+ "ts": "2026-10-17T07:52:57+00:00"
+}

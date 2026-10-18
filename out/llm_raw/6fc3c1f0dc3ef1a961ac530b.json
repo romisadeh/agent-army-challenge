@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Buyer cut budget 3.81 to 2.48 22 hours ago and the 24h lock is active, so I should not override it. Last 3 days show 2 loss days, with revenue 0 and 1.18 on the two most recent, and a declining trend. The positive 3d ROI of 0.539 comes from one big day (D-3). The adset is small, so peers carry weight. Not a clear pause or scale case.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 3.81->2.48 22h ago\",\"last_3d loss_days=2, profit_days=1\",\"trend_last_day_vs_prior=declining; D-1 ROI -0.694, D-2 ROI -1.0\",\"blended_roi=0.223 with own weight 0.32, peers 0.078\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget flag distorts recent spend and ROI\",\"Whether late revenue will lift D-1\",\"Why the buyer cut the budget, since no note is given\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005521,
+ "request_id": "req_011Cg9Lz8KDXD2tzftRG8KgG",
+ "ts": "2026-10-18T07:56:49+00:00"
+}

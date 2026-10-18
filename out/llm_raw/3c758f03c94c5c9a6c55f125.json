@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Own 3-day ROI is -0.341 with 3 loss days and 0 profit days (last_3d), so it fails the proven-winner test (last_3d.roi must exceed +0.10). Blended_roi 0.274 is positive only because peers (fwd_roi_1_3d 0.697, n=5) carry weight 0.59. Spend is small ($13.75 over 3 days) and the losses are modest, so pausing is not justified. The buyer tripled budget 1.27 to 3.81 about 89h ago, outside the 48h window. Losses are real, but the evidence is mixed, so hold rather than cut.\",\"key_evidence\":[\"last_3d.roi=-0.341, loss_days=3, profit_days=0\",\"blended_roi=0.274 with blend_weight_own=0.41 (peer-driven)\",\"buyer.last_human_action up 1.27->3.81, hours_ago=89\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 3x budget increase caused the recent losses or they are noise on small spend\",\"Peer forward ROI of 0.697 with n=5 is a weak signal\",\"Reliability of spend figures given the spend_exceeds_1.25x_budget flag\",\"Whether today's 10:00 window reading would confirm or reverse the losing trend\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 612,
+  "output_tokens": 1042,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000604,
+ "request_id": "req_011Cg7tYfk4uNBKJqUQYQuCm",
+ "ts": "2026-10-17T13:29:32+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Matured last_3d ROI is 0.331 with 3 profit days, and blended_roi is 0.205, so the adset is profitable. However, yesterday's ROI fell to 0.09 (trend declining) and peer forward ROI is only 0.041. buyer.lock_24h is true after a human raised budget 12.7 to 19.05 21.2h ago, so I am not changing budget today. Evidence is mixed, so keep.\",\"key_evidence\":[\"last_3d.roi = 0.331, profit_days = 3\",\"blended_roi = 0.205, blend_weight_own = 0.57\",\"trend_last_day_vs_prior = declining, matured_days d=-1 roi = 0.09\",\"buyer.lock_24h = true, last_human_action up 21.2h ago\"],\"uncertainty\":[\"Whether the declining D-1 ROI is the start of a trend or noise after three profitable days\",\"Peer forward ROI of 0.041 is well below the own 3-day ROI\",\"Whether the 19.05 budget is fully spent (D-1 spend 16.22 vs budget 19.05)\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 818,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000487,
+ "request_id": "req_011Cg7UvseFcdHcKqBz6WvAT",
+ "ts": "2026-10-17T08:19:48+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer cut budget from 8.89 to 6.22 0.5h ago and lock_24h is true, so I defer to that action. Matured 3-day ROI is 0.023 with 2 loss days and 1 profit day, and blended_roi is -0.082, so the evidence is mixed rather than a clear loss. The spend_exceeds_1.25x_budget flag (D-1 spend 11.63 vs budget 6.22) means the budget reading is unreliable. No scale or pause is justified yet.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget 8.89->6.22, 0.5h ago, lock_24h true\",\"last_3d.roi: 0.023 (2 loss days, 1 profit day)\",\"blended_roi: -0.082 (own weight 0.61, peers -0.245)\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the ABO budget cap is actually enforced given spend 1.87x budget on D-1\",\"Whether peer forward ROI of -0.245 (n=22, band fallback) applies to this adset\",\"Next-day trend after the buyer's downward change\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 911,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000536,
+ "request_id": "req_011Cg7USUxxuaACMVS2cCwCQ",
+ "ts": "2026-10-17T08:13:23+00:00"
+}

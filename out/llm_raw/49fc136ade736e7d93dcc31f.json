@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Matured 3-day ROI is -0.059 with 2 loss days and 1 profit day, and blended ROI is -0.039, so the evidence is mixed and near break-even rather than a consistent loss. Peer forward ROI is +0.244 (n=27, fallback level 1), which argues against cutting. Today's partial reading (-0.107 at 17:30) is not reliable enough to act on. Yesterday's R02 cuts all failed/no-op, so no budget change took effect. Buyer's 82.51 cut was 72h ago with no lock.\",\"key_evidence\":[\"blended_roi -0.039 with blend_weight_own 0.93\",\"last_3d roi -0.059, loss_days 2, profit_days 1\",\"peers fwd_roi_1_3d 0.244, n 27, fallback_level 1\",\"rules.acted_yesterday: all R02 cuts FAILED/NOOP\"],\"uncertainty\":[\"Whether the 'declining' trend persists after yesterday's -0.248 day\",\"Whether the spend_exceeds_1.25x_budget flag means actual budget differs from 82.51\",\"Whether the failed R02 cuts left the adset in an unknown delivery state\",\"Peer evidence is a fallback band with moderate sample size\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 1507,
+  "output_tokens": 987,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000663,
+ "request_id": "req_011Cg7VBr8sph7C3Vs8jueM8",
+ "ts": "2026-10-17T08:23:12+00:00"
+}

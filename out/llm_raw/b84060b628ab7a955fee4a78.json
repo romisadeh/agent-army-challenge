@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset has only 2 spend days and $10.12 total spend, so it is not a proven winner. Last_3d ROI is -0.295 with one profit day and one loss day. Yesterday was -0.496 and declining, while blended ROI is only +0.025 because peers lean positive. Budget was raised 38h ago, so we should not cut on one bad day. No basis to scale or pause.\",\"key_evidence\":[\"age_spend_days=2\",\"last_3d.roi=-0.295 (1 profit day, 1 loss day)\",\"blended_roi=0.025 with blend_weight_own=0.34\",\"buyer raised budget 3.81->6.32 38.1h ago\"],\"uncertainty\":[\"Tiny spend makes ROI very noisy\",\"Peer group is a coarse account-level fallback\",\"Buyer note about CPM spike may indicate a cost issue that persists\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 332,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.004875,
+ "request_id": "req_011Cg9Ms6A9UVXeKjJ8M65hi",
+ "ts": "2026-10-18T08:08:20+00:00"
+}

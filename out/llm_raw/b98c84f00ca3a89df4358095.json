@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Buyer cut budget from 3.18 to 2.07 via UI 0.5h ago and lock_24h is true, so I defer to that deliberate action. The adset does not meet proven-winner criteria: last_3d.roi is 0.066 and blended_roi 0.074, both at or below +0.10, with only 1 of 3 matured days profitable. Trend is declining and D-1 had zero revenue on 3.29 spend. Evidence is mixed and near break-even.\",\"key_evidence\":[\"buyer.last_human_action: ui_adjust_budget down 3.18->2.07, hours_ago 0.5, lock_24h true\",\"last_3d: profit_days 1, loss_days 2, roi 0.066\",\"blended_roi 0.074 (own weight 0.43) vs peers fwd_roi 0.08\",\"trend_last_day_vs_prior: declining; matured d-1 revenue 0.0\"],\"uncertainty\":[\"Whether the buyer's down-move reflects known information about creative or pacing\",\"Spend exceeds 1.25x budget (d-1 spend 3.29 vs budget 2.07), so true spend may be understated or misattributed\",\"Peer forward ROI of 0.08 is thin-positive; a recovery in the next 1-3 days would favor scaling after the lock expires\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 644,
+  "output_tokens": 862,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000517,
+ "request_id": "req_011Cg9Ly6gwpwxZvdcKJrRru",
+ "ts": "2026-10-18T07:56:36+00:00"
+}

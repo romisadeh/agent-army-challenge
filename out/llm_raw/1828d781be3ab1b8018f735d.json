@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":2.44,\"confidence\":0.45,\"reasoning\":\"Matured last_3d is clearly negative (roi -0.285, loss_days 3, profit_days 0) and trend_last_day_vs_prior is declining, with d-1 at -0.48. Blended_roi is -0.028, near break-even, and peers fwd_roi 0.077 (n=26, fallback) argue against a deep cut. No lock and no buyer notes. A 20% step down limits exposure while the losses persist.\",\"key_evidence\":[\"last_3d.roi = -0.285 with 3 loss days, 0 profit days\",\"matured_days d-1 roi = -0.48, trend declining\",\"blended_roi = -0.028, peers fwd_roi_1_3d = 0.077 (n=26, fallback_level 1)\",\"buyer last action: ui_adjust_budget down 5.08 to 3.05, 24.6h ago, lock_24h false\"],\"uncertainty\":[\"Peer evidence is band fallback, so the forward ROI signal is weak\",\"Only 4 matured days, and d-2 was near break-even (-0.02)\",\"Buyer cut budget 24.6h ago; the reason is unknown and may carry information\",\"Pause could be warranted if losses persist next day\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 602,
+  "output_tokens": 973,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000568,
+ "request_id": "req_011Cg7sz7iMaevTFVRydWpBN",
+ "ts": "2026-10-17T13:22:10+00:00"
+}

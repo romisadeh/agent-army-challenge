@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":78.0,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age 8 spend days, 2 of last 3 matured days profitable, last_3d.roi 0.59 and blended_roi 0.528 both above +0.10. Buyer's last action was an upward move (55.3 to 68.0, 14.1h ago), so scaling does not conflict with it. The 24h lock may block execution. Peer fwd_roi_1_3d is only 0.015, a weak signal, so confidence is moderate.\",\"key_evidence\":[\"last_3d.roi = 0.59 (2 profit days, 1 loss)\",\"blended_roi = 0.528, blend_weight_own = 0.89\",\"buyer.last_human_action: up 55.3 to 68.0, 14.1h ago\",\"peers.fwd_roi_1_3d = 0.015, n = 19\"],\"uncertainty\":[\"Peer forward ROI is near break-even, suggesting the edge may fade at higher budget\",\"D-2 ROI was -0.221, and a loss streak would reverse the case\",\"lock_24h may prevent execution; the buyer's recent upward move could be intentional\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 640,
+  "output_tokens": 909,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00054,
+ "request_id": "req_011Cg9MwiczDuDSNADHDjguc",
+ "ts": "2026-10-18T08:09:24+00:00"
+}

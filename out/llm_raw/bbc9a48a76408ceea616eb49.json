@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Buyer raised budget 5.08 to 8.89 about 14h ago and lock_24h is true, so no change is the safe call. Last 3 matured days are all profitable (3 profit_days, last_3d ROI 0.202, blended_roi 0.133), but the daily ROI is declining (0.581, 0.012, 0.093) and peers forward ROI is only 0.078. Extreme_roi_gt_5 flag on day -5 makes the own history noisy. Evidence is mixed, so hold.\",\"key_evidence\":[\"buyer.lock_24h = true; last_human_action up 5.08 to 8.89, 14.1h ago\",\"last_3d: profit_days 3, loss_days 0, roi 0.202\",\"blended_roi 0.133 vs peers.fwd_roi_1_3d 0.078 (n=23)\",\"trend_last_day_vs_prior = declining; data_quality_flags = extreme_roi_gt_5\"],\"uncertainty\":[\"Whether the declining daily ROI trend continues after the recent budget increase\",\"Reliability of the day -5 outlier (roi 5.829) given the extreme-ROI flag\",\"Whether the 14h-old budget raise has had time to show its effect\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 637,
+  "output_tokens": 885,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000525,
+ "request_id": "req_011Cg7TujxkEMCZXSvAWd19q",
+ "ts": "2026-10-17T08:06:27+00:00"
+}

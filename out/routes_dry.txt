@@ -1,0 +1,12 @@
+2026-06-10 population: {"spent_on_D_minus_1": 223, "excluded_killed_on_D_minus_1": 0, "active": 223, "day1_adsets_on_D": 69, "day1_spend_on_D": 112.31, "day1_share_of_D_spend": 0.115}
+2026-06-10 leakage assertion passed on 223 cards (all perf <= D-1, peer windows <= D-1, events < window)
+2026-06-10 routes: auto_keep 131 adsets / 11% of 3-day spend, escalate 1 adsets / 1% of 3-day spend, llm_review 91 adsets / 88% of 3-day spend
+2026-06-10 llm_review cards: {'locked': 29, 'locked_with_buyer_conflict': 4, 'budget_ge_50': 5, 'sonnet_certain (lock+conflict or >= $50)': 8} (plus Sonnet when Haiku confidence < 0.6)
+2026-06-11 population: {"spent_on_D_minus_1": 196, "excluded_killed_on_D_minus_1": 8, "active": 188, "day1_adsets_on_D": 212, "day1_spend_on_D": 260.69, "day1_share_of_D_spend": 0.202}
+2026-06-11 leakage assertion passed on 188 cards (all perf <= D-1, peer windows <= D-1, events < window)
+2026-06-11 routes: auto_keep 109 adsets / 9% of 3-day spend, escalate 1 adsets / 2% of 3-day spend, llm_review 78 adsets / 88% of 3-day spend
+2026-06-11 llm_review cards: {'locked': 45, 'locked_with_buyer_conflict': 14, 'budget_ge_50': 2, 'sonnet_certain (lock+conflict or >= $50)': 16} (plus Sonnet when Haiku confidence < 0.6)
+2026-06-12 population: {"spent_on_D_minus_1": 323, "excluded_killed_on_D_minus_1": 6, "active": 317, "day1_adsets_on_D": 145, "day1_spend_on_D": 105.0, "day1_share_of_D_spend": 0.125}
+2026-06-12 leakage assertion passed on 317 cards (all perf <= D-1, peer windows <= D-1, events < window)
+2026-06-12 routes: auto_keep 255 adsets / 16% of 3-day spend, escalate 1 adsets / 6% of 3-day spend, llm_review 61 adsets / 78% of 3-day spend
+2026-06-12 llm_review cards: {'locked': 31, 'locked_with_buyer_conflict': 4, 'budget_ge_50': 3, 'sonnet_certain (lock+conflict or >= $50)': 7} (plus Sonnet when Haiku confidence < 0.6)

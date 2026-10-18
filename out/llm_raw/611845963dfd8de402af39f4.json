@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Buyer cut budget from 6.35 to 1.9 22h ago and lock_24h is true, so I won't override it. Numbers are mixed: last_3d.roi +0.238 but only 1 profit day of 3, blended_roi -0.037, peers fwd_roi_1_3d -0.223, and trend declining. Spend exceeds budget per flag, so the budget figure may not reflect actual spend. Not a proven winner. Human should settle whether the buyer cut stands.\",\"key_evidence\":[\"buyer.last_human_action: down 6.35->1.9, 22h ago, lock_24h true\",\"blended_roi -0.037 with peers fwd_roi_1_3d -0.223 (n=6)\",\"last_3d: 1 profit day, 2 loss days, roi +0.238\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer cut was deliberate or a mistake\",\"Whether actual spend (13.53 over 3d) versus budget 1.9 reflects real delivery\",\"Yesterday's ROI of -1.0 with 5.04 spend on a 1.9 budget is inconsistent and needs checking\",\"Peer forward ROI is negative, which argues against scaling\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 718,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000445,
+ "request_id": "req_011Cg9MMyQ3NEVyXPtNYgG6G",
+ "ts": "2026-10-18T08:01:46+00:00"
+}

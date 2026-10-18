@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is positive (last_3d roi 0.14, 2 profit days, 0 loss days) and blended_roi is 0.137, which supports growth. However, the buyer raised budget to 254 about 64h ago, but the card shows current 215.9 from rule_engine_before_window, and spend_exceeds_1.25x_budget is flagged. Peer forward ROI is only 0.013. A human should reconcile the budget before any change.\",\"key_evidence\":[\"last_3d.roi = 0.14, profit_days = 2, loss_days = 0\",\"blended_roi = 0.137, blend_weight_own = 0.97\",\"buyer.last_human_action: up to 254.0, 63.9h ago vs budget.current 215.9\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the 215.9 budget is the true live budget or a stale rule-engine value\",\"Peer forward ROI of 0.013 (n=14) suggests much weaker future returns than own history\",\"Spend exceeding 1.25x budget may indicate misreported spend or budget\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 628,
+  "output_tokens": 1056,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000609,
+ "request_id": "req_011Cg7SJG38j5T4tDE7VWP2r",
+ "ts": "2026-10-17T07:45:20+00:00"
+}

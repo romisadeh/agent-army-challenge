@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is -0.251 with 3 loss days and zero revenue on D-1, and blended ROI is -0.232, so the adset is losing. The buyer already cut budget from 3.42 to 1.9 about 23h ago and the 24h lock is active, so I won't change budget again today. Spend exceeds 1.25x budget, so the data is unreliable. Revisit pause if losses continue after the lock expires.\",\"key_evidence\":[\"last_3d.roi = -0.251 (3 loss days, 0 profit days)\",\"matured_days D-1 revenue = 0.0 on spend 3.84\",\"buyer.last_human_action: down 3.42 to 1.9, hours_ago 23.2, lock_24h true\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget baseline is unclear: spend exceeds budget, so the true daily budget may differ from 1.9\",\"Peer forward ROI (-0.202, n=9, band fallback) is weak evidence\",\"Whether the buyer's cut is already enough to stop the losses\",\"Any further losses after the lock expires would favour pause\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 617,
+  "output_tokens": 985,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000573,
+ "request_id": "req_011Cg7Srvbkg9cNtYZuuyxBG",
+ "ts": "2026-10-17T07:52:43+00:00"
+}

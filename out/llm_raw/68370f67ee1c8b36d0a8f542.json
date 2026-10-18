@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Adset is age 8 with last_3d ROI +0.183 and blended ROI +0.172, but only 1 of the last 3 matured days was profitable, so the proven-winner test (2 of 3) fails. Yesterday was -0.103 on the highest spend ($72 vs budget $10.16) and the trend is declining. Spend far exceeds budget, which makes the numbers unreliable. A human raised the budget 41h ago and the rule cut it this morning, so I hold.\",\"key_evidence\":[\"last_3d profit_days=1, loss_days=2, roi=+0.183\",\"blended_roi=+0.172, peers fwd_roi +0.074 (n=21)\",\"D-1 ROI -0.103 on spend 72.16, trend declining\",\"flag spend_exceeds_1.25x_budget; budget 10.16 vs daily spend 40-72\"],\"uncertainty\":[\"Why spend is 4-7x the stated budget; the real budget may differ from the card\",\"Whether the R02 cuts this morning (budget 10.16 after buyer set 12.7) will hold\",\"Volatile daily ROI swinging between -0.26 and +0.84 makes the trend noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 777,
+  "output_tokens": 437,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.006347,
+ "request_id": "req_011Cg9LuDuB1HgvGbdNvCubH",
+ "ts": "2026-10-18T07:55:43+00:00"
+}

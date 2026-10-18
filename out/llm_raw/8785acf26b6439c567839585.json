@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Own 3-day ROI is -0.123 with 2 loss days and 1 profit day, and the last day is declining (-0.549). Blended ROI is only +0.068, and that positive value leans on peers (fwd 0.227, n=33, band fallback) because own spend is small (16.64, w=0.45). Evidence is mixed, not a consistent matured loss or profit, and the buyer's recent cut (38.2h ago, no lock) is not in conflict with the numbers. No change until more matured data arrives.\",\"key_evidence\":[\"last_3d.roi = -0.123 (2 loss days, 1 profit day)\",\"blended_roi = 0.068 with blend_weight_own 0.45\",\"trend_last_day_vs_prior = declining, matured_days d=-1 roi -0.549\",\"buyer.last_human_action: down 12.7 to 10.16, 38.2h ago, lock_24h false\"],\"uncertainty\":[\"Peer forward ROI is a band fallback (fallback_level 1), so the blended positive depends on a weak proxy\",\"Own spend is small and the last day is worsening; one more matured loss day would argue for scale_down or pause\",\"Whether the buyer's prior cut was intended to test a lower budget is not stated in notes\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 611,
+  "output_tokens": 867,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000513,
+ "request_id": "req_011Cg7UQUZMZAaercT6CZV8p",
+ "ts": "2026-10-17T08:12:57+00:00"
+}

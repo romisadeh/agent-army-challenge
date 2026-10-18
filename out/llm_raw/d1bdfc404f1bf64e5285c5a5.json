@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Age is 3 spend days, below the 4+ proven-winner threshold, and yesterday was loss-making (matured_days d=-1 roi -0.124) with trend_last_day_vs_prior declining. A buyer cut budget 14.2h ago (ui_adjust_budget 12.7 to 10.16) and lock_24h is true, so any change needs a human. Positive blended_roi 0.334 and peers fwd_roi 0.401 (n=17) argue for scaling later, but the mixed recent days and buyer lock favor holding at 10.16.\",\"key_evidence\":[\"matured_days d=-1 roi=-0.124 with trend_last_day_vs_prior=declining\",\"buyer.last_human_action down 12.7 to 10.16, hours_ago=14.2, lock_24h=true\",\"last_3d roi=0.249 with profit_days=2 and loss_days=1\",\"peers fwd_roi_1_3d=0.401 n=17\"],\"uncertainty\":[\"Whether yesterday's loss persists into today's matured data\",\"Why the buyer cut budget, since no note explains it\",\"Whether the adset reaches age 4+ and two profitable days, which would make it a scale-up candidate\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 576,
+  "output_tokens": 854,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000506,
+ "request_id": "req_011Cg7u3y9PCyFwHLH13e1Qa",
+ "ts": "2026-10-17T13:36:08+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Only one matured day (spend $2.35, ROI -0.459) and blended ROI is -0.28, so there is no proven winner. A buyer raised the budget 15h ago and holds a 24h lock, so I should not override it on thin data. Rule R05 killed the adset at 02:00 on immature data (spend_seen $0.25), and the adset is currently off. Keep and leave the decision to the buyer's lock.\",\"key_evidence\":[\"age_spend_days=1, matured spend $2.35, ROI -0.459\",\"blended_roi=-0.28, peers n=19 fwd ROI -0.259\",\"buyer lock_24h=true, budget raised 1.27->3.81 15.1h ago\",\"status_at_window=off_by_rule_today (R05 kill at 02:00, spend_seen 0.25)\"],\"uncertainty\":[\"Whether the buyer wants the adset re-enabled after the rule kill\",\"Only one day of data, with tiny spend and noisy revenue\",\"Peers trend negative, so losses may persist\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 386,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005409,
+ "request_id": "req_011Cg9LxrWAyLEcqgb4RgNeg",
+ "ts": "2026-10-18T07:56:31+00:00"
+}

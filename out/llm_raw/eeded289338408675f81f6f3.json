@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Last 3d ROI is -0.059 with 2 of 3 days losing, and yesterday was -0.248 with a declining trend, so this is not a proven winner and scaling up is not supported. Blended ROI is -0.039 and peers are positive at +0.244, which argues against cutting hard. The buyer cut the budget 64.7h ago, which already addresses the issue. Evidence is mixed and roughly break-even, so keep.\",\"key_evidence\":[\"last_3d.roi -0.059 (2 loss days, 1 profit day)\",\"blended_roi -0.039 vs peers fwd_roi_1_3d +0.244 (n=27)\",\"matured d-1 ROI -0.248, trend declining\",\"buyer cut budget 103.14->82.51 64.7h ago\"],\"uncertainty\":[\"Whether yesterday's -0.248 is noise or the start of a persistent decline\",\"Spend exceeding 1.25x budget flag and failed R02 cuts may distort spend\",\"Peer ROI is a fallback band and may not reflect this adset\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 1401,
+  "output_tokens": 395,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.007187,
+ "request_id": "req_011Cg7tdMrgXAWM6NCfF3TsN",
+ "ts": "2026-10-17T13:30:41+00:00"
+}

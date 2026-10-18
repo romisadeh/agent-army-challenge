@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":3.07,\"confidence\":0.55,\"reasoning\":\"Proven-winner profile: age 5 spend days, last_3d.roi 0.35 > 0.10, blended_roi 0.198 > 0.10, 2 of 3 matured days profitable, peers fwd_roi 0.106. Against scaling: buyer ui_adjust_budget moved budget down 3.81 to 2.67 24.5h ago, and trend_last_day_vs_prior is declining with d-1 ROI -0.137. Scaling up would override that recent deliberate cut, so a human should settle it. Spend_exceeds_1.25x_budget flag adds data doubt.\",\"key_evidence\":[\"last_3d.roi=0.35, profit_days=2, loss_days=1\",\"blended_roi=0.198, peers fwd_roi_1_3d=0.106 (n=15)\",\"buyer.last_human_action: down 3.81->2.67, hours_ago=24.5\",\"matured_days d-1 roi=-0.137, trend declining\"],\"uncertainty\":[\"Whether the buyer's down move was a deliberate view on the adset or a reaction to yesterday's loss\",\"Whether spend exceeding 1.25x budget makes the reported spend and ROI unreliable\",\"Whether d-1 loss persists or is one-day noise\"],\"proposed_if_escalated\":\"scale_up\"}",
+ "usage": {
+  "input_tokens": 610,
+  "output_tokens": 1145,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000655,
+ "request_id": "req_011Cg7tXvXncAxVtZnrSF7e8",
+ "ts": "2026-10-17T13:29:22+00:00"
+}

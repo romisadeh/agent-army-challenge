@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"A human raised the budget from $8.20 to $14.55 only 18.4h ago, so the 24h lock is active. Matured data is mixed: 2 profit days and 1 loss day in the last 3d (ROI 0.537 on only $21.46 spend), and yesterday was barely positive at 0.103. Blended ROI is 0.292, but peers are near break-even at 0.029. The evidence is not strong enough to override the buyer or scale further.\",\"key_evidence\":[\"buyer.lock_24h=true, budget raised 8.2->14.55 18.4h ago\",\"last_3d ROI 0.537 on spend $21.46 (2 profit / 1 loss days)\",\"blended_roi 0.292 vs peers fwd_roi_1_3d 0.029 (n=51)\",\"D-1 ROI 0.103 on spend $10.69, trend declining\"],\"uncertainty\":[\"Whether the higher budget will hold ROI, since only one day was near the new spend level\",\"Daily ROI is very volatile at this small spend\",\"A buyer note from 42.9h ago said 'CPM spiked, cutting', which conflicts with the later increase\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 657,
+  "output_tokens": 424,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005928,
+ "request_id": "req_011Cg7V5zMaDUhJFZt3wNzPt",
+ "ts": "2026-10-17T08:21:51+00:00"
+}

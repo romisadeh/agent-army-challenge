@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v1",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.35,\"reasoning\":\"Matured 3-day ROI 0.334 and blended ROI 0.208 are positive, with 2 profit days, but yesterday ROI was -0.202 and trend is declining. Buyer cut budget 3.81 to 2.67 about 24.5h ago, and spend exceeds 1.25x budget with conversions greater than clicks, so data quality is suspect. Mixed signals call for human review.\",\"key_evidence\":[\"blended_roi = 0.208\",\"last_3d.roi = 0.334 with 2 profit days, 1 loss day\",\"matured_days d=-1 roi = -0.202, trend declining\",\"buyer last_human_action down 3.81 to 2.67, 24.5h ago\"],\"uncertainty\":[\"Whether the spend_exceeds_1.25x_budget and meta_conversions_gt_clicks flags distort revenue or ROI\",\"Whether the buyer's cut reflected information not on the card\",\"Peer forward ROI of 0.101 over n=13 is only modestly positive\",\"Small absolute spend (about $17 over 3 days) limits signal strength\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 408,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000285,
+ "request_id": "req_011Cg7RvBs1267mmacAdcGbq",
+ "ts": "2026-10-17T07:40:17+00:00"
+}

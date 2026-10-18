@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset meets proven-winner criteria (age 7, 2 of last 3 days profitable, last_3d ROI 0.236, blended 0.205), but a buyer cut the budget 17h ago and a 24h lock is active. Yesterday was near break-even and declining. Spend also exceeded 1.25x budget, so the data is less reliable. Do not override a recent deliberate buyer action; hold.\",\"key_evidence\":[\"buyer.lock_24h=true, last action down 10.16->9.14 17.2h ago\",\"last_3d.roi=0.236 with 2 profit days, 1 loss day\",\"blended_roi=0.205, peers fwd_roi_1_3d=0.163 (n=23)\",\"d-1 roi=0.017, trend declining\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Why the buyer trimmed the budget (note mentions duplicating to a new audience)\",\"Whether the yesterday slowdown is noise or a real trend\",\"Spend overrun may distort the ROI figures\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 673,
+  "output_tokens": 392,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005689,
+ "request_id": "req_011Cg9N1MWMem6VWJFVhXgup",
+ "ts": "2026-10-18T08:10:12+00:00"
+}

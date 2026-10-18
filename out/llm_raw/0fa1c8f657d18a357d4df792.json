@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Tiny adset ($3.81 budget, $9.32 spend over 3d). Last_3d ROI is -0.086 with 2 profit days and 1 loss day, and blended ROI is +0.083 with peers at +0.161 (n=30). Yesterday's loss (-0.382) is a single day after profit days, so it is noise rather than a trend. The budget was raised 41h ago. Evidence is too thin to scale or pause, and the R08 kills failed/no-op on immature data.\",\"key_evidence\":[\"last_3d ROI -0.086 (2 profit days, 1 loss day)\",\"blended_roi 0.083, peers fwd_roi 0.161 (n=30)\",\"d-1 ROI -0.382 on spend $4.56\",\"buyer raised budget 1.27->3.81 41.1h ago\"],\"uncertainty\":[\"Whether yesterday's loss persists after the recent budget tripling\",\"Very small spend makes ROI noisy\",\"R08 kill attempts this morning were on immature data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 679,
+  "output_tokens": 381,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005542,
+ "request_id": "req_011Cg7SHyuGS7sua7bNvVe7Y",
+ "ts": "2026-10-17T07:45:14+00:00"
+}

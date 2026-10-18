@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_down\",\"new_daily_budget\":4.26,\"confidence\":0.55,\"reasoning\":\"Three consecutive matured loss days (last_3d roi -0.494, loss_days 3, profit_days 0) and blended_roi -0.398 with peer fwd_roi -0.307 point to a sustained loss. d-4 was roughly break-even and d-1 improved versus d-2, so pausing is not yet clearly justified. A 20% cut trims absolute loss while the trend is checked. Buyer already cut budget 24.5h ago with no lock, consistent with this direction.\",\"key_evidence\":[\"last_3d.roi = -0.494 with loss_days = 3, profit_days = 0\",\"blended_roi = -0.398 (blend_weight_own 0.49), peers fwd_roi_1_3d = -0.307 with n = 12 at fallback_level 1\",\"buyer.last_human_action: down 7.62 to 5.33, lock_24h false\"],\"uncertainty\":[\"Peer evidence is band fallback level 1, so it is a weak anchor\",\"spend_exceeds_1.25x_budget flag means spend figures may be overstated relative to budget\",\"trend_last_day_vs_prior improving (d-1 -0.282 vs d-2 -0.569) could mean recovery\",\"Pause would stop all losses but was not chosen given only three days of data\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 616,
+  "output_tokens": 1110,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000635,
+ "request_id": "req_011Cg7SbZzbL9zPw7KVqdghQ",
+ "ts": "2026-10-17T07:49:15+00:00"
+}

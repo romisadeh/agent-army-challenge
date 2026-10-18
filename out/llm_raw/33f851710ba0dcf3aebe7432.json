@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.7,\"reasoning\":\"A human cut the budget 0.4h ago (2.54 to 2.03) and a 24h lock is active, so I should not override it. Matured data is mixed: 1 profit day, 2 loss days, 3d ROI 0.07 on only $9.19 spend. Blended ROI 0.114 is mildly positive and the sample is tiny, so evidence supports neither scaling nor pausing.\",\"key_evidence\":[\"buyer.lock_24h=true, budget cut 2.54->2.03 0.4h ago\",\"last_3d ROI 0.07 on spend 9.19 (1 profit day, 2 loss days)\",\"blended_roi 0.114, own weight 0.31\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Buyer's reason for the cut is unknown (no note)\",\"Spend exceeding 1.25x budget may distort the daily figures\",\"Very small spend means high variance in ROI\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 582,
+  "output_tokens": 356,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005098,
+ "request_id": "req_011Cg7UcEeWrf3vfn4wXhJML",
+ "ts": "2026-10-17T08:15:34+00:00"
+}

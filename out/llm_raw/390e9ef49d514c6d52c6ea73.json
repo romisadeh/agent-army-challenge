@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Matured 3-day ROI is +0.17 with 2 profit days and 1 loss day, and blended ROI is +0.131 (own weight 0.79). Evidence is mixed: last day ROI is -0.036 with a declining trend, and peers forward ROI is -0.013 (n=30). The buyer cut budget 24.5h ago with no lock. Spend exceeds budget, so the budget reading may be off. Not enough consistent profit to scale up or a consistent loss to cut.\",\"key_evidence\":[\"last_3d.roi = 0.17 with profit_days 2, loss_days 1\",\"blended_roi = 0.131\",\"peers.fwd_roi_1_3d = -0.013 (n=30)\",\"trend_last_day_vs_prior = declining, matured d-1 roi -0.036\"],\"uncertainty\":[\"Whether the d-1 decline is the start of a sustained downtrend or noise\",\"Peer forward ROI is negative and may dominate if own ROI keeps falling\",\"data_quality_flags spend_exceeds_1.25x_budget may mean the current budget value is wrong\",\"Recent buyer cut from 25.4 to 17.78 may reflect information not on the card\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 900,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00053,
+ "request_id": "req_011Cg7SaQz5zBMXArGczP8KC",
+ "ts": "2026-10-17T07:48:58+00:00"
+}

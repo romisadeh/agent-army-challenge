@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Meets proven-winner criteria on paper (age 4, 2 of 3 days profitable, last_3d ROI 0.49, blended 0.223), but a specific field argues against scaling: the buyer cut budget 12.7 to 10.16 about 24h ago, a deliberate recent action, and yesterday was slightly negative with a declining trend. Spend is tiny and peer forward ROI is only 0.041. Holding is safer than overriding the buyer.\",\"key_evidence\":[\"buyer.last_human_action: down 12.7->10.16, 24.4h ago\",\"last_3d.roi 0.49 on $13.58 spend, 2 profit days\",\"matured d-1 roi -0.024, trend declining\",\"peers.fwd_roi_1_3d 0.041, n=54\"],\"uncertainty\":[\"Why the buyer reduced budget\",\"Whether yesterday's slight loss is noise given tiny spend\",\"Spend is so low that ROI is highly volatile\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 596,
+  "output_tokens": 367,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005285,
+ "request_id": "req_011Cg9MqBR76KkyhBqzGT2M3",
+ "ts": "2026-10-18T08:07:54+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.78,\"confidence\":0.5,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.269 with 2 loss days versus 1 profit day, and blended_roi 0.06 is below the +0.10 bar. Pausing is not warranted: the 5-day matured ROIs are mixed, and peers.fwd_roi_1_3d is +0.208 (n=16, fallback 0). The buyer cut budget 23.1h ago (buyer.last_human_action, lock_24h true), which matches the recent losses, so there is no conflict to escalate. Hold at the current budget.\",\"key_evidence\":[\"last_3d.roi = -0.269 (2 loss days, 1 profit day)\",\"blended_roi = 0.06\",\"buyer.lock_24h = true; last action down 2.54 to 1.78\",\"peers.fwd_roi_1_3d = 0.208, n=16\"],\"uncertainty\":[\"Spend exceeds 1.25x budget (data_quality_flags), so the budget and spend figures may be unreliable\",\"Peer signal could be the better guide if own losses prove noise\",\"Whether the buyer's cut was enough, given D-2 spend of 5.03 against a budget near 2\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 1165,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000668,
+ "request_id": "req_011Cg9N6dY9cb6ygTLXKYTbS",
+ "ts": "2026-10-18T08:11:26+00:00"
+}

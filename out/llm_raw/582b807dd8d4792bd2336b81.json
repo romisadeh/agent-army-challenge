@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Not a proven winner: last_3d.roi is -0.056 and blended_roi is -0.045, with 2 of 3 days losing. It is not a clear loser either, since the losses are small and yesterday was slightly positive. Spend has fallen to $2.48 against a $6.35 budget, which was reconstructed, so the data is shaky. Peers are roughly break-even. Evidence is thin and mixed, so keep.\",\"key_evidence\":[\"last_3d.roi -0.056 (1 profit day, 2 loss days)\",\"blended_roi -0.045, peers fwd_roi -0.025 (n=11)\",\"matured spend fell from 27.67 (d-5) to 2.48 (d-1)\",\"flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget value is reconstructed and may not be accurate\",\"Why spend collapsed to $2.48 is unknown (CBO allocation or bid constraint)\",\"Revenue on tiny spend is noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 615,
+  "output_tokens": 385,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005503,
+ "request_id": "req_011Cg9MZwv6E6TKkY6dcvqBo",
+ "ts": "2026-10-18T08:04:28+00:00"
+}

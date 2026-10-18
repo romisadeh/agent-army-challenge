@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":17.27,\"confidence\":0.5,\"reasoning\":\"Matured 3-day ROI is +0.17 with 3 profit days and 0 loss days, and blended ROI is 0.117. However, the buyer raised budget from 10.92 to 17.27 about 21h ago and lock_24h is true, so I will not change it. Yesterday's ROI fell to 0.028 (trend declining) and peer forward ROI is only 0.015 (n=49). The evidence is mixed, so no change is the right call.\",\"key_evidence\":[\"last_3d.roi = 0.17 with profit_days = 3, loss_days = 0\",\"blended_roi = 0.117\",\"buyer.lock_24h = true, last up-adjust 21.2h ago\",\"peers.fwd_roi_1_3d = 0.015, trend_last_day_vs_prior = declining\"],\"uncertainty\":[\"Whether the decline to 0.028 yesterday is the start of a trend or noise\",\"Whether the recent budget increase to 17.27 is hurting marginal ROI\",\"Peer forward ROI of 0.015 suggests weaker returns ahead\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 627,
+  "output_tokens": 695,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000429,
+ "request_id": "req_011Cg7V2EkPiS4DyFubtccDV",
+ "ts": "2026-10-17T08:21:01+00:00"
+}

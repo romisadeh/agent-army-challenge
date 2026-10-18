@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset meets proven-winner criteria: age 18, 2 of last 3 matured days profitable, last_3d.roi 0.212, blended_roi 0.34. However, yesterday roi was -0.574 with trend_last_day_vs_prior declining, which the rules allow as a reason to hold. The budget_reconstructed_metadata flag and spend_exceeds_1.25x_budget mean the $1.27 budget is uncertain, so I hold rather than scale.\",\"key_evidence\":[\"last_3d.roi=0.212, blended_roi=0.34\",\"matured_days d=-1 roi=-0.574\",\"trend_last_day_vs_prior=declining\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether d=-1 loss persists or is noise after good days\",\"Actual current daily budget given reconstructed metadata\",\"Peer forward ROI of 0.417 rests on n=14 peers\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 589,
+  "output_tokens": 852,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000507,
+ "request_id": "req_011Cg7tpD3ug1RzPzMQW8nWk",
+ "ts": "2026-10-17T13:33:01+00:00"
+}

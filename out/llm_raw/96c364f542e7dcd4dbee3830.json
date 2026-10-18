@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.5,\"reasoning\":\"Adset is a proven-winner candidate (age 10, 2 of 3 matured days profitable, last_3d.roi 0.155, blended_roi 0.163), but buyer.last_human_action was a budget cut 17.2h ago, inside the 48h window and under lock_24h, which the rules name as a reason not to scale. Yesterday's roi was -0.141 with trend_last_day_vs_prior declining. The spend_exceeds_1.25x_budget flag also makes the actual budget baseline uncertain. Keep for now and re-check after the lock expires.\",\"key_evidence\":[\"buyer.last_human_action: down 20.32->18.29, hours_ago 17.2, lock_24h true\",\"last_3d: roi 0.155, profit_days 2, loss_days 1\",\"matured_days D-1 roi -0.141, trend declining\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's down-adjust reflected information not on the card\",\"Whether spend above budget means the true daily budget differs from 18.29\",\"Whether yesterday's loss is the start of a decline or noise\",\"Peer forward ROI 0.19 (n=21) supports scaling if the lock clears\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 645,
+  "output_tokens": 979,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000575,
+ "request_id": "req_011Cg9N4JLwJD8b9RbcDTcWc",
+ "ts": "2026-10-18T08:10:54+00:00"
+}

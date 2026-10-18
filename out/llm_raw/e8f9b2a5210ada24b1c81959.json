@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":61.34,\"confidence\":0.6,\"reasoning\":\"last_3d shows 3 profit days, ROI 0.615, revenue 76.06 on spend 47.1. blended_roi is 0.46 with own weight 0.7. Trend is improving and the last day ROI is 0.793. Peer forward ROI is only 0.094 (n=22), so I keep the step modest at about 15%. Budget is reconstructed from metadata, so the current value is uncertain.\",\"key_evidence\":[\"last_3d.profit_days=3, loss_days=0\",\"blended_roi=0.46 (blend_weight_own=0.7)\",\"peers.fwd_roi_1_3d=0.094, n=22\",\"data_quality_flags: budget_reconstructed\"],\"uncertainty\":[\"Budget 53.34 is reconstructed from end-of-week metadata, so the true current value may differ\",\"Peer forward ROI is much lower than own 3-day ROI\",\"Day -2 ROI of 0.199 shows volatility\",\"Spend is only 47.1 over 3 days, so the own signal is modest\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 593,
+  "output_tokens": 730,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000443,
+ "request_id": "req_011Cg7UrZErrL6CFmPK3cc7S",
+ "ts": "2026-10-17T08:18:50+00:00"
+}

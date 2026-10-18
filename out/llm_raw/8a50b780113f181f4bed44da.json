@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.55,\"reasoning\":\"Not a proven winner: last_3d ROI is -0.133 with 2 loss days, and the last two matured days (d-2, d-1) had zero revenue. Blended ROI of 0.111 is propped up by peers (fwd ROI 0.275), with own weight only 0.4. Budget is tiny at $2.07 and a buyer cut it 24.5h ago, so pausing or cutting further is not justified. Spend exceeded 1.25x budget, which is a flag. Keep and observe.\",\"key_evidence\":[\"last_3d.roi -0.133, 2 loss days of 3\",\"matured d-2 and d-1 revenue 0.0 (roi -1.0)\",\"blended_roi 0.111 vs peers fwd_roi 0.275 (n=17)\",\"buyer cut budget 3.18 to 2.07, 24.5h ago\"],\"uncertainty\":[\"Whether two zero-revenue days are noise at such low spend or a real decay\",\"Spend exceeding 1.25x budget may distort the daily figures\",\"Small sample: total 3-day spend is only $13.40\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 405,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005767,
+ "request_id": "req_011Cg9MjJyMvNiDD9WZ5cPKE",
+ "ts": "2026-10-18T08:06:35+00:00"
+}

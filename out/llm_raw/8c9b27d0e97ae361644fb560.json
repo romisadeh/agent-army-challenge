@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":3.81,\"confidence\":0.4,\"reasoning\":\"Matured history is mixed: D-2 ROI 0.617 (profit) and D-1 ROI -0.193 (loss), so no consistent trend. Blended ROI is -0.041, near break-even, with w=0.32 leaning on peers (fwd ROI -0.133, n=13). Trend is declining and only two matured days exist. Budget is reconstructed and spend exceeds 1.25x budget, so the budget baseline is unreliable. Keep is the low-risk choice.\",\"key_evidence\":[\"blended_roi = -0.041\",\"matured_days D-2 roi 0.617, D-1 roi -0.193\",\"peers fwd_roi_1_3d = -0.133, n=13\",\"data_quality_flags: budget_reconstructed, spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Budget baseline is reconstructed from end-of-week metadata, so true daily budget may differ\",\"Only two matured days; age is 2 days\",\"Whether the declining trend continues into D0 and D+1\",\"Peer forward ROI is negative and could drag this adset lower\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 516,
+  "output_tokens": 851,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000496,
+ "request_id": "req_011Cg7Sc2bFUZzh3pNfjuxQv",
+ "ts": "2026-10-17T07:49:19+00:00"
+}

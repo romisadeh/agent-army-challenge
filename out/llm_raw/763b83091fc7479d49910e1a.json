@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.45,\"reasoning\":\"Last 3 days ROI is -1.2% with 2 loss days, and the last day declines, but blended ROI is +3.9% with peer forward ROI +10.6% (n=5). A buyer ui_adjust_budget down 17.2h ago holds a 24h lock, so I should not override it without strong evidence. Spend exceeds budget 1.25x, a data quality flag. The evidence is mixed and small, so a human should settle it.\",\"key_evidence\":[\"last_3d.roi = -0.012 with loss_days 2, profit_days 1\",\"blended_roi = 0.039, peers.fwd_roi_1_3d = 0.106 (n=5)\",\"buyer.lock_24h = true, last_human_action down 7.62 to 6.86 17.2h ago\",\"data_quality_flags: spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the buyer's downward adjustment was based on information not on the card\",\"Whether spend above budget signals a delivery or reporting issue\",\"Whether the 10.6% peer forward ROI applies given only n=5 peers\",\"Whether yesterday's -11.6% ROI is noise or the start of a trend\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 614,
+  "output_tokens": 438,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000299,
+ "request_id": "req_011Cg7SSSTRMZXxS1gyXoryA",
+ "ts": "2026-10-17T07:47:08+00:00"
+}

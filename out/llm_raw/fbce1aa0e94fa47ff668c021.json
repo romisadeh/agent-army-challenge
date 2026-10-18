@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is aged 7 days, but last_3d ROI is only +0.039 and blended ROI +0.083, both below the +0.10 proven-winner threshold, so scale-up is not mandated. A buyer raised the budget 8.0 to 13.6 about 17h ago and the 24h lock is active. Spend also exceeds 1.25x budget, so the data is slightly unreliable. Holding lets the recent raise play out.\",\"key_evidence\":[\"last_3d.roi 0.039 (below 0.10 threshold)\",\"blended_roi 0.083\",\"buyer lock_24h true; budget raised 8.0->13.6 16.8h ago\",\"flag spend_exceeds_1.25x_budget\"],\"uncertainty\":[\"Whether the spend overrun distorts the ROI figures\",\"How the adset performs at the new 13.6 budget, since no matured day reflects it yet\",\"Small spend base makes ROI noisy\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 631,
+  "output_tokens": 353,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005227,
+ "request_id": "req_011Cg7tZhbxwnc8w39yg1FE4",
+ "ts": "2026-10-17T13:29:44+00:00"
+}

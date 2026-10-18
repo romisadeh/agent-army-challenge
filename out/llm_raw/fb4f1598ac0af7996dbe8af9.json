@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v2",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Adset is only 2 days old with tiny spend ($10.12 over 3d). Matured days are mixed: +10.5% ROI on $3.39, then -49.6% on $6.73. Blended ROI is about break-even (0.025) and leans on a small peer group. This is not consistent loss, so pausing or cutting is unjustified, and there is not consistent profit to scale. The buyer raised the budget 38h ago, so hold.\",\"key_evidence\":[\"last_3d roi -0.295 on spend $10.12 (1 profit day, 1 loss day)\",\"blended_roi 0.025 with own weight 0.34\",\"d-1 roi -0.496 on $6.73 after d-2 roi +0.105\",\"buyer raised budget 3.81 to 6.32 38.1h ago\"],\"uncertainty\":[\"Whether the d-1 loss is noise or the start of a trend given tiny spend\",\"Peer group is small/coarse (fallback level 2)\",\"Effect of the recent budget increase on performance\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 566,
+  "output_tokens": 378,
+  "cache_read_input_tokens": 1869,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005286,
+ "request_id": "req_011Cg7UpS4wZoLgd44SMjqcc",
+ "ts": "2026-10-17T08:18:21+00:00"
+}

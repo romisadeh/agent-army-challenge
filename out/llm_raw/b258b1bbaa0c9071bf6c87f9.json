@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"escalate\",\"new_daily_budget\":null,\"confidence\":0.4,\"reasoning\":\"Meets the proven-winner screen: age 7, last_3d.roi 0.334 with 2 profit days, blended_roi 0.208. But buyer.last_human_action was a deliberate budget cut (3.81 to 2.67) 24.5h ago, net -1.14 over 48h. Data_quality_flags (meta_conversions_gt_clicks, spend_exceeds_1.25x_budget) cast doubt on the numbers, and trend is declining with matured D-1 ROI -0.202. A human should settle this conflict.\",\"key_evidence\":[\"last_3d.roi 0.334, profit_days 2 of 3\",\"buyer.last_human_action down 3.81\u21922.67, hours_ago 24.5\",\"data_quality_flags includes meta_conversions_gt_clicks and spend_exceeds_1.25x_budget\",\"trend_last_day_vs_prior declining, matured d=-1 roi -0.202\"],\"uncertainty\":[\"Whether the buyer's cut reflected data problems or a deliberate pullback\",\"Whether the data_quality flags distort reported revenue and ROI\",\"Whether the declining trend continues after D-1 matures\",\"Peer forward ROI 0.101 with n=13 is only a modest signal\"],\"proposed_if_escalated\":\"keep\"}",
+ "usage": {
+  "input_tokens": 624,
+  "output_tokens": 993,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.00058,
+ "request_id": "req_011Cg7sVrLc2bwndiJa4zPcw",
+ "ts": "2026-10-17T13:15:46+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":1.83,\"confidence\":0.4,\"reasoning\":\"Last_3d ROI is -0.019 and blended_roi is -0.01, so the adset is roughly break-even, not a proven winner (last_3d shows 2 loss days, 1 profit day, and the trend is declining). The buyer cut budget 2.29 to 1.83 about 24h ago, so no further change is warranted. Data_quality_flags (meta_conversions_gt_clicks, spend_exceeds_1.25x_budget) make the readings less reliable. Peers fwd ROI is -0.005 (n=14), which is also flat. Keep.\",\"key_evidence\":[\"last_3d.roi = -0.019 (2 loss days, 1 profit day)\",\"blended_roi = -0.01\",\"peers.fwd_roi_1_3d = -0.005, n=14\",\"buyer.last_human_action: down 2.29->1.83, 24.4h ago\"],\"uncertainty\":[\"Data quality flags could mean spend or conversions are misattributed\",\"Declining trend could turn into a persistent matured loss\",\"Day -4 profit (ROI 1.41) shows the adset can win, so a sustained recovery would change the call\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 664,
+  "output_tokens": 842,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000509,
+ "request_id": "req_011Cg9MzTD8ThoQdJHLb8FyJ",
+ "ts": "2026-10-18T08:10:01+00:00"
+}

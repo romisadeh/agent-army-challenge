@@ -1,0 +1,15 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt_version": "adset-agent-v3b",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"scale_up\",\"new_daily_budget\":7.3,\"confidence\":0.6,\"reasoning\":\"Proven-winner pattern: age_spend_days 4, 2 of 3 matured days profitable (d-3, d-1), last_3d.roi 0.761 and blended_roi 0.39 both above +0.10. Trend is improving. Buyer moved budget up 3.81 to 6.35 seventeen hours ago, so this proposal agrees with that direction. Step is about +15%, within limits. Lock applies, so a human will review.\",\"key_evidence\":[\"last_3d.roi=0.761 with profit_days=2 of 3\",\"blended_roi=0.39 (blend_weight_own=0.43)\",\"trend_last_day_vs_prior=improving\",\"buyer.last_human_action up 3.81->6.35, 17h ago\"],\"uncertainty\":[\"d-2 loss (roi -0.26) on a 6.11 spend day shows volatility\",\"peer forward ROI is modest at 0.105\",\"buyer lock_24h is true, so a human must confirm the increase\",\"budget only just rose 17h ago; the effect of the earlier step is not yet visible\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 592,
+  "output_tokens": 800,
+  "cache_read_input_tokens": 2177,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.000481,
+ "request_id": "req_011Cg7tbgGQP2svNkib4zzVu",
+ "ts": "2026-10-17T13:30:11+00:00"
+}

@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "adset-agent-v3",
+ "stop_reason": "end_turn",
+ "text": "{\"action\":\"keep\",\"new_daily_budget\":null,\"confidence\":0.6,\"reasoning\":\"Blended ROI is -0.058 and last_3d ROI is -0.085 on $36 spend, which is mildly negative but near break-even. Peers are flat at -0.007. Yesterday's spend was only $0.71, so its -1.0 ROI is noise. The budget is $1.27, so any move is trivial. Not a proven winner, and the evidence is not strong enough to pause.\",\"key_evidence\":[\"blended_roi -0.058\",\"last_3d roi -0.085 (2 loss days, 1 profit day)\",\"peers fwd_roi_1_3d -0.007 (n=11)\",\"d-1 spend $0.71, revenue $0\"],\"uncertainty\":[\"Why spend collapsed to $0.71 yesterday against a $1.27 budget and earlier spend of $26-27/day\",\"Flag spend_exceeds_1.25x_budget suggests the budget figure may be out of sync with actual delivery\",\"Whether delivery is throttled by the bid cap\"],\"proposed_if_escalated\":null}",
+ "usage": {
+  "input_tokens": 647,
+  "output_tokens": 368,
+  "cache_read_input_tokens": 2116,
+  "cache_creation_input_tokens": 0
+ },
+ "cost_usd": 0.005397,
+ "request_id": "req_011Cg9M9svYtcTAiJHno6Lzp",
+ "ts": "2026-10-18T07:59:01+00:00"
+}
